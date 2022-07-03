@@ -1,7 +1,7 @@
 @tailwind base;
 
 a {
-  @apply text-blue-700;
+  @apply text-fbstyle-400;
 }
 
 a:hover {

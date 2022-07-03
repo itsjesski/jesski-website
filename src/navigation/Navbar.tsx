@@ -11,11 +11,11 @@ const Navbar = (props: INavbarProps) => (
     <style jsx>
       {`
         .navbar :global(a) {
-          @apply text-gray-700;
+          @apply text-fbstyle-400;
         }
 
         .navbar :global(a:hover) {
-          @apply no-underline text-gray-900;
+          @apply no-underline text-fbstyle-400;
         }
       `}
     </style>
