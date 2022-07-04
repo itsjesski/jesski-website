@@ -2,7 +2,7 @@ import React, { ReactNode } from 'react';
 
 import Link from 'next/link';
 
-import { Logo } from '../content/misc/Logo';
+import { Logo } from '../content/modules/Logo';
 import { Navbar } from '../navigation/Navbar';
 import { AppConfig } from '../utils/AppConfig';
 
@@ -16,7 +16,7 @@ const Main = (props: IMainProps) => (
     {props.meta}
 
     <div className="mx-auto page-wrapper">
-      <div className="flex bg-fbstyle-700 p-3 border-b-2 border-fbstyle-600">
+      <div className="flex bg-fbstyle-700 p-3 border-b-2 border-fbstyle-300">
         <nav className="container mx-auto items-center justify-between flex flex-wrap">
           <div className="flex items-center flex-shrink-0 text-white mr-6">
             <Logo></Logo>

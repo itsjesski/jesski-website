@@ -5,8 +5,8 @@ const Logo = () => (
     <svg
       version="1.0"
       xmlns="http://www.w3.org/2000/svg"
-      width="30pt"
-      height="32pt"
+      width="20pt"
+      height="21pt"
       viewBox="0 0 340 359"
       preserveAspectRatio="none"
     >
