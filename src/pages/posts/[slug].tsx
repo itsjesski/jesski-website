@@ -6,7 +6,7 @@ import { GetStaticPaths, GetStaticProps } from 'next';
 import { Content } from '../../content/Content';
 import { Meta } from '../../layout/Meta';
 import { Main } from '../../templates/Main';
-import { getAllPosts, getPostBySlug } from '../../utils/Content';
+import { getAllPosts, getPostBySlug } from '../../utils/Blog';
 import { markdownToHtml } from '../../utils/Markdown';
 
 type IPostUrl = {

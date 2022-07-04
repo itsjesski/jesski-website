@@ -7,7 +7,7 @@ import { Meta } from '../layout/Meta';
 import { IPaginationProps } from '../pagination/Pagination';
 import { Main } from '../templates/Main';
 import { AppConfig } from '../utils/AppConfig';
-import { getAllPosts } from '../utils/Content';
+import { getAllPosts } from '../utils/Blog';
 import { convertTo2D } from '../utils/Pagination';
 
 type IPageUrl = {

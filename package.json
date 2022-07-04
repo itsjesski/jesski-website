@@ -26,6 +26,7 @@
     "remark-parse": "^10.0.1",
     "remark-rehype": "^10.1.0",
     "styled-jsx-plugin-postcss": "^4.0.1",
+    "ts-igdb-client": "^0.2.5",
     "unified": "^10.1.1"
   },
   "devDependencies": {

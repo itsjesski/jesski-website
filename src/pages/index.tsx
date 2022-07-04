@@ -7,7 +7,7 @@ import { Meta } from '../layout/Meta';
 import { IPaginationProps } from '../pagination/Pagination';
 import { Main } from '../templates/Main';
 import { AppConfig } from '../utils/AppConfig';
-import { getAllPosts } from '../utils/Content';
+import { getAllPosts } from '../utils/Blog';
 
 const Index = (props: IBlogGalleryProps) => (
   <Main meta={<Meta title="Home" description={AppConfig.description} />}>

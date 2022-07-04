@@ -12,9 +12,6 @@ This project was built as a personal website for Firebottle. The primary goal is
 - and more as I come up with ideas.
 
 ### Features
-
-Blog feature:
-
 - Syntax Highlighting with Prism.js
 - SEO metadata and Open Graph tags
 - JSON-LD for richer indexing
@@ -22,12 +19,13 @@ Blog feature:
 - Markdown
 - Maximize lighthouse score
 
-Developer experience first:
+### Developer experience:
 
-- 🔥 [Next.js](https://nextjs.org) for Static Site Generator
-- 🎨 Integrate with [Tailwind CSS](https://tailwindcss.com)
-- 💅 [PostCSS](https://postcss.org) for processing [Tailwind CSS](https://tailwindcss.com)
-- 🎉 Type checking [TypeScript](https://www.typescriptlang.org)
-- ✏️ Linter with [ESLint](https://eslint.org)
-- 🛠 Code Formatter with [Prettier](https://prettier.io)
-- 🦊 SEO metadata, [JSON-LD](https://developers.google.com/search/docs/guides/intro-structured-data) and [Open Graph](https://ogp.me/) tags with [Next SEO](https://github.com/garmeeh/next-seo)
+- [Next.js](https://nextjs.org) for Static Site Generator
+- Integrate with [Tailwind CSS](https://tailwindcss.com)
+- [PostCSS](https://postcss.org) for processing [Tailwind CSS](https://tailwindcss.com)
+- Type checking [TypeScript](https://www.typescriptlang.org)
+- Linter with [ESLint](https://eslint.org)
+- Code Formatter with [Prettier](https://prettier.io)
+- SEO metadata, [JSON-LD](https://developers.google.com/search/docs/guides/intro-structured-data) and [Open Graph](https://ogp.me/) tags with [Next SEO](https://github.com/garmeeh/next-seo)
+- [TS-IGDB-Client](https://www.npmjs.com/package/ts-igdb-client) for IGDB API calls.

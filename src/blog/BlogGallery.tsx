@@ -4,7 +4,7 @@ import { format } from 'date-fns';
 import Link from 'next/link';
 
 import { Pagination, IPaginationProps } from '../pagination/Pagination';
-import { PostItems } from '../utils/Content';
+import { PostItems } from '../utils/Blog';
 
 export type IBlogGalleryProps = {
   posts: PostItems[];
@@ -23,7 +23,7 @@ const BlogGallery = (props: IBlogGalleryProps) => (
             <Link href="/posts/[slug]" as={`/posts/${elt.slug}`}>
               <a>
                 <div className="blog-image">
-                  <img src={elt.image} alt="blog image"></img>
+                  <img src={elt.image} alt="image"></img>
                 </div>
                 <div className="text-left p-2 text-fbstyle-50">
                   <h2>{elt.title}</h2>

@@ -33,3 +33,6 @@ local
 
 # vercel
 .vercel
+
+# env
+env-config.tsx
