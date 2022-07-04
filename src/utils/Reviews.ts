@@ -3,7 +3,7 @@ import { join } from 'path';
 
 import matter from 'gray-matter';
 
-const postsDirectory = join(process.cwd(), '_posts');
+const postsDirectory = join(process.cwd(), '_reviews');
 
 export type PostItems = {
   [key: string]: string;
