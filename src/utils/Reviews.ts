@@ -38,7 +38,7 @@ export function getReviewBySlug(slug: string, fields: string[] = []) {
   return items;
 }
 
-export function getAllReviews(fields: string[] = []) {
+export function getAllReviewPosts(fields: string[] = []) {
   const slugs = getReviewSlugs();
   const posts = slugs
     .map((slug) => getReviewBySlug(slug, fields))

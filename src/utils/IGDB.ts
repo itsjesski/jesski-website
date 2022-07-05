@@ -1,11 +1,20 @@
 import { twitchAccessToken, igdb, where, fields } from 'ts-igdb-client';
 
-import config from '../../env-config';
+// import config from '../../env-config';
+// const twitchConfig = JSON.parse(JSON.stringify(config.twitch));
 
-const twitchConfig = JSON.parse(JSON.stringify(config.twitch));
-const twitchSecrets = {
-  client_id: twitchConfig.client_id,
-  client_secret: twitchConfig.client_secret,
+type TwitchSecrets = {
+  client_id: string;
+  client_secret: string;
+};
+
+const twitchSecrets: TwitchSecrets = {
+  client_id:
+    process.env.TWITCH_CLIENT_ID != null ? process.env.TWITCH_CLIENT_ID : '',
+  client_secret:
+    process.env.TWITCH_CLIENT_SECRET != null
+      ? process.env.TWITCH_CLIENT_SECRET
+      : '',
 };
 const accessToken = await twitchAccessToken(twitchSecrets);
 const client = igdb(twitchSecrets.client_id, accessToken);

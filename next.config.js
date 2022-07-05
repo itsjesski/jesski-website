@@ -1,3 +1,5 @@
+require('dotenv').config();
+
 /* eslint-disable import/no-extraneous-dependencies */
 const withBundleAnalyzer = require('@next/bundle-analyzer')({
   enabled: process.env.ANALYZE === 'true',
@@ -23,8 +25,10 @@ module.exports = {
     // this will override the experiments
     // eslint-disable-next-line no-param-reassign
     config.experiments = { topLevelAwait: true };
-    // this will just update topLevelAwait property of config.experiments
-    // config.experiments.topLevelAwait = true.
     return config;
+  },
+  env: {
+    TWITCH_CLIENT_ID: process.env.TWITCH_CLIENT_ID,
+    TWITCH_CLIENT_SECRET: process.env.TWITCH_CLIENT_SECRET,
   },
 };

@@ -5,28 +5,52 @@ import { GetStaticProps } from 'next';
 import { BlogGallery, IBlogGalleryProps } from '../blog/BlogGallery';
 import { Meta } from '../layout/Meta';
 import { IPaginationProps } from '../pagination/Pagination';
+import { IReviewGalleryProps, ReviewGallery } from '../reviews/ReviewGallery';
 import { Main } from '../templates/Main';
 import { AppConfig } from '../utils/AppConfig';
-import { getAllPosts } from '../utils/Blog';
+import { getAllBlogPosts } from '../utils/Blog';
+import { getAllReviewPosts } from '../utils/Reviews';
 
-const Index = (props: IBlogGalleryProps) => (
+export type IndexProps = {
+  blog: IBlogGalleryProps;
+  reviews: IReviewGalleryProps;
+};
+
+const Index = (props: IndexProps) => (
   <Main meta={<Meta title="Home" description={AppConfig.description} />}>
-    <BlogGallery posts={props.posts} pagination={props.pagination} />
+    <ReviewGallery
+      posts={props.reviews.posts}
+      pagination={props.reviews.pagination}
+    ></ReviewGallery>
+    <BlogGallery posts={props.blog.posts} pagination={props.blog.pagination} />
   </Main>
 );
 
-export const getStaticProps: GetStaticProps<IBlogGalleryProps> = async () => {
-  const posts = getAllPosts(['title', 'date', 'slug', 'image']);
-  const pagination: IPaginationProps = {};
+export const getStaticProps: GetStaticProps = async () => {
+  const blogPosts = getAllBlogPosts(['title', 'date', 'slug', 'image']);
+  const blogPagination: IPaginationProps = {};
 
-  if (posts.length > AppConfig.pagination_size) {
-    pagination.next = '/page2';
+  if (blogPosts.length > AppConfig.pagination_size) {
+    blogPagination.next = '/page2';
+  }
+
+  const reviewPosts = getAllReviewPosts(['title', 'date', 'slug']);
+  const reviewPagination: IPaginationProps = {};
+
+  if (reviewPosts.length > AppConfig.pagination_size) {
+    reviewPagination.next = '/page2';
   }
 
   return {
     props: {
-      posts: posts.slice(0, AppConfig.pagination_size),
-      pagination,
+      blog: {
+        posts: blogPosts.slice(0, AppConfig.pagination_size),
+        pagination: blogPagination,
+      },
+      reviews: {
+        posts: reviewPosts.slice(0, AppConfig.pagination_size),
+        pagination: reviewPagination,
+      },
     },
   };
 };

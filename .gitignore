@@ -35,4 +35,4 @@ local
 .vercel
 
 # env
-env-config.tsx
+.env
