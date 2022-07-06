@@ -28,4 +28,4 @@ This project was built as a personal website for Firebottle. The primary goal is
 - Linter with [ESLint](https://eslint.org)
 - Code Formatter with [Prettier](https://prettier.io)
 - SEO metadata, [JSON-LD](https://developers.google.com/search/docs/guides/intro-structured-data) and [Open Graph](https://ogp.me/) tags with [Next SEO](https://github.com/garmeeh/next-seo)
-- [TS-IGDB-Client](https://www.npmjs.com/package/ts-igdb-client) for IGDB API calls.
+- [IGDB API Node](https://www.npmjs.com/package/igdb-api-node) for IGDB API calls.
