@@ -29,6 +29,7 @@ export function getPostBySlug(
     if (field === 'slug') {
       items[field] = realSlug;
     }
+
     if (field === 'content') {
       items[field] = content;
     }

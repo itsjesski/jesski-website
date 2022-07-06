@@ -28,7 +28,11 @@ export const getStaticProps: GetStaticProps = async () => {
         posts: getPosts('_posts', ['title', 'date', 'slug', 'image'], 5),
       },
       reviews: {
-        posts: getPosts('_reviews', ['id', 'title', 'date', 'slug'], 5),
+        posts: getPosts(
+          '_reviews',
+          ['id', 'title', 'date', 'slug', 'score'],
+          5
+        ),
       },
     },
   };

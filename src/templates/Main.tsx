@@ -20,7 +20,7 @@ const Main = (props: IMainProps) => (
         <nav className="container mx-auto items-center justify-between flex flex-wrap">
           <div className="flex items-center flex-shrink-0 text-white mr-6">
             <Logo></Logo>
-            <span className="font-semibold text-xl tracking-tight">
+            <span className="font-semibold text-xl tracking-tight text-white">
               {AppConfig.title}
             </span>
           </div>

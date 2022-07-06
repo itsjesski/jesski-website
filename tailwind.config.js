@@ -15,6 +15,18 @@ module.exports = {
     },
     extend: {
       colors: {
+        reviewscore: {
+          1: '#ff4545',
+          2: '#ff4545',
+          3: '#ffa534',
+          4: '#ffa534',
+          5: '#ffe234',
+          6: '#ffe234',
+          7: '#b7dd29',
+          8: '#b7dd29',
+          9: '#57e32c',
+          10: '#57e32c',
+        },
         fbstyle: {
           50: '#cecece',
           100: '#b5b5b5',

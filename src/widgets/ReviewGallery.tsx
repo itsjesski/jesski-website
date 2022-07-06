@@ -3,6 +3,7 @@ import React, { useState, useEffect } from 'react';
 import { format } from 'date-fns';
 import Link from 'next/link';
 
+import { ReviewScoreBox } from '../content/modules/ReviewScoreBox';
 import { FBGame } from '../pages/api/games/[title]';
 import { PostItems } from '../utils/Posts';
 
@@ -30,11 +31,11 @@ const ReviewCard: React.FC<{ review: PostItems }> = ({ review }) => {
     getGameData();
   }, [fbGame, review.title]);
   return (
-    <li key={review.slug} className="p-2 lg:w-1/4 md:w-1/2 sm:w-full">
+    <li key={review.slug} className="p-2 lg:w-1/6 md:w-1/2 w-full">
       <div className="border-solid border-fbstyle-300 border-2 shadow">
         <Link href="/reviews/[slug]" as={`/reviews/${review.slug}`}>
           <a>
-            <div className="image">
+            <div className="image relative">
               {fbGame?.cover && (
                 <img
                   src={fbGame?.cover}
@@ -42,6 +43,7 @@ const ReviewCard: React.FC<{ review: PostItems }> = ({ review }) => {
                   className="w-full"
                 ></img>
               )}
+              <ReviewScoreBox score={review.score}></ReviewScoreBox>
             </div>
             <div className="text-left p-2 text-fbstyle-50">
               <h2>{review.title}</h2>
@@ -64,7 +66,7 @@ const ReviewGallery = (props: IReviewGalleryProps) => (
     <h2 className="mb-3 p-2 border-b-fbstyle-400 border-solid border-b-2">
       Reviews
     </h2>
-    <ul className="flex flex-wrap justify-between">
+    <ul className="flex flex-wrap">
       {props.posts.map((review) => (
         <ReviewCard review={review} key={review.slug}></ReviewCard>
       ))}

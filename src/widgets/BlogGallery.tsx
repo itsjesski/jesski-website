@@ -14,9 +14,9 @@ const BlogGallery = (props: IBlogGalleryProps) => (
     <h2 className="mb-3 p-2 border-b-fbstyle-400 border-solid border-b-2">
       Blog
     </h2>
-    <ul className="flex flex-wrap justify-between">
+    <ul className="flex flex-wrap">
       {props.posts.map((elt) => (
-        <li key={elt.slug} className="p-2 lg:w-1/4 md:w-1/2 sm:w-full">
+        <li key={elt.slug} className="p-2 lg:w-1/6 md:w-1/2 w-full">
           <div className="border-solid border-fbstyle-300 border-2 shadow">
             <Link href="/posts/[slug]" as={`/posts/${elt.slug}`}>
               <a>
