@@ -2,12 +2,12 @@ import React from 'react';
 
 import { GetStaticProps } from 'next';
 
-import { BlogGallery, IBlogGalleryProps } from '../blog/BlogGallery';
 import { Meta } from '../layout/Meta';
-import { IReviewGalleryProps, ReviewGallery } from '../reviews/ReviewGallery';
 import { Main } from '../templates/Main';
 import { AppConfig } from '../utils/AppConfig';
 import { getPosts } from '../utils/Posts';
+import { BlogGallery, IBlogGalleryProps } from '../widgets/BlogGallery';
+import { IReviewGalleryProps, ReviewGallery } from '../widgets/ReviewGallery';
 
 export type IndexProps = {
   blog: IBlogGalleryProps;

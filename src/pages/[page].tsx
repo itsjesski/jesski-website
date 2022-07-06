@@ -2,13 +2,13 @@ import React from 'react';
 
 import { GetStaticPaths, GetStaticProps } from 'next';
 
-import { BlogGallery, IBlogGalleryProps } from '../blog/BlogGallery';
 import { Meta } from '../layout/Meta';
 import { IPaginationProps } from '../pagination/Pagination';
 import { Main } from '../templates/Main';
 import { AppConfig } from '../utils/AppConfig';
 import { convertTo2D } from '../utils/Pagination';
 import { getPosts } from '../utils/Posts';
+import { BlogGallery, IBlogGalleryProps } from '../widgets/BlogGallery';
 
 type IPageUrl = {
   page: string;
