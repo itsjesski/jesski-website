@@ -1,5 +1,6 @@
 ---
 title: 'Sniper Elite v2: Remastered'
+description: 'This is a description used for meta'
 score: 7
 playtime: 'Finished'
 date: '2022-07-02'

@@ -1,5 +1,6 @@
 ---
 title: 'Raft'
+description: 'This is a description used for meta'
 score: 8
 playtime: 'Finished'
 date: '2022-07-01'
