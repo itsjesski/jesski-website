@@ -1,4 +1,5 @@
-import { twitchAccessToken, igdb, where, fields } from 'ts-igdb-client';
+import axios from 'axios';
+import igdb from 'igdb-api-node';
 
 type TwitchSecrets = {
   client_id: string;
@@ -14,17 +15,35 @@ const twitchSecrets: TwitchSecrets = {
       : '',
 };
 
+async function getTwitchAccessToken(): Promise<string | undefined> {
+  return axios({
+    method: 'post',
+    url: 'https://id.twitch.tv/oauth2/token',
+    data: {
+      client_id: twitchSecrets.client_id,
+      client_secret: twitchSecrets.client_secret,
+      grant_type: 'client_credentials',
+    },
+  })
+    .then((response) => {
+      return response.data.access_token;
+    })
+    .catch(() => {
+      return '';
+    });
+}
+
 export async function getGameByName(
   name: string,
   requested_fields: '*' | [any, ...any[]] = ['name']
-) {
-  const accessToken = await twitchAccessToken(twitchSecrets);
-  const client = igdb(twitchSecrets.client_id, accessToken);
-  const { data } = await client
-    .request('games')
-    .pipe(fields(requested_fields), where('name', '~', name))
-    .execute();
-  console.log(data);
+): Promise<any> {
+  const accessToken = await getTwitchAccessToken();
+  const client = await igdb(twitchSecrets.client_id, accessToken);
+  const cleanName = decodeURIComponent(name);
+  const response = await client
+    .fields(requested_fields)
+    .search(cleanName)
+    .request('/games');
 
-  return data[0];
+  return response.data;
 }

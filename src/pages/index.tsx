@@ -34,7 +34,7 @@ export const getStaticProps: GetStaticProps = async () => {
     blogPagination.next = '/page2';
   }
 
-  const reviewPosts = getAllReviewPosts(['title', 'date', 'slug']);
+  const reviewPosts = getAllReviewPosts(['id', 'title', 'date', 'slug']);
   const reviewPagination: IPaginationProps = {};
 
   if (reviewPosts.length > AppConfig.pagination_size) {

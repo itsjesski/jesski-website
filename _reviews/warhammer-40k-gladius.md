@@ -1,5 +1,6 @@
 ---
-title: 'Warhammer 40k: Gladius'
+id: 76410
+title: 'Warhammer 40,000: Gladius - Relics of War'
 score: 8
 playtime: '12 hours'
 date: '2022-6-5'

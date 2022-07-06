@@ -4,13 +4,14 @@ import { format } from 'date-fns';
 import Link from 'next/link';
 
 import { Pagination, IPaginationProps } from '../pagination/Pagination';
-import { getGameByName } from '../utils/IGDB';
 import { PostItems } from '../utils/Reviews';
 
 export type IReviewGalleryProps = {
   posts: PostItems[];
   pagination: IPaginationProps;
 };
+
+const axios = require('axios').default;
 
 const ReviewCard: React.FC<{ review: PostItems }> = ({ review }) => {
   const [thumbnailUrl, setThumbnailUrl] = useState<string | null | undefined>(
@@ -21,8 +22,16 @@ const ReviewCard: React.FC<{ review: PostItems }> = ({ review }) => {
     if (thumbnailUrl != null) return;
 
     async function getGameData() {
-      const game = await getGameByName(review.title);
-      setThumbnailUrl(game.cover?.url);
+      axios
+        .get(`/api/games/${review.title}`)
+        .then((response: { data: any }): void => {
+          console.log(response.data);
+          setThumbnailUrl(response.data.cover);
+        })
+        .catch((error: any) => {
+          // handle error
+          console.log(error);
+        });
     }
 
     getGameData();
@@ -30,15 +39,19 @@ const ReviewCard: React.FC<{ review: PostItems }> = ({ review }) => {
   return (
     <li key={review.slug} className="p-2 lg:w-1/4 md:w-1/2 sm:w-full">
       <div className="border-solid border-fbstyle-300 border-2 shadow">
-        <Link href="/posts/[slug]" as={`/posts/${review.slug}`}>
+        <Link href="/reviews/[slug]" as={`/reviews/${review.slug}`}>
           <a>
             <div className="image">
               {thumbnailUrl && (
-                <img src={thumbnailUrl} alt="review image"></img>
+                <img
+                  src={thumbnailUrl}
+                  alt="review image"
+                  className="w-full"
+                ></img>
               )}
             </div>
             <div className="text-left p-2 text-fbstyle-50">
-              <h2>{review.title}</h2>+
+              <h2>{review.title}</h2>
               <span className="text-left text-sm text-fbstyle-100">
                 {format(new Date(review.date), 'LLL d, yyyy')}
               </span>
