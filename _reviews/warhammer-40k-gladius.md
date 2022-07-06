@@ -1,5 +1,4 @@
 ---
-id: 76410
 title: 'Warhammer 40,000: Gladius - Relics of War'
 score: 8
 playtime: '12 hours'
