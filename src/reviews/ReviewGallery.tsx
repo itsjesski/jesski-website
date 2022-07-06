@@ -4,12 +4,10 @@ import { format } from 'date-fns';
 import Link from 'next/link';
 
 import { FBGame } from '../pages/api/games/[title]';
-import { Pagination, IPaginationProps } from '../pagination/Pagination';
-import { PostItems } from '../utils/Reviews';
+import { PostItems } from '../utils/Posts';
 
 export type IReviewGalleryProps = {
   posts: PostItems[];
-  pagination: IPaginationProps;
 };
 
 const axios = require('axios').default;
@@ -71,11 +69,6 @@ const ReviewGallery = (props: IReviewGalleryProps) => (
         <ReviewCard review={review} key={review.slug}></ReviewCard>
       ))}
     </ul>
-
-    <Pagination
-      previous={props.pagination.previous}
-      next={props.pagination.next}
-    />
   </>
 );
 
