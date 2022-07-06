@@ -24,7 +24,10 @@ module.exports = {
   webpack: (config) => {
     // this will override the experiments
     // eslint-disable-next-line no-param-reassign
-    config.experiments = { topLevelAwait: true };
+    config.experiments = {
+      topLevelAwait: true,
+      layers: true,
+    };
     return config;
   },
   env: {
