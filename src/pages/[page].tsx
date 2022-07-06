@@ -7,8 +7,8 @@ import { Meta } from '../layout/Meta';
 import { IPaginationProps } from '../pagination/Pagination';
 import { Main } from '../templates/Main';
 import { AppConfig } from '../utils/AppConfig';
-import { getAllBlogPosts } from '../utils/Blog';
 import { convertTo2D } from '../utils/Pagination';
+import { getPosts } from '../utils/Posts';
 
 type IPageUrl = {
   page: string;
@@ -16,12 +16,12 @@ type IPageUrl = {
 
 const PaginatePosts = (props: IBlogGalleryProps) => (
   <Main meta={<Meta title="Lorem ipsum" description="Lorem ipsum" />}>
-    <BlogGallery posts={props.posts} pagination={props.pagination} />
+    <BlogGallery posts={props.posts} />
   </Main>
 );
 
 export const getStaticPaths: GetStaticPaths<IPageUrl> = async () => {
-  const posts = getAllBlogPosts(['slug']);
+  const posts = getPosts('_posts', ['slug']);
 
   const pages = convertTo2D(posts, AppConfig.pagination_size);
 
@@ -42,7 +42,7 @@ export const getStaticProps: GetStaticProps<
   IBlogGalleryProps,
   IPageUrl
 > = async ({ params }) => {
-  const posts = getAllBlogPosts(['title', 'date', 'slug']);
+  const posts = getPosts('_posts', ['title', 'date', 'slug']);
 
   const pages = convertTo2D(posts, AppConfig.pagination_size);
   const currentPage = Number(params!.page.replace('page', ''));

@@ -6,8 +6,8 @@ import { GetStaticPaths, GetStaticProps } from 'next';
 import { Content } from '../../content/Content';
 import { Meta } from '../../layout/Meta';
 import { Main } from '../../templates/Main';
-import { getAllBlogPosts, getBlogPostBySlug } from '../../utils/Blog';
 import { markdownToHtml } from '../../utils/Markdown';
+import { getPostBySlug, getPosts } from '../../utils/Posts';
 
 type IPostUrl = {
   slug: string;
@@ -53,7 +53,7 @@ const DisplayPost = (props: IPostProps) => (
 );
 
 export const getStaticPaths: GetStaticPaths<IPostUrl> = async () => {
-  const posts = getAllBlogPosts(['slug']);
+  const posts = getPosts('_posts', ['slug']);
 
   return {
     paths: posts.map((post) => ({
@@ -68,7 +68,7 @@ export const getStaticPaths: GetStaticPaths<IPostUrl> = async () => {
 export const getStaticProps: GetStaticProps<IPostProps, IPostUrl> = async ({
   params,
 }) => {
-  const post = getBlogPostBySlug(params!.slug, [
+  const post = getPostBySlug('_posts', params!.slug, [
     'title',
     'description',
     'date',

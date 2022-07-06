@@ -7,7 +7,7 @@ import { Content } from '../../content/Content';
 import { Meta } from '../../layout/Meta';
 import { Main } from '../../templates/Main';
 import { markdownToHtml } from '../../utils/Markdown';
-import { getAllReviewPosts, getReviewBySlug } from '../../utils/Reviews';
+import { getPostBySlug, getPosts } from '../../utils/Posts';
 
 type IPostUrl = {
   slug: string;
@@ -54,7 +54,7 @@ const DisplayPost = (props: IPostProps) => (
 );
 
 export const getStaticPaths: GetStaticPaths<IPostUrl> = async () => {
-  const posts = getAllReviewPosts(['slug']);
+  const posts = getPosts('_reviews', ['slug']);
 
   return {
     paths: posts.map((post) => ({
@@ -69,7 +69,7 @@ export const getStaticPaths: GetStaticPaths<IPostUrl> = async () => {
 export const getStaticProps: GetStaticProps<IPostProps, IPostUrl> = async ({
   params,
 }) => {
-  const post = getReviewBySlug(params!.slug, [
+  const post = getPostBySlug('_reviews', params!.slug, [
     'title',
     'description',
     'score',
