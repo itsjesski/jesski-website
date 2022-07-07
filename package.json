@@ -13,6 +13,7 @@
     "lint": "next lint",
     "build-types": "tsc --noEmit --pretty",
     "prepare": "husky install",
+    "postbuild": "npm run cache-posts",
     "cache-posts": "npx ts-node --skip-project ./src/utils/PostCache.ts"
   },
   "husky": {
