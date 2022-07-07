@@ -24,7 +24,19 @@ export function getPostBySlug(
   const { data, content } = matter(fileContents);
   const items: PostItems = {};
 
-  // Ensure only the minimal needed data is exposed
+  // Get all fields by passing an array with only an astrix.
+  if (fields[0] === '*') {
+    items.slug = realSlug;
+    items.content = content;
+    Object.entries(data).forEach((entry) => {
+      const [key, value] = entry;
+      items[key] = value;
+    });
+
+    return items;
+  }
+
+  // If only specific fields are specified, then get those.
   fields.forEach((field) => {
     if (field === 'slug') {
       items[field] = realSlug;
