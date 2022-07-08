@@ -67,7 +67,10 @@ const Main = (props: IMainProps) => (
       <div className="text-xl py-5 container mx-auto">{props.children}</div>
 
       <div className="border-t border-fbstyle-300 text-center py-8 text-sm">
-        © Copyright {new Date().getFullYear()} {AppConfig.title}.
+        © Copyright {new Date().getFullYear()} {AppConfig.title}. Game data from{' '}
+        <Link href="https://igdb.com" target="_blank">
+          <a>IGDB.com</a>
+        </Link>
       </div>
     </div>
   </div>

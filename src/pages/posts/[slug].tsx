@@ -7,22 +7,13 @@ import { Content } from '../../content/Content';
 import { Meta } from '../../layout/Meta';
 import { Main } from '../../templates/Main';
 import { markdownToHtml } from '../../utils/Markdown';
-import { getPostBySlug, getPosts } from '../../utils/Posts';
+import { FBPost, getBlogPostBySlug, getBlogPosts } from '../../utils/Posts';
 
 type IPostUrl = {
   slug: string;
 };
 
-type IPostProps = {
-  title: string;
-  description: string;
-  date: string;
-  modified_date: string;
-  image: string;
-  content: string;
-};
-
-const DisplayPost = (props: IPostProps) => (
+const DisplayPost = (props: FBPost) => (
   <Main
     meta={
       <Meta
@@ -53,7 +44,7 @@ const DisplayPost = (props: IPostProps) => (
 );
 
 export const getStaticPaths: GetStaticPaths<IPostUrl> = async () => {
-  const posts = getPosts('_posts', ['slug']);
+  const posts = await getBlogPosts(['slug']);
 
   return {
     paths: posts.map((post) => ({
@@ -65,10 +56,11 @@ export const getStaticPaths: GetStaticPaths<IPostUrl> = async () => {
   };
 };
 
-export const getStaticProps: GetStaticProps<IPostProps, IPostUrl> = async ({
-  params,
-}) => {
-  const post = getPostBySlug('_posts', params!.slug, [
+export const getStaticProps: GetStaticProps<
+  Partial<FBPost>,
+  IPostUrl
+> = async ({ params }) => {
+  const post = await getBlogPostBySlug(params!.slug, [
     'title',
     'description',
     'date',
@@ -77,15 +69,16 @@ export const getStaticProps: GetStaticProps<IPostProps, IPostUrl> = async ({
     'content',
     'slug',
   ]);
-  const content = await markdownToHtml(post.content || '');
+
+  const content = await markdownToHtml(post[0].content || '');
 
   return {
     props: {
-      title: post.title,
-      description: post.description,
-      date: post.date,
-      modified_date: post.modified_date,
-      image: post.image,
+      title: post[0].title,
+      description: post[0].description,
+      date: post[0].date,
+      modified_date: post[0].modified_date,
+      image: post[0].image,
       content,
     },
   };

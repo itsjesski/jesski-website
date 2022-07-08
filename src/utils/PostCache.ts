@@ -1,11 +1,48 @@
 import * as fs from 'fs';
+import { join } from 'path';
 
-import { getPosts } from './Posts';
+import matter from 'gray-matter';
 
 const postTypes = ['_posts', '_reviews'];
 
+export type PostItems = {
+  [key: string]: string;
+};
+
+function getPostSlugs(postType: string) {
+  const postsDirectory = join(process.cwd(), postType);
+  return fs.readdirSync(postsDirectory);
+}
+function getPostBySlug(postType: string, slug: string) {
+  const postsDirectory = join(process.cwd(), postType);
+  const realSlug = slug.replace(/\.md$/, '');
+  const fullPath = join(postsDirectory, `${realSlug}.md`);
+  const fileContents = fs.readFileSync(fullPath, 'utf8');
+  const { data, content } = matter(fileContents);
+  const items: PostItems = {};
+
+  items.slug = realSlug;
+  items.content = content;
+  Object.entries(data).forEach((entry) => {
+    const [key, value] = entry;
+    items[key] = value;
+  });
+
+  return items;
+}
+
+function getPosts(postType: string) {
+  const slugs = getPostSlugs(postType);
+  const posts = slugs
+    .map((slug) => getPostBySlug(postType, slug))
+    // sort posts by date in descending order
+    .sort((post1, post2) => (post1.date > post2.date ? -1 : 1));
+
+  return posts;
+}
+
 function getPostsForCache(postType: string) {
-  const posts = getPosts(postType, ['*']);
+  const posts = getPosts(postType);
   return JSON.stringify(posts);
 }
 

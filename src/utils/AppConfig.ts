@@ -5,5 +5,5 @@ export const AppConfig = {
   url: 'https://example.com',
   locale: 'en',
   author: 'Anonymous',
-  pagination_size: 5,
+  pagination_size: 25,
 };

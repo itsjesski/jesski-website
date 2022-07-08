@@ -5,7 +5,7 @@ import { GetStaticProps } from 'next';
 import { Meta } from '../layout/Meta';
 import { Main } from '../templates/Main';
 import { AppConfig } from '../utils/AppConfig';
-import { getPosts } from '../utils/Posts';
+import { getBlogPosts, getReviewPosts } from '../utils/Posts';
 import { BlogGallery, IBlogGalleryProps } from '../widgets/BlogGallery';
 import { IReviewGalleryProps, ReviewGallery } from '../widgets/ReviewGallery';
 
@@ -25,14 +25,10 @@ export const getStaticProps: GetStaticProps = async () => {
   return {
     props: {
       blog: {
-        posts: getPosts('_posts', ['title', 'date', 'slug', 'image'], 5),
+        posts: await getBlogPosts(['title', 'date', 'slug', 'image']),
       },
       reviews: {
-        posts: getPosts(
-          '_reviews',
-          ['id', 'title', 'date', 'slug', 'score'],
-          5
-        ),
+        posts: await getReviewPosts(['id', 'title', 'date', 'slug', 'score']),
       },
     },
   };

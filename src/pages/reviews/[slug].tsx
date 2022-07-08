@@ -7,23 +7,17 @@ import { Content } from '../../content/Content';
 import { Meta } from '../../layout/Meta';
 import { Main } from '../../templates/Main';
 import { markdownToHtml } from '../../utils/Markdown';
-import { getPostBySlug, getPosts } from '../../utils/Posts';
+import {
+  FBReview,
+  getReviewPostBySlug,
+  getReviewPosts,
+} from '../../utils/Posts';
 
 type IPostUrl = {
   slug: string;
 };
 
-type IPostProps = {
-  title: string;
-  date: string;
-  modified_date: string;
-  score: any; // TODO: Fix the any type?
-  screenshots: any; // TODO: Fix the any type?
-  content: string;
-  description: string;
-};
-
-const DisplayPost = (props: IPostProps) => (
+const DisplayPost = (props: FBReview) => (
   <Main
     meta={
       <Meta
@@ -54,7 +48,7 @@ const DisplayPost = (props: IPostProps) => (
 );
 
 export const getStaticPaths: GetStaticPaths<IPostUrl> = async () => {
-  const posts = getPosts('_reviews', ['slug']);
+  const posts = await getReviewPosts(['slug']);
 
   return {
     paths: posts.map((post) => ({
@@ -66,31 +60,28 @@ export const getStaticPaths: GetStaticPaths<IPostUrl> = async () => {
   };
 };
 
-export const getStaticProps: GetStaticProps<IPostProps, IPostUrl> = async ({
-  params,
-}) => {
-  const post = getPostBySlug('_reviews', params!.slug, [
+export const getStaticProps: GetStaticProps<
+  Partial<FBReview>,
+  IPostUrl
+> = async ({ params }) => {
+  const post = await getReviewPostBySlug(params!.slug, [
     'title',
     'description',
-    'score',
     'date',
     'modified_date',
-    'playtime',
-    'screenshots',
+    'image',
     'content',
     'slug',
   ]);
-  const content = await markdownToHtml(post.content || '');
+
+  const content = await markdownToHtml(post[0].content || '');
 
   return {
     props: {
-      title: post.title,
-      description: post.description,
-      score: post.score,
-      date: post.date,
-      modified_date: post.modified_date,
-      playtime: post.playtime,
-      screenshots: post.screenshots,
+      title: post[0].title,
+      description: post[0].description,
+      date: post[0].date,
+      modified_date: post[0].modified_date,
       content,
     },
   };
