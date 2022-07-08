@@ -5,7 +5,7 @@ import Link from 'next/link';
 
 import { ReviewScoreBox } from '../content/modules/ReviewScoreBox';
 import { FBGame } from '../pages/api/games/[title]';
-import { PostItems } from '../utils/Posts';
+import { FBReview, getReviewPosts, PostItems } from '../utils/Posts';
 
 export type IReviewGalleryProps = {
   posts: PostItems[];
@@ -13,12 +13,13 @@ export type IReviewGalleryProps = {
 
 const axios = require('axios').default;
 
-const ReviewCard: React.FC<{ review: PostItems }> = ({ review }) => {
+const ReviewCard: React.FC<{ review: FBReview }> = ({ review }) => {
   const [fbGame, setGameData] = useState<FBGame>();
 
   useEffect(() => {
-    if (fbGame != null) return;
-
+    if (fbGame != null) {
+      return;
+    }
     async function getGameData() {
       axios
         .get(`/api/games/${review.title}`)
@@ -61,18 +62,37 @@ const ReviewCard: React.FC<{ review: PostItems }> = ({ review }) => {
   );
 };
 
-const ReviewGallery = (props: IReviewGalleryProps) => (
+const ReviewCardList: React.FC<{}> = () => {
+  const [fbPosts, setPostData] = useState<FBReview[]>();
+
+  useEffect(() => {
+    if (fbPosts != null) {
+      return;
+    }
+    getReviewPosts(['id', 'title', 'date', 'slug', 'score']).then(
+      (reviewPosts) => {
+        // Always 6 reviews for the gallery.
+        setPostData(reviewPosts.slice(0, 6));
+      }
+    );
+  }, [fbPosts]);
+  return (
+    <ul className="flex flex-wrap">
+      {fbPosts?.map((review) => (
+        <ReviewCard review={review} key={review.slug}></ReviewCard>
+      ))}
+    </ul>
+  );
+};
+
+const ReviewGallery = () => (
   <>
     <div className="review-gallery gallery-widget mb-10">
       <div className="gallery-title border-b-fbstyle-400 border-solid border-b-2 mb-3 flex justify-between items-end flex-wrap">
         <h2>Reviews</h2>
       </div>
       <div className="gallery-content">
-        <ul className="flex flex-wrap">
-          {props.posts.map((review) => (
-            <ReviewCard review={review} key={review.slug}></ReviewCard>
-          ))}
-        </ul>
+        <ReviewCardList></ReviewCardList>
       </div>
       <div className="gallery-more flex justify-center mt-4">
         <Link href="/posts/">
