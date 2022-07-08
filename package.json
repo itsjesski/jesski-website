@@ -1,5 +1,5 @@
 {
-  "name": "next-js-boilerplate",
+  "name": "firebottle-website",
   "version": "1.0.0",
   "proxy": "http://localhost:3000",
   "scripts": {
@@ -12,7 +12,14 @@
     "clean": "rimraf .next out",
     "lint": "next lint",
     "build-types": "tsc --noEmit --pretty",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "postbuild": "npm run cache-posts",
+    "cache-posts": "npx ts-node --skip-project ./src/utils/PostCache.ts"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run cache-posts && git add cache"
+    }
   },
   "dependencies": {
     "@types/igdb-api-node": "^5.0.0",

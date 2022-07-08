@@ -20,7 +20,7 @@ const Main = (props: IMainProps) => (
         <nav className="container mx-auto items-center justify-between flex flex-wrap">
           <div className="flex items-center flex-shrink-0 text-white mr-6">
             <Logo></Logo>
-            <span className="font-semibold text-xl tracking-tight">
+            <span className="font-semibold text-xl tracking-tight text-white">
               {AppConfig.title}
             </span>
           </div>
@@ -67,7 +67,10 @@ const Main = (props: IMainProps) => (
       <div className="text-xl py-5 container mx-auto">{props.children}</div>
 
       <div className="border-t border-fbstyle-300 text-center py-8 text-sm">
-        © Copyright {new Date().getFullYear()} {AppConfig.title}.
+        © Copyright {new Date().getFullYear()} {AppConfig.title}. Game data from{' '}
+        <Link href="https://igdb.com" target="_blank">
+          <a>IGDB.com</a>
+        </Link>
       </div>
     </div>
   </div>

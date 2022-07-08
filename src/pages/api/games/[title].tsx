@@ -40,7 +40,7 @@ function getGenreString(genres: Genres): string {
 
 export default async function handler(
   req: { query: { title: string } },
-  res: { json: (arg0: FBGame) => void }
+  res: { json: (results: FBGame) => void }
 ) {
   await cors(req, res);
 

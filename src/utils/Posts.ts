@@ -1,60 +1,121 @@
-import fs from 'fs';
-import { join } from 'path';
-
-import matter from 'gray-matter';
+import axios from 'axios';
 
 export type PostItems = {
   [key: string]: string;
 };
 
-export function getPostSlugs(postType: string) {
-  const postsDirectory = join(process.cwd(), postType);
-  return fs.readdirSync(postsDirectory);
-}
+export type FBPost = {
+  title: string;
+  description: string;
+  date: string;
+  modified_date: string;
+  image: string;
+  slug: string;
+  content: string;
+};
 
-export function getPostBySlug(
+export type FBReview = {
+  title: string;
+  description: string;
+  score: number;
+  playtime: string;
+  date: string;
+  modified_date: string;
+  screenshots: string[];
+  slug: string;
+  content: string;
+};
+
+/**
+ * Gets a post by post slug.
+ * @param postType
+ * @param slug
+ * @param fields
+ * @returns
+ */
+async function getPostBySlug(
   postType: string,
   slug: string,
-  fields: string[] = []
-) {
-  const postsDirectory = join(process.cwd(), postType);
-  const realSlug = slug.replace(/\.md$/, '');
-  const fullPath = join(postsDirectory, `${realSlug}.md`);
-  const fileContents = fs.readFileSync(fullPath, 'utf8');
-  const { data, content } = matter(fileContents);
-  const items: PostItems = {};
+  fields: string[]
+): Promise<any[]> {
+  let apiUrl = `/api/${postType}/${slug}/`;
+  const encodedFields = encodeURIComponent(fields.join(','));
 
-  // Ensure only the minimal needed data is exposed
-  fields.forEach((field) => {
-    if (field === 'slug') {
-      items[field] = realSlug;
-    }
-    if (field === 'content') {
-      items[field] = content;
-    }
-
-    if (data[field]) {
-      items[field] = data[field];
-    }
-  });
-
-  return items;
-}
-
-export function getPosts(
-  postType: string,
-  fields: string[] = [],
-  numberPosts: number | string = 'all'
-) {
-  const slugs = getPostSlugs(postType);
-  let posts = slugs
-    .map((slug) => getPostBySlug(postType, slug, fields))
-    // sort posts by date in descending order
-    .sort((post1, post2) => (post1.date > post2.date ? -1 : 1));
-
-  if (typeof numberPosts === 'number') {
-    posts = posts.slice(0, numberPosts);
+  if (fields.length > 0) {
+    apiUrl = `${apiUrl}?fields=${encodedFields}`;
   }
 
-  return posts;
+  try {
+    const response = await axios.request({
+      url: apiUrl,
+      baseURL: process.env.SITE_URL,
+    });
+    return response.data;
+  } catch (error) {
+    // eslint-disable-next-line no-console
+    console.log(error);
+  }
+
+  return [];
+}
+
+/**
+ * Gets X number of posts, up to the pagination limit.
+ * @param postType
+ * @param page
+ * @param fields
+ * @returns
+ */
+async function getPosts(
+  postType: string,
+  fields: string[],
+  page: number = 1
+): Promise<any[]> {
+  let apiUrl = `/api/${postType}/`;
+  const encodedFields = encodeURIComponent(fields.join(','));
+
+  apiUrl = `${apiUrl}?page=${page}`;
+
+  if (fields.length > 0) {
+    apiUrl = `${apiUrl}&fields=${encodedFields}`;
+  }
+
+  try {
+    const response = await axios.request({
+      url: apiUrl,
+      baseURL: process.env.SITE_URL,
+    });
+    return response.data;
+  } catch (error) {
+    // eslint-disable-next-line no-console
+    console.log(error);
+  }
+
+  return [];
+}
+
+export async function getBlogPosts(
+  fields: string[],
+  page: number = 1
+): Promise<FBPost[]> {
+  return getPosts('posts', fields, page);
+}
+export async function getBlogPostBySlug(
+  slug: string,
+  fields: string[]
+): Promise<FBPost[]> {
+  return getPostBySlug('posts', slug, fields);
+}
+
+export async function getReviewPosts(
+  fields: string[],
+  page: number = 1
+): Promise<FBReview[]> {
+  return getPosts('reviews', fields, page);
+}
+export async function getReviewPostBySlug(
+  slug: string,
+  fields: string[]
+): Promise<FBReview[]> {
+  return getPostBySlug('reviews', slug, fields);
 }
