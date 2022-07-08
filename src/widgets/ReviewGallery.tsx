@@ -5,11 +5,7 @@ import Link from 'next/link';
 
 import { ReviewScoreBox } from '../content/modules/ReviewScoreBox';
 import { FBGame } from '../pages/api/games/[title]';
-import { FBReview, getReviewPosts, PostItems } from '../utils/Posts';
-
-export type IReviewGalleryProps = {
-  posts: PostItems[];
-};
+import { FBReview, getReviewPosts } from '../utils/Posts';
 
 const axios = require('axios').default;
 
@@ -66,9 +62,7 @@ const ReviewCardList: React.FC<{}> = () => {
   const [fbPosts, setPostData] = useState<FBReview[]>();
 
   useEffect(() => {
-    if (fbPosts != null) {
-      return;
-    }
+    if (fbPosts != null) return;
     getReviewPosts(['id', 'title', 'date', 'slug', 'score']).then(
       (reviewPosts) => {
         // Always 6 reviews for the gallery.
