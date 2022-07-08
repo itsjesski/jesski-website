@@ -24,7 +24,7 @@ const DisplayPost = (props: FBReview) => (
         title={props.title}
         description={props.description}
         post={{
-          image: props.screenshots[0],
+          image: props.screenshots != null ? props.screenshots[0] : '',
           date: props.date,
           modified_date: props.modified_date,
         }}
