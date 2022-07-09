@@ -11,7 +11,7 @@ const BlogCardList: React.FC<{}> = () => {
   useEffect(() => {
     if (fbPosts != null) return;
     getBlogPosts(['title', 'date', 'slug', 'image']).then((blogPosts) => {
-      setPostData(blogPosts.slice(0, 6));
+      setPostData(blogPosts.results.slice(0, 6));
     });
   }, [fbPosts]);
   return (

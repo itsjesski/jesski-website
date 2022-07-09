@@ -13,9 +13,8 @@ const ReviewCard: React.FC<{ review: FBReview }> = ({ review }) => {
   const [fbGame, setGameData] = useState<FBGame>();
 
   useEffect(() => {
-    if (fbGame != null) {
-      return;
-    }
+    if (fbGame != null) return;
+
     async function getGameData() {
       axios
         .get(`/api/games/${review.title}`)
@@ -63,10 +62,11 @@ const ReviewCardList: React.FC<{}> = () => {
 
   useEffect(() => {
     if (fbPosts != null) return;
+
     getReviewPosts(['id', 'title', 'date', 'slug', 'score']).then(
       (reviewPosts) => {
         // Always 6 reviews for the gallery.
-        setPostData(reviewPosts.slice(0, 6));
+        setPostData(reviewPosts.results.slice(0, 6));
       }
     );
   }, [fbPosts]);

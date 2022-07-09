@@ -4,7 +4,7 @@ import { filterPostFields } from '../../../utils/ApiHelper';
 export default async function handler(
   req: { query: { slug: string; fields: string } },
   res: {
-    json: (results: any[]) => void;
+    json: (results: any) => void;
   }
 ) {
   const { slug, fields } = req.query;
@@ -15,5 +15,10 @@ export default async function handler(
 
   result = filterPostFields(result, fields);
 
-  res.json(result);
+  const response = {
+    results: result,
+    totalPosts: posts.length,
+  };
+
+  res.json(response);
 }

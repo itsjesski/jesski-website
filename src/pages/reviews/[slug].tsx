@@ -51,7 +51,7 @@ export const getStaticPaths: GetStaticPaths<IPostUrl> = async () => {
   const posts = await getReviewPosts(['slug']);
 
   return {
-    paths: posts.map((post) => ({
+    paths: posts.results.map((post) => ({
       params: {
         slug: post.slug,
       },
@@ -74,14 +74,15 @@ export const getStaticProps: GetStaticProps<
     'slug',
   ]);
 
-  const content = await markdownToHtml(post[0].content || '');
+  const postResult = post.results[0];
+  const content = await markdownToHtml(postResult.content || '');
 
   return {
     props: {
-      title: post[0].title,
-      description: post[0].description,
-      date: post[0].date,
-      modified_date: post[0].modified_date,
+      title: postResult.title,
+      description: postResult.description,
+      date: postResult.date,
+      modified_date: postResult.modified_date,
       content,
     },
   };

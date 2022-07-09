@@ -24,14 +24,13 @@ export function getPageResults(posts: any[], page: string): any[] {
   // eslint-disable-next-line no-restricted-globals
   const pageNum = !isNaN(parseInt(page, 10)) ? parseInt(page, 10) : 1;
   const pagination = AppConfig.pagination_size;
-  const resultsNum = pagination * pageNum;
 
-  const resultsMin = resultsNum + 1;
-  const resultsMax = resultsMin + pagination;
-
-  // Pagination
   if (pageNum === 1) {
     return posts.slice(0, pagination);
   }
+
+  const resultsMin = pagination * (pageNum - 1);
+  const resultsMax = resultsMin + pagination;
+
   return posts.slice(resultsMin, resultsMax);
 }
