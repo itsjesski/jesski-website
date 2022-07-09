@@ -4,7 +4,7 @@
   "proxy": "http://localhost:3000",
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "npm run cache-posts && next build",
     "start": "next start",
     "build-stats": "cross-env ANALYZE=true npm run build",
     "export": "next export",
@@ -13,7 +13,6 @@
     "lint": "next lint",
     "build-types": "tsc --noEmit --pretty",
     "prepare": "husky install",
-    "postbuild": "npm run cache-posts",
     "cache-posts": "npx ts-node --skip-project ./src/utils/PostCache.ts"
   },
   "husky": {
