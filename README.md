@@ -12,12 +12,8 @@ This project was built as a personal website for Firebottle. The primary goal is
 - and more as I come up with ideas.
 
 ### Features
-- Syntax Highlighting with Prism.js
-- SEO metadata and Open Graph tags
-- JSON-LD for richer indexing
-- Pagination
-- Markdown
-- Maximize lighthouse score
+- Static site generator
+- Markdown files for posts
 
 ### Developer experience:
 
