@@ -1,64 +1,9 @@
 import React, { useState, useEffect } from 'react';
 
-import { format } from 'date-fns';
 import Link from 'next/link';
 
-import { IGDBGame } from '../pages/api/igdb/[title]';
 import { FBGame, getGamePosts } from '../utils/Posts';
-import { GameScoreBox } from './GameScoreBox';
-
-const axios = require('axios').default;
-
-const GameCard: React.FC<{ game: FBGame }> = ({ game }) => {
-  const [fbGame, setGameData] = useState<IGDBGame>();
-
-  useEffect(() => {
-    if (fbGame != null) return;
-
-    async function getGameData() {
-      axios
-        .get(`/api/igdb/${game.title}`)
-        .then((response: { data: IGDBGame }): void => {
-          setGameData(response.data);
-        })
-        .catch(() => {});
-    }
-
-    getGameData();
-  }, [fbGame, game.title]);
-  return (
-    <li
-      key={game.slug}
-      className="p-2 lg:w-1/6 md:w-1/2 w-full shadow-2xl bg-slate-700"
-    >
-      <div className="">
-        <Link href="/games/[slug]" as={`/games/${game.slug}`}>
-          <a>
-            <div className="image relative">
-              {fbGame?.cover && (
-                <img
-                  src={fbGame?.cover}
-                  alt="game image"
-                  className="w-full"
-                ></img>
-              )}
-              <GameScoreBox score={game.score}></GameScoreBox>
-            </div>
-            <div className="text-left p-2 text-slate-50">
-              <h2>{game.title}</h2>
-              <div className="text-left text-xs text-slate-100">
-                {fbGame?.genre}
-              </div>
-              <div className="text-left text-xs text-slate-100">
-                Played on {format(new Date(game.date), 'LLL d, yyyy')}
-              </div>
-            </div>
-          </a>
-        </Link>
-      </div>
-    </li>
-  );
-};
+import { GameCard } from './GameCard';
 
 const GameCardList: React.FC<{}> = () => {
   const [fbPosts, setPostData] = useState<FBGame[]>();
@@ -75,7 +20,12 @@ const GameCardList: React.FC<{}> = () => {
   return (
     <ul className="flex flex-wrap justify-between">
       {fbPosts?.map((game) => (
-        <GameCard game={game} key={game.slug}></GameCard>
+        <li
+          key={game.slug}
+          className="p-2 lg:w-1/6 md:w-1/2 w-full shadow-2xl bg-slate-700"
+        >
+          <GameCard game={game} key={game.slug}></GameCard>
+        </li>
       ))}
     </ul>
   );
