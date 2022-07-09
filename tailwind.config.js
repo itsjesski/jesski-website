@@ -14,6 +14,9 @@ module.exports = {
       '6xl': '4rem',
     },
     extend: {
+      boxShadow: {
+        steam: '0 0 7px 0px #000',
+      },
       colors: {
         reviewscore: {
           1: '#ff4545',

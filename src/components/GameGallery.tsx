@@ -7,7 +7,7 @@ import { GameCard } from './GameCard';
 
 const GameCardList: React.FC<{}> = () => {
   const [fbPosts, setPostData] = useState<FBGame[]>();
-  const numberPosts = 5;
+  const numberPosts = 6;
 
   useEffect(() => {
     if (fbPosts != null) return;
@@ -18,16 +18,11 @@ const GameCardList: React.FC<{}> = () => {
     });
   }, [fbPosts]);
   return (
-    <ul className="flex flex-wrap justify-between">
+    <div className="flex flex-wrap justify-between">
       {fbPosts?.map((game) => (
-        <li
-          key={game.slug}
-          className="p-2 lg:w-1/6 md:w-1/2 w-full shadow-2xl bg-slate-700"
-        >
-          <GameCard game={game} key={game.slug}></GameCard>
-        </li>
+        <GameCard game={game} key={game.slug}></GameCard>
       ))}
-    </ul>
+    </div>
   );
 };
 

@@ -7,7 +7,7 @@ import { BlogCard } from './BlogCard';
 
 const BlogCardList: React.FC<{}> = () => {
   const [fbPosts, setPostData] = useState<FBPost[]>();
-  const numberPosts = 5;
+  const numberPosts = 6;
 
   useEffect(() => {
     if (fbPosts != null) return;
@@ -18,16 +18,11 @@ const BlogCardList: React.FC<{}> = () => {
     );
   }, [fbPosts]);
   return (
-    <ul className="flex flex-wrap justify-between">
+    <div className="flex flex-wrap justify-between">
       {fbPosts?.map((elt) => (
-        <li
-          key={elt.slug}
-          className="p-2 lg:w-1/6 md:w-1/2 w-full shadow-2xl bg-slate-700"
-        >
-          <BlogCard post={elt}></BlogCard>
-        </li>
+        <BlogCard post={elt} key={elt.slug}></BlogCard>
       ))}
-    </ul>
+    </div>
   );
 };
 

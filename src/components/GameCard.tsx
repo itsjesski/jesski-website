@@ -26,22 +26,21 @@ const GameCard: React.FC<{ game: FBGame }> = ({ game }) => {
     getGameData();
   }, [fbGame, game.title]);
   return (
-    <div>
-      <div
-        className="group 
-  overflow-hidden
-   relative shadow-lg max-w-xs"
-      >
+    <div className="p-2 xl:w-1/6 md:w-1/3 sm:w-1/2 w-full">
+      <div className="group overflow-hidden relative max-w-xs shadow-steam">
         <Link href="/games/[slug]" as={`/games/${game.slug}`}>
           <a className="absolute z-10 top-0 bottom-0 left-0 right-0"></a>
         </Link>
-        {fbGame?.cover && (
-          <img
-            src={fbGame?.cover}
-            alt="game image"
-            className="block group-hover:opacity-40 transition-opacity duration-700"
-          ></img>
-        )}
+        <div>
+          {fbGame?.cover && (
+            <img
+              src={fbGame?.cover}
+              alt="game image"
+              className="block group-hover:opacity-40 transition-opacity duration-700 w-full"
+            ></img>
+          )}
+        </div>
+
         <GameScoreBox score={game.score}></GameScoreBox>
         <div className="absolute bg-black flex items-center group-hover:-top-0 group-hover:opacity-100 duration-700 top-full right-0 w-full opacity-0 h-1/3 transition-all">
           <div>
