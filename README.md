@@ -14,6 +14,7 @@ This project was built as a personal website for Firebottle. The primary goal is
 ### Features
 - Static site generator
 - Markdown files for posts
+- Automatic SEO based on fields in the markdown files.
 
 ### Developer experience:
 
