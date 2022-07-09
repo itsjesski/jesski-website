@@ -2,7 +2,7 @@ export const posts: any[] = [
   {
     slug: '19',
     content:
-      '\nLorem ipsum dolor sit amet, consectetur adipiscing elit.\n\nExample with image:\n\n![Error](@@baseUrl@@/assets/images/posts/error.png)\n\nExample code block:\n\n```js\nfunction myFunction() {\n  return true;\n}\n```\n',
+      '\r\nLorem ipsum dolor sit amet, consectetur adipiscing elit.\r\n\r\nExample with image:\r\n\r\n![Error](@@baseUrl@@/assets/images/posts/error.png)\r\n\r\nExample code block:\r\n\r\n```js\r\nfunction myFunction() {\r\n  return true;\r\n}\r\n```\r\n',
     title: 'My fifth post',
     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
     date: '2020-08-08',
@@ -12,7 +12,7 @@ export const posts: any[] = [
   {
     slug: '20',
     content:
-      '\nLorem ipsum dolor sit amet, consectetur adipiscing elit.\n\nExample with image:\n\n![Error](@@baseUrl@@/assets/images/posts/error.png)\n\nExample code block:\n\n```js\nfunction myFunction() {\n  return true;\n}\n```\n',
+      '\r\nLorem ipsum dolor sit amet, consectetur adipiscing elit.\r\n\r\nExample with image:\r\n\r\n![Error](@@baseUrl@@/assets/images/posts/error.png)\r\n\r\nExample code block:\r\n\r\n```js\r\nfunction myFunction() {\r\n  return true;\r\n}\r\n```\r\n',
     title: 'My fifth post',
     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
     date: '2020-08-08',
@@ -22,7 +22,7 @@ export const posts: any[] = [
   {
     slug: '21',
     content:
-      '\nLorem ipsum dolor sit amet, consectetur adipiscing elit.\n\nExample with image:\n\n![Error](@@baseUrl@@/assets/images/posts/error.png)\n\nExample code block:\n\n```js\nfunction myFunction() {\n  return true;\n}\n```\n',
+      '\r\nLorem ipsum dolor sit amet, consectetur adipiscing elit.\r\n\r\nExample with image:\r\n\r\n![Error](@@baseUrl@@/assets/images/posts/error.png)\r\n\r\nExample code block:\r\n\r\n```js\r\nfunction myFunction() {\r\n  return true;\r\n}\r\n```\r\n',
     title: 'My fifth post',
     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
     date: '2020-08-08',
@@ -32,7 +32,7 @@ export const posts: any[] = [
   {
     slug: '16',
     content:
-      '\nLorem ipsum dolor sit amet, consectetur adipiscing elit.\n\nExample with image:\n\n![Error](@@baseUrl@@/assets/images/posts/error.png)\n\nExample code block:\n\n```js\nfunction myFunction() {\n  return true;\n}\n```\n',
+      '\r\nLorem ipsum dolor sit amet, consectetur adipiscing elit.\r\n\r\nExample with image:\r\n\r\n![Error](@@baseUrl@@/assets/images/posts/error.png)\r\n\r\nExample code block:\r\n\r\n```js\r\nfunction myFunction() {\r\n  return true;\r\n}\r\n```\r\n',
     title: 'My forth post',
     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
     date: '2020-07-07',
@@ -42,7 +42,7 @@ export const posts: any[] = [
   {
     slug: '17',
     content:
-      '\nLorem ipsum dolor sit amet, consectetur adipiscing elit.\n\nExample with image:\n\n![Error](@@baseUrl@@/assets/images/posts/error.png)\n\nExample code block:\n\n```js\nfunction myFunction() {\n  return true;\n}\n```\n',
+      '\r\nLorem ipsum dolor sit amet, consectetur adipiscing elit.\r\n\r\nExample with image:\r\n\r\n![Error](@@baseUrl@@/assets/images/posts/error.png)\r\n\r\nExample code block:\r\n\r\n```js\r\nfunction myFunction() {\r\n  return true;\r\n}\r\n```\r\n',
     title: 'My forth post',
     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
     date: '2020-07-07',
@@ -52,7 +52,7 @@ export const posts: any[] = [
   {
     slug: '18',
     content:
-      '\nLorem ipsum dolor sit amet, consectetur adipiscing elit.\n\nExample with image:\n\n![Error](@@baseUrl@@/assets/images/posts/error.png)\n\nExample code block:\n\n```js\nfunction myFunction() {\n  return true;\n}\n```\n',
+      '\r\nLorem ipsum dolor sit amet, consectetur adipiscing elit.\r\n\r\nExample with image:\r\n\r\n![Error](@@baseUrl@@/assets/images/posts/error.png)\r\n\r\nExample code block:\r\n\r\n```js\r\nfunction myFunction() {\r\n  return true;\r\n}\r\n```\r\n',
     title: 'My forth post',
     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
     date: '2020-07-07',
@@ -62,7 +62,7 @@ export const posts: any[] = [
   {
     slug: '13',
     content:
-      '\nLorem ipsum dolor sit amet, consectetur adipiscing elit.\n\nExample with image:\n\n![Error](@@baseUrl@@/assets/images/posts/error.png)\n\nExample code block:\n\n```js\nfunction myFunction() {\n  return true;\n}\n```\n',
+      '\r\nLorem ipsum dolor sit amet, consectetur adipiscing elit.\r\n\r\nExample with image:\r\n\r\n![Error](@@baseUrl@@/assets/images/posts/error.png)\r\n\r\nExample code block:\r\n\r\n```js\r\nfunction myFunction() {\r\n  return true;\r\n}\r\n```\r\n',
     title: 'My third post',
     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
     date: '2020-06-06',
@@ -72,7 +72,7 @@ export const posts: any[] = [
   {
     slug: '14',
     content:
-      '\nLorem ipsum dolor sit amet, consectetur adipiscing elit.\n\nExample with image:\n\n![Error](@@baseUrl@@/assets/images/posts/error.png)\n\nExample code block:\n\n```js\nfunction myFunction() {\n  return true;\n}\n```\n',
+      '\r\nLorem ipsum dolor sit amet, consectetur adipiscing elit.\r\n\r\nExample with image:\r\n\r\n![Error](@@baseUrl@@/assets/images/posts/error.png)\r\n\r\nExample code block:\r\n\r\n```js\r\nfunction myFunction() {\r\n  return true;\r\n}\r\n```\r\n',
     title: 'My third post',
     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
     date: '2020-06-06',
@@ -82,7 +82,7 @@ export const posts: any[] = [
   {
     slug: '15',
     content:
-      '\nLorem ipsum dolor sit amet, consectetur adipiscing elit.\n\nExample with image:\n\n![Error](@@baseUrl@@/assets/images/posts/error.png)\n\nExample code block:\n\n```js\nfunction myFunction() {\n  return true;\n}\n```\n',
+      '\r\nLorem ipsum dolor sit amet, consectetur adipiscing elit.\r\n\r\nExample with image:\r\n\r\n![Error](@@baseUrl@@/assets/images/posts/error.png)\r\n\r\nExample code block:\r\n\r\n```js\r\nfunction myFunction() {\r\n  return true;\r\n}\r\n```\r\n',
     title: 'My third post',
     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
     date: '2020-06-06',
@@ -92,7 +92,7 @@ export const posts: any[] = [
   {
     slug: '10',
     content:
-      '\nLorem ipsum dolor sit amet, consectetur adipiscing elit.\n\nExample with image:\n\n![Error](@@baseUrl@@/assets/images/posts/error.png)\n\nExample code block:\n\n```js\nfunction myFunction() {\n  return true;\n}\n```\n',
+      '\r\nLorem ipsum dolor sit amet, consectetur adipiscing elit.\r\n\r\nExample with image:\r\n\r\n![Error](@@baseUrl@@/assets/images/posts/error.png)\r\n\r\nExample code block:\r\n\r\n```js\r\nfunction myFunction() {\r\n  return true;\r\n}\r\n```\r\n',
     title: 'My second post',
     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
     date: '2020-03-03',
@@ -102,7 +102,7 @@ export const posts: any[] = [
   {
     slug: '11',
     content:
-      '\nLorem ipsum dolor sit amet, consectetur adipiscing elit.\n\nExample with image:\n\n![Error](@@baseUrl@@/assets/images/posts/error.png)\n\nExample code block:\n\n```js\nfunction myFunction() {\n  return true;\n}\n```\n',
+      '\r\nLorem ipsum dolor sit amet, consectetur adipiscing elit.\r\n\r\nExample with image:\r\n\r\n![Error](@@baseUrl@@/assets/images/posts/error.png)\r\n\r\nExample code block:\r\n\r\n```js\r\nfunction myFunction() {\r\n  return true;\r\n}\r\n```\r\n',
     title: 'My second post',
     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
     date: '2020-03-03',
@@ -112,7 +112,7 @@ export const posts: any[] = [
   {
     slug: '12',
     content:
-      '\nLorem ipsum dolor sit amet, consectetur adipiscing elit.\n\nExample with image:\n\n![Error](@@baseUrl@@/assets/images/posts/error.png)\n\nExample code block:\n\n```js\nfunction myFunction() {\n  return true;\n}\n```\n',
+      '\r\nLorem ipsum dolor sit amet, consectetur adipiscing elit.\r\n\r\nExample with image:\r\n\r\n![Error](@@baseUrl@@/assets/images/posts/error.png)\r\n\r\nExample code block:\r\n\r\n```js\r\nfunction myFunction() {\r\n  return true;\r\n}\r\n```\r\n',
     title: 'My second post',
     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
     date: '2020-03-03',
@@ -122,7 +122,7 @@ export const posts: any[] = [
   {
     slug: '1',
     content:
-      '\nLorem ipsum dolor sit amet, consectetur adipiscing elit.\n\nExample with image:\n\n![Error](@@baseUrl@@/assets/images/posts/error.png)\n\nExample code block:\n\n```js\nfunction myFunction() {\n  return true;\n}\n```\n',
+      '\r\nLorem ipsum dolor sit amet, consectetur adipiscing elit.\r\n\r\nExample with image:\r\n\r\n![Error](@@baseUrl@@/assets/images/posts/error.png)\r\n\r\nExample code block:\r\n\r\n```js\r\nfunction myFunction() {\r\n  return true;\r\n}\r\n```\r\n',
     title: 'My first post',
     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
     date: '2020-02-02',
@@ -132,7 +132,7 @@ export const posts: any[] = [
   {
     slug: '2',
     content:
-      '\nLorem ipsum dolor sit amet, consectetur adipiscing elit.\n\nExample with image:\n\n![Error](@@baseUrl@@/assets/images/posts/error.png)\n\nExample code block:\n\n```js\nfunction myFunction() {\n  return true;\n}\n```\n',
+      '\r\nLorem ipsum dolor sit amet, consectetur adipiscing elit.\r\n\r\nExample with image:\r\n\r\n![Error](@@baseUrl@@/assets/images/posts/error.png)\r\n\r\nExample code block:\r\n\r\n```js\r\nfunction myFunction() {\r\n  return true;\r\n}\r\n```\r\n',
     title: 'My first post',
     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
     date: '2020-02-02',
@@ -142,7 +142,7 @@ export const posts: any[] = [
   {
     slug: '3',
     content:
-      '\nLorem ipsum dolor sit amet, consectetur adipiscing elit.\n\nExample with image:\n\n![Error](@@baseUrl@@/assets/images/posts/error.png)\n\nExample code block:\n\n```js\nfunction myFunction() {\n  return true;\n}\n```\n',
+      '\r\nLorem ipsum dolor sit amet, consectetur adipiscing elit.\r\n\r\nExample with image:\r\n\r\n![Error](@@baseUrl@@/assets/images/posts/error.png)\r\n\r\nExample code block:\r\n\r\n```js\r\nfunction myFunction() {\r\n  return true;\r\n}\r\n```\r\n',
     title: 'My first post',
     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
     date: '2020-02-02',
@@ -152,7 +152,7 @@ export const posts: any[] = [
   {
     slug: '4',
     content:
-      '\nLorem ipsum dolor sit amet, consectetur adipiscing elit.\n\nExample with image:\n\n![Error](@@baseUrl@@/assets/images/posts/error.png)\n\nExample code block:\n\n```js\nfunction myFunction() {\n  return true;\n}\n```\n',
+      '\r\nLorem ipsum dolor sit amet, consectetur adipiscing elit.\r\n\r\nExample with image:\r\n\r\n![Error](@@baseUrl@@/assets/images/posts/error.png)\r\n\r\nExample code block:\r\n\r\n```js\r\nfunction myFunction() {\r\n  return true;\r\n}\r\n```\r\n',
     title: 'My first post',
     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
     date: '2020-02-02',
@@ -162,7 +162,7 @@ export const posts: any[] = [
   {
     slug: '5',
     content:
-      '\nLorem ipsum dolor sit amet, consectetur adipiscing elit.\n\nExample with image:\n\n![Error](@@baseUrl@@/assets/images/posts/error.png)\n\nExample code block:\n\n```js\nfunction myFunction() {\n  return true;\n}\n```\n',
+      '\r\nLorem ipsum dolor sit amet, consectetur adipiscing elit.\r\n\r\nExample with image:\r\n\r\n![Error](@@baseUrl@@/assets/images/posts/error.png)\r\n\r\nExample code block:\r\n\r\n```js\r\nfunction myFunction() {\r\n  return true;\r\n}\r\n```\r\n',
     title: 'My first post',
     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
     date: '2020-02-02',
@@ -172,7 +172,7 @@ export const posts: any[] = [
   {
     slug: '6',
     content:
-      '\nLorem ipsum dolor sit amet, consectetur adipiscing elit.\n\nExample with image:\n\n![Error](@@baseUrl@@/assets/images/posts/error.png)\n\nExample code block:\n\n```js\nfunction myFunction() {\n  return true;\n}\n```\n',
+      '\r\nLorem ipsum dolor sit amet, consectetur adipiscing elit.\r\n\r\nExample with image:\r\n\r\n![Error](@@baseUrl@@/assets/images/posts/error.png)\r\n\r\nExample code block:\r\n\r\n```js\r\nfunction myFunction() {\r\n  return true;\r\n}\r\n```\r\n',
     title: 'My first post',
     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
     date: '2020-02-02',
@@ -182,7 +182,7 @@ export const posts: any[] = [
   {
     slug: '7',
     content:
-      '\nLorem ipsum dolor sit amet, consectetur adipiscing elit.\n\nExample with image:\n\n![Error](@@baseUrl@@/assets/images/posts/error.png)\n\nExample code block:\n\n```js\nfunction myFunction() {\n  return true;\n}\n```\n',
+      '\r\nLorem ipsum dolor sit amet, consectetur adipiscing elit.\r\n\r\nExample with image:\r\n\r\n![Error](@@baseUrl@@/assets/images/posts/error.png)\r\n\r\nExample code block:\r\n\r\n```js\r\nfunction myFunction() {\r\n  return true;\r\n}\r\n```\r\n',
     title: 'My first post',
     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
     date: '2020-02-02',
@@ -192,7 +192,7 @@ export const posts: any[] = [
   {
     slug: '8',
     content:
-      '\nLorem ipsum dolor sit amet, consectetur adipiscing elit.\n\nExample with image:\n\n![Error](@@baseUrl@@/assets/images/posts/error.png)\n\nExample code block:\n\n```js\nfunction myFunction() {\n  return true;\n}\n```\n',
+      '\r\nLorem ipsum dolor sit amet, consectetur adipiscing elit.\r\n\r\nExample with image:\r\n\r\n![Error](@@baseUrl@@/assets/images/posts/error.png)\r\n\r\nExample code block:\r\n\r\n```js\r\nfunction myFunction() {\r\n  return true;\r\n}\r\n```\r\n',
     title: 'My first post',
     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
     date: '2020-02-02',
@@ -202,7 +202,7 @@ export const posts: any[] = [
   {
     slug: '9',
     content:
-      '\nLorem ipsum dolor sit amet, consectetur adipiscing elit.\n\nExample with image:\n\n![Error](@@baseUrl@@/assets/images/posts/error.png)\n\nExample code block:\n\n```js\nfunction myFunction() {\n  return true;\n}\n```\n',
+      '\r\nLorem ipsum dolor sit amet, consectetur adipiscing elit.\r\n\r\nExample with image:\r\n\r\n![Error](@@baseUrl@@/assets/images/posts/error.png)\r\n\r\nExample code block:\r\n\r\n```js\r\nfunction myFunction() {\r\n  return true;\r\n}\r\n```\r\n',
     title: 'My first post',
     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
     date: '2020-02-02',

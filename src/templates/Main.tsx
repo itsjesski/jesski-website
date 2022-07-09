@@ -2,7 +2,7 @@ import React, { ReactNode } from 'react';
 
 import Link from 'next/link';
 
-import { Logo } from '../content/modules/Logo';
+import { Logo } from '../components/Logo';
 import { Navbar } from '../navigation/Navbar';
 import { AppConfig } from '../utils/AppConfig';
 

@@ -19,7 +19,7 @@ type PostResponse = {
   totalPosts: number;
 };
 
-export type FBReview = {
+export type FBGame = {
   title: string;
   description: string;
   score: number;
@@ -31,8 +31,8 @@ export type FBReview = {
   content: string;
 };
 
-type ReviewResponse = {
-  results: FBReview[];
+type GameResponse = {
+  results: FBGame[];
   totalPosts: number;
 };
 
@@ -150,21 +150,21 @@ export async function getBlogPostBySlug(
   return getPostBySlug('posts', slug, fields);
 }
 
-export async function searchReviewPosts(
+export async function searchGamePosts(
   fields: string[],
   query: string
 ): Promise<PostResponse> {
-  return searchPosts('reviews', fields, query);
+  return searchPosts('games', fields, query);
 }
-export async function getReviewPosts(
+export async function getGamePosts(
   fields: string[],
   page: number = 1
-): Promise<ReviewResponse> {
-  return getPosts('reviews', fields, page);
+): Promise<GameResponse> {
+  return getPosts('games', fields, page);
 }
-export async function getReviewPostBySlug(
+export async function getGamePostBySlug(
   slug: string,
   fields: string[]
-): Promise<ReviewResponse> {
-  return getPostBySlug('reviews', slug, fields);
+): Promise<GameResponse> {
+  return getPostBySlug('games', slug, fields);
 }

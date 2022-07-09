@@ -3,7 +3,7 @@ import Cors from 'cors';
 import { getGameByName } from '../../../utils/IGDB';
 import initMiddleware from '../../../utils/InitMiddleware';
 
-export type FBGame = {
+export type IGDBGame = {
   id: string | number | null | undefined;
   name: string | null | undefined;
   cover: string | null | undefined;
@@ -40,7 +40,7 @@ function getGenreString(genres: Genres): string {
 
 export default async function handler(
   req: { query: { title: string } },
-  res: { json: (results: FBGame) => void }
+  res: { json: (results: IGDBGame) => void }
 ) {
   await cors(req, res);
 
