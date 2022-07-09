@@ -1,7 +1,5 @@
 import React, { useState, useEffect } from 'react';
 
-import Link from 'next/link';
-
 import { FBGame, getGamePosts } from '../utils/Posts';
 import { GameCard } from './GameCard';
 
@@ -29,18 +27,14 @@ const GameCardList: React.FC<{}> = () => {
 const GameGallery = () => (
   <>
     <section className="game-gallery gallery-widget mb-20">
-      <div className="gallery-title mb-3 flex justify-between items-end flex-wrap">
+      <div className="gallery-title mb-3 flex justify-between items-end flex-wrap border-b-slate-700 border-solid border-b-2 pb-2">
         <h1>Games</h1>
+        <div className="text-sm text-gray-400">
+          Checkout the latest games Firebottle has played!
+        </div>
       </div>
       <div className="gallery-content">
         <GameCardList></GameCardList>
-      </div>
-      <div className="gallery-more flex justify-center mt-4">
-        <Link href="/games/">
-          <a className="inline-block text-sm px-4 py-2 leading-none border rounded text-white border-white hover:border-transparent hover:text-slate-500 hover:bg-white mt-4 lg:mt-0">
-            View All {'>'}
-          </a>
-        </Link>
       </div>
     </section>
   </>

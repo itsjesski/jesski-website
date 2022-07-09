@@ -1,7 +1,5 @@
 import React, { useEffect, useState } from 'react';
 
-import Link from 'next/link';
-
 import { FBPost, getBlogPosts } from '../utils/Posts';
 import { BlogCard } from './BlogCard';
 
@@ -29,18 +27,14 @@ const BlogCardList: React.FC<{}> = () => {
 const BlogGallery = () => (
   <>
     <section className="blog-gallery gallery-widget mb-10">
-      <div className="gallery-title  mb-3 flex justify-between items-end flex-wrap">
+      <div className="gallery-title  mb-3 flex justify-between items-end flex-wrap border-b-slate-700 border-solid border-b-2 pb-2">
         <h1 className="">Blog</h1>
+        <div className="text-sm text-gray-400">
+          Ramblings from the mind of a crazy person.
+        </div>
       </div>
       <div className="gallery-content">
         <BlogCardList></BlogCardList>
-      </div>
-      <div className="gallery-more flex justify-center mt-4">
-        <Link href="/posts/">
-          <a className="inline-block text-sm px-4 py-2 leading-none border rounded text-white border-white hover:border-transparent hover:text-slate-500 hover:bg-white mt-4 lg:mt-0">
-            View All {'>'}
-          </a>
-        </Link>
       </div>
     </section>
   </>
