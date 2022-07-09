@@ -1,8 +1,6 @@
 import React, { useEffect, useState } from 'react';
 
-import { format } from 'date-fns';
-import Link from 'next/link';
-
+import { BlogCard } from '../../components/BlogCard';
 import Pagination from '../../components/Pagination';
 import Search from '../../components/Search';
 import { Content } from '../../content/Content';
@@ -72,21 +70,7 @@ const PostsIndex: React.FC<{}> = () => {
           <ul className="flex flex-wrap">
             {fbPosts?.map((elt) => (
               <li key={elt.slug} className="p-2 lg:w-1/5 md:w-1/2 w-full">
-                <div className="border-solid border-slate-300 border-2 shadow">
-                  <Link href="/posts/[slug]" as={`/posts/${elt.slug}`}>
-                    <a>
-                      <div className="blog-image">
-                        <img src={elt.image} alt="image"></img>
-                      </div>
-                      <div className="text-left p-2 text-slate-50">
-                        <h2>{elt.title}</h2>
-                        <span className="text-left text-sm text-slate-100">
-                          {format(new Date(elt.date), 'LLL d, yyyy')}
-                        </span>
-                      </div>
-                    </a>
-                  </Link>
-                </div>
+                <BlogCard post={elt}></BlogCard>
               </li>
             ))}
           </ul>

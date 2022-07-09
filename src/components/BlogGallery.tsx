@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from 'react';
 
-import { format } from 'date-fns';
 import Link from 'next/link';
 
 import { FBPost, getBlogPosts } from '../utils/Posts';
+import { BlogCard } from './BlogCard';
 
 const BlogCardList: React.FC<{}> = () => {
   const [fbPosts, setPostData] = useState<FBPost[]>();
@@ -11,9 +11,11 @@ const BlogCardList: React.FC<{}> = () => {
 
   useEffect(() => {
     if (fbPosts != null) return;
-    getBlogPosts(['title', 'date', 'slug', 'image']).then((blogPosts) => {
-      setPostData(blogPosts.results.slice(0, numberPosts));
-    });
+    getBlogPosts(['title', 'date', 'slug', 'image', 'description']).then(
+      (blogPosts) => {
+        setPostData(blogPosts.results.slice(0, numberPosts));
+      }
+    );
   }, [fbPosts]);
   return (
     <ul className="flex flex-wrap justify-between">
@@ -22,21 +24,7 @@ const BlogCardList: React.FC<{}> = () => {
           key={elt.slug}
           className="p-2 lg:w-1/6 md:w-1/2 w-full shadow-2xl bg-slate-700"
         >
-          <div className="">
-            <Link href="/posts/[slug]" as={`/posts/${elt.slug}`}>
-              <a>
-                <div className="blog-image">
-                  <img src={elt.image} alt="image"></img>
-                </div>
-                <div className="text-left p-2 text-slate-50">
-                  <h2>{elt.title}</h2>
-                  <span className="text-left text-sm text-slate-100">
-                    {format(new Date(elt.date), 'LLL d, yyyy')}
-                  </span>
-                </div>
-              </a>
-            </Link>
-          </div>
+          <BlogCard post={elt}></BlogCard>
         </li>
       ))}
     </ul>

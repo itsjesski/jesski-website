@@ -33,10 +33,7 @@ const GameCard: React.FC<{ game: FBGame }> = ({ game }) => {
    relative shadow-lg max-w-xs"
       >
         <Link href="/games/[slug]" as={`/games/${game.slug}`}>
-          <a
-            href="#"
-            className="absolute z-10 top-0 bottom-0 left-0 right-0"
-          ></a>
+          <a className="absolute z-10 top-0 bottom-0 left-0 right-0"></a>
         </Link>
         {fbGame?.cover && (
           <img
