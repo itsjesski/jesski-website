@@ -19,7 +19,6 @@ const GameCard: React.FC<{ game: FBGame }> = ({ game }) => {
         .get(`/api/igdb/${game.title}`)
         .then((response: { data: IGDBGame }): void => {
           setGameData(response.data);
-          console.log(response.data);
         })
         .catch(() => {});
     }

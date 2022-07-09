@@ -3,7 +3,7 @@ import { useCallback, useRef, useState } from 'react';
 import { format } from 'date-fns';
 import Link from 'next/link';
 
-import { searchBlogPosts } from '../utils/Posts';
+import { searchBlogPosts, searchGamePosts } from '../utils/Posts';
 
 interface Props {
   postType: string;
@@ -21,15 +21,20 @@ export default function Search(Props: Props) {
     async (event) => {
       setQuery(event.target.value);
 
-      if (query.length >= 3) {
-        const response = await searchBlogPosts(
-          ['slug', 'title', 'date'],
-          query
-        );
+      if (query.length >= 2) {
+        let response;
+        switch (postType) {
+          case 'games':
+            response = await searchGamePosts(['slug', 'title', 'date'], query);
+            break;
+          default:
+            response = await searchBlogPosts(['slug', 'title', 'date'], query);
+        }
+
         setResults(response.results);
       }
     },
-    [query]
+    [postType, query]
   );
 
   const onFocus = useCallback(() => {
@@ -73,7 +78,7 @@ export default function Search(Props: Props) {
         />
       </form>
       {active && results?.length > 0 && (
-        <div className="absolute mt-3 w-full bg-slate-50 text-slate-400 border border-slate-300 rounded-lg focus:ring-slate-500 focus:border-slate-500 shadow-2xl">
+        <div className="absolute mt-3 w-full bg-slate-50 text-slate-400 border border-slate-300 rounded-lg focus:ring-slate-500 focus:border-slate-500 shadow-2xl z-20">
           {results?.map(({ slug, title, date }) => (
             <div className="" key={slug}>
               <Link href={`/${postType}/${slug}`} as={`/${postType}/${slug}`}>
