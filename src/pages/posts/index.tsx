@@ -62,7 +62,7 @@ const PostsIndex: React.FC<{}> = () => {
         <div className="post-index">
           <ul className="flex flex-wrap">
             {fbPosts?.map((elt) => (
-              <li key={elt.slug} className="p-2 lg:w-1/6 md:w-1/2 w-full">
+              <li key={elt.slug} className="p-2 lg:w-1/5 md:w-1/2 w-full">
                 <div className="border-solid border-fbstyle-300 border-2 shadow">
                   <Link href="/posts/[slug]" as={`/posts/${elt.slug}`}>
                     <a>
@@ -83,7 +83,7 @@ const PostsIndex: React.FC<{}> = () => {
           </ul>
         </div>
       </Content>
-      {totalPages >= 1 && (
+      {totalPages > 1 && (
         <Pagination
           totalPages={totalPages}
           currentPage={page}
