@@ -1,7 +1,7 @@
 export const posts: any[] = [
   {
     slug: 'sniper-elite-3',
-    content: '\r\nThis is where a review would go if one had been written.\r\n',
+    content: '\r\nThis is where a game would go if one had been written.\r\n',
     title: 'Sniper Elite III',
     description: 'This is a description used for meta',
     score: 8,
@@ -12,7 +12,7 @@ export const posts: any[] = [
   },
   {
     slug: 'sniper-elite-2-remastered',
-    content: '\r\nThis is where a review would go if one had been written.\r\n',
+    content: '\r\nThis is where a game would go if one had been written.\r\n',
     title: 'Sniper Elite v2: Remastered',
     description: 'This is a description used for meta',
     score: 7,
@@ -23,7 +23,7 @@ export const posts: any[] = [
   },
   {
     slug: 'raft',
-    content: '\r\nThis is where a review would go if one had been written.\r\n',
+    content: '\r\nThis is where a game would go if one had been written.\r\n',
     title: 'Raft',
     description: 'This is a description used for meta',
     score: 8,
@@ -34,7 +34,7 @@ export const posts: any[] = [
   },
   {
     slug: '20-minutes-till-dawn',
-    content: '\r\nThis is where a review would go if one had been written.\r\n',
+    content: '\r\nThis is where a game would go if one had been written.\r\n',
     title: '20 Minutes Till Dawn',
     description: 'This is a description used for meta',
     score: 7,
@@ -45,7 +45,7 @@ export const posts: any[] = [
   },
   {
     slug: 'warhammer-40k-gladius',
-    content: '\r\nThis is where a review would go if one had been written.\r\n',
+    content: '\r\nThis is where a game would go if one had been written.\r\n',
     title: 'Warhammer 40,000: Gladius - Relics of War',
     description: 'This is a description used for meta',
     score: 8,

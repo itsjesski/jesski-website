@@ -1,11 +1,11 @@
 ---
-title: 'Sniper Elite III'
+title: 'Raft'
 description: 'This is a description used for meta'
 score: 8
 playtime: 'Finished'
-date: '2022-07-04'
-modified_date: '2022-07-05'
+date: '2022-07-01'
+modified_date: '2022-07-04'
 screenshots: ['/assets/images/posts/random-img.jpg']
 ---
 
-This is where a review would go if one had been written.
+This is where a game would go if one had been written.

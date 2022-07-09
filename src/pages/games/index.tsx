@@ -1,29 +1,29 @@
 import React, { useEffect, useState } from 'react';
 
-import { BlogCard } from '../../components/BlogCard';
+import { GameCard } from '../../components/GameCard';
 import Pagination from '../../components/Pagination';
 import Search from '../../components/Search';
 import { Content } from '../../content/Content';
 import { Meta } from '../../layout/Meta';
 import { Main } from '../../templates/Main';
 import { AppConfig } from '../../utils/AppConfig';
-import { FBPost, getBlogPosts } from '../../utils/Posts';
+import { FBGame, getGamePosts } from '../../utils/Posts';
 
 const PostsIndex: React.FC<{}> = () => {
   const [page, setPage] = useState<number>(() => {
     return 1;
   });
-  const [fbPosts, setPostData] = useState<FBPost[]>();
+  const [fbPosts, setPostData] = useState<FBGame[]>();
   const [totalPages, setTotalPages] = useState<number>(() => {
     return 1;
   });
 
   function updateBlogPosts(newPage: number) {
-    getBlogPosts(['title', 'date', 'slug', 'image'], newPage).then(
-      (blogPosts) => {
-        setPostData(blogPosts.results);
+    getGamePosts(['id', 'title', 'date', 'slug', 'score'], newPage).then(
+      (gamePosts) => {
+        setPostData(gamePosts.results);
         setTotalPages(
-          Math.floor(blogPosts.totalPosts / AppConfig.pagination_size)
+          Math.floor(gamePosts.totalPosts / AppConfig.pagination_size)
         );
       }
     );
@@ -60,16 +60,16 @@ const PostsIndex: React.FC<{}> = () => {
       <Content>
         <div className="index-header border-b-slate-400 border-solid border-b-2 mb-3 flex justify-between items-end flex-wrap pb-2">
           <div className="">
-            <h1>Blog</h1>
+            <h1>Games</h1>
           </div>
           <div className="search-container">
-            <Search postType="posts"></Search>
+            <Search postType="games"></Search>
           </div>
         </div>
         <div className="post-index">
           <div className="flex flex-wrap justify-between">
             {fbPosts?.map((elt) => (
-              <BlogCard post={elt} key={elt.slug}></BlogCard>
+              <GameCard game={elt} key={elt.slug}></GameCard>
             ))}
           </div>
         </div>

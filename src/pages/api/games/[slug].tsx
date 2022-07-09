@@ -1,4 +1,4 @@
-import { posts } from '../../../../public/cache/_reviews';
+import { posts } from '../../../../public/cache/_games';
 import { filterPostFields } from '../../../utils/ApiHelper';
 
 export default async function handler(

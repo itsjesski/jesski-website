@@ -1,6 +1,6 @@
 import FuzzySearch from 'fuzzy-search';
 
-import { posts } from '../../../../public/cache/_posts';
+import { posts } from '../../../../public/cache/_games';
 import { filterPostFields } from '../../../utils/ApiHelper';
 
 export default async function handler(

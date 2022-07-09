@@ -1,16 +1,16 @@
 import React from 'react';
 
-export type IReviewScoreProps = {
+export type IGameScoreProps = {
   score: number | string;
 };
 
 /**
  * Tailwind doesnt support dynamic classes as far as I can tell, so we're pairing up our score with colors here.
- * @param reviewScore
+ * @param gameScore
  * @returns
  */
-function getStyles(reviewScore: number | string): string {
-  switch (reviewScore) {
+function getStyles(gameScore: number | string): string {
+  switch (gameScore) {
     case 1:
       return `bg-reviewscore-1`;
     case 2:
@@ -32,14 +32,14 @@ function getStyles(reviewScore: number | string): string {
     case 10:
       return `bg-reviewScore-10`;
     default:
-      return `bg-fbstyle-100`;
+      return `bg-slate-100`;
   }
 }
 
-const ReviewScoreBox = (props: IReviewScoreProps) => (
+const GameScoreBox = (props: IGameScoreProps) => (
   <>
     <div
-      className={`review-score absolute bottom-0 right-0 text-fbstyle-900 pt-1 pl-3 pr-3 pb-1 ${getStyles(
+      className={`game-score absolute bottom-0 right-0 text-slate-900 pt-1 pl-3 pr-3 pb-1 ${getStyles(
         props.score
       )}`}
     >
@@ -48,4 +48,4 @@ const ReviewScoreBox = (props: IReviewScoreProps) => (
   </>
 );
 
-export { ReviewScoreBox };
+export { GameScoreBox };

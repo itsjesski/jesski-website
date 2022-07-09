@@ -22,12 +22,16 @@ const Content = (props: IContentProps) => (
           @apply my-6;
         }
 
+        .content :global(h1) {
+          @apply text-2xl font-semibold text-slate-50;
+        }
+
         .content :global(h2) {
-          @apply text-2xl font-semibold text-fbstyle-400 my-4;
+          @apply text-xl font-semibold text-slate-50;
         }
 
         .content :global(h3) {
-          @apply text-xl font-semibold text-fbstyle-400 my-4;
+          @apply text-base font-semibold text-slate-50;
         }
       `}
     </style>

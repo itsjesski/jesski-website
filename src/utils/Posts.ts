@@ -19,7 +19,7 @@ type PostResponse = {
   totalPosts: number;
 };
 
-export type FBReview = {
+export type FBGame = {
   title: string;
   description: string;
   score: number;
@@ -31,8 +31,8 @@ export type FBReview = {
   content: string;
 };
 
-type ReviewResponse = {
-  results: FBReview[];
+type GameResponse = {
+  results: FBGame[];
   totalPosts: number;
 };
 
@@ -104,6 +104,39 @@ async function getPosts(
   return [];
 }
 
+async function searchPosts(
+  postType: string,
+  fields: string[],
+  query: string
+): Promise<any> {
+  const encodedFields = encodeURIComponent(fields.join(','));
+  const encodedQuery = encodeURIComponent(query);
+  let apiUrl = `/api/${postType}/search?s=${encodedQuery}`;
+
+  if (fields.length > 0) {
+    apiUrl = `${apiUrl}&fields=${encodedFields}`;
+  }
+
+  try {
+    const response = await axios.request({
+      url: apiUrl,
+      baseURL: process.env.SITE_URL,
+    });
+    return response.data;
+  } catch (error) {
+    // eslint-disable-next-line no-console
+    console.log(error);
+  }
+
+  return [];
+}
+
+export async function searchBlogPosts(
+  fields: string[],
+  query: string
+): Promise<PostResponse> {
+  return searchPosts('posts', fields, query);
+}
 export async function getBlogPosts(
   fields: string[],
   page: number = 1
@@ -117,15 +150,21 @@ export async function getBlogPostBySlug(
   return getPostBySlug('posts', slug, fields);
 }
 
-export async function getReviewPosts(
+export async function searchGamePosts(
+  fields: string[],
+  query: string
+): Promise<PostResponse> {
+  return searchPosts('games', fields, query);
+}
+export async function getGamePosts(
   fields: string[],
   page: number = 1
-): Promise<ReviewResponse> {
-  return getPosts('reviews', fields, page);
+): Promise<GameResponse> {
+  return getPosts('games', fields, page);
 }
-export async function getReviewPostBySlug(
+export async function getGamePostBySlug(
   slug: string,
   fields: string[]
-): Promise<ReviewResponse> {
-  return getPostBySlug('reviews', slug, fields);
+): Promise<GameResponse> {
+  return getPostBySlug('games', slug, fields);
 }

@@ -7,17 +7,13 @@ import { Content } from '../../content/Content';
 import { Meta } from '../../layout/Meta';
 import { Main } from '../../templates/Main';
 import { markdownToHtml } from '../../utils/Markdown';
-import {
-  FBReview,
-  getReviewPostBySlug,
-  getReviewPosts,
-} from '../../utils/Posts';
+import { FBGame, getGamePostBySlug, getGamePosts } from '../../utils/Posts';
 
 type IPostUrl = {
   slug: string;
 };
 
-const DisplayPost = (props: FBReview) => (
+const DisplayPost = (props: FBGame) => (
   <Main
     meta={
       <Meta
@@ -31,7 +27,7 @@ const DisplayPost = (props: FBReview) => (
       />
     }
   >
-    <h1 className="text-center font-bold text-3xl text-fbstyle-400">
+    <h1 className="text-center font-bold text-3xl text-slate-400">
       {props.title}
     </h1>
     <div className="text-center text-sm mb-8">
@@ -48,7 +44,7 @@ const DisplayPost = (props: FBReview) => (
 );
 
 export const getStaticPaths: GetStaticPaths<IPostUrl> = async () => {
-  const posts = await getReviewPosts(['slug']);
+  const posts = await getGamePosts(['slug']);
 
   return {
     paths: posts.results.map((post) => ({
@@ -61,10 +57,10 @@ export const getStaticPaths: GetStaticPaths<IPostUrl> = async () => {
 };
 
 export const getStaticProps: GetStaticProps<
-  Partial<FBReview>,
+  Partial<FBGame>,
   IPostUrl
 > = async ({ params }) => {
-  const post = await getReviewPostBySlug(params!.slug, [
+  const post = await getGamePostBySlug(params!.slug, [
     'title',
     'description',
     'date',

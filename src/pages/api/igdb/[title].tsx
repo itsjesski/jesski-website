@@ -3,11 +3,13 @@ import Cors from 'cors';
 import { getGameByName } from '../../../utils/IGDB';
 import initMiddleware from '../../../utils/InitMiddleware';
 
-export type FBGame = {
-  id: string | number | null | undefined;
-  name: string | null | undefined;
-  cover: string | null | undefined;
-  genre: string | null | undefined;
+export type IGDBGame = {
+  id: string;
+  name: string;
+  cover: string;
+  genre: string;
+  screenshot: string;
+  video: string;
 };
 
 type Genres = [
@@ -30,6 +32,16 @@ function getBigCoverImage(coverUrl: string): string {
   return coverUrl.replace('t_thumb', 't_cover_big');
 }
 
+function getBigScreenshotImage(coverArray: any[]): string {
+  if (coverArray == null) {
+    return '';
+  }
+
+  const cover = coverArray[Math.floor(Math.random() * coverArray.length)];
+
+  return cover.url.replace('t_thumb', 't_screenshot_big');
+}
+
 function getGenreString(genres: Genres): string {
   const genresMap = genres.map((item) => {
     return item.name;
@@ -40,7 +52,7 @@ function getGenreString(genres: Genres): string {
 
 export default async function handler(
   req: { query: { title: string } },
-  res: { json: (results: FBGame) => void }
+  res: { json: (results: IGDBGame) => void }
 ) {
   await cors(req, res);
 
@@ -50,6 +62,8 @@ export default async function handler(
     'name',
     'cover.url',
     'genres.name',
+    'screenshots.url',
+    'videos',
   ]);
 
   const gameData = game[0];
@@ -59,5 +73,7 @@ export default async function handler(
     name: gameData?.name,
     cover: getBigCoverImage(gameData?.cover?.url),
     genre: getGenreString(gameData?.genres),
+    screenshot: getBigScreenshotImage(gameData?.screenshots),
+    video: gameData?.videos[0],
   });
 }

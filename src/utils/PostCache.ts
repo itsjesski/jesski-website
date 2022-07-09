@@ -3,7 +3,7 @@ import { join } from 'path';
 
 import matter from 'gray-matter';
 
-const postTypes = ['_posts', '_reviews'];
+const postTypes = ['_posts', '_games'];
 
 export type PostItems = {
   [key: string]: string;
