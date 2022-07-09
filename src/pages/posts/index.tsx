@@ -4,6 +4,7 @@ import { format } from 'date-fns';
 import Link from 'next/link';
 
 import Pagination from '../../components/Pagination';
+import Search from '../../components/Search';
 import { Content } from '../../content/Content';
 import { Meta } from '../../layout/Meta';
 import { Main } from '../../templates/Main';
@@ -59,19 +60,27 @@ const PostsIndex: React.FC<{}> = () => {
       }
     >
       <Content>
+        <div className="index-header border-b-slate-400 border-solid border-b-2 mb-3 flex justify-between items-end flex-wrap pb-2">
+          <div className="">
+            <h1>Blog</h1>
+          </div>
+          <div className="search-container">
+            <Search postType="posts"></Search>
+          </div>
+        </div>
         <div className="post-index">
           <ul className="flex flex-wrap">
             {fbPosts?.map((elt) => (
               <li key={elt.slug} className="p-2 lg:w-1/5 md:w-1/2 w-full">
-                <div className="border-solid border-fbstyle-300 border-2 shadow">
+                <div className="border-solid border-slate-300 border-2 shadow">
                   <Link href="/posts/[slug]" as={`/posts/${elt.slug}`}>
                     <a>
                       <div className="blog-image">
                         <img src={elt.image} alt="image"></img>
                       </div>
-                      <div className="text-left p-2 text-fbstyle-50">
+                      <div className="text-left p-2 text-slate-50">
                         <h2>{elt.title}</h2>
-                        <span className="text-left text-sm text-fbstyle-100">
+                        <span className="text-left text-sm text-slate-100">
                           {format(new Date(elt.date), 'LLL d, yyyy')}
                         </span>
                       </div>

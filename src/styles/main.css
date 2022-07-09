@@ -1,7 +1,7 @@
 @tailwind base;
 
 a {
-  @apply text-fbstyle-50;
+  @apply text-slate-50;
 }
 
 a:hover {

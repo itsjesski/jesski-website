@@ -27,7 +27,7 @@ const DisplayPost = (props: FBPost) => (
       />
     }
   >
-    <h1 className="text-center font-bold text-3xl text-fbstyle-400">
+    <h1 className="text-center font-bold text-3xl text-slate-400">
       {props.title}
     </h1>
     <div className="text-center text-sm mb-8">

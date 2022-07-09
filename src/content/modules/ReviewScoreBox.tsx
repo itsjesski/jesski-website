@@ -32,14 +32,14 @@ function getStyles(reviewScore: number | string): string {
     case 10:
       return `bg-reviewScore-10`;
     default:
-      return `bg-fbstyle-100`;
+      return `bg-slate-100`;
   }
 }
 
 const ReviewScoreBox = (props: IReviewScoreProps) => (
   <>
     <div
-      className={`review-score absolute bottom-0 right-0 text-fbstyle-900 pt-1 pl-3 pr-3 pb-1 ${getStyles(
+      className={`review-score absolute bottom-0 right-0 text-slate-900 pt-1 pl-3 pr-3 pb-1 ${getStyles(
         props.score
       )}`}
     >

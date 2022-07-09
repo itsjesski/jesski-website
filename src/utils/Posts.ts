@@ -104,6 +104,39 @@ async function getPosts(
   return [];
 }
 
+async function searchPosts(
+  postType: string,
+  fields: string[],
+  query: string
+): Promise<any> {
+  const encodedFields = encodeURIComponent(fields.join(','));
+  const encodedQuery = encodeURIComponent(query);
+  let apiUrl = `/api/${postType}/search?s=${encodedQuery}`;
+
+  if (fields.length > 0) {
+    apiUrl = `${apiUrl}&fields=${encodedFields}`;
+  }
+
+  try {
+    const response = await axios.request({
+      url: apiUrl,
+      baseURL: process.env.SITE_URL,
+    });
+    return response.data;
+  } catch (error) {
+    // eslint-disable-next-line no-console
+    console.log(error);
+  }
+
+  return [];
+}
+
+export async function searchBlogPosts(
+  fields: string[],
+  query: string
+): Promise<PostResponse> {
+  return searchPosts('posts', fields, query);
+}
 export async function getBlogPosts(
   fields: string[],
   page: number = 1
@@ -117,6 +150,12 @@ export async function getBlogPostBySlug(
   return getPostBySlug('posts', slug, fields);
 }
 
+export async function searchReviewPosts(
+  fields: string[],
+  query: string
+): Promise<PostResponse> {
+  return searchPosts('reviews', fields, query);
+}
 export async function getReviewPosts(
   fields: string[],
   page: number = 1
