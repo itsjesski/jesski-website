@@ -49,6 +49,16 @@ const Main = (props: IMainProps) => (
                 </Link>
               </li>
               <li className="mr-6">
+                <Link href="/posts/">
+                  <a>Blog</a>
+                </Link>
+              </li>
+              <li className="mr-6">
+                <Link href="/games/">
+                  <a>Games</a>
+                </Link>
+              </li>
+              <li className="mr-6">
                 <a href="https://github.com/firebottle">GitHub</a>
               </li>
             </Navbar>
