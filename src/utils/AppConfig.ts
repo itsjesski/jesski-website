@@ -4,6 +4,6 @@ export const AppConfig = {
   description: 'This is a website for Firebottle',
   url: 'https://example.com',
   locale: 'en',
-  author: 'Anonymous',
+  author: 'Firebottle',
   pagination_size: 25,
 };

@@ -14,6 +14,11 @@ export type FBPost = {
   content: string;
 };
 
+type PostResponse = {
+  results: FBPost[];
+  totalPosts: number;
+};
+
 export type FBReview = {
   title: string;
   description: string;
@@ -24,6 +29,11 @@ export type FBReview = {
   screenshots: string[];
   slug: string;
   content: string;
+};
+
+type ReviewResponse = {
+  results: FBReview[];
+  totalPosts: number;
 };
 
 /**
@@ -37,7 +47,7 @@ async function getPostBySlug(
   postType: string,
   slug: string,
   fields: string[]
-): Promise<any[]> {
+): Promise<any> {
   let apiUrl = `/api/${postType}/${slug}/`;
   const encodedFields = encodeURIComponent(fields.join(','));
 
@@ -70,7 +80,7 @@ async function getPosts(
   postType: string,
   fields: string[],
   page: number = 1
-): Promise<any[]> {
+): Promise<any> {
   let apiUrl = `/api/${postType}/`;
   const encodedFields = encodeURIComponent(fields.join(','));
 
@@ -97,25 +107,25 @@ async function getPosts(
 export async function getBlogPosts(
   fields: string[],
   page: number = 1
-): Promise<FBPost[]> {
+): Promise<PostResponse> {
   return getPosts('posts', fields, page);
 }
 export async function getBlogPostBySlug(
   slug: string,
   fields: string[]
-): Promise<FBPost[]> {
+): Promise<PostResponse> {
   return getPostBySlug('posts', slug, fields);
 }
 
 export async function getReviewPosts(
   fields: string[],
   page: number = 1
-): Promise<FBReview[]> {
+): Promise<ReviewResponse> {
   return getPosts('reviews', fields, page);
 }
 export async function getReviewPostBySlug(
   slug: string,
   fields: string[]
-): Promise<FBReview[]> {
+): Promise<ReviewResponse> {
   return getPostBySlug('reviews', slug, fields);
 }

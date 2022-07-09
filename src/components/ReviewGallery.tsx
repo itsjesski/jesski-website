@@ -66,7 +66,7 @@ const ReviewCardList: React.FC<{}> = () => {
     getReviewPosts(['id', 'title', 'date', 'slug', 'score']).then(
       (reviewPosts) => {
         // Always 6 reviews for the gallery.
-        setPostData(reviewPosts.slice(0, 6));
+        setPostData(reviewPosts.results.slice(0, 6));
       }
     );
   }, [fbPosts]);
