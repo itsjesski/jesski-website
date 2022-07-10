@@ -153,7 +153,7 @@ export async function getBlogPostBySlug(
 export async function searchGamePosts(
   fields: string[],
   query: string
-): Promise<PostResponse> {
+): Promise<GameResponse> {
   return searchPosts('games', fields, query);
 }
 export async function getGamePosts(

@@ -47,9 +47,9 @@ export const getStaticPaths: GetStaticPaths<IPostUrl> = async () => {
   const posts = await getGamePosts(['slug']);
 
   return {
-    paths: posts.results.map((post) => ({
+    paths: posts?.results?.map((post) => ({
       params: {
-        slug: post.slug,
+        slug: post?.slug,
       },
     })),
     fallback: false,
