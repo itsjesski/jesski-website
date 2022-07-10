@@ -1,3 +1,4 @@
+/* eslint-disable global-require */
 module.exports = {
   content: ['./src/**/*.{js,ts,jsx,tsx}', './_posts/**/*.md'],
   theme: {
@@ -34,5 +35,5 @@ module.exports = {
     },
   },
   variants: {},
-  plugins: [],
+  plugins: [require('tailwindcss-textshadow')],
 };
