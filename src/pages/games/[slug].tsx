@@ -3,15 +3,30 @@ import React from 'react';
 import { format } from 'date-fns';
 import { GetStaticPaths, GetStaticProps } from 'next';
 
+import { posts } from '../../../public/cache/_games';
 import { Content } from '../../content/Content';
 import { Meta } from '../../layout/Meta';
 import { Main } from '../../templates/Main';
+import { filterPostFields } from '../../utils/ApiHelper';
 import { markdownToHtml } from '../../utils/Markdown';
-import { FBGame, getGamePostBySlug, getGamePosts } from '../../utils/Posts';
+import { FBGame, GameResponse } from '../../utils/Posts';
 
 type IPostUrl = {
   slug: string;
 };
+
+function getPostBySlug(slug: string, fields: string): GameResponse {
+  let result = posts.filter((post) => {
+    return post.slug === slug;
+  });
+
+  result = filterPostFields(result, fields);
+
+  return {
+    results: result,
+    totalPosts: posts.length,
+  };
+}
 
 const DisplayPost = (props: FBGame) => (
   <Main
@@ -44,10 +59,8 @@ const DisplayPost = (props: FBGame) => (
 );
 
 export const getStaticPaths: GetStaticPaths<IPostUrl> = async () => {
-  const posts = await getGamePosts(['slug']);
-
   return {
-    paths: posts.results.map((post) => ({
+    paths: posts.map((post: { slug: string }) => ({
       params: {
         slug: post.slug,
       },
@@ -60,14 +73,10 @@ export const getStaticProps: GetStaticProps<
   Partial<FBGame>,
   IPostUrl
 > = async ({ params }) => {
-  const post = await getGamePostBySlug(params!.slug, [
-    'title',
-    'description',
-    'date',
-    'modified_date',
-    'content',
-    'slug',
-  ]);
+  const post = getPostBySlug(
+    params!.slug,
+    'title,description,date,modified_date,content,slug'
+  );
 
   const postResult = post.results[0];
   const content = await markdownToHtml(postResult.content || '');
