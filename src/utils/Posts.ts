@@ -14,7 +14,7 @@ export type FBPost = {
   content: string;
 };
 
-type PostResponse = {
+export type PostResponse = {
   results: FBPost[];
   totalPosts: number;
 };
@@ -31,7 +31,7 @@ export type FBGame = {
   content: string;
 };
 
-type GameResponse = {
+export type GameResponse = {
   results: FBGame[];
   totalPosts: number;
 };

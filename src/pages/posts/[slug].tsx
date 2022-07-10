@@ -3,15 +3,30 @@ import React from 'react';
 import { format } from 'date-fns';
 import { GetStaticPaths, GetStaticProps } from 'next';
 
+import { posts } from '../../../public/cache/_posts';
 import { Content } from '../../content/Content';
 import { Meta } from '../../layout/Meta';
 import { Main } from '../../templates/Main';
+import { filterPostFields } from '../../utils/ApiHelper';
 import { markdownToHtml } from '../../utils/Markdown';
-import { FBPost, getBlogPostBySlug, getBlogPosts } from '../../utils/Posts';
+import { FBPost, PostResponse } from '../../utils/Posts';
 
 type IPostUrl = {
   slug: string;
 };
+
+function getPostBySlug(slug: string, fields: string): PostResponse {
+  let result = posts.filter((post) => {
+    return post.slug === slug;
+  });
+
+  result = filterPostFields(result, fields);
+
+  return {
+    results: result,
+    totalPosts: posts.length,
+  };
+}
 
 const DisplayPost = (props: FBPost) => (
   <Main
@@ -44,10 +59,8 @@ const DisplayPost = (props: FBPost) => (
 );
 
 export const getStaticPaths: GetStaticPaths<IPostUrl> = async () => {
-  const posts = await getBlogPosts(['slug']);
-
   return {
-    paths: posts.results.map((post) => ({
+    paths: posts.map((post) => ({
       params: {
         slug: post.slug,
       },
@@ -60,15 +73,10 @@ export const getStaticProps: GetStaticProps<
   Partial<FBPost>,
   IPostUrl
 > = async ({ params }) => {
-  const post = await getBlogPostBySlug(params!.slug, [
-    'title',
-    'description',
-    'date',
-    'modified_date',
-    'image',
-    'content',
-    'slug',
-  ]);
+  const post = await getPostBySlug(
+    params!.slug,
+    'title,description,date,modified_date,image,content,slug'
+  );
 
   const postResult = post.results[0];
   const content = await markdownToHtml(postResult.content || '');
