@@ -6,6 +6,36 @@ type TwitchSecrets = {
   client_secret: string;
 };
 
+export type Genres = [
+  {
+    id: number;
+    name: string;
+  }
+];
+
+export type Cover = {
+  id: number;
+  url: string;
+};
+
+export type Screenshots = [
+  {
+    id: number;
+    url: string;
+  }
+];
+
+export type IGDBGame = {
+  id: number;
+  name: string;
+  cover: Cover;
+  genres: Genres;
+  screenshots: Screenshots;
+  videos: number[];
+  aggregated_rating: number;
+  summary: string;
+};
+
 const twitchSecrets: TwitchSecrets = {
   client_id:
     process.env.TWITCH_CLIENT_ID != null ? process.env.TWITCH_CLIENT_ID : '',
@@ -33,10 +63,45 @@ async function getTwitchAccessToken(): Promise<string | undefined> {
     });
 }
 
+export function getBigCoverImage(cover: Cover): Cover {
+  if (cover == null) {
+    return {
+      id: 0,
+      url: '',
+    };
+  }
+  const modifiedCover = cover;
+  modifiedCover.url = cover.url.replace('t_thumb', 't_cover_big');
+
+  return cover;
+}
+
+export function getBigScreenshotImage(
+  screenshotsArray: Screenshots
+): Screenshots {
+  if (screenshotsArray == null) {
+    return [
+      {
+        id: 0,
+        url: '',
+      },
+    ];
+  }
+
+  const modifiedScreenshots =
+    screenshotsArray[Math.floor(Math.random() * screenshotsArray.length)];
+  modifiedScreenshots.url = modifiedScreenshots.url.replace(
+    't_thumb',
+    't_screenshot_huge'
+  );
+
+  return [modifiedScreenshots];
+}
+
 export async function getGameByName(
   name: string,
   requested_fields: '*' | [any, ...any[]] = ['name']
-): Promise<any> {
+): Promise<IGDBGame[]> {
   const accessToken = await getTwitchAccessToken();
   const client = await igdb(twitchSecrets.client_id, accessToken);
   const cleanName = decodeURIComponent(name);
@@ -45,5 +110,23 @@ export async function getGameByName(
     .search(cleanName)
     .request('/games');
 
-  return response.data;
+  const modifiedResponse = response.data[0];
+
+  // Get a random single screenshot.
+  modifiedResponse.screenshots = getBigScreenshotImage(
+    modifiedResponse.screenshots
+  );
+
+  // Get big cover image.
+  modifiedResponse.cover = getBigCoverImage(modifiedResponse.cover);
+
+  return [modifiedResponse];
+}
+
+export function getGenreString(genres: Genres): string {
+  const genresMap = genres.map((item) => {
+    return item.name;
+  });
+
+  return genresMap.join(', ');
 }

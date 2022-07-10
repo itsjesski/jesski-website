@@ -34,7 +34,7 @@ export const posts: any[] = [
   },
   {
     slug: '20-minutes-till-dawn',
-    content: '\r\nThis is where a game would go if one had been written.\r\n',
+    content: '',
     title: '20 Minutes Till Dawn',
     description: 'This is a description used for meta',
     score: 7,
@@ -45,7 +45,7 @@ export const posts: any[] = [
   },
   {
     slug: 'warhammer-40k-gladius',
-    content: '\r\nThis is where a game would go if one had been written.\r\n',
+    content: '',
     title: 'Warhammer 40,000: Gladius - Relics of War',
     description: 'This is a description used for meta',
     score: 8,

@@ -39,7 +39,7 @@ function getStyles(gameScore: number | string): string {
 const GameScoreBox = (props: IGameScoreProps) => (
   <>
     <div
-      className={`game-score absolute bottom-0 right-0 text-slate-900 pt-1 pl-3 pr-3 pb-1 ${getStyles(
+      className={`game-score text-slate-900 pt-1 pl-3 pr-3 pb-1 ${getStyles(
         props.score
       )}`}
     >

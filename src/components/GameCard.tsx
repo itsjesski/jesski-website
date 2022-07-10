@@ -4,7 +4,7 @@ import axios from 'axios';
 import { format } from 'date-fns';
 import Link from 'next/link';
 
-import { IGDBGame } from '../pages/api/igdb/[title]';
+import { getGenreString, IGDBGame } from '../utils/IGDB';
 import { FBGame } from '../utils/Posts';
 import { GameScoreBox } from './GameScoreBox';
 import { Spinner } from './Spinner';
@@ -39,19 +39,22 @@ const GameCard: React.FC<{ game: FBGame }> = ({ game }) => {
 
           {fbGame?.cover && (
             <img
-              src={fbGame?.cover}
+              src={fbGame?.cover.url}
               alt="game image"
               className="block group-hover:opacity-40 transition-opacity duration-700 w-full"
             ></img>
           )}
         </div>
 
-        <GameScoreBox score={game.score}></GameScoreBox>
+        <div className="absolute bottom-0 right-0">
+          <GameScoreBox score={game.score}></GameScoreBox>
+        </div>
+
         <div className="absolute bg-black flex items-center group-hover:-top-0 group-hover:opacity-100 duration-700 top-full right-0 w-full opacity-0 h-1/3 transition-all">
           <div>
-            {fbGame?.screenshot && (
+            {fbGame?.screenshots[0].url && (
               <img
-                src={fbGame?.screenshot}
+                src={fbGame?.screenshots[0].url}
                 alt="game image"
                 className="block w-full h-full"
               ></img>
@@ -68,7 +71,9 @@ const GameCard: React.FC<{ game: FBGame }> = ({ game }) => {
               <span className="uppercase text-gray-400 whitespace-nowrap text-xs md:text-sm">
                 Genre:{' '}
               </span>
-              <span className="relative z-20">{fbGame?.genre}</span>
+              <span className="relative z-20">
+                {fbGame?.genres != null && getGenreString(fbGame?.genres)}
+              </span>
             </div>
             <div className="whitespace-nowrap overflow-hidden overflow-ellipsis relative z-20">
               <span className="uppercase text-gray-400 whitespace-nowrap text-xs md:text-sm">
