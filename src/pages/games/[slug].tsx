@@ -54,8 +54,10 @@ const GameDetailsPage: React.FC<{ post: GameDetails }> = (props) => {
       return `N/A`;
     }
 
-    const newFBReview = fbReview * 10;
-    const difference = Math.round(newFBReview - criticReview);
+    const newCriticReview = Math.floor(criticReview);
+    const newFBReview = Math.floor(fbReview * 10);
+
+    const difference = Math.round(newFBReview - newCriticReview);
     let diffText = '';
     if (difference < 0) {
       diffText = `Firebottle's score was ${Math.abs(
