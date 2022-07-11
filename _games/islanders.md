@@ -1,5 +1,5 @@
 ---
-id: 62
+id: 116133
 title: "Islanders"
 description: "Islanders - Review"
 score: 8
@@ -8,6 +8,6 @@ completed: TRUE
 awards: ""
 modified_date: "2022-07-04"
 screenshots: []
-cover: "//images.igdb.com/igdb/image/upload/t_cover_big/co30yu.jpg"
-image: "//images.igdb.com/igdb/image/upload/t_screenshot_huge/otlhpoqqrjoqtx6kzxni.jpg"
+cover: "//images.igdb.com/igdb/image/upload/t_cover_big/co1s93.png"
+image: "//images.igdb.com/igdb/image/upload/t_original/sc691v.jpg"
 ---
