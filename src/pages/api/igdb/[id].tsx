@@ -1,6 +1,6 @@
 import Cors from 'cors';
 
-import { getGameByName, IGDBGame } from '../../../utils/IGDB';
+import { getGameByID, IGDBGame } from '../../../utils/IGDB';
 import initMiddleware from '../../../utils/InitMiddleware';
 
 const cors = initMiddleware(
@@ -10,13 +10,15 @@ const cors = initMiddleware(
 );
 
 export default async function handler(
-  req: { query: { title: string } },
+  req: { query: { id: string } },
   res: { json: (results: IGDBGame) => void }
 ) {
   await cors(req, res);
 
-  const { title } = req.query;
-  const game = await getGameByName(title, [
+  const { id } = req.query;
+  const newId = parseInt(id, 10);
+
+  const game = await getGameByID(newId, [
     'id',
     'name',
     'cover.url',
@@ -29,14 +31,5 @@ export default async function handler(
 
   const gameData = game[0];
 
-  res.json({
-    id: gameData?.id,
-    name: gameData?.name,
-    cover: gameData?.cover,
-    genres: gameData?.genres,
-    screenshots: gameData?.screenshots,
-    videos: gameData?.videos,
-    aggregated_rating: gameData?.aggregated_rating,
-    summary: gameData?.summary,
-  });
+  res.json(gameData);
 }
