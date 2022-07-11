@@ -5,7 +5,7 @@ description: "Old Friend - Review"
 score: 7
 date: "2017-02-26"
 completed: TRUE
-awards: ""
+awards: []
 modified_date: "2022-07-04"
 screenshots: []
 cover: "//cdn.akamai.steamstatic.com/steam/apps/570000/header.jpg?t=1482429710"

@@ -5,7 +5,7 @@ description: "Doki Doki Literature Club - Review"
 score: 7
 date: "2017-10-21"
 completed: TRUE
-awards: ""
+awards: []
 modified_date: "2022-07-04"
 screenshots: []
 cover: "//images.igdb.com/igdb/image/upload/t_cover_big/co395s.jpg"

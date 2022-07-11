@@ -5,7 +5,7 @@ description: "Outpost Zero - Review"
 score: 8
 date: "2019-07-20"
 completed: FALSE
-awards: ""
+awards: []
 modified_date: "2022-07-04"
 screenshots: []
 cover: "//images.igdb.com/igdb/image/upload/t_cover_big/teppdsitr8wwcqc2kjiu.jpg"

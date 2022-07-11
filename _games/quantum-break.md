@@ -5,7 +5,7 @@ description: "Quantum Break - Review"
 score: 8
 date: "2017-05-12"
 completed: TRUE
-awards: ""
+awards: []
 modified_date: "2022-07-04"
 screenshots: []
 cover: "//images.igdb.com/igdb/image/upload/t_cover_big/co2dqe.jpg"

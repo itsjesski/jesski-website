@@ -5,7 +5,13 @@ description: "Stardew Valley - Review"
 score: 10
 date: "2016-03-07"
 completed: FALSE
-awards: "Game of the Stream Silver 2016"
+awards: [
+  {
+    name: Game of the Stream,
+    year: "2016",
+    type: "Silver"
+  }
+]
 modified_date: "2022-07-04"
 screenshots: []
 cover: "//images.igdb.com/igdb/image/upload/t_cover_big/xrpmydnu9rpxvxfjkiu7.jpg"

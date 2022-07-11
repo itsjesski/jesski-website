@@ -5,7 +5,7 @@ description: "Runes: The forgotten Path - Review"
 score: 7
 date: "2018-11-25"
 completed: FALSE
-awards: ""
+awards: []
 modified_date: "2022-07-04"
 screenshots: []
 cover: "//images.igdb.com/igdb/image/upload/t_cover_big/co3c5z.jpg"

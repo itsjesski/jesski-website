@@ -5,7 +5,7 @@ description: "South Park: Stick of Truth - Review"
 score: 8
 date: "2017-08-26"
 completed: TRUE
-awards: ""
+awards: []
 modified_date: "2022-07-04"
 screenshots: []
 cover: "//images.igdb.com/igdb/image/upload/t_cover_big/co1v8x.jpg"

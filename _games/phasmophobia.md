@@ -5,7 +5,7 @@ description: "Phasmophobia - Review"
 score: 8
 date: "2020-09-26"
 completed: FALSE
-awards: ""
+awards: []
 modified_date: "2022-07-04"
 screenshots: []
 cover: "//images.igdb.com/igdb/image/upload/t_cover_big/co2hby.jpg"

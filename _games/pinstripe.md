@@ -5,7 +5,7 @@ description: "Pinstripe - Review"
 score: 8
 date: "2017-10-05"
 completed: TRUE
-awards: ""
+awards: []
 modified_date: "2022-07-04"
 screenshots: []
 cover: "//images.igdb.com/igdb/image/upload/t_cover_big/wdvojtqymc24siasqjde.jpg"

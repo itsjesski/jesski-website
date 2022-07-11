@@ -5,7 +5,13 @@ description: "Lethal League - Review"
 score: 7
 date: "2015-12-30"
 completed: FALSE
-awards: "Game of the Stream Bronze 2015"
+awards: [
+  {
+    name: Game of the Stream,
+    year: "2015",
+    type: "Bronze"
+  }
+]
 modified_date: "2022-07-04"
 screenshots: []
 cover: "//images.igdb.com/igdb/image/upload/t_cover_big/co1tvb.jpg"

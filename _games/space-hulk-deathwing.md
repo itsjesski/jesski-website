@@ -5,7 +5,7 @@ description: "Space Hulk: Deathwing - Review"
 score: 5
 date: "2016-12-17"
 completed: TRUE
-awards: ""
+awards: []
 modified_date: "2022-07-04"
 screenshots: []
 cover: "//images.igdb.com/igdb/image/upload/t_cover_big/co24tj.jpg"

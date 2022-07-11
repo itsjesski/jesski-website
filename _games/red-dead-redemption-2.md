@@ -5,7 +5,13 @@ description: "Red Dead Redemption 2 - Review"
 score: 10
 date: "2018-11-08"
 completed: TRUE
-awards: "Game of the Stream Silver 2018"
+awards: [
+  {
+    name: Game of the Stream,
+    year: "2018",
+    type: "Silver"
+  }
+]
 modified_date: "2022-07-04"
 screenshots: []
 cover: "//images.igdb.com/igdb/image/upload/t_cover_big/co1q1f.jpg"

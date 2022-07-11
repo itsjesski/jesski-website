@@ -5,7 +5,7 @@ description: "Elden Ring - Review"
 score: 9
 date: "2022-04-03"
 completed: TRUE
-awards: ""
+awards: []
 modified_date: "2022-07-04"
 screenshots: []
 cover: "//images.igdb.com/igdb/image/upload/t_cover_big/co4jni.jpg"

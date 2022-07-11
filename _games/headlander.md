@@ -5,7 +5,7 @@ description: "Headlander - Review"
 score: 7
 date: "2016-08-10"
 completed: TRUE
-awards: ""
+awards: []
 modified_date: "2022-07-04"
 screenshots: []
 cover: "//images.igdb.com/igdb/image/upload/t_cover_big/uyhtdsepz3tsqi9j55m5.jpg"

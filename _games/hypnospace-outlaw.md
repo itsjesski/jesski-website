@@ -5,7 +5,7 @@ description: "Hypnospace Outlaw - Review"
 score: 8
 date: "2019-03-20"
 completed: FALSE
-awards: ""
+awards: []
 modified_date: "2022-07-04"
 screenshots: []
 cover: "//images.igdb.com/igdb/image/upload/t_cover_big/co2f5i.jpg"

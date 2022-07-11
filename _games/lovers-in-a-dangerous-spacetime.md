@@ -5,7 +5,7 @@ description: "Lovers in a Dangerous Spacetime - Review"
 score: 7
 date: "2016-01-02"
 completed: TRUE
-awards: ""
+awards: []
 modified_date: "2022-07-04"
 screenshots: []
 cover: "//images.igdb.com/igdb/image/upload/t_cover_big/co2543.jpg"

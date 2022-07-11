@@ -5,7 +5,7 @@ description: "There is no game - Review"
 score: 8
 date: "2020-09-08"
 completed: TRUE
-awards: ""
+awards: []
 modified_date: "2022-07-04"
 screenshots: []
 cover: "//images.igdb.com/igdb/image/upload/t_cover_big/co25pm.png"

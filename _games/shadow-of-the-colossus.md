@@ -5,7 +5,7 @@ description: "Shadow of the Colossus - Review"
 score: 8
 date: "2018-02-22"
 completed: TRUE
-awards: ""
+awards: []
 modified_date: "2022-07-04"
 screenshots: []
 cover: "//images.igdb.com/igdb/image/upload/t_cover_big/co2ijk.jpg"

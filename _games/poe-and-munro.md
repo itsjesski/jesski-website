@@ -5,7 +5,7 @@ description: "Poe and Munro - Review"
 score: 5
 date: "2020-07-07"
 completed: TRUE
-awards: ""
+awards: []
 modified_date: "2022-07-04"
 screenshots: []
 cover: "//images.igdb.com/igdb/image/upload/t_cover_big/co2911.jpg"

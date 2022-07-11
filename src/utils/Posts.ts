@@ -30,7 +30,7 @@ export type FBGame = {
   slug: string;
   content: string;
   cover: string;
-  awards: string;
+  awards: any[];
   image: string;
   completed: boolean;
 };

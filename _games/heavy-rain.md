@@ -5,7 +5,7 @@ description: "Heavy Rain - Review"
 score: 8
 date: "2019-10-04"
 completed: TRUE
-awards: ""
+awards: []
 modified_date: "2022-07-04"
 screenshots: []
 cover: "//images.igdb.com/igdb/image/upload/t_cover_big/co3rhy.jpg"

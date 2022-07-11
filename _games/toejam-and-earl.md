@@ -5,7 +5,7 @@ description: "Toejam and Earl - Review"
 score: 4
 date: "2021-02-25"
 completed: FALSE
-awards: ""
+awards: []
 modified_date: "2022-07-04"
 screenshots: []
 cover: "//images.igdb.com/igdb/image/upload/t_cover_big/co2rpd.jpg"

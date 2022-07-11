@@ -5,7 +5,13 @@ description: "Half-life Alyx - Review"
 score: 10
 date: "2020-04-03"
 completed: TRUE
-awards: "Game of the Stream Bronze 2020"
+awards: [
+  {
+    name: Game of the Stream,
+    year: "2020",
+    type: "Bronze"
+  }
+]
 modified_date: "2022-07-04"
 screenshots: []
 cover: "//images.igdb.com/igdb/image/upload/t_cover_big/co1tq3.jpg"
