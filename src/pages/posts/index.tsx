@@ -67,7 +67,7 @@ const PostsIndex: React.FC<{}> = () => {
           </div>
         </div>
         <div className="post-index">
-          <div className="flex flex-wrap justify-between">
+          <div className="flex flex-wrap">
             {fbPosts?.map((elt) => (
               <BlogCard post={elt} key={elt.slug}></BlogCard>
             ))}
