@@ -30,7 +30,7 @@ function getStyles(gameScore: number | string): string {
     case 9:
       return `bg-reviewscore-9`;
     case 10:
-      return `bg-reviewScore-10`;
+      return `bg-reviewscore-10`;
     default:
       return `bg-slate-100`;
   }
