@@ -36,3 +36,6 @@ local
 
 # env
 .env
+
+# csv
+src/scripts/csv

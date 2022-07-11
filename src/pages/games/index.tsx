@@ -19,14 +19,15 @@ const PostsIndex: React.FC<{}> = () => {
   });
 
   function updateBlogPosts(newPage: number) {
-    getGamePosts(['id', 'title', 'date', 'slug', 'score'], newPage).then(
-      (gamePosts) => {
-        setPostData(gamePosts.results);
-        setTotalPages(
-          Math.floor(gamePosts.totalPosts / AppConfig.pagination_size)
-        );
-      }
-    );
+    getGamePosts(
+      ['id', 'title', 'date', 'slug', 'score', 'image', 'cover'],
+      newPage
+    ).then((gamePosts) => {
+      setPostData(gamePosts.results);
+      setTotalPages(
+        Math.floor(gamePosts.totalPosts / AppConfig.pagination_size)
+      );
+    });
   }
 
   const handlePrevPage = () => {
@@ -58,7 +59,7 @@ const PostsIndex: React.FC<{}> = () => {
       }
     >
       <Content>
-        <div className="index-header border-b-slate-400 border-solid border-b-2 mb-3 flex justify-between items-end flex-wrap pb-2">
+        <div className="index-header border-b-slate-400 border-solid border-b-2 mb-3 items-end flex-wrap pb-2 flex justify-between">
           <div className="">
             <h1>Games</h1>
           </div>
@@ -67,7 +68,7 @@ const PostsIndex: React.FC<{}> = () => {
           </div>
         </div>
         <div className="post-index">
-          <div className="flex flex-wrap justify-between">
+          <div className="flex flex-wrap">
             {fbPosts?.map((elt) => (
               <GameCard game={elt} key={elt.slug}></GameCard>
             ))}

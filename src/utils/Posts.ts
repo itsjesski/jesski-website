@@ -20,15 +20,19 @@ export type PostResponse = {
 };
 
 export type FBGame = {
+  id: number;
   title: string;
   description: string;
   score: number;
-  playtime: string;
   date: string;
   modified_date: string;
   screenshots: string[];
   slug: string;
   content: string;
+  cover: string;
+  awards: string;
+  image: string;
+  completed: boolean;
 };
 
 export type GameResponse = {

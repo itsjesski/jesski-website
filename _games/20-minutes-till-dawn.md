@@ -1,9 +1,14 @@
 ---
-title: '20 Minutes Till Dawn'
-description: 'This is a description used for meta'
+id: 199748
+title: "20 minutes till dawn"
+description: "20 minutes till dawn - Review"
 score: 7
-playtime: '3 hours'
-date: '2022-06-12'
-modified_date: '2022-07-04'
-screenshots: ['/assets/images/posts/random-img.jpg']
+date: "2022-06-12"
+completed: FALSE
+awards: ""
+modified_date: "2022-07-04"
+screenshots: []
+cover: "//images.igdb.com/igdb/image/upload/t_cover_big/co4ti3.jpg"
+image: "//images.igdb.com/igdb/image/upload/t_screenshot_huge/scgv0n.jpg"
 ---
+Like vampire survivors, except it looks better. It's much more shallow though.
