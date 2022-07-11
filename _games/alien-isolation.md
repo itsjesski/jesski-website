@@ -5,7 +5,7 @@ description: 'Alien Isolation - Review'
 score: 5
 date: '2016-02-19'
 completed: FALSE
-awards: ''
+awards: []
 modified_date: '2022-07-04'
 screenshots: []
 cover: "//images.igdb.com/igdb/image/upload/t_cover_big/co1vzu.png"
