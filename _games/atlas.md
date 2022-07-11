@@ -1,5 +1,5 @@
 ---
-id: 38315
+id: 113116
 title: "Atlas"
 description: "Atlas - Review"
 score: 5
@@ -8,7 +8,7 @@ completed: FALSE
 awards: ""
 modified_date: "2022-07-04"
 screenshots: []
-cover: "//images.igdb.com/igdb/image/upload/t_cover_big/co3eiv.jpg"
+cover: "//images.igdb.com/igdb/image/upload/t_cover_big/co1sh8.png"
 image: "//images.igdb.com/igdb/image/upload/t_screenshot_huge/sc5r92.jpg"
 ---
 Bad introduction and buggy, but a lot of potential.

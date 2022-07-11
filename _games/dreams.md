@@ -1,5 +1,5 @@
 ---
-id: 3365
+id: 11155
 title: "Dreams"
 description: "Dreams - Review"
 score: 10
@@ -8,7 +8,7 @@ completed: FALSE
 awards: ""
 modified_date: "2022-07-04"
 screenshots: []
-cover: "//images.igdb.com/igdb/image/upload/t_cover_big/co4ahq.jpg"
-image: "//images.igdb.com/igdb/image/upload/t_screenshot_huge/enbqfts2ikk0ecwvjy9n.jpg"
+cover: "//images.igdb.com/igdb/image/upload/t_cover_big/co4rmx.png"
+image: "//images.igdb.com/igdb/image/upload/t_screenshot_huge/qbz2djvuvquujq8bsjex.jpg"
 ---
 I love it so much.

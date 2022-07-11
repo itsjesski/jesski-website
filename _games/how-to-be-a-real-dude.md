@@ -8,7 +8,7 @@ completed: TRUE
 awards: ""
 modified_date: "2022-07-04"
 screenshots: []
-cover: "undefined"
-image: "//images.igdb.com/igdb/image/upload/t_screenshot_huge/sc6j3k.jpg"
+cover: "//images.igdb.com/igdb/image/upload/t_original/sc6j3i.jpg"
+image: "//cdn.akamai.steamstatic.com/steam/apps/1061640/header.jpg?t=1557412061"
 ---
 ....

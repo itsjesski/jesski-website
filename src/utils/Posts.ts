@@ -20,6 +20,7 @@ export type PostResponse = {
 };
 
 export type FBGame = {
+  id: number;
   title: string;
   description: string;
   score: number;

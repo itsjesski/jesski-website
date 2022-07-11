@@ -137,6 +137,45 @@ export async function getGameByName(
   return [modifiedResponse];
 }
 
+export async function getGameByID(
+  id: number,
+  requested_fields: '*' | [any, ...any[]] = ['name']
+): Promise<IGDBGame[]> {
+  const accessToken = await getTwitchAccessToken();
+  const client = await igdb(twitchSecrets.client_id, accessToken);
+
+  const response = await client
+    .fields(requested_fields)
+    .where(`id = ${id}`)
+    .request('/games');
+
+  const modifiedResponse = response.data[0];
+
+  if (modifiedResponse == null) {
+    // eslint-disable-next-line no-console
+    console.log(`${id} could not be found in API!`);
+    return [];
+  }
+
+  // Get a random single screenshot.
+  if (modifiedResponse.screenshots != null) {
+    modifiedResponse.screenshots = getBigScreenshotImage(
+      modifiedResponse.screenshots
+    );
+  } else {
+    modifiedResponse.screenshots = [];
+  }
+
+  // Get big cover image.
+  if (modifiedResponse.cover) {
+    modifiedResponse.cover = getBigCoverImage(modifiedResponse.cover);
+  } else {
+    modifiedResponse.cover = [];
+  }
+
+  return [modifiedResponse];
+}
+
 export function getGenreString(genres: Genres): string {
   const genresMap = genres.map((item) => {
     return item.name;

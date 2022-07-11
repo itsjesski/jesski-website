@@ -1,5 +1,5 @@
 ---
-id: 131216
+id: 23181
 title: "OneShot"
 description: "OneShot - Review"
 score: 10
@@ -8,7 +8,7 @@ completed: TRUE
 awards: ""
 modified_date: "2022-07-04"
 screenshots: []
-cover: "//images.igdb.com/igdb/image/upload/t_cover_big/co2lwb.jpg"
-image: "//images.igdb.com/igdb/image/upload/t_screenshot_huge/sc86vn.jpg"
+cover: "//images.igdb.com/igdb/image/upload/t_cover_big/co1u08.png"
+image: "//images.igdb.com/igdb/image/upload/t_screenshot_huge/jfpfqg6mdgjjeir14mkq.jpg"
 ---
 Loved it. This is an excellent game.

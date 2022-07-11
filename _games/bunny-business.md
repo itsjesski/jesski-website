@@ -8,6 +8,6 @@ completed: TRUE
 awards: ""
 modified_date: "2022-07-04"
 screenshots: []
-cover: "undefined"
+cover: "//images.igdb.com/igdb/image/upload/t_original/ar1b9v.jpg"
 image: "//images.igdb.com/igdb/image/upload/t_screenshot_huge/scezvo.jpg"
 ---

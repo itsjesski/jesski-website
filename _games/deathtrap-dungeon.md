@@ -1,5 +1,5 @@
 ---
-id: 8470
+id: 129936
 title: "Deathtrap Dungeon"
 description: "Deathtrap Dungeon - Review"
 score: 7
@@ -8,7 +8,7 @@ completed: TRUE
 awards: ""
 modified_date: "2022-07-04"
 screenshots: []
-cover: "//images.igdb.com/igdb/image/upload/t_cover_big/co2pvp.jpg"
-image: "//images.igdb.com/igdb/image/upload/t_screenshot_huge/a6nohl7wlrqiek65nokb.jpg"
+cover: "//images.igdb.com/igdb/image/upload/t_cover_big/co2lo8.png"
+image: "//images.igdb.com/igdb/image/upload/t_screenshot_huge/sc83zb.jpg"
 ---
 Good game based on choose your own adventure books.

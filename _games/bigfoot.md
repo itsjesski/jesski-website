@@ -1,5 +1,5 @@
 ---
-id: 13398
+id: 31851
 title: "Bigfoot"
 description: "Bigfoot - Review"
 score: 6
@@ -8,7 +8,7 @@ completed: FALSE
 awards: ""
 modified_date: "2022-07-04"
 screenshots: []
-cover: "//images.igdb.com/igdb/image/upload/t_cover_big/co3vpu.jpg"
-image: "//images.igdb.com/igdb/image/upload/t_screenshot_huge/hs0bcx3mhc7rllr1obnc.jpg"
+cover: "//images.igdb.com/igdb/image/upload/t_cover_big/co2lj4.png"
+image: "//images.igdb.com/igdb/image/upload/t_screenshot_huge/buyoge2he7iftxrko7b7.jpg"
 ---
 Eh, it's okay!

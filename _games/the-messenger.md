@@ -1,5 +1,5 @@
 ---
-id: 44838
+id: 71628
 title: "The Messenger"
 description: "The Messenger - Review"
 score: 9
@@ -8,7 +8,7 @@ completed: TRUE
 awards: ""
 modified_date: "2022-07-04"
 screenshots: []
-cover: "//images.igdb.com/igdb/image/upload/t_cover_big/co22i7.jpg"
-image: "//images.igdb.com/igdb/image/upload/t_screenshot_huge/sc8321.jpg"
+cover: "//images.igdb.com/igdb/image/upload/t_cover_big/co2hr9.png"
+image: "//images.igdb.com/igdb/image/upload/t_screenshot_huge/c5hnld671pfcee9as5kb.jpg"
 ---
 Good game with good controls. But I suck at platformers.

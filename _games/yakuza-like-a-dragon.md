@@ -8,7 +8,7 @@ completed: TRUE
 awards: ""
 modified_date: "2022-07-04"
 screenshots: []
-cover: "//images.igdb.com/igdb/image/upload/t_cover_big/co3k3w.jpg"
+cover: "//images.igdb.com/igdb/image/upload/t_cover_big/co2em9.png"
 image: "//images.igdb.com/igdb/image/upload/t_screenshot_huge/scbabw.jpg"
 ---
 Fun story, good characters, terrible boss mechanics and game design forcing you to hit level walls constantly.

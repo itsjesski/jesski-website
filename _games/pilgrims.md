@@ -1,5 +1,5 @@
 ---
-id: 71229
+id: 122766
 title: "Pilgrims"
 description: "Pilgrims - Review"
 score: 7
@@ -8,7 +8,7 @@ completed: TRUE
 awards: ""
 modified_date: "2022-07-04"
 screenshots: []
-cover: "//images.igdb.com/igdb/image/upload/t_cover_big/mbaf2q2mo1ehbhnxbirw.jpg"
-image: "//images.igdb.com/igdb/image/upload/t_screenshot_huge/sc9cuc.jpg"
+cover: "//images.igdb.com/igdb/image/upload/t_cover_big/co26cn.png"
+image: "//images.igdb.com/igdb/image/upload/t_screenshot_huge/sc76rv.jpg"
 ---
 Short but pretty fun

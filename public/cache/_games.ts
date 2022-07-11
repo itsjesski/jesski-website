@@ -222,7 +222,7 @@ export const posts: any[] = [
   {
     slug: 'pilgrims',
     content: 'Short but pretty fun',
-    id: 71229,
+    id: 122766,
     title: 'Pilgrims',
     description: 'Pilgrims - Review',
     score: 7,
@@ -231,9 +231,8 @@ export const posts: any[] = [
     awards: '',
     modified_date: '2022-07-04',
     screenshots: [],
-    cover:
-      '//images.igdb.com/igdb/image/upload/t_cover_big/mbaf2q2mo1ehbhnxbirw.jpg',
-    image: '//images.igdb.com/igdb/image/upload/t_screenshot_huge/sc9cuc.jpg',
+    cover: '//images.igdb.com/igdb/image/upload/t_cover_big/co26cn.png',
+    image: '//images.igdb.com/igdb/image/upload/t_screenshot_huge/sc76rv.jpg',
   },
   {
     slug: 'monster-hunter-rise',
@@ -247,7 +246,7 @@ export const posts: any[] = [
     awards: '',
     modified_date: '2022-07-04',
     screenshots: [],
-    cover: 'undefined',
+    cover: '//images.igdb.com/igdb/image/upload/t_cover_big/co3uzk.png',
     image: '//images.igdb.com/igdb/image/upload/t_screenshot_huge/schr32.jpg',
   },
   {
@@ -664,19 +663,17 @@ export const posts: any[] = [
   {
     slug: 'totem',
     content: 'Short but neat little indie game.',
-    id: 32070,
-    title: 'Totem',
-    description: 'Totem - Review',
+    id: 133974,
+    title: 'Tôtem',
+    description: 'Tôtem - Review',
     score: 6,
     date: '2021-06-07',
     completed: true,
     awards: '',
     modified_date: '2022-07-04',
     screenshots: [],
-    cover:
-      '//images.igdb.com/igdb/image/upload/t_cover_big/zqz52plezppmmjxx8nkm.jpg',
-    image:
-      '//images.igdb.com/igdb/image/upload/t_screenshot_huge/eqv8mcyvsjdwgys8fzaw.jpg',
+    cover: '//images.igdb.com/igdb/image/upload/t_cover_big/co26k1.png',
+    image: '//images.igdb.com/igdb/image/upload/t_screenshot_huge/sc88ns.jpg',
   },
   {
     slug: 'operation-tango',
@@ -745,7 +742,7 @@ export const posts: any[] = [
   {
     slug: 'dungeons-3',
     content: 'Like dungeon keeper, but more modern.',
-    id: 12278,
+    id: 27353,
     title: 'Dungeons 3',
     description: 'Dungeons 3 - Review',
     score: 7,
@@ -754,7 +751,7 @@ export const posts: any[] = [
     awards: '',
     modified_date: '2022-07-04',
     screenshots: [],
-    cover: '//images.igdb.com/igdb/image/upload/t_cover_big/co2nq6.jpg',
+    cover: '//images.igdb.com/igdb/image/upload/t_cover_big/co2fm9.png',
     image:
       '//images.igdb.com/igdb/image/upload/t_screenshot_huge/dizfmjdedrekrjaixkyb.jpg',
   },
@@ -816,7 +813,7 @@ export const posts: any[] = [
     awards: '',
     modified_date: '2022-07-04',
     screenshots: [],
-    cover: 'undefined',
+    cover: '//images.igdb.com/igdb/image/upload/t_cover_big/co2urs.png',
     image: '//images.igdb.com/igdb/image/upload/t_screenshot_huge/scdzh8.jpg',
   },
   {
@@ -868,7 +865,7 @@ export const posts: any[] = [
   {
     slug: 'songs-for-a-hero',
     content: 'Pretty good? The singing voice can get grating after a bit.',
-    id: 163667,
+    id: 19719,
     title: 'Songs for a Hero',
     description: 'Songs for a Hero - Review',
     score: 7,
@@ -877,8 +874,8 @@ export const posts: any[] = [
     awards: '',
     modified_date: '2022-07-04',
     screenshots: [],
-    cover: 'undefined',
-    image: '//images.igdb.com/igdb/image/upload/t_screenshot_huge/scchgc.jpg',
+    cover: '//images.igdb.com/igdb/image/upload/t_cover_big/co2k79.png',
+    image: '//images.igdb.com/igdb/image/upload/t_screenshot_huge/sc8qi0.jpg',
   },
   {
     slug: 'bloons-td-6',
@@ -1177,7 +1174,7 @@ export const posts: any[] = [
     awards: '',
     modified_date: '2022-07-04',
     screenshots: [],
-    cover: '//images.igdb.com/igdb/image/upload/t_cover_big/co3k3w.jpg',
+    cover: '//images.igdb.com/igdb/image/upload/t_cover_big/co2em9.png',
     image: '//images.igdb.com/igdb/image/upload/t_screenshot_huge/scbabw.jpg',
   },
   {
@@ -1370,7 +1367,7 @@ export const posts: any[] = [
   {
     slug: 'there-is-no-game',
     content: 'Great story. Definitely recommend giving it a shot.',
-    id: 116797,
+    id: 28336,
     title: 'There is no game',
     description: 'There is no game - Review',
     score: 8,
@@ -1379,8 +1376,9 @@ export const posts: any[] = [
     awards: '',
     modified_date: '2022-07-04',
     screenshots: [],
-    cover: '//images.igdb.com/igdb/image/upload/t_cover_big/co26c2.jpg',
-    image: '//images.igdb.com/igdb/image/upload/t_screenshot_huge/sc6cy3.jpg',
+    cover: '//images.igdb.com/igdb/image/upload/t_cover_big/co25pm.png',
+    image:
+      '//images.igdb.com/igdb/image/upload/t_screenshot_huge/iilsw9kpytcf43u6fawe.jpg',
   },
   {
     slug: 'fire-emblem-three-houses',
@@ -1417,7 +1415,7 @@ export const posts: any[] = [
   {
     slug: 'journey',
     content: 'Still an amazing game.',
-    id: 137294,
+    id: 1352,
     title: 'Journey',
     description: 'Journey - Review',
     score: 8,
@@ -1426,8 +1424,8 @@ export const posts: any[] = [
     awards: '',
     modified_date: '2022-07-04',
     screenshots: [],
-    cover: '//images.igdb.com/igdb/image/upload/t_cover_big/co2fro.jpg',
-    image: '//images.igdb.com/igdb/image/upload/t_screenshot_huge/scbtdt.jpg',
+    cover: '//images.igdb.com/igdb/image/upload/t_cover_big/co1q8q.png',
+    image: '//images.igdb.com/igdb/image/upload/t_screenshot_huge/sc8nw9.jpg',
   },
   {
     slug: 'katana-zero',
@@ -1525,7 +1523,7 @@ export const posts: any[] = [
   {
     slug: 'deathtrap-dungeon',
     content: 'Good game based on choose your own adventure books.',
-    id: 8470,
+    id: 129936,
     title: 'Deathtrap Dungeon',
     description: 'Deathtrap Dungeon - Review',
     score: 7,
@@ -1534,14 +1532,13 @@ export const posts: any[] = [
     awards: '',
     modified_date: '2022-07-04',
     screenshots: [],
-    cover: '//images.igdb.com/igdb/image/upload/t_cover_big/co2pvp.jpg',
-    image:
-      '//images.igdb.com/igdb/image/upload/t_screenshot_huge/a6nohl7wlrqiek65nokb.jpg',
+    cover: '//images.igdb.com/igdb/image/upload/t_cover_big/co2lo8.png',
+    image: '//images.igdb.com/igdb/image/upload/t_screenshot_huge/sc83zb.jpg',
   },
   {
     slug: 'the-messenger',
     content: 'Good game with good controls. But I suck at platformers.',
-    id: 44838,
+    id: 71628,
     title: 'The Messenger',
     description: 'The Messenger - Review',
     score: 9,
@@ -1550,8 +1547,9 @@ export const posts: any[] = [
     awards: '',
     modified_date: '2022-07-04',
     screenshots: [],
-    cover: '//images.igdb.com/igdb/image/upload/t_cover_big/co22i7.jpg',
-    image: '//images.igdb.com/igdb/image/upload/t_screenshot_huge/sc8321.jpg',
+    cover: '//images.igdb.com/igdb/image/upload/t_cover_big/co2hr9.png',
+    image:
+      '//images.igdb.com/igdb/image/upload/t_screenshot_huge/c5hnld671pfcee9as5kb.jpg',
   },
   {
     slug: 'blackwell-legacy',
@@ -1572,17 +1570,18 @@ export const posts: any[] = [
   {
     slug: 'assassins-creed-odyssey',
     content: 'Great game with good story and mechanics.',
-    id: 164698,
-    title: "Assassin's Creed Odyssey",
-    description: "Assassin's Creed Odyssey - Review",
+    id: 103054,
+    title: "Assassin's Creed: Odyssey",
+    description: "Assassin's Creed: Odyssey - Review",
     score: 9,
     date: '2020-06-15',
     completed: true,
     awards: '',
     modified_date: '2022-07-04',
     screenshots: [],
-    cover: '//images.igdb.com/igdb/image/upload/t_cover_big/co3ka7.jpg',
-    image: '//images.igdb.com/igdb/image/upload/t_screenshot_huge/scco2c.jpg',
+    cover: '//images.igdb.com/igdb/image/upload/t_cover_big/co2nul.png',
+    image:
+      '//images.igdb.com/igdb/image/upload/t_original/uhbwqvqyzd9z28moax4v.jpg',
   },
   {
     slug: 'grimms-hollow',
@@ -1681,7 +1680,7 @@ export const posts: any[] = [
   {
     slug: 'for-the-king',
     content: 'A pretty fun board game like thing.',
-    id: 7528,
+    id: 20331,
     title: 'For The King',
     description: 'For The King - Review',
     score: 7,
@@ -1690,8 +1689,9 @@ export const posts: any[] = [
     awards: '',
     modified_date: '2022-07-04',
     screenshots: [],
-    cover: '//images.igdb.com/igdb/image/upload/t_cover_big/co28rz.jpg',
-    image: '//images.igdb.com/igdb/image/upload/t_screenshot_huge/scb034.jpg',
+    cover: '//images.igdb.com/igdb/image/upload/t_cover_big/co1hxc.png',
+    image:
+      '//images.igdb.com/igdb/image/upload/t_screenshot_huge/uyg8tibepzc3bxjqhhwi.jpg',
   },
   {
     slug: 'warhammer-chaosbane',
@@ -1760,7 +1760,7 @@ export const posts: any[] = [
     slug: 'chrono-trigger',
     content:
       'Good story, but some of the bosses have some messed up mechanics.',
-    id: 79447,
+    id: 206320,
     title: 'Chrono Trigger',
     description: 'Chrono Trigger - Review',
     score: 9,
@@ -1769,8 +1769,8 @@ export const posts: any[] = [
     awards: '',
     modified_date: '2022-07-04',
     screenshots: [],
-    cover: '//images.igdb.com/igdb/image/upload/t_cover_big/co39u6.jpg',
-    image: '//images.igdb.com/igdb/image/upload/t_screenshot_huge/scabxm.jpg',
+    cover: '//images.igdb.com/igdb/image/upload/t_cover_big/co2eqd.png',
+    image: '//images.igdb.com/igdb/image/upload/t_screenshot_huge/schlak.jpg',
   },
   {
     slug: 'doom-eternal',
@@ -2028,7 +2028,7 @@ export const posts: any[] = [
   {
     slug: 'ratchet-and-clank',
     content: 'Fun game with neat weapons.',
-    id: 19994,
+    id: 11065,
     title: 'Ratchet and Clank',
     description: 'Ratchet and Clank - Review',
     score: 8,
@@ -2037,9 +2037,9 @@ export const posts: any[] = [
     awards: '',
     modified_date: '2022-07-04',
     screenshots: [],
-    cover: '//images.igdb.com/igdb/image/upload/t_cover_big/co230q.jpg',
+    cover: '//images.igdb.com/igdb/image/upload/t_cover_big/co230k.png',
     image:
-      '//images.igdb.com/igdb/image/upload/t_screenshot_huge/z2hataux9dati7e3269n.jpg',
+      '//images.igdb.com/igdb/image/upload/t_screenshot_huge/ns9ubkujno3x3enquv5i.jpg',
   },
   {
     slug: 'god-of-war',
@@ -2153,19 +2153,6 @@ export const posts: any[] = [
       '//images.igdb.com/igdb/image/upload/t_screenshot_huge/nnafra3tsv67tty7qnk5.jpg',
   },
   {
-    slug: 'mechwarrior',
-    content: 'I think this might be a great co-op game.',
-    id: 1255,
-    title: 'Mechwarrior',
-    description: 'Mechwarrior - Review',
-    score: 8,
-    date: '2019-12-15',
-    completed: false,
-    awards: '',
-    modified_date: '2022-07-04',
-    screenshots: [],
-  },
-  {
     slug: 'star-wars-the-old-republic',
     content: 'Pretty good, but a LOT of travelling.',
     id: 114,
@@ -2198,7 +2185,7 @@ export const posts: any[] = [
   },
   {
     slug: 'rune-2',
-    content: 'Okay, but not too much to do.\n',
+    content: 'Okay, but not too much to do.\r\n',
     id: 55149,
     title: 'Rune 2',
     description: 'Rune 2 - Review',
@@ -2276,7 +2263,7 @@ export const posts: any[] = [
   {
     slug: 'bigfoot',
     content: "Eh, it's okay!",
-    id: 13398,
+    id: 31851,
     title: 'Bigfoot',
     description: 'Bigfoot - Review',
     score: 6,
@@ -2285,9 +2272,9 @@ export const posts: any[] = [
     awards: '',
     modified_date: '2022-07-04',
     screenshots: [],
-    cover: '//images.igdb.com/igdb/image/upload/t_cover_big/co3vpu.jpg',
+    cover: '//images.igdb.com/igdb/image/upload/t_cover_big/co2lj4.png',
     image:
-      '//images.igdb.com/igdb/image/upload/t_screenshot_huge/hs0bcx3mhc7rllr1obnc.jpg',
+      '//images.igdb.com/igdb/image/upload/t_screenshot_huge/buyoge2he7iftxrko7b7.jpg',
   },
   {
     slug: 'pine',
@@ -2433,7 +2420,7 @@ export const posts: any[] = [
   {
     slug: 'jurassic-world-evolution',
     content: 'Good, but can sometimes be a bit annoying.',
-    id: 165850,
+    id: 54996,
     title: 'Jurassic World Evolution',
     description: 'Jurassic World Evolution - Review',
     score: 8,
@@ -2442,7 +2429,7 @@ export const posts: any[] = [
     awards: '',
     modified_date: '2022-07-04',
     screenshots: [],
-    cover: '//images.igdb.com/igdb/image/upload/t_cover_big/co3r3g.jpg',
+    cover: '//images.igdb.com/igdb/image/upload/t_cover_big/co1uzy.png',
     image: '//images.igdb.com/igdb/image/upload/t_screenshot_huge/scctvk.jpg',
   },
   {
@@ -2543,7 +2530,7 @@ export const posts: any[] = [
   {
     slug: 'dreams',
     content: 'I love it so much.',
-    id: 3365,
+    id: 11155,
     title: 'Dreams',
     description: 'Dreams - Review',
     score: 10,
@@ -2552,9 +2539,9 @@ export const posts: any[] = [
     awards: '',
     modified_date: '2022-07-04',
     screenshots: [],
-    cover: '//images.igdb.com/igdb/image/upload/t_cover_big/co4ahq.jpg',
+    cover: '//images.igdb.com/igdb/image/upload/t_cover_big/co4rmx.png',
     image:
-      '//images.igdb.com/igdb/image/upload/t_screenshot_huge/enbqfts2ikk0ecwvjy9n.jpg',
+      '//images.igdb.com/igdb/image/upload/t_screenshot_huge/qbz2djvuvquujq8bsjex.jpg',
   },
   {
     slug: 'final-fantasy-xiv',
@@ -2655,7 +2642,7 @@ export const posts: any[] = [
     slug: 'control',
     content:
       "One of the best games I've played in a long time. Loved the story.",
-    id: 15103,
+    id: 103329,
     title: 'Control',
     description: 'Control - Review',
     score: 10,
@@ -2664,10 +2651,9 @@ export const posts: any[] = [
     awards: 'Game of the Stream GOLD 2019',
     modified_date: '2022-07-04',
     screenshots: [],
-    cover:
-      '//images.igdb.com/igdb/image/upload/t_cover_big/dnllpwmk5k7tuiw6krjh.jpg',
+    cover: '//images.igdb.com/igdb/image/upload/t_cover_big/co2evj.png',
     image:
-      '//images.igdb.com/igdb/image/upload/t_screenshot_huge/gursup2x5k8zxgvm4d9u.jpg',
+      '//images.igdb.com/igdb/image/upload/t_screenshot_huge/sq0fojs2sff78e1bhl0v.jpg',
   },
   {
     slug: 'erica',
@@ -2897,24 +2883,9 @@ export const posts: any[] = [
     awards: '',
     modified_date: '2022-07-04',
     screenshots: [],
-    cover: 'undefined',
-    image: '//images.igdb.com/igdb/image/upload/t_screenshot_huge/sc6j3k.jpg',
-  },
-  {
-    slug: 'final-fantasy-7',
-    content:
-      'Switch version w/ cheats. It was okay. Got confused on where to go due to breaks. Decided to wait for remaster.',
-    id: 127879,
-    title: 'Final Fantasy 7',
-    description: 'Final Fantasy 7 - Review',
-    score: 7,
-    date: '2019-08-01',
-    completed: false,
-    awards: '',
-    modified_date: '2022-07-04',
-    screenshots: [],
-    cover: '//images.igdb.com/igdb/image/upload/t_cover_big/co1vn2.jpg',
-    image: '//images.igdb.com/igdb/image/upload/t_screenshot_huge/sc7h3r.jpg',
+    cover: '//images.igdb.com/igdb/image/upload/t_original/sc6j3i.jpg',
+    image:
+      '//cdn.akamai.steamstatic.com/steam/apps/1061640/header.jpg?t=1557412061',
   },
   {
     slug: 'wolfenstein-youngblood',
@@ -3292,7 +3263,7 @@ export const posts: any[] = [
     awards: '',
     modified_date: '2022-07-04',
     screenshots: [],
-    cover: 'undefined',
+    cover: '//images.igdb.com/igdb/image/upload/t_original/ar1b9v.jpg',
     image: '//images.igdb.com/igdb/image/upload/t_screenshot_huge/scezvo.jpg',
   },
   {
@@ -3626,8 +3597,8 @@ export const posts: any[] = [
   {
     slug: 'earthbound',
     content:
-      "Honestly, a great game but I'm glad we were on the snes with save states. I can't imagine what it would be like without that. However, it was a fantasic game.",
-    id: 78559,
+      "Honestly, a great game but I'm glad we had save states. I can't imagine what it would be like without that. However, it was a fantasic game.",
+    id: 2899,
     title: 'Earthbound',
     description: 'Earthbound - Review',
     score: 9,
@@ -3636,9 +3607,8 @@ export const posts: any[] = [
     awards: '',
     modified_date: '2022-07-04',
     screenshots: [],
-    cover:
-      '//images.igdb.com/igdb/image/upload/t_cover_big/udoqdu91vczupvadieku.jpg',
-    image: '//images.igdb.com/igdb/image/upload/t_screenshot_huge/sc7le9.jpg',
+    cover: '//images.igdb.com/igdb/image/upload/t_cover_big/co3shr.png',
+    image: '//images.igdb.com/igdb/image/upload/t_screenshot_huge/scftzl.jpg',
   },
   {
     slug: 'onimusha-warlords',
@@ -3707,7 +3677,7 @@ export const posts: any[] = [
   {
     slug: 'atlas',
     content: 'Bad introduction and buggy, but a lot of potential.',
-    id: 38315,
+    id: 113116,
     title: 'Atlas',
     description: 'Atlas - Review',
     score: 5,
@@ -3716,7 +3686,7 @@ export const posts: any[] = [
     awards: '',
     modified_date: '2022-07-04',
     screenshots: [],
-    cover: '//images.igdb.com/igdb/image/upload/t_cover_big/co3eiv.jpg',
+    cover: '//images.igdb.com/igdb/image/upload/t_cover_big/co1sh8.png',
     image: '//images.igdb.com/igdb/image/upload/t_screenshot_huge/sc5r92.jpg',
   },
   {
@@ -3802,7 +3772,7 @@ export const posts: any[] = [
     slug: 'ashen',
     content:
       'Great dark souls rpg with very cool bossfights and multiplayer mechanics.',
-    id: 6259,
+    id: 17001,
     title: 'Ashen',
     description: 'Ashen - Review',
     score: 9,
@@ -3811,8 +3781,8 @@ export const posts: any[] = [
     awards: '',
     modified_date: '2022-07-04',
     screenshots: [],
-    cover: '//images.igdb.com/igdb/image/upload/t_cover_big/co3aiw.jpg',
-    image: '//images.igdb.com/igdb/image/upload/t_screenshot_huge/scak6t.jpg',
+    cover: '//images.igdb.com/igdb/image/upload/t_cover_big/co4o0i.png',
+    image: '//images.igdb.com/igdb/image/upload/t_screenshot_huge/sc77nt.jpg',
   },
   {
     slug: 'battlefield-v',
@@ -4383,7 +4353,7 @@ export const posts: any[] = [
   {
     slug: 'moonlighter',
     content: 'Great little indie RPG with a unique shop keeping aspect to it.',
-    id: 206935,
+    id: 27771,
     title: 'Moonlighter',
     description: 'Moonlighter - Review',
     score: 8,
@@ -4392,8 +4362,9 @@ export const posts: any[] = [
     awards: '',
     modified_date: '2022-07-04',
     screenshots: [],
-    cover: '//images.igdb.com/igdb/image/upload/t_cover_big/co4xeh.jpg',
-    image: '//images.igdb.com/igdb/image/upload/t_screenshot_huge/schmsi.jpg',
+    cover: '//images.igdb.com/igdb/image/upload/t_cover_big/co1vck.png',
+    image:
+      '//images.igdb.com/igdb/image/upload/t_screenshot_huge/xf4vvrwsmdx1gfnmwxj3.jpg',
   },
   {
     slug: 'monster-prom',
@@ -4675,16 +4646,16 @@ export const posts: any[] = [
     slug: 'furi',
     content:
       'Neat, but brutal difficulty. Game doesnt control well enough for it.',
-    id: 37751,
+    id: 17026,
     title: 'Furi',
     description: 'Furi - Review',
-    score: 5,
+    score: 7,
     date: '2017-12-18',
     completed: true,
     awards: '',
     modified_date: '2022-07-04',
     screenshots: [],
-    cover: '//images.igdb.com/igdb/image/upload/t_cover_big/co49mj.jpg',
+    cover: '//images.igdb.com/igdb/image/upload/t_cover_big/co27q3.png',
     image:
       '//images.igdb.com/igdb/image/upload/t_screenshot_huge/nrgxlrpxyazlwfy5c6rc.jpg',
   },
@@ -5065,7 +5036,7 @@ export const posts: any[] = [
   {
     slug: 'remember-me',
     content: 'Neat story, terrible everything else.',
-    id: 36495,
+    id: 1827,
     title: 'Remember Me',
     description: 'Remember Me - Review',
     score: 5,
@@ -5074,10 +5045,9 @@ export const posts: any[] = [
     awards: '',
     modified_date: '2022-07-04',
     screenshots: [],
-    cover:
-      '//images.igdb.com/igdb/image/upload/t_cover_big/uwk5nzvqt6q9l2ogr3am.jpg',
+    cover: '//images.igdb.com/igdb/image/upload/t_cover_big/co2h9u.png',
     image:
-      '//images.igdb.com/igdb/image/upload/t_screenshot_huge/e1b6k0eavmsqlzifb2tb.jpg',
+      '//images.igdb.com/igdb/image/upload/t_screenshot_huge/y2xyocp2zya1fvrps8mx.jpg',
   },
   {
     slug: 'kingsway',
@@ -5262,17 +5232,17 @@ export const posts: any[] = [
     slug: 'player-unknowns-battlegrounds',
     content:
       "Took me a bit to get hooked, but once I figured everything out I fell in love. I normally don't play these types of games much but it has me hooked.",
-    id: 111360,
-    title: "Player Unknown's Battlegrounds",
-    description: "Player Unknown's Battlegrounds - Review",
+    id: 27789,
+    title: 'PUBG: Battlegrounds',
+    description: 'PUBG: Battlegrounds - Review',
     score: 8,
     date: '2017-07-14',
     completed: false,
     awards: '',
     modified_date: '2022-07-04',
     screenshots: [],
-    cover: 'undefined',
-    image: '//images.igdb.com/igdb/image/upload/t_screenshot_huge/sc5k45.jpg',
+    cover: '//images.igdb.com/igdb/image/upload/t_cover_big/co4c1x.png',
+    image: '//images.igdb.com/igdb/image/upload/t_screenshot_huge/sc87lk.jpg',
   },
   {
     slug: 'what-remains-of-edith-finch',
@@ -5293,7 +5263,7 @@ export const posts: any[] = [
   {
     slug: 'oneshot',
     content: 'Loved it. This is an excellent game.',
-    id: 131216,
+    id: 23181,
     title: 'OneShot',
     description: 'OneShot - Review',
     score: 10,
@@ -5302,8 +5272,9 @@ export const posts: any[] = [
     awards: '',
     modified_date: '2022-07-04',
     screenshots: [],
-    cover: '//images.igdb.com/igdb/image/upload/t_cover_big/co2lwb.jpg',
-    image: '//images.igdb.com/igdb/image/upload/t_screenshot_huge/sc86vn.jpg',
+    cover: '//images.igdb.com/igdb/image/upload/t_cover_big/co1u08.png',
+    image:
+      '//images.igdb.com/igdb/image/upload/t_screenshot_huge/jfpfqg6mdgjjeir14mkq.jpg',
   },
   {
     slug: 'star-trek-bridge-crew',
@@ -5357,17 +5328,18 @@ export const posts: any[] = [
     slug: 'job-simulator',
     content:
       "Eh. Fun and silly, but it's missing something. Might have worked better if it were my first VR game.",
-    id: 175760,
-    title: 'Job Simulator',
-    description: 'Job Simulator - Review',
+    id: 12596,
+    title: 'Job Simulator: The 2050 Archives',
+    description: 'Job Simulator: The 2050 Archives - Review',
     score: 5,
     date: '2017-06-23',
     completed: true,
     awards: '',
     modified_date: '2022-07-04',
     screenshots: [],
-    cover: 'undefined',
-    image: '//images.igdb.com/igdb/image/upload/t_screenshot_huge/sce5y9.jpg',
+    cover: '//images.igdb.com/igdb/image/upload/t_cover_big/co2qgk.png',
+    image:
+      '//images.igdb.com/igdb/image/upload/t_screenshot_huge/yhkfakbp1ykggvmuudxd.jpg',
   },
   {
     slug: 'alan-wake',
@@ -5552,7 +5524,7 @@ export const posts: any[] = [
   {
     slug: 'inside',
     content: 'Beautiful game... but I think it might be overhyped.',
-    id: 139295,
+    id: 7342,
     title: 'Inside',
     description: 'Inside - Review',
     score: 7,
@@ -5561,8 +5533,9 @@ export const posts: any[] = [
     awards: '',
     modified_date: '2022-07-04',
     screenshots: [],
-    cover: '//images.igdb.com/igdb/image/upload/t_cover_big/co2i8x.jpg',
-    image: '//images.igdb.com/igdb/image/upload/t_screenshot_huge/sc8m5v.jpg',
+    cover: '//images.igdb.com/igdb/image/upload/t_cover_big/co2fca.png',
+    image:
+      '//images.igdb.com/igdb/image/upload/t_screenshot_huge/z4fkserflyby1nv5ispe.jpg',
   },
   {
     slug: 'toonstruck',
@@ -5836,17 +5809,18 @@ export const posts: any[] = [
   {
     slug: 'zelda-breath-of-the-wild',
     content: 'Amazing.',
-    id: 119388,
-    title: 'Zelda: Breath of the Wild',
-    description: 'Zelda: Breath of the Wild - Review',
+    id: 7346,
+    title: 'The Legend of Zelda: Breath of the Wild',
+    description: 'The Legend of Zelda: Breath of the Wild - Review',
     score: 10,
     date: '2017-03-19',
     completed: true,
     awards: 'Game of the Stream Bronze 2017',
     modified_date: '2022-07-04',
     screenshots: [],
-    cover: '//images.igdb.com/igdb/image/upload/t_cover_big/co4kob.jpg',
-    image: '//images.igdb.com/igdb/image/upload/t_screenshot_huge/scaoj9.jpg',
+    cover: '//images.igdb.com/igdb/image/upload/t_cover_big/co3p2d.png',
+    image:
+      '//images.igdb.com/igdb/image/upload/t_original/ayjm7juog9vitiwbfrcz.jpg',
   },
   {
     slug: 'horizon-zero-dawn',
@@ -5894,7 +5868,8 @@ export const posts: any[] = [
     awards: '',
     modified_date: '2022-07-04',
     screenshots: [],
-    cover: 'undefined',
+    cover:
+      '//cdn.akamai.steamstatic.com/steam/apps/570000/header.jpg?t=1482429710',
     image:
       '//images.igdb.com/igdb/image/upload/t_screenshot_huge/xo7w4ebyxwu3s2sq8wbd.jpg',
   },
@@ -6728,7 +6703,7 @@ export const posts: any[] = [
     slug: 'the-bunker',
     content:
       'Pretty great story, but gameplay is absolutely minimal. This is a playable movie that is completely linear.',
-    id: 170332,
+    id: 24017,
     title: 'The Bunker',
     description: 'The Bunker - Review',
     score: 5,
@@ -6737,8 +6712,9 @@ export const posts: any[] = [
     awards: '',
     modified_date: '2022-07-04',
     screenshots: [],
-    cover: '//images.igdb.com/igdb/image/upload/t_cover_big/co4gnq.jpg',
-    image: '//images.igdb.com/igdb/image/upload/t_screenshot_huge/scdggu.jpg',
+    cover: '//images.igdb.com/igdb/image/upload/t_cover_big/co1mqd.png',
+    image:
+      '//images.igdb.com/igdb/image/upload/t_original/vuzusil1tuu7acdg5fvi.jpg',
   },
   {
     slug: 'halcyon-6',
@@ -7178,7 +7154,7 @@ export const posts: any[] = [
     slug: 'dead-by-daylight',
     content:
       "Frustrating and repetitive gameplay. Plus, it's not actually scary.",
-    id: 129400,
+    id: 18866,
     title: 'Dead By Daylight',
     description: 'Dead By Daylight - Review',
     score: 4,
@@ -7187,8 +7163,8 @@ export const posts: any[] = [
     awards: '',
     modified_date: '2022-07-04',
     screenshots: [],
-    cover: '//images.igdb.com/igdb/image/upload/t_cover_big/co1y71.jpg',
-    image: '//images.igdb.com/igdb/image/upload/t_screenshot_huge/sc7ln5.jpg',
+    cover: '//images.igdb.com/igdb/image/upload/t_cover_big/co4m8x.png',
+    image: '//images.igdb.com/igdb/image/upload/t_original/sc6vlc.jpg',
   },
   {
     slug: 'in-verbis-virtus',
@@ -7326,7 +7302,7 @@ export const posts: any[] = [
   {
     slug: 'her-story',
     content: 'Good story, but very little in the way of gameplay.',
-    id: 170227,
+    id: 11346,
     title: 'Her Story',
     description: 'Her Story - Review',
     score: 6,
@@ -7335,8 +7311,9 @@ export const posts: any[] = [
     awards: '',
     modified_date: '2022-07-04',
     screenshots: [],
-    cover: 'undefined',
-    image: '//images.igdb.com/igdb/image/upload/t_screenshot_huge/scdg21.jpg',
+    cover: '//images.igdb.com/igdb/image/upload/t_cover_big/co2gzl.png',
+    image:
+      '//images.igdb.com/igdb/image/upload/t_screenshot_huge/t0ihshvsknsofhpnxfyl.jpg',
   },
   {
     slug: 'mirrors-edge',
@@ -7437,7 +7414,7 @@ export const posts: any[] = [
   {
     slug: 'lords-of-the-fallen',
     content: 'Bah. Heavy dark souls. Good looking and terrible gameplay.',
-    id: 800,
+    id: 4847,
     title: 'Lords of the Fallen',
     description: 'Lords of the Fallen - Review',
     score: 3,
@@ -7446,8 +7423,9 @@ export const posts: any[] = [
     awards: '',
     modified_date: '2022-07-04',
     screenshots: [],
-    cover: '//images.igdb.com/igdb/image/upload/t_cover_big/co29oa.jpg',
-    image: '//images.igdb.com/igdb/image/upload/t_screenshot_huge/sc753f.jpg',
+    cover: '//images.igdb.com/igdb/image/upload/t_cover_big/co1nzt.png',
+    image:
+      '//images.igdb.com/igdb/image/upload/t_screenshot_huge/zpengo6mkmz5shyocukf.jpg',
   },
   {
     slug: 'battlefleet-gothic',
@@ -7605,18 +7583,18 @@ export const posts: any[] = [
     slug: 'renowned-explorers',
     content:
       'A unique rougelike for those who love storytelling. Sort of like "Around the world in 80 days" with some hex based combat. Even with all of that, it doesn\'t really stand out all that much.  ',
-    id: 19387,
-    title: 'Renowned Explorers',
-    description: 'Renowned Explorers - Review',
+    id: 12510,
+    title: 'Renowned Explorers: International Society',
+    description: 'Renowned Explorers: International Society - Review',
     score: 4,
     date: '2016-04-09',
     completed: false,
     awards: '',
     modified_date: '2022-07-04',
     screenshots: [],
-    cover: 'undefined',
+    cover: '//images.igdb.com/igdb/image/upload/t_cover_big/co2h13.png',
     image:
-      '//images.igdb.com/igdb/image/upload/t_screenshot_huge/ernk88aflgvxcnfurja2.jpg',
+      '//images.igdb.com/igdb/image/upload/t_original/aunvtzmykzvpjz4qwtnc.jpg',
   },
   {
     slug: 'enter-the-gungeon',
@@ -7941,19 +7919,17 @@ export const posts: any[] = [
   {
     slug: 'xcom-2',
     content: "I love Xcom. I'm terrible at it, but I love it so much.",
-    id: 21427,
-    title: 'XCom 2',
-    description: 'XCom 2 - Review',
+    id: 10919,
+    title: 'XCOM 2',
+    description: 'XCOM 2 - Review',
     score: 8,
     date: '2016-02-09',
     completed: true,
     awards: '',
     modified_date: '2022-07-04',
     screenshots: [],
-    cover:
-      '//images.igdb.com/igdb/image/upload/t_cover_big/uqdzs6ytf5d5c2tt3ma3.jpg',
-    image:
-      '//images.igdb.com/igdb/image/upload/t_screenshot_huge/ykgomrqy53rfqu94erxq.jpg',
+    cover: '//images.igdb.com/igdb/image/upload/t_cover_big/co1mvj.png',
+    image: '//images.igdb.com/igdb/image/upload/t_original/sc99va.jpg',
   },
   {
     slug: 'hacknet',
@@ -7986,9 +7962,9 @@ export const posts: any[] = [
     awards: '',
     modified_date: '2022-07-04',
     screenshots: [],
-    cover:
-      '//images.igdb.com/igdb/image/upload/t_cover_big/jj4tws1yyigd5ndsbhsj.jpg',
-    image: '//images.igdb.com/igdb/image/upload/t_screenshot_huge/scdrse.jpg',
+    cover: '//images.igdb.com/igdb/image/upload/t_cover_big/co3hih.png',
+    image:
+      '//images.igdb.com/igdb/image/upload/t_screenshot_huge/fztajtk1l9o4st10tsrv.jpg',
   },
   {
     slug: 'invisible-inc',

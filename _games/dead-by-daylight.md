@@ -1,5 +1,5 @@
 ---
-id: 129400
+id: 18866
 title: "Dead By Daylight"
 description: "Dead By Daylight - Review"
 score: 4
@@ -8,7 +8,7 @@ completed: FALSE
 awards: ""
 modified_date: "2022-07-04"
 screenshots: []
-cover: "//images.igdb.com/igdb/image/upload/t_cover_big/co1y71.jpg"
-image: "//images.igdb.com/igdb/image/upload/t_screenshot_huge/sc7ln5.jpg"
+cover: "//images.igdb.com/igdb/image/upload/t_cover_big/co4m8x.png"
+image: "//images.igdb.com/igdb/image/upload/t_original/sc6vlc.jpg"
 ---
 Frustrating and repetitive gameplay. Plus, it's not actually scary.
