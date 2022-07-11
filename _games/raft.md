@@ -1,11 +1,9 @@
 ---
 title: 'Raft'
-description: 'This is a description used for meta'
+description: 'Raft - Review'
 score: 8
 playtime: 'Finished'
 date: '2022-07-01'
 modified_date: '2022-07-04'
-screenshots: ['/assets/images/posts/random-img.jpg']
+screenshots: []
 ---
-
-This is where a game would go if one had been written.

@@ -1,11 +1,9 @@
 ---
-title: 'Sniper Elite III'
-description: 'This is a description used for meta'
-score: 8
+title: 'Sniper Elite 3'
+description: 'Sniper Elite 3 - Review'
+score: 7
 playtime: 'Finished'
 date: '2022-07-04'
 modified_date: '2022-07-05'
-screenshots: ['/assets/images/posts/random-img.jpg']
+screenshots: []
 ---
-
-This is where a game would go if one had been written.

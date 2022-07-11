@@ -24,6 +24,7 @@ type GameDetails = {
     modified_date: string;
     content: string;
     score: number;
+    playtime: string;
   };
   igdb: IGDBGame;
 };
@@ -86,6 +87,14 @@ const DisplayPost = (props: GameDetails) => (
               <span className="text-positive">
                 {format(new Date(props.post.date), 'LLL d, yyyy')}
               </span>
+            </span>
+          </div>
+          <div className="whitespace-nowrap overflow-hidden overflow-ellipsis relative z-20">
+            <span className="uppercase text-gray-400 whitespace-nowrap text-xs md:text-sm">
+              Playtime:{' '}
+            </span>
+            <span className="whitespace-nowrap overflow-hidden overflow-ellipsis relative z-20">
+              <span className="text-positive">{props.post.playtime}</span>
             </span>
           </div>
         </div>
@@ -155,7 +164,7 @@ export const getStaticProps: GetStaticProps<
 > = async ({ params }) => {
   const post = getPostBySlug(
     params!.slug,
-    'title,description,date,modified_date,content,slug,score'
+    'title,description,date,modified_date,content,slug,score,playtime'
   );
 
   const postResult = post.results[0];
@@ -182,6 +191,7 @@ export const getStaticProps: GetStaticProps<
       date: postResult.date,
       modified_date: postResult.modified_date,
       score: postResult.score,
+      playtime: postResult.playtime,
       content,
     },
   };
