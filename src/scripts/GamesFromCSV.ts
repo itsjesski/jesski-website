@@ -50,6 +50,8 @@ async function writeGameMDFile(game: any) {
       'screenshots.url',
     ]);
 
+    // TODO: We need to get the game with the newest release date.
+
     if (igdb[0].id == null) {
       console.log('ERROR, game id missing.');
       return;
