@@ -31,6 +31,11 @@ module.exports = {
           9: '#57e32c',
           10: '#57e32c',
         },
+        awards: {
+          bronze: '#d7995b',
+          silver: '#D3D3D3',
+          gold: '#FFD700',
+        },
       },
     },
   },

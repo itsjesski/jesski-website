@@ -5,7 +5,7 @@ description: "Zelda: Wand of Gamelon - Review"
 score: 3
 date: "2021-01-10"
 completed: TRUE
-awards: "Game of the Universe"
+awards: []
 modified_date: "2022-07-04"
 screenshots: []
 cover: "//images.igdb.com/igdb/image/upload/t_cover_big/co2lh6.jpg"

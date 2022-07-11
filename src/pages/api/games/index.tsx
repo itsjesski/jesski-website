@@ -1,8 +1,12 @@
 import { posts } from '../../../../public/cache/_games';
-import { filterPostFields, getPageResults } from '../../../utils/ApiHelper';
+import {
+  filterPostFields,
+  getPageResults,
+  sortPosts,
+} from '../../../utils/ApiHelper';
 
 export default async function handler(
-  req: { query: { page: string; fields: string } },
+  req: { query: { page: string; fields: string; sort: string } },
   res: {
     json: (results: any) => void;
   }
@@ -12,8 +16,19 @@ export default async function handler(
     return;
   }
 
-  const { page, fields } = req.query;
-  let result = getPageResults(posts, page);
+  const { page, fields, sort } = req.query;
+
+  let result = posts;
+
+  // Always sort first, then trim and filter after.
+  if (sort) {
+    result = sortPosts(result, sort);
+  }
+
+  // Paginate
+  result = getPageResults(posts, page);
+
+  // Filter post fields
   result = filterPostFields(result, fields);
 
   const response = {

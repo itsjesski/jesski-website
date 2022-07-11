@@ -5,7 +5,13 @@ description: "Deaths Door - Review"
 score: 10
 date: "2021-07-28"
 completed: TRUE
-awards: "Game of the Stream Gold 2021"
+awards: [
+  {
+    name: Game of the Stream,
+    year: "2021",
+    type: "Gold"
+  }
+]
 modified_date: "2022-07-04"
 screenshots: []
 cover: "//images.igdb.com/igdb/image/upload/t_cover_big/co45xc.jpg"

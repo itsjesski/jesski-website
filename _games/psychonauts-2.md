@@ -5,7 +5,7 @@ description: "Psychonauts 2 - Review"
 score: 9
 date: "2021-12-01"
 completed: TRUE
-awards: ""
+awards: []
 modified_date: "2022-07-04"
 screenshots: []
 cover: "//images.igdb.com/igdb/image/upload/t_cover_big/co1sod.jpg"

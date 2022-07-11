@@ -5,7 +5,7 @@ description: "20 minutes till dawn - Review"
 score: 7
 date: "2022-06-12"
 completed: FALSE
-awards: ""
+awards: []
 modified_date: "2022-07-04"
 screenshots: []
 cover: "//images.igdb.com/igdb/image/upload/t_cover_big/co4ti3.jpg"

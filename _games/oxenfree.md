@@ -5,7 +5,7 @@ description: "Oxenfree - Review"
 score: 10
 date: "2016-09-07"
 completed: TRUE
-awards: ""
+awards: []
 modified_date: "2022-07-04"
 screenshots: []
 cover: "//images.igdb.com/igdb/image/upload/t_cover_big/co2hlq.jpg"

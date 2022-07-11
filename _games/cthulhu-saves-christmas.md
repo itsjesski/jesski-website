@@ -5,7 +5,7 @@ description: "Cthulhu Saves Christmas - Review"
 score: 7
 date: "2020-12-22"
 completed: TRUE
-awards: ""
+awards: []
 modified_date: "2022-07-04"
 screenshots: []
 cover: "//images.igdb.com/igdb/image/upload/t_cover_big/co1vdz.jpg"

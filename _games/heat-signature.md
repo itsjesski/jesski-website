@@ -5,7 +5,7 @@ description: "Heat Signature - Review"
 score: 6
 date: "2017-09-30"
 completed: FALSE
-awards: ""
+awards: []
 modified_date: "2022-07-04"
 screenshots: []
 cover: "//images.igdb.com/igdb/image/upload/t_cover_big/co1qrb.jpg"

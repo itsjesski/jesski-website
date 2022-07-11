@@ -30,7 +30,7 @@ function getStyles(gameScore: number | string): string {
     case 9:
       return `bg-reviewscore-9`;
     case 10:
-      return `bg-reviewScore-10`;
+      return `bg-reviewscore-10`;
     default:
       return `bg-slate-100`;
   }
@@ -39,7 +39,7 @@ function getStyles(gameScore: number | string): string {
 const GameScoreBox = (props: IGameScoreProps) => (
   <>
     <div
-      className={`game-score text-slate-900 pt-1 pl-3 pr-3 pb-1 ${getStyles(
+      className={`game-score text-slate-900 p-2 align-middle shadow-steam ${getStyles(
         props.score
       )}`}
     >

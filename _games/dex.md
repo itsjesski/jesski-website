@@ -5,7 +5,7 @@ description: "Dex - Review"
 score: 5
 date: "2018-09-21"
 completed: FALSE
-awards: ""
+awards: []
 modified_date: "2022-07-04"
 screenshots: []
 cover: "//images.igdb.com/igdb/image/upload/t_cover_big/co2gdn.jpg"

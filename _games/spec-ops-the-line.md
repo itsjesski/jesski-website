@@ -5,7 +5,7 @@ description: "Spec Ops: The Line - Review"
 score: 5
 date: "2016-11-18"
 completed: TRUE
-awards: ""
+awards: []
 modified_date: "2022-07-04"
 screenshots: []
 cover: "//images.igdb.com/igdb/image/upload/t_cover_big/co2acb.jpg"

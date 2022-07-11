@@ -15,11 +15,11 @@ const Content = (props: IContentProps) => (
         }
 
         .content :global(p) {
-          @apply my-6;
+          @apply my-3;
         }
 
         .content :global(ul) {
-          @apply my-6;
+          @apply my-3;
         }
 
         .content :global(h1) {

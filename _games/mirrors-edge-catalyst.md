@@ -5,7 +5,7 @@ description: "Mirror's Edge Catalyst - Review"
 score: 5
 date: "2016-06-13"
 completed: TRUE
-awards: ""
+awards: []
 modified_date: "2022-07-04"
 screenshots: []
 cover: "//images.igdb.com/igdb/image/upload/t_cover_big/co28r2.jpg"

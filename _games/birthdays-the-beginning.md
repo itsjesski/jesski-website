@@ -5,7 +5,7 @@ description: "Birthdays: The Beginning - Review"
 score: 4
 date: "2017-05-10"
 completed: FALSE
-awards: ""
+awards: []
 modified_date: "2022-07-04"
 screenshots: []
 cover: "//images.igdb.com/igdb/image/upload/t_cover_big/co22yz.jpg"

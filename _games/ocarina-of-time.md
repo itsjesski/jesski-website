@@ -5,7 +5,7 @@ description: "Ocarina of Time - Review"
 score: 8
 date: "2016-11-15"
 completed: TRUE
-awards: ""
+awards: []
 modified_date: "2022-07-04"
 screenshots: []
 cover: "//images.igdb.com/igdb/image/upload/t_cover_big/co498r.jpg"

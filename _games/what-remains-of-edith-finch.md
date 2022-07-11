@@ -5,7 +5,7 @@ description: "What Remains of Edith Finch - Review"
 score: 9
 date: "2017-07-10"
 completed: TRUE
-awards: ""
+awards: []
 modified_date: "2022-07-04"
 screenshots: []
 cover: "//images.igdb.com/igdb/image/upload/t_cover_big/co1rbj.jpg"

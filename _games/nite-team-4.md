@@ -5,7 +5,7 @@ description: "NITE Team 4 - Review"
 score: 6
 date: "2019-09-01"
 completed: FALSE
-awards: ""
+awards: []
 modified_date: "2022-07-04"
 screenshots: []
 cover: "//images.igdb.com/igdb/image/upload/t_cover_big/co21e7.jpg"

@@ -5,7 +5,7 @@ description: "Choice of Robots - Review"
 score: 7
 date: "2018-03-03"
 completed: TRUE
-awards: ""
+awards: []
 modified_date: "2022-07-04"
 screenshots: []
 cover: "//images.igdb.com/igdb/image/upload/t_cover_big/wrcxdr4vhb5tbru4hax7.jpg"

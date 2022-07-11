@@ -19,6 +19,14 @@ export type PostResponse = {
   totalPosts: number;
 };
 
+export type GameAward = [
+  {
+    name: string;
+    year: string;
+    type: string;
+  }
+];
+
 export type FBGame = {
   id: number;
   title: string;
@@ -30,7 +38,7 @@ export type FBGame = {
   slug: string;
   content: string;
   cover: string;
-  awards: string;
+  awards: GameAward;
   image: string;
   completed: boolean;
 };
@@ -83,15 +91,21 @@ async function getPostBySlug(
 async function getPosts(
   postType: string,
   fields: string[],
-  page: number = 1
+  page: number = 1,
+  sort: string = ''
 ): Promise<any> {
   let apiUrl = `/api/${postType}/`;
   const encodedFields = encodeURIComponent(fields.join(','));
+  const encodedSort = encodeURIComponent(sort);
 
   apiUrl = `${apiUrl}?page=${page}`;
 
   if (fields.length > 0) {
     apiUrl = `${apiUrl}&fields=${encodedFields}`;
+  }
+
+  if (sort.length > 0) {
+    apiUrl = `${apiUrl}&sort=${encodedSort}`;
   }
 
   try {
@@ -143,9 +157,10 @@ export async function searchBlogPosts(
 }
 export async function getBlogPosts(
   fields: string[],
-  page: number = 1
+  page: number = 1,
+  sort: string = ''
 ): Promise<PostResponse> {
-  return getPosts('posts', fields, page);
+  return getPosts('posts', fields, page, sort);
 }
 export async function getBlogPostBySlug(
   slug: string,
@@ -162,9 +177,10 @@ export async function searchGamePosts(
 }
 export async function getGamePosts(
   fields: string[],
-  page: number = 1
+  page: number = 1,
+  sort: string = ''
 ): Promise<GameResponse> {
-  return getPosts('games', fields, page);
+  return getPosts('games', fields, page, sort);
 }
 export async function getGamePostBySlug(
   slug: string,

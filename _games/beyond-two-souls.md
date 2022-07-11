@@ -5,7 +5,7 @@ description: "Beyond: Two Souls - Review"
 score: 8
 date: "2020-10-16"
 completed: TRUE
-awards: ""
+awards: []
 modified_date: "2022-07-04"
 screenshots: []
 cover: "//images.igdb.com/igdb/image/upload/t_cover_big/co2mps.jpg"

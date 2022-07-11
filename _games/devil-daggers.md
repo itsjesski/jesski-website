@@ -5,7 +5,7 @@ description: "Devil Daggers - Review"
 score: 8
 date: "2016-02-26"
 completed: FALSE
-awards: ""
+awards: []
 modified_date: "2022-07-04"
 screenshots: []
 cover: "//images.igdb.com/igdb/image/upload/t_cover_big/co1uz6.jpg"

@@ -5,7 +5,7 @@ description: "911 Operator - Review"
 score: 7
 date: "2021-07-01"
 completed: FALSE
-awards: ""
+awards: []
 modified_date: "2022-07-04"
 screenshots: []
 cover: "//images.igdb.com/igdb/image/upload/t_cover_big/co2gjv.jpg"

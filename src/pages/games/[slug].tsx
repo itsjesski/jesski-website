@@ -11,7 +11,7 @@ import { Main } from '../../templates/Main';
 import { filterPostFields } from '../../utils/ApiHelper';
 import { getGenreString, IGDBGame } from '../../utils/IGDB';
 import { markdownToHtml } from '../../utils/Markdown';
-import { GameResponse } from '../../utils/Posts';
+import { GameAward, GameResponse } from '../../utils/Posts';
 
 type IPostUrl = {
   slug: string;
@@ -28,6 +28,7 @@ type GameDetails = {
   image: string;
   cover: string;
   completed: boolean;
+  awards: GameAward | [];
 };
 
 function getPostBySlug(slug: string, fields: string): GameResponse {
@@ -135,6 +136,23 @@ const GameDetailsPage: React.FC<{ post: GameDetails }> = (props) => {
                 </span>
               </span>
             </div>
+            <div className="relative z-20">
+              <span className="uppercase text-gray-400 text-xs md:text-sm">
+                Awards:{' '}
+              </span>
+              <span className="relative z-20">
+                {props.post?.awards.length === 0 && (
+                  <span className="text-positive">None</span>
+                )}
+                {props.post?.awards?.map((award) => (
+                  <div key={award.type + award.year + award.name}>
+                    <span className="text-positive">
+                      {award.name}: {award.type} - {award.year}
+                    </span>
+                  </div>
+                ))}
+              </span>
+            </div>
           </div>
           <div className="game-info border-b-slate-700 border-solid border-b-2 pb-2 mb-2">
             <div className="genre">
@@ -239,7 +257,7 @@ export const getStaticProps: GetStaticProps<
 > = async ({ params }) => {
   const post = getPostBySlug(
     params!.slug,
-    'title,description,date,modified_date,content,slug,score,cover,image,completed,id'
+    'title,description,date,modified_date,content,slug,score,cover,image,completed,id,awards'
   );
 
   const postResult = post.results[0];
@@ -255,6 +273,7 @@ export const getStaticProps: GetStaticProps<
     cover: postResult.cover ? postResult.cover : '',
     image: postResult.image ? postResult.image : '',
     completed: postResult.completed ? postResult.completed : false,
+    awards: postResult.awards,
     content,
   };
 

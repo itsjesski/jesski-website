@@ -5,7 +5,13 @@ description: "Binary Domain - Review"
 score: 8
 date: "2015-12-29"
 completed: TRUE
-awards: "Game of the Stream Silver 2015"
+awards: [
+  {
+    name: Game of the Stream,
+    year: "2019",
+    type: "Silver"
+  }
+]
 modified_date: "2022-07-04"
 screenshots: []
 cover: "//images.igdb.com/igdb/image/upload/t_cover_big/co1qu7.jpg"

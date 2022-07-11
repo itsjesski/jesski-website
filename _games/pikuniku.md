@@ -5,7 +5,7 @@ description: "Pikuniku - Review"
 score: 9
 date: "2019-02-16"
 completed: TRUE
-awards: ""
+awards: []
 modified_date: "2022-07-04"
 screenshots: []
 cover: "//images.igdb.com/igdb/image/upload/t_cover_big/co2gb6.jpg"

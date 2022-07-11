@@ -5,7 +5,7 @@ description: "Lovecraft's Untold Stories - Review"
 score: 8
 date: "2019-02-14"
 completed: FALSE
-awards: ""
+awards: []
 modified_date: "2022-07-04"
 screenshots: []
 cover: "//images.igdb.com/igdb/image/upload/t_cover_big/co3vn3.jpg"

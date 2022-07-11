@@ -5,7 +5,7 @@ description: "PUBG: Battlegrounds - Review"
 score: 8
 date: "2017-07-14"
 completed: FALSE
-awards: ""
+awards: []
 modified_date: "2022-07-04"
 screenshots: []
 cover: "//images.igdb.com/igdb/image/upload/t_cover_big/co4c1x.png"

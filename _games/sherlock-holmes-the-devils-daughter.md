@@ -5,7 +5,7 @@ description: "Sherlock Holmes: The Devils Daughter - Review"
 score: 7
 date: "2019-02-10"
 completed: TRUE
-awards: ""
+awards: []
 modified_date: "2022-07-04"
 screenshots: []
 cover: "//images.igdb.com/igdb/image/upload/t_cover_big/co3wmc.jpg"

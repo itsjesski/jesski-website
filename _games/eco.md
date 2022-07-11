@@ -5,7 +5,13 @@ description: "Eco - Review"
 score: 9
 date: "2021-02-12"
 completed: FALSE
-awards: "Game of the Stream Silver 2021"
+awards: [
+  {
+    name: Game of the Stream,
+    year: "2021",
+    type: "Silver"
+  }
+]
 modified_date: "2022-07-04"
 screenshots: []
 cover: "//images.igdb.com/igdb/image/upload/t_cover_big/co1wlv.jpg"

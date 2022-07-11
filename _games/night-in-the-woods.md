@@ -5,7 +5,13 @@ description: "Night in the Woods - Review"
 score: 10
 date: "2017-05-18"
 completed: TRUE
-awards: "Game of the Stream Silver 2017"
+awards: [
+  {
+    name: Game of the Stream,
+    year: "2017",
+    type: "Silver"
+  }
+]
 modified_date: "2022-07-04"
 screenshots: []
 cover: "//images.igdb.com/igdb/image/upload/t_cover_big/co4ovg.jpg"

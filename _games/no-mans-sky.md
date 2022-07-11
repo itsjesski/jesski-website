@@ -5,7 +5,7 @@ description: "No Man's Sky - Review"
 score: 5
 date: "2016-08-16"
 completed: FALSE
-awards: ""
+awards: []
 modified_date: "2022-07-04"
 screenshots: []
 cover: "//images.igdb.com/igdb/image/upload/t_cover_big/co4xe0.jpg"

@@ -5,7 +5,13 @@ description: "Tales from the Borderlands - Review"
 score: 10
 date: "2016-09-27"
 completed: TRUE
-awards: "Game of the Stream Bronze 2016"
+awards: [
+  {
+    name: Game of the Stream,
+    year: "2016",
+    type: "Bronze"
+  }
+]
 modified_date: "2022-07-04"
 screenshots: []
 cover: "//images.igdb.com/igdb/image/upload/t_cover_big/co20tr.jpg"

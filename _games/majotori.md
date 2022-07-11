@@ -5,7 +5,7 @@ description: "Majotori - Review"
 score: 8
 date: "2021-07-09"
 completed: FALSE
-awards: ""
+awards: []
 modified_date: "2022-07-04"
 screenshots: []
 cover: "//images.igdb.com/igdb/image/upload/t_cover_big/co24z0.jpg"

@@ -1,5 +1,7 @@
 import { AppConfig } from './AppConfig';
 
+const sortArray = require('sort-array');
+
 function pick<T extends object, U extends keyof T>(
   obj: T,
   paths: Array<U>
@@ -33,4 +35,19 @@ export function getPageResults(posts: any[], page: string): any[] {
   const resultsMax = resultsMin + pagination;
 
   return posts.slice(resultsMin, resultsMax);
+}
+
+export function sortPosts(posts: any[], sort: string) {
+  if (sort == null) {
+    return [];
+  }
+
+  // formatted like played:asc
+  const key = sort.split(':')[0];
+  const sortType = sort.split(':')[1];
+
+  return sortArray(posts, {
+    by: key,
+    order: sortType,
+  });
 }

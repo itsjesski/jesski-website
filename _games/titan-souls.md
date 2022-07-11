@@ -5,7 +5,7 @@ description: "Titan Souls - Review"
 score: 7
 date: "2016-03-10"
 completed: FALSE
-awards: ""
+awards: []
 modified_date: "2022-07-04"
 screenshots: []
 cover: "//images.igdb.com/igdb/image/upload/t_cover_big/co2xo0.jpg"

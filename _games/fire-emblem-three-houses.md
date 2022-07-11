@@ -5,7 +5,7 @@ description: "Fire Emblem: Three Houses - Review"
 score: N/A
 date: "2020-08-20"
 completed: FALSE
-awards: ""
+awards: []
 modified_date: "2022-07-04"
 screenshots: []
 cover: "//images.igdb.com/igdb/image/upload/t_cover_big/co1n8t.jpg"
