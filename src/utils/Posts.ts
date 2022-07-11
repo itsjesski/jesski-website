@@ -19,6 +19,14 @@ export type PostResponse = {
   totalPosts: number;
 };
 
+export type GameAward = [
+  {
+    name: string;
+    year: string;
+    type: string;
+  }
+];
+
 export type FBGame = {
   id: number;
   title: string;
@@ -30,7 +38,7 @@ export type FBGame = {
   slug: string;
   content: string;
   cover: string;
-  awards: any[];
+  awards: GameAward;
   image: string;
   completed: boolean;
 };
