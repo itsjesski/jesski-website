@@ -5,7 +5,9 @@ type INavbarProps = {
 };
 
 const Navbar = (props: INavbarProps) => (
-  <ul className="navbar flex flex-wrap text-xl">{props.children}</ul>
+  <ul className="flex flex-col mt-4 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium">
+    {props.children}
+  </ul>
 );
 
 export { Navbar };

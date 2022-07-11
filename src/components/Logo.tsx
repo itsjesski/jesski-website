@@ -1,7 +1,7 @@
 import React from 'react';
 
 const Logo = () => (
-  <div className="logo mr-6">
+  <div className="logo mr-3 h-6 sm:h-9">
     <svg
       version="1.0"
       xmlns="http://www.w3.org/2000/svg"
