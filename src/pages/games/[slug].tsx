@@ -54,8 +54,8 @@ const GameDetailsPage: React.FC<{ post: GameDetails }> = (props) => {
       return `N/A`;
     }
 
-    const newCriticReview = Math.round(criticReview);
-    const newFBReview = Math.round(fbReview * 10);
+    const newCriticReview = Math.floor(criticReview);
+    const newFBReview = Math.floor(fbReview * 10);
 
     const difference = Math.round(newFBReview - newCriticReview);
     let diffText = '';
