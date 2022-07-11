@@ -112,13 +112,27 @@ export async function getGameByName(
 
   const modifiedResponse = response.data[0];
 
+  if (modifiedResponse == null) {
+    // eslint-disable-next-line no-console
+    console.log(`${name} could not be found in API!`);
+    return [];
+  }
+
   // Get a random single screenshot.
-  modifiedResponse.screenshots = getBigScreenshotImage(
-    modifiedResponse.screenshots
-  );
+  if (modifiedResponse.screenshots != null) {
+    modifiedResponse.screenshots = getBigScreenshotImage(
+      modifiedResponse.screenshots
+    );
+  } else {
+    modifiedResponse.screenshots = [];
+  }
 
   // Get big cover image.
-  modifiedResponse.cover = getBigCoverImage(modifiedResponse.cover);
+  if (modifiedResponse.cover) {
+    modifiedResponse.cover = getBigCoverImage(modifiedResponse.cover);
+  } else {
+    modifiedResponse.cover = [];
+  }
 
   return [modifiedResponse];
 }

@@ -19,14 +19,15 @@ const PostsIndex: React.FC<{}> = () => {
   });
 
   function updateBlogPosts(newPage: number) {
-    getGamePosts(['id', 'title', 'date', 'slug', 'score'], newPage).then(
-      (gamePosts) => {
-        setPostData(gamePosts.results);
-        setTotalPages(
-          Math.floor(gamePosts.totalPosts / AppConfig.pagination_size)
-        );
-      }
-    );
+    getGamePosts(
+      ['id', 'title', 'date', 'slug', 'score', 'image', 'cover'],
+      newPage
+    ).then((gamePosts) => {
+      setPostData(gamePosts.results);
+      setTotalPages(
+        Math.floor(gamePosts.totalPosts / AppConfig.pagination_size)
+      );
+    });
   }
 
   const handlePrevPage = () => {

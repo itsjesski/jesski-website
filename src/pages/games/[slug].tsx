@@ -24,7 +24,9 @@ type GameDetails = {
     modified_date: string;
     content: string;
     score: number;
-    playtime: string;
+    image: string;
+    cover: string;
+    completed: boolean;
   };
   igdb: IGDBGame;
 };
@@ -49,8 +51,7 @@ const DisplayPost = (props: GameDetails) => (
         title={props.post.title}
         description={props.post.description}
         post={{
-          image:
-            props.igdb.screenshots != null ? props.igdb.screenshots[0].url : '',
+          image: props.post.image,
           date: props.post.date,
           modified_date: props.post.modified_date,
         }}
@@ -60,7 +61,7 @@ const DisplayPost = (props: GameDetails) => (
     <div
       className="details-header bg-blend-overlay bg-no-repeat bg-cover bg-center pt-60 pb-60 flex justify-center items-center shadow-steam"
       style={{
-        backgroundImage: `linear-gradient(rgba(22, 101, 52, 0.9), rgba(30, 64, 175, 0.9)),url(${props.igdb.screenshots[0].url})`,
+        backgroundImage: `linear-gradient(rgba(22, 101, 52, 0.9), rgba(30, 64, 175, 0.9)),url(${props.post.image})`,
       }}
     >
       <div className="bg-slate-800 pl-20 pr-20 pt-10 pb-10 shadow-steam">
@@ -91,10 +92,12 @@ const DisplayPost = (props: GameDetails) => (
           </div>
           <div className="whitespace-nowrap overflow-hidden overflow-ellipsis relative z-20">
             <span className="uppercase text-gray-400 whitespace-nowrap text-xs md:text-sm">
-              Playtime:{' '}
+              Finished?:{' '}
             </span>
             <span className="whitespace-nowrap overflow-hidden overflow-ellipsis relative z-20">
-              <span className="text-positive">{props.post.playtime}</span>
+              <span className="text-positive">
+                {props.post.completed === true ? 'Complete' : 'Incomplete'}
+              </span>
             </span>
           </div>
         </div>
@@ -164,7 +167,7 @@ export const getStaticProps: GetStaticProps<
 > = async ({ params }) => {
   const post = getPostBySlug(
     params!.slug,
-    'title,description,date,modified_date,content,slug,score,playtime'
+    'title,description,date,modified_date,content,slug,score,cover,image'
   );
 
   const postResult = post.results[0];
@@ -173,9 +176,7 @@ export const getStaticProps: GetStaticProps<
   const igdbData = await getGameByName(postResult.title, [
     'id',
     'name',
-    'cover.url',
     'genres.name',
-    'screenshots.url',
     'videos',
     'aggregated_rating',
     'summary',
@@ -191,7 +192,9 @@ export const getStaticProps: GetStaticProps<
       date: postResult.date,
       modified_date: postResult.modified_date,
       score: postResult.score,
-      playtime: postResult.playtime,
+      cover: postResult.cover,
+      image: postResult.image,
+      completed: postResult.completed,
       content,
     },
   };

@@ -10,7 +10,15 @@ const GameCardList: React.FC<{}> = () => {
   useEffect(() => {
     if (fbPosts != null) return;
 
-    getGamePosts(['id', 'title', 'date', 'slug', 'score']).then((gamePosts) => {
+    getGamePosts([
+      'id',
+      'title',
+      'date',
+      'slug',
+      'score',
+      'cover',
+      'image',
+    ]).then((gamePosts) => {
       // Always 6 games for the gallery.
       setPostData(gamePosts.results.slice(0, numberPosts));
     });
