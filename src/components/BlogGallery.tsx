@@ -27,7 +27,7 @@ const BlogCardList: React.FC<{}> = () => {
 const BlogGallery = () => (
   <>
     <section className="blog-gallery gallery-widget mb-10">
-      <div className="gallery-title  mb-3 flex justify-between items-end flex-wrap border-b-slate-700 border-solid border-b-2 pb-2">
+      <div className="gallery-title  mb-3 flex justify-between items-end flex-wrap border-b-slate-700 border-solid border-b-2 pb-2 pl-2 pr-2">
         <h1 className="">Blog</h1>
         <div className="text-sm text-gray-400">
           Ramblings from the mind of a crazy person.

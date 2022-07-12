@@ -7,8 +7,8 @@ import { FBPost } from '../utils/Posts';
 
 const BlogCard: React.FC<{ post: FBPost }> = ({ post }) => {
   return (
-    <div className="p-2 xl:w-1/6 md:w-1/3 sm:w-1/2 w-full">
-      <div className="group overflow-hidden relative max-w-xs shadow-steam">
+    <div className="p-2 xl:w-1/6 md:w-1/3 w-full">
+      <div className="group overflow-hidden relative w-full shadow-steam">
         <Link href="/posts/[slug]" as={`/posts/${post.slug}`}>
           <a className="absolute z-10 top-0 bottom-0 left-0 right-0"></a>
         </Link>

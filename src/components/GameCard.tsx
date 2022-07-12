@@ -10,7 +10,7 @@ import { GameScoreBox } from './GameScoreBox';
 const GameCard: React.FC<{ game: FBGame }> = ({ game }) => {
   return (
     <div className="p-2 xl:w-1/6 md:w-1/3 sm:w-1/2 w-full">
-      <div className="group overflow-hidden relative max-w-xs shadow-steam">
+      <div className="group overflow-hidden relative w-full shadow-steam">
         <Link href="/games/[slug]" as={`/games/${game.slug}`}>
           <a className="absolute z-10 top-0 bottom-0 left-0 right-0"></a>
         </Link>
@@ -22,8 +22,8 @@ const GameCard: React.FC<{ game: FBGame }> = ({ game }) => {
           ></img>
         </div>
 
-        {game.awards.length > 0 && (
-          <div className="absolute bottom-0 left-0">
+        {game.awards?.length > 0 && (
+          <div className="absolute bottom-0 left-0 md:block hidden">
             <GameAwardBox awards={game.awards}></GameAwardBox>
           </div>
         )}
