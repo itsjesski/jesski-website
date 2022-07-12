@@ -82,11 +82,11 @@ const PostsIndex: React.FC<{}> = () => {
     >
       <Content>
         <div className="index-header border-b-slate-400 border-solid border-b-2 mb-3 items-end flex-wrap pb-2 flex justify-between">
-          <div className="">
+          <div className="pl-2">
             <h1>Games</h1>
           </div>
-          <div className="flex justify-between items-center">
-            <div className="filter relative w-1/2 mr-2">
+          <div className="flex justify-between items-center pl-2 pr-2">
+            <div className="filter relative w-1/2 mr-2  md:w-1/2 sm:w-full">
               <Listbox value={sorters} onChange={handleSortChange}>
                 <Listbox.Button className="bg-slate-50 border border-slate-300 text-slate-900 text-sm rounded-lg focus:ring-slate-500 focus:border-slate-500 w-full p-2.5 pr-4 flex justify-between">
                   <svg

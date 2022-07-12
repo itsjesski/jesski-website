@@ -12,14 +12,12 @@ const Header: React.FC<{}> = () => {
   return (
     <nav className="px-2 sm:px-4 py-2.5 rounded dark:bg-gray-800 w-full">
       <div className="container flex flex-wrap justify-between items-center mx-auto">
-        <Link href={process.env.SITE_URL != null ? process.env.SITE_URL : ''}>
-          <a className="mr-3 h-6 sm:h-9 flex items-center">
-            <Logo></Logo>
-            <span className="self-center text-xl font-semibold whitespace-nowrap dark:text-white">
-              {AppConfig.title}
-            </span>
-          </a>
-        </Link>
+        <div className="mr-3 h-6 sm:h-9 flex items-center">
+          <Logo></Logo>
+          <span className="self-center text-xl font-semibold whitespace-nowrap dark:text-white">
+            {AppConfig.title}
+          </span>
+        </div>
 
         <div className="flex md:order-2">
           <Link href="https://twitch.tv/FirebottleTV">
@@ -87,22 +85,19 @@ const Header: React.FC<{}> = () => {
               </Link>
             </li>
             <li className="block py-2 pr-4 pl-3 text-white rounded md:bg-transparent md:p-0 dark:text-white">
-              <Link href="/about/">
+              <Link href="about">
                 <a>About</a>
               </Link>
             </li>
             <li className="block py-2 pr-4 pl-3 text-white rounded md:bg-transparent  md:p-0 dark:text-white">
-              <Link href="/posts/">
+              <Link href="posts">
                 <a>Blog</a>
               </Link>
             </li>
             <li className="block py-2 pr-4 pl-3 text-white rounded md:bg-transparent  md:p-0 dark:text-white">
-              <Link href="/games/">
+              <Link href="games">
                 <a>Games</a>
               </Link>
-            </li>
-            <li className="block py-2 pr-4 pl-3 text-white rounded md:bg-transparent md:p-0 dark:text-white">
-              <a href="https://github.com/firebottle">GitHub</a>
             </li>
           </Navbar>
         </div>
