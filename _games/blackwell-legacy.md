@@ -10,6 +10,6 @@ modified_date: 2022-07-04
 screenshots: []
 cover: //images.igdb.com/igdb/image/upload/t_cover_big/co432t.jpg
 image: //images.igdb.com/igdb/image/upload/t_screenshot_huge/fnwn2qks85ethnnnlfv0.jpg
-videos: []
+videos: ['https://www.youtube.com/playlist?list=PLMDR1hlaVsmcz0UtETOgHWzGFA24XN9v0']
 ---
 Good story, some of the gameplay is meh.

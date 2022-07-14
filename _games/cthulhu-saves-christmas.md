@@ -10,6 +10,6 @@ modified_date: 2022-07-04
 screenshots: []
 cover: //images.igdb.com/igdb/image/upload/t_cover_big/co1vdz.jpg
 image: //images.igdb.com/igdb/image/upload/t_screenshot_huge/sc7xwk.jpg
-videos: []
+videos: ['https://www.youtube.com/playlist?list=PLMDR1hlaVsme4aVaGBF3TUz_u85cfHC5c']
 ---
 Funny writing, good characters, kinda repetitive gameplay.

@@ -41,6 +41,7 @@ export type FBGame = {
   awards: GameAward;
   image: string;
   completed: boolean;
+  videos: string[];
 };
 
 export type GameResponse = {

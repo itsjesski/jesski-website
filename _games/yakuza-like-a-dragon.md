@@ -10,6 +10,6 @@ modified_date: 2022-07-04
 screenshots: []
 cover: //images.igdb.com/igdb/image/upload/t_cover_big/co2em9.png
 image: //images.igdb.com/igdb/image/upload/t_screenshot_huge/scbabw.jpg
-videos: []
+videos: ['https://www.youtube.com/playlist?list=PLMDR1hlaVsmdARWXB4SUYhNPf-0p8uXZn']
 ---
 Fun story, good characters, terrible boss mechanics and game design forcing you to hit level walls constantly.

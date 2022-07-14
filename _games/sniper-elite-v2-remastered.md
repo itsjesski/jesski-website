@@ -10,6 +10,6 @@ modified_date: 2022-07-04
 screenshots: []
 cover: //images.igdb.com/igdb/image/upload/t_cover_big/co2urq.jpg
 image: //images.igdb.com/igdb/image/upload/t_screenshot_huge/sc6fhu.jpg
-videos: []
+videos: ['https://www.youtube.com/playlist?list=PLMDR1hlaVsmcbGOiI-LrvbKotM_A9wlLk']
 ---
 Its okay, pretty janky sometimes.

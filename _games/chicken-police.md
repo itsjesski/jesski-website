@@ -10,6 +10,6 @@ modified_date: 2022-07-04
 screenshots: []
 cover: //images.igdb.com/igdb/image/upload/t_cover_big/co2kga.jpg
 image: //images.igdb.com/igdb/image/upload/t_screenshot_huge/sc6t50.jpg
-videos: []
+videos: ['https://www.youtube.com/playlist?list=PLMDR1hlaVsmf_H4_ldkI45T1ZPCEWWppc']
 ---
 Way better than it had any right to be. Full of Noir goodness.

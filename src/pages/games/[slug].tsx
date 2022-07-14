@@ -3,6 +3,7 @@ import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import { format } from 'date-fns';
 import { GetStaticPaths, GetStaticProps } from 'next';
+import ReactPlayer from 'react-player';
 
 import { posts } from '../../../public/cache/_games';
 import { Content } from '../../content/Content';
@@ -29,6 +30,7 @@ type GameDetails = {
   cover: string;
   completed: boolean;
   awards: GameAward | [];
+  videos: string[];
 };
 
 function getPostBySlug(slug: string, fields: string): GameResponse {
@@ -89,6 +91,7 @@ const GameDetailsPage: React.FC<{ post: GameDetails }> = (props) => {
   useEffect(() => {
     if (igdbData == null) {
       updateIGDBData(props.post?.id);
+      console.log(props);
     }
   });
 
@@ -204,7 +207,7 @@ const GameDetailsPage: React.FC<{ post: GameDetails }> = (props) => {
                 </div>
               )}
               {igdbData?.summary != null && (
-                <div className="description">
+                <div className="description mt-4">
                   <h2 className="mb-4">Description:</h2>
                   <div
                     className="content"
@@ -212,6 +215,14 @@ const GameDetailsPage: React.FC<{ post: GameDetails }> = (props) => {
                       __html: igdbData?.summary,
                     }}
                   ></div>
+                </div>
+              )}
+              {props.post.videos.length > 0 && (
+                <div className="description mt-4">
+                  <h2 className="mb-4">Archive Video:</h2>
+                  <div className="content">
+                    <ReactPlayer url={props.post.videos[0]} controls={true} />
+                  </div>
                 </div>
               )}
             </div>
@@ -257,7 +268,7 @@ export const getStaticProps: GetStaticProps<
 > = async ({ params }) => {
   const post = getPostBySlug(
     params!.slug,
-    'title,description,date,modified_date,content,slug,score,cover,image,completed,id,awards'
+    'title,description,date,modified_date,content,slug,score,cover,image,completed,id,awards,videos'
   );
 
   const postResult = post.results[0];
@@ -274,6 +285,7 @@ export const getStaticProps: GetStaticProps<
     image: postResult.image ? postResult.image : '',
     completed: postResult.completed ? postResult.completed : false,
     awards: postResult.awards,
+    videos: postResult.videos,
     content,
   };
 

@@ -10,6 +10,6 @@ modified_date: 2022-07-04
 screenshots: []
 cover: //images.igdb.com/igdb/image/upload/t_cover_big/co2911.jpg
 image: //images.igdb.com/igdb/image/upload/t_screenshot_huge/sc7a1p.jpg
-videos: []
+videos: ['https://www.youtube.com/playlist?list=PLMDR1hlaVsmcJ9JJ1gciyPofqwDFC903V']
 ---
 Decent, but the story is all over the place and no where near as good as their other games.

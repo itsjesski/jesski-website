@@ -85,17 +85,17 @@ const Header: React.FC<{}> = () => {
               </Link>
             </li>
             <li className="block py-2 pr-4 pl-3 text-white rounded md:bg-transparent md:p-0 dark:text-white">
-              <Link href="about">
+              <Link href="/about">
                 <a>About</a>
               </Link>
             </li>
             <li className="block py-2 pr-4 pl-3 text-white rounded md:bg-transparent  md:p-0 dark:text-white">
-              <Link href="posts">
+              <Link href="/posts">
                 <a>Blog</a>
               </Link>
             </li>
             <li className="block py-2 pr-4 pl-3 text-white rounded md:bg-transparent  md:p-0 dark:text-white">
-              <Link href="games">
+              <Link href="/games">
                 <a>Games</a>
               </Link>
             </li>

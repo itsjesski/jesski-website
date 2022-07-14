@@ -13,6 +13,6 @@ modified_date: 2022-07-04
 screenshots: []
 cover: //images.igdb.com/igdb/image/upload/t_cover_big/co2crj.jpg
 image: //images.igdb.com/igdb/image/upload/t_screenshot_huge/ob4pm8jmsutkttmdm5ys.jpg
-videos: []
+videos: ['https://www.youtube.com/playlist?list=PLMDR1hlaVsmfgX1t_WqqOvHyxDQcjAAx_']
 ---
 Crazy good game. Excellent combat.

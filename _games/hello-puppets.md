@@ -10,6 +10,6 @@ modified_date: 2022-07-04
 screenshots: []
 cover: //images.igdb.com/igdb/image/upload/t_cover_big/co2qbw.jpg
 image: //images.igdb.com/igdb/image/upload/t_screenshot_huge/scb7cs.jpg
-videos: []
+videos: ['https://www.youtube.com/playlist?list=PLMDR1hlaVsmclOt_Hzhb1HZtvdtfF8YZI']
 ---
 Really fun horror game with a great art style and good writing. A little buggy at release.
