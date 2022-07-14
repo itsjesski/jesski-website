@@ -3,12 +3,13 @@ id: 11563
 title: "Sherlock Holmes: The Devils Daughter"
 description: "Sherlock Holmes: The Devils Daughter - Review"
 score: 7
-date: "2019-02-10"
-completed: TRUE
+date: 2019-02-10
+completed: true
 awards: []
-modified_date: "2022-07-04"
+modified_date: 2022-07-04
 screenshots: []
-cover: "//images.igdb.com/igdb/image/upload/t_cover_big/co3wmc.jpg"
-image: "//images.igdb.com/igdb/image/upload/t_screenshot_huge/o8tofifk5spo6kvasmyk.jpg"
+cover: //images.igdb.com/igdb/image/upload/t_cover_big/co3wmc.jpg
+image: //images.igdb.com/igdb/image/upload/t_screenshot_huge/o8tofifk5spo6kvasmyk.jpg
+videos: []
 ---
 Pretty good game. The best part was the very end when they decided to do some cool magical stuff.

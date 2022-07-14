@@ -1,14 +1,15 @@
 ---
 id: 18900
-title: 'OPUS'
-description: 'OPUS - Review'
+title: OPUS
+description: OPUS - Review
 score: 7
-date: '2016-08-08'
-completed: TRUE
+date: 2016-08-08
+completed: true
 awards: []
-modified_date: '2022-07-04'
+modified_date: 2022-07-04
 screenshots: []
-cover: "//images.igdb.com/igdb/image/upload/t_cover_big/co22t4.png"
-image: "//images.igdb.com/igdb/image/upload/t_screenshot_huge/dzpjv8vrfheuiiuxoayo.jpg"
+cover: //images.igdb.com/igdb/image/upload/t_cover_big/co22t4.png
+image: //images.igdb.com/igdb/image/upload/t_screenshot_huge/dzpjv8vrfheuiiuxoayo.jpg
+videos: []
 ---
 Good story! A fun little mindless story driven game.

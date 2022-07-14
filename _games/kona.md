@@ -1,14 +1,15 @@
 ---
 id: 14404
-title: "Kona"
-description: "Kona - Review"
+title: Kona
+description: Kona - Review
 score: 6
-date: "2017-10-08"
-completed: TRUE
+date: 2017-10-08
+completed: true
 awards: []
-modified_date: "2022-07-04"
+modified_date: 2022-07-04
 screenshots: []
-cover: "//images.igdb.com/igdb/image/upload/t_cover_big/co252m.jpg"
-image: "//images.igdb.com/igdb/image/upload/t_screenshot_huge/oggwdapmvckn5x41wubu.jpg"
+cover: //images.igdb.com/igdb/image/upload/t_cover_big/co252m.jpg
+image: //images.igdb.com/igdb/image/upload/t_screenshot_huge/oggwdapmvckn5x41wubu.jpg
+videos: []
 ---
 Good story, with some fun horror and survival mechanics. Fun little world to explore.

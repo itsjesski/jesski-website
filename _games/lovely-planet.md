@@ -1,14 +1,15 @@
 ---
 id: 14326
-title: "Lovely Planet"
-description: "Lovely Planet - Review"
+title: Lovely Planet
+description: Lovely Planet - Review
 score: 4
-date: "2016-05-21"
-completed: FALSE
+date: 2016-05-21
+completed: false
 awards: []
-modified_date: "2022-07-04"
+modified_date: 2022-07-04
 screenshots: []
-cover: "//images.igdb.com/igdb/image/upload/t_cover_big/co4vyz.jpg"
-image: "//images.igdb.com/igdb/image/upload/t_screenshot_huge/ltw82qryxihe3umwmlxj.jpg"
+cover: //images.igdb.com/igdb/image/upload/t_cover_big/co4vyz.jpg
+image: //images.igdb.com/igdb/image/upload/t_screenshot_huge/ltw82qryxihe3umwmlxj.jpg
+videos: []
 ---
 Wut

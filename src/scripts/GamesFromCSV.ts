@@ -2,7 +2,8 @@
 /* eslint-disable func-names */
 
 /**
- * This file was built to parse a google sheets csv where I had a bunch of info stored, into markdown files.
+ * This file is a really rough script meant to parse a google sheets csv and turn it into markdown files, while fetching data from igdb.
+ * It's was built as a one time first import solution.
  */
 
 // eslint-disable-next-line import/no-extraneous-dependencies

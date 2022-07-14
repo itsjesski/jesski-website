@@ -1,14 +1,15 @@
 ---
 id: 133974
-title: "Tôtem"
-description: "Tôtem - Review"
+title: Tôtem
+description: Tôtem - Review
 score: 6
-date: "2021-06-07"
-completed: TRUE
+date: 2021-06-07
+completed: true
 awards: []
-modified_date: "2022-07-04"
+modified_date: 2022-07-04
 screenshots: []
-cover: "//images.igdb.com/igdb/image/upload/t_cover_big/co26k1.png"
-image: "//images.igdb.com/igdb/image/upload/t_screenshot_huge/sc88ns.jpg"
+cover: //images.igdb.com/igdb/image/upload/t_cover_big/co26k1.png
+image: //images.igdb.com/igdb/image/upload/t_screenshot_huge/sc88ns.jpg
+videos: []
 ---
 Short but neat little indie game.

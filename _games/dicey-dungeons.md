@@ -1,14 +1,15 @@
 ---
 id: 102420
-title: "Dicey Dungeons"
-description: "Dicey Dungeons - Review"
+title: Dicey Dungeons
+description: Dicey Dungeons - Review
 score: 9
-date: "2019-08-19"
-completed: FALSE
+date: 2019-08-19
+completed: false
 awards: []
-modified_date: "2022-07-04"
+modified_date: 2022-07-04
 screenshots: []
-cover: "//images.igdb.com/igdb/image/upload/t_cover_big/co2h3y.jpg"
-image: "//images.igdb.com/igdb/image/upload/t_screenshot_huge/sc9clz.jpg"
+cover: //images.igdb.com/igdb/image/upload/t_cover_big/co2h3y.jpg
+image: //images.igdb.com/igdb/image/upload/t_screenshot_huge/sc9clz.jpg
+videos: []
 ---
 An amazingly simple and addtictive game.

@@ -1,14 +1,15 @@
 ---
 id: 16313
-title: "Planet of the Eyes"
-description: "Planet of the Eyes - Review"
+title: Planet of the Eyes
+description: Planet of the Eyes - Review
 score: 5
-date: "2016-09-04"
-completed: TRUE
+date: 2016-09-04
+completed: true
 awards: []
-modified_date: "2022-07-04"
+modified_date: 2022-07-04
 screenshots: []
-cover: "//images.igdb.com/igdb/image/upload/t_cover_big/co24qg.jpg"
-image: "//images.igdb.com/igdb/image/upload/t_screenshot_huge/mefezjvfl3spr8wvow1y.jpg"
+cover: //images.igdb.com/igdb/image/upload/t_cover_big/co24qg.jpg
+image: //images.igdb.com/igdb/image/upload/t_screenshot_huge/mefezjvfl3spr8wvow1y.jpg
+videos: []
 ---
 Decent limbo-esque platformer about a robot.

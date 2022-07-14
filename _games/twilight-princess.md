@@ -1,14 +1,15 @@
 ---
 id: 1036
-title: "Twilight Princess"
-description: "Twilight Princess - Review"
+title: Twilight Princess
+description: Twilight Princess - Review
 score: 8
-date: "2017-01-14"
-completed: TRUE
+date: 2017-01-14
+completed: true
 awards: []
-modified_date: "2022-07-04"
+modified_date: 2022-07-04
 screenshots: []
-cover: "//images.igdb.com/igdb/image/upload/t_cover_big/co3mtv.jpg"
-image: "//images.igdb.com/igdb/image/upload/t_screenshot_huge/pozco1vcpglnqv6igo9g.jpg"
+cover: //images.igdb.com/igdb/image/upload/t_cover_big/co3mtv.jpg
+image: //images.igdb.com/igdb/image/upload/t_screenshot_huge/pozco1vcpglnqv6igo9g.jpg
+videos: []
 ---
 Fun game, but very different from other zelda games. Good story.

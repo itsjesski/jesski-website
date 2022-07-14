@@ -3,12 +3,13 @@ id: 1976
 title: "Call of Juarez: Gunslinger"
 description: "Call of Juarez: Gunslinger - Review"
 score: 8
-date: "2022-05-07"
-completed: TRUE
+date: 2022-05-07
+completed: true
 awards: []
-modified_date: "2022-07-04"
+modified_date: 2022-07-04
 screenshots: []
-cover: "//images.igdb.com/igdb/image/upload/t_cover_big/co1qqf.jpg"
-image: "//images.igdb.com/igdb/image/upload/t_screenshot_huge/njp4204gewcfudiypxhe.jpg"
+cover: //images.igdb.com/igdb/image/upload/t_cover_big/co1qqf.jpg
+image: //images.igdb.com/igdb/image/upload/t_screenshot_huge/njp4204gewcfudiypxhe.jpg
+videos: []
 ---
 Fun game with an interesting story telling style. A bit short.

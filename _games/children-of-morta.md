@@ -1,14 +1,15 @@
 ---
 id: 36198
-title: "Children of Morta"
-description: "Children of Morta - Review"
+title: Children of Morta
+description: Children of Morta - Review
 score: 8
-date: "2019-10-15"
-completed: FALSE
+date: 2019-10-15
+completed: false
 awards: []
-modified_date: "2022-07-04"
+modified_date: 2022-07-04
 screenshots: []
-cover: "//images.igdb.com/igdb/image/upload/t_cover_big/co2iw2.jpg"
-image: "//images.igdb.com/igdb/image/upload/t_screenshot_huge/d9rmklyqe0svtcvizmbu.jpg"
+cover: //images.igdb.com/igdb/image/upload/t_cover_big/co2iw2.jpg
+image: //images.igdb.com/igdb/image/upload/t_screenshot_huge/d9rmklyqe0svtcvizmbu.jpg
+videos: []
 ---
 A good roguelite that makes great use of story.

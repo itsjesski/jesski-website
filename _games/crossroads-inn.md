@@ -1,14 +1,15 @@
 ---
 id: 107255
-title: "Crossroads inn"
-description: "Crossroads inn - Review"
+title: Crossroads inn
+description: Crossroads inn - Review
 score: 6
-date: "2019-11-01"
-completed: FALSE
+date: 2019-11-01
+completed: false
 awards: []
-modified_date: "2022-07-04"
+modified_date: 2022-07-04
 screenshots: []
-cover: "//images.igdb.com/igdb/image/upload/t_cover_big/co30yd.jpg"
-image: "//images.igdb.com/igdb/image/upload/t_screenshot_huge/jlryro3ebv14o12tiqmo.jpg"
+cover: //images.igdb.com/igdb/image/upload/t_cover_big/co30yd.jpg
+image: //images.igdb.com/igdb/image/upload/t_screenshot_huge/jlryro3ebv14o12tiqmo.jpg
+videos: []
 ---
 Some decent ideas, but bad gameplay.

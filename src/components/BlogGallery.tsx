@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from 'react';
 
+import Link from 'next/link';
+
 import { FBPost, getBlogPosts } from '../utils/Posts';
 import { BlogCard } from './BlogCard';
 
@@ -35,6 +37,18 @@ const BlogGallery = () => (
       </div>
       <div className="gallery-content">
         <BlogCardList></BlogCardList>
+      </div>
+      <div className="view-more align-middle justify-center flex mt-2 mb-2">
+        <Link href="/games">
+          <a>
+            <button
+              type="button"
+              className="leading-none border text-white border-white hover:border-transparent hover:text-slate-500 hover:bg-white font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-3 md:mr-0"
+            >
+              View all
+            </button>
+          </a>
+        </Link>
       </div>
     </section>
   </>
