@@ -1,14 +1,15 @@
 ---
 id: 11155
-title: "Dreams"
-description: "Dreams - Review"
+title: Dreams
+description: Dreams - Review
 score: 10
-date: "2019-09-12"
-completed: FALSE
+date: 2019-09-12
+completed: false
 awards: []
-modified_date: "2022-07-04"
+modified_date: 2022-07-04
 screenshots: []
-cover: "//images.igdb.com/igdb/image/upload/t_cover_big/co4rmx.png"
-image: "//images.igdb.com/igdb/image/upload/t_screenshot_huge/qbz2djvuvquujq8bsjex.jpg"
+cover: //images.igdb.com/igdb/image/upload/t_cover_big/co4rmx.png
+image: //images.igdb.com/igdb/image/upload/t_screenshot_huge/qbz2djvuvquujq8bsjex.jpg
+videos: []
 ---
 I love it so much.

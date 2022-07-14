@@ -1,14 +1,15 @@
 ---
 id: 116851
-title: "Smile for Me"
-description: "Smile for Me - Review"
+title: Smile for Me
+description: Smile for Me - Review
 score: 7
-date: "2019-09-10"
-completed: TRUE
+date: 2019-09-10
+completed: true
 awards: []
-modified_date: "2022-07-04"
+modified_date: 2022-07-04
 screenshots: []
-cover: "//images.igdb.com/igdb/image/upload/t_cover_big/co41or.jpg"
-image: "//images.igdb.com/igdb/image/upload/t_screenshot_huge/sc6frz.jpg"
+cover: //images.igdb.com/igdb/image/upload/t_cover_big/co41or.jpg
+image: //images.igdb.com/igdb/image/upload/t_screenshot_huge/sc6frz.jpg
+videos: []
 ---
 Weird puzzle game that is very trippy, but overall not too funny or fun.

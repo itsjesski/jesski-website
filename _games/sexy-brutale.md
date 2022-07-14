@@ -1,14 +1,15 @@
 ---
 id: 22783
-title: "Sexy Brutale"
-description: "Sexy Brutale - Review"
+title: Sexy Brutale
+description: Sexy Brutale - Review
 score: 4
-date: "2017-12-21"
-completed: FALSE
+date: 2017-12-21
+completed: false
 awards: []
-modified_date: "2022-07-04"
+modified_date: 2022-07-04
 screenshots: []
-cover: "//images.igdb.com/igdb/image/upload/t_cover_big/co23dx.jpg"
-image: "//images.igdb.com/igdb/image/upload/t_screenshot_huge/ki5qauvwkhpizuveslwx.jpg"
+cover: //images.igdb.com/igdb/image/upload/t_cover_big/co23dx.jpg
+image: //images.igdb.com/igdb/image/upload/t_screenshot_huge/ki5qauvwkhpizuveslwx.jpg
+videos: []
 ---
 Neat art, but the gameplay is a tedious mix of confusion and trial and error.

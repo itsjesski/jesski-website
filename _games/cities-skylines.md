@@ -3,12 +3,13 @@ id: 119961
 title: "Cities: Skylines"
 description: "Cities: Skylines - Review"
 score: 8
-date: "2017-03-25"
-completed: FALSE
+date: 2017-03-25
+completed: false
 awards: []
-modified_date: "2022-07-04"
+modified_date: 2022-07-04
 screenshots: []
-cover: "//images.igdb.com/igdb/image/upload/t_cover_big/co1yw7.jpg"
-image: "//images.igdb.com/igdb/image/upload/t_screenshot_huge/sc6qhf.jpg"
+cover: //images.igdb.com/igdb/image/upload/t_cover_big/co1yw7.jpg
+image: //images.igdb.com/igdb/image/upload/t_screenshot_huge/sc6qhf.jpg
+videos: []
 ---
 Love it, but traffic is dumb as crap.

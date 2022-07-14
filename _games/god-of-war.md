@@ -1,14 +1,15 @@
 ---
 id: 19560
-title: "God of War"
-description: "God of War - Review"
+title: God of War
+description: God of War - Review
 score: 9
-date: "2020-01-01"
-completed: TRUE
+date: 2020-01-01
+completed: true
 awards: []
-modified_date: "2022-07-04"
+modified_date: 2022-07-04
 screenshots: []
-cover: "//images.igdb.com/igdb/image/upload/t_cover_big/co1tmu.jpg"
-image: "//images.igdb.com/igdb/image/upload/t_screenshot_huge/ywrkjcrbeemmb51flsfj.jpg"
+cover: //images.igdb.com/igdb/image/upload/t_cover_big/co1tmu.jpg
+image: //images.igdb.com/igdb/image/upload/t_screenshot_huge/ywrkjcrbeemmb51flsfj.jpg
+videos: []
 ---
 Amazing game

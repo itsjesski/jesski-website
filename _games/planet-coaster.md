@@ -1,14 +1,15 @@
 ---
 id: 18829
-title: "Planet Coaster"
-description: "Planet Coaster - Review"
+title: Planet Coaster
+description: Planet Coaster - Review
 score: 8
-date: "2016-11-26"
-completed: FALSE
+date: 2016-11-26
+completed: false
 awards: []
-modified_date: "2022-07-04"
+modified_date: 2022-07-04
 screenshots: []
-cover: "//images.igdb.com/igdb/image/upload/t_cover_big/rdk5xgeyvh9foupt0vu3.jpg"
-image: "//images.igdb.com/igdb/image/upload/t_screenshot_huge/fudtlswehhm2ny4mumyx.jpg"
+cover: //images.igdb.com/igdb/image/upload/t_cover_big/rdk5xgeyvh9foupt0vu3.jpg
+image: //images.igdb.com/igdb/image/upload/t_screenshot_huge/fudtlswehhm2ny4mumyx.jpg
+videos: []
 ---
 Great soundtrack and gameplay, but suffers from some FPS loss in busy parks and frustrating building tools at times.

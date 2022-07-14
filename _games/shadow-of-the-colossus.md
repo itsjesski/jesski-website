@@ -1,14 +1,15 @@
 ---
 id: 139896
-title: "Shadow of the Colossus"
-description: "Shadow of the Colossus - Review"
+title: Shadow of the Colossus
+description: Shadow of the Colossus - Review
 score: 8
-date: "2018-02-22"
-completed: TRUE
+date: 2018-02-22
+completed: true
 awards: []
-modified_date: "2022-07-04"
+modified_date: 2022-07-04
 screenshots: []
-cover: "//images.igdb.com/igdb/image/upload/t_cover_big/co2ijk.jpg"
-image: "//images.igdb.com/igdb/image/upload/t_screenshot_huge/sc96ky.jpg"
+cover: //images.igdb.com/igdb/image/upload/t_cover_big/co2ijk.jpg
+image: //images.igdb.com/igdb/image/upload/t_screenshot_huge/sc96ky.jpg
+videos: []
 ---
 Fun, but sometimes annoying.

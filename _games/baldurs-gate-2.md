@@ -1,14 +1,15 @@
 ---
 id: 82
-title: "Baldur's Gate 2"
-description: "Baldur's Gate 2 - Review"
+title: Baldur's Gate 2
+description: Baldur's Gate 2 - Review
 score: 8
-date: "2020-02-06"
-completed: TRUE
+date: 2020-02-06
+completed: true
 awards: []
-modified_date: "2022-07-04"
+modified_date: 2022-07-04
 screenshots: []
-cover: "//images.igdb.com/igdb/image/upload/t_cover_big/co25n2.jpg"
-image: "//images.igdb.com/igdb/image/upload/t_screenshot_huge/sc74xk.jpg"
+cover: //images.igdb.com/igdb/image/upload/t_cover_big/co25n2.jpg
+image: //images.igdb.com/igdb/image/upload/t_screenshot_huge/sc74xk.jpg
+videos: []
 ---
 Good, but really tough to stream.

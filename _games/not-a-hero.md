@@ -1,14 +1,15 @@
 ---
 id: 146301
-title: "Not A Hero"
-description: "Not A Hero - Review"
+title: Not A Hero
+description: Not A Hero - Review
 score: 4
-date: "2016-04-30"
-completed: FALSE
+date: 2016-04-30
+completed: false
 awards: []
-modified_date: "2022-07-04"
+modified_date: 2022-07-04
 screenshots: []
-cover: "//images.igdb.com/igdb/image/upload/t_cover_big/co2yn1.jpg"
-image: "//images.igdb.com/igdb/image/upload/t_screenshot_huge/sc9dtp.jpg"
+cover: //images.igdb.com/igdb/image/upload/t_cover_big/co2yn1.jpg
+image: //images.igdb.com/igdb/image/upload/t_screenshot_huge/sc9dtp.jpg
+videos: []
 ---
 Not bad. But, technical difficulties lower the score. No video options? Base resolution that is non-standard?

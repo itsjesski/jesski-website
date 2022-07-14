@@ -1,14 +1,15 @@
 ---
 id: 19067
-title: "theBlu"
-description: "theBlu - Review"
+title: theBlu
+description: theBlu - Review
 score: 4
-date: "2016-12-05"
-completed: TRUE
+date: 2016-12-05
+completed: true
 awards: []
-modified_date: "2022-07-04"
+modified_date: 2022-07-04
 screenshots: []
-cover: "//images.igdb.com/igdb/image/upload/t_cover_big/ncknkeo5dncm3e28iqpl.jpg"
-image: "//images.igdb.com/igdb/image/upload/t_screenshot_huge/a88ewcp82ggqmmdmrneb.jpg"
+cover: //images.igdb.com/igdb/image/upload/t_cover_big/ncknkeo5dncm3e28iqpl.jpg
+image: //images.igdb.com/igdb/image/upload/t_screenshot_huge/a88ewcp82ggqmmdmrneb.jpg
+videos: []
 ---
 Perfect for showing new non-gamers VR. But, pricy for what you get.

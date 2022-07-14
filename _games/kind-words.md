@@ -1,14 +1,15 @@
 ---
 id: 120646
-title: "Kind Words"
-description: "Kind Words - Review"
+title: Kind Words
+description: Kind Words - Review
 score: 8
-date: "2019-11-15"
-completed: FALSE
+date: 2019-11-15
+completed: false
 awards: []
-modified_date: "2022-07-04"
+modified_date: 2022-07-04
 screenshots: []
-cover: "//images.igdb.com/igdb/image/upload/t_cover_big/co1q4r.jpg"
-image: "//images.igdb.com/igdb/image/upload/t_screenshot_huge/sc6xb5.jpg"
+cover: //images.igdb.com/igdb/image/upload/t_cover_big/co1q4r.jpg
+image: //images.igdb.com/igdb/image/upload/t_screenshot_huge/sc6xb5.jpg
+videos: []
 ---
 This needed to exist.

@@ -1,14 +1,15 @@
 ---
 id: 128289
-title: "The Supper"
-description: "The Supper - Review"
+title: The Supper
+description: The Supper - Review
 score: 6
-date: "2021-04-16"
-completed: TRUE
+date: 2021-04-16
+completed: true
 awards: []
-modified_date: "2022-07-04"
+modified_date: 2022-07-04
 screenshots: []
-cover: "//images.igdb.com/igdb/image/upload/t_cover_big/co1xj4.jpg"
-image: "//images.igdb.com/igdb/image/upload/t_screenshot_huge/sc7jbf.jpg"
+cover: //images.igdb.com/igdb/image/upload/t_cover_big/co1xj4.jpg
+image: //images.igdb.com/igdb/image/upload/t_screenshot_huge/sc7jbf.jpg
+videos: []
 ---
 Its fine I guess!

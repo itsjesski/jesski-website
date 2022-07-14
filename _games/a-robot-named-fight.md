@@ -1,14 +1,15 @@
 ---
 id: 51944
-title: "A Robot Named Fight"
-description: "A Robot Named Fight - Review"
+title: A Robot Named Fight
+description: A Robot Named Fight - Review
 score: 7
-date: "2019-07-20"
-completed: FALSE
+date: 2019-07-20
+completed: false
 awards: []
-modified_date: "2022-07-04"
+modified_date: 2022-07-04
 screenshots: []
-cover: "//images.igdb.com/igdb/image/upload/t_cover_big/co1ks5.jpg"
-image: "//images.igdb.com/igdb/image/upload/t_screenshot_huge/fsi29zigyi4qst0mmape.jpg"
+cover: //images.igdb.com/igdb/image/upload/t_cover_big/co1ks5.jpg
+image: //images.igdb.com/igdb/image/upload/t_screenshot_huge/fsi29zigyi4qst0mmape.jpg
+videos: []
 ---
 A good metroidvania game. Sticks to its roots.
