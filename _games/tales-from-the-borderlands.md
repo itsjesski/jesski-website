@@ -6,7 +6,7 @@ score: 10
 date: 2016-09-27
 completed: true
 awards:
-  - name: Game of the Stream
+  - name: Game of the Year
     year: "2016"
     type: Bronze
 modified_date: 2022-07-04

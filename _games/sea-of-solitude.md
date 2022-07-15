@@ -6,7 +6,7 @@ score: 9
 date: 2021-03-23
 completed: true
 awards:
-  - name: Game of the Stream
+  - name: Game of the Year
     year: "2021"
     type: Bronze
 modified_date: 2022-07-04

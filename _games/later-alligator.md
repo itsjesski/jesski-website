@@ -6,7 +6,7 @@ score: 10
 date: 2019-09-21
 completed: true
 awards:
-  - name: Game of the Stream
+  - name: Game of the Year
     year: "2019"
     type: Silver
 modified_date: 2022-07-04

@@ -6,7 +6,7 @@ score: 10
 date: 2017-04-12
 completed: true
 awards:
-  - name: Game of the Stream
+  - name: Game of the Year
     year: "2017"
     type: Gold
 modified_date: 2022-07-04

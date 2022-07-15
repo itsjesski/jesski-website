@@ -6,7 +6,7 @@ score: 9
 date: 2015-12-31
 completed: true
 awards:
-  - name: Game of the Stream
+  - name: Game of the Year
     year: "2015"
     type: Gold
 modified_date: 2022-07-04
