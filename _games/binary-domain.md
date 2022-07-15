@@ -7,7 +7,7 @@ date: 2015-12-29
 completed: true
 awards:
   - name: Game of the Year
-    year: "2019"
+    year: "2015"
     type: Silver
 modified_date: 2022-07-04
 screenshots: []

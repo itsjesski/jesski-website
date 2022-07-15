@@ -1,0 +1,86 @@
+import React, { useEffect, useState } from 'react';
+
+import { GameAwardGallery } from '../../components/GameAwardGallery';
+import { Content } from '../../content/Content';
+import { Meta } from '../../layout/Meta';
+import { Main } from '../../templates/Main';
+import { FBGame, getGamePosts } from '../../utils/Posts';
+
+const PostsIndex: React.FC<{}> = () => {
+  const [fbPosts, setPostData] = useState<FBGame[]>();
+  const [validYears, setValidYears] = useState<number[]>();
+
+  function updateValidYears() {
+    const currentYear = new Date().getFullYear();
+    const years = [];
+    let startYear = 2015;
+    while (startYear < currentYear) {
+      // eslint-disable-next-line no-plusplus
+      years.push(startYear++);
+    }
+    setValidYears(years.reverse());
+  }
+
+  function updateBlogPosts() {
+    getGamePosts([
+      'id',
+      'title',
+      'date',
+      'slug',
+      'score',
+      'image',
+      'cover',
+      'awards',
+    ]).then((gamePosts) => {
+      setPostData(gamePosts.results);
+    });
+  }
+
+  useEffect(() => {
+    if (fbPosts == null) {
+      updateBlogPosts();
+    }
+
+    if (validYears == null) {
+      updateValidYears();
+    }
+  });
+
+  return (
+    <Main
+      meta={
+        <Meta
+          title="Best of the best games | Firebottle"
+          description="Game reviews by Firebottle."
+        />
+      }
+    >
+      <Content>
+        <div className="index-header mb-10 items-end flex-wrap pb-2 flex justify-between bg-slate-700 p-3 shadow-steam">
+          <div className="pl-2">
+            <h1>Game of the Year Awards</h1>
+            <p>
+              Since 2015 I&apos;ve selected three games to win the Game of the
+              Year award. These are all selected from games I played, not
+              nessessarily games released that year. I started keeping track in
+              December 2015, so 2015 is a strange year. Regardless, all of my
+              choices are below!
+            </p>
+          </div>
+        </div>
+        <div className="post-index">
+          <div className="flex flex-wrap">
+            {validYears?.map((year: number) => (
+              <GameAwardGallery
+                year={year.toString()}
+                key={year.toString()}
+              ></GameAwardGallery>
+            ))}
+          </div>
+        </div>
+      </Content>
+    </Main>
+  );
+};
+
+export default PostsIndex;

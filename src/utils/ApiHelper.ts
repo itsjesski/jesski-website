@@ -1,4 +1,5 @@
 import { AppConfig } from './AppConfig';
+import { FBGame } from './Posts';
 
 const sortArray = require('sort-array');
 
@@ -14,12 +15,49 @@ function pick<T extends object, U extends keyof T>(
   return ret;
 }
 
+function insertAt(array: any[], index: any, ...elements: any[]) {
+  array.splice(index, 0, ...elements);
+}
+
 export function filterPostFields(posts: any, fields: string): any[] {
   if (fields == null) {
     return [];
   }
   const filter = fields.split(',');
   return posts.map((post: any) => pick(post, filter));
+}
+
+export function getPostsByAward(
+  posts: any,
+  award: string,
+  year: string
+): any[] {
+  const awardPosts = posts.reduce((awardedGames: FBGame[], post: FBGame) => {
+    const { awards } = post;
+    if (awards.length > 0) {
+      // eslint-disable-next-line no-restricted-syntax
+      for (const gameAward of awards) {
+        if (
+          gameAward.name.toLowerCase() === award.toLowerCase() &&
+          gameAward.year === year
+        ) {
+          switch (gameAward.type.toLowerCase()) {
+            case 'gold':
+              insertAt(awardedGames, 0, post);
+              break;
+            case 'silver':
+              insertAt(awardedGames, 1, post);
+              break;
+            default:
+              awardedGames.push(post);
+          }
+        }
+      }
+    }
+    return awardedGames;
+  }, []);
+
+  return awardPosts;
 }
 
 export function getPageResults(posts: any[], page: string): any[] {

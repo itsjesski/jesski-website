@@ -28,7 +28,7 @@ const GameCardList: React.FC<{}> = () => {
   return (
     <div className="flex flex-wrap justify-between">
       {fbPosts?.map((game) => (
-        <GameCard game={game} key={game.slug}></GameCard>
+        <GameCard game={game} size="medium" key={game.slug}></GameCard>
       ))}
     </div>
   );
@@ -38,7 +38,7 @@ const GameGallery = () => (
   <>
     <section className="game-gallery gallery-widget mb-20">
       <div className="gallery-title mb-3 flex justify-between items-end flex-wrap border-b-slate-700 border-solid border-b-2 pb-2 pl-2 pr-2">
-        <h1>Games</h1>
+        <h1>Recently Played</h1>
         <div className="text-sm text-gray-400">
           Checkout the latest games Firebottle has played!
         </div>
