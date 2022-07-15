@@ -2,7 +2,7 @@
 id: 76410
 title: "Warhammer 40,000: Gladius"
 description: "Warhammer 40,000: Gladius - Review"
-score: 8
+score: 6
 date: 2022-06-05
 completed: false
 awards: []

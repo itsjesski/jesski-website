@@ -207,7 +207,7 @@ const GameDetailsPage: React.FC<{ post: GameDetails }> = (props) => {
                 </div>
               )}
               {igdbData?.summary != null && (
-                <div className="description mt-4">
+                <div className="description mt-14">
                   <h2 className="mb-4">Description:</h2>
                   <div
                     className="content"
@@ -218,7 +218,7 @@ const GameDetailsPage: React.FC<{ post: GameDetails }> = (props) => {
                 </div>
               )}
               {props.post.videos.length > 0 && (
-                <div className="description mt-4">
+                <div className="description mt-14">
                   <h2 className="mb-4">Archive Video:</h2>
                   <div className="content">
                     <ReactPlayer url={props.post.videos[0]} controls={true} />

@@ -2,7 +2,7 @@
 id: 7326
 title: Forza Horizon 2
 description: Forza Horizon 2 - Review
-score: 7
+score: 6
 date: 2021-12-16
 completed: null
 awards: []

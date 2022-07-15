@@ -2,7 +2,7 @@
 id: 117266
 title: Chicory
 description: Chicory - Review
-score: 7
+score: 6
 date: 2022-05-12
 completed: false
 awards: []
