@@ -2,7 +2,7 @@
 id: 140839
 title: Mass Effect Legendary Edition
 description: Mass Effect Legendary Edition - Review
-score: 6
+score: 7
 date: 2021-06-01
 completed: false
 awards: []

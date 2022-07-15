@@ -2,7 +2,7 @@
 id: 10637
 title: Offworld Trading Company
 description: Offworld Trading Company - Review
-score: 7
+score: 6
 date: 2021-05-07
 completed: false
 awards: []

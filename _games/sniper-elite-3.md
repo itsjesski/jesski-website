@@ -2,7 +2,7 @@
 id: 8366
 title: Sniper Elite 3
 description: Sniper Elite 3 - Review
-score: 7
+score: 6
 date: 2022-07-04
 completed: true
 awards: []

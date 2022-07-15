@@ -2,7 +2,7 @@
 id: 18366
 title: Sniper Elite 4
 description: Sniper Elite 4 - Review
-score: 8
+score: 7
 date: 2022-07-07
 completed: true
 awards: []

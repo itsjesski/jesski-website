@@ -2,7 +2,7 @@
 id: 31851
 title: Bigfoot
 description: Bigfoot - Review
-score: 6
+score: 5
 date: 2019-10-25
 completed: false
 awards: []

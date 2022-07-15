@@ -2,7 +2,7 @@
 id: 117599
 title: "Hellsplit: Arena"
 description: "Hellsplit: Arena - Review"
-score: 7
+score: 5
 date: 2022-04-03
 completed: false
 awards: []

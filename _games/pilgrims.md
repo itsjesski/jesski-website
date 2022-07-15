@@ -2,7 +2,7 @@
 id: 122766
 title: Pilgrims
 description: Pilgrims - Review
-score: 7
+score: 6
 date: 2022-03-05
 completed: true
 awards: []

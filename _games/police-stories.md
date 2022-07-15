@@ -2,7 +2,7 @@
 id: 28225
 title: Police Stories
 description: Police Stories - Review
-score: 7
+score: 6
 date: 2021-08-26
 completed: false
 awards: []

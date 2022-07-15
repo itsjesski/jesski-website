@@ -2,7 +2,7 @@
 id: 199748
 title: 20 minutes till dawn
 description: 20 minutes till dawn - Review
-score: 7
+score: 6
 date: 2022-06-12
 completed: false
 awards: []
