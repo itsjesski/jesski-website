@@ -5,14 +5,14 @@ import { format } from 'date-fns';
 import { GetStaticPaths, GetStaticProps } from 'next';
 import ReactPlayer from 'react-player';
 
-import { posts } from '../../../public/cache/_games';
-import { Content } from '../../content/Content';
-import { Meta } from '../../layout/Meta';
-import { Main } from '../../templates/Main';
-import { filterPostFields } from '../../utils/ApiHelper';
-import { getGenreString, IGDBGame } from '../../utils/IGDB';
-import { markdownToHtml } from '../../utils/Markdown';
-import { GameAward, GameResponse } from '../../utils/Posts';
+import { posts } from '../../../../public/cache/_games';
+import { Content } from '../../../content/Content';
+import { Meta } from '../../../layout/Meta';
+import { Main } from '../../../templates/Main';
+import { filterPostFields } from '../../../utils/ApiHelper';
+import { getGenreString, IGDBGame } from '../../../utils/IGDB';
+import { markdownToHtml } from '../../../utils/Markdown';
+import { GameAwards, GameResponse } from '../../../utils/Posts';
 
 type IPostUrl = {
   slug: string;
@@ -29,7 +29,7 @@ type GameDetails = {
   image: string;
   cover: string;
   completed: boolean;
-  awards: GameAward | [];
+  awards: GameAwards | [];
   videos: string[];
 };
 
@@ -91,7 +91,6 @@ const GameDetailsPage: React.FC<{ post: GameDetails }> = (props) => {
   useEffect(() => {
     if (igdbData == null) {
       updateIGDBData(props.post?.id);
-      console.log(props);
     }
   });
 
@@ -110,8 +109,8 @@ const GameDetailsPage: React.FC<{ post: GameDetails }> = (props) => {
         </div>
       </div>
 
-      <div className="details-content flex">
-        <div className="details-sidebar shadow-steam bg-slate-800 p-4 mt-4 mr-4 w-1/4">
+      <div className="details-content md:flex">
+        <div className="details-sidebar shadow-steam bg-slate-800 p-4 mt-4 mr-4 md:w-1/4 w-full">
           <div className="firebottle-details border-b-slate-700 border-solid border-b-2 pb-2 mb-2">
             <div className="genre">
               <span className="uppercase text-gray-400 whitespace-nowrap text-xs md:text-sm">
@@ -189,7 +188,7 @@ const GameDetailsPage: React.FC<{ post: GameDetails }> = (props) => {
             </span>
           </div>
         </div>
-        <div className="w-3/4">
+        <div className="md:w-3/4 w-full">
           <Content>
             <div className="p-4 mt-4">
               {props.post.content !== '' && (
@@ -221,7 +220,13 @@ const GameDetailsPage: React.FC<{ post: GameDetails }> = (props) => {
                 <div className="description mt-14">
                   <h2 className="mb-4">Archive Video:</h2>
                   <div className="content">
-                    <ReactPlayer url={props.post.videos[0]} controls={true} />
+                    <ReactPlayer
+                      url={props.post.videos[0]}
+                      controls={true}
+                      className="aspect-video"
+                      width="100%"
+                      height="100%"
+                    />
                   </div>
                 </div>
               )}

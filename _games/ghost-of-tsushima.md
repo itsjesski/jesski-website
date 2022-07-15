@@ -6,7 +6,7 @@ score: 10
 date: 2020-08-06
 completed: true
 awards:
-  - name: Game of the Stream
+  - name: Game of the Year
     year: "2020"
     type: Silver
 modified_date: 2022-07-04

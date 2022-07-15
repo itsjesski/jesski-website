@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { GameAward } from '../utils/Posts';
+import { GameAwards } from '../utils/Posts';
 
 /**
  * Tailwind doesnt support dynamic classes as far as I can tell, so we're pairing up our score with colors here.
@@ -20,7 +20,7 @@ function getStyles(awardType: string): string {
   }
 }
 
-const GameAwardBox = (props: { awards: GameAward }) => (
+const GameAwardBox = (props: { awards: GameAwards }) => (
   <>
     <div
       className={`game-award text-slate-900 pt-1 pl-3 pr-3 pb-1 align-middle shadow-steam ${getStyles(

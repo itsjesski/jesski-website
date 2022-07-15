@@ -58,10 +58,19 @@ const PostsIndex: React.FC<{}> = () => {
       }
     >
       <Content>
-        <div className="index-header border-b-slate-400 border-solid border-b-2 mb-3 flex justify-between items-end flex-wrap pb-2">
-          <div className="">
+        <div className="index-header mb-10 items-end flex-wrap pb-2 flex justify-between bg-slate-700 p-3 shadow-steam">
+          <div className="pl-2">
             <h1>Blog</h1>
+            <p>
+              Below you&apos;ll find a bunch of notes and ramblings on various
+              different things I feel like writing about. To be honest, this may
+              not get updated often. But, I hope what you do find is
+              interesting.
+            </p>
           </div>
+        </div>
+        <div className="border-b-slate-400 border-solid border-b-2 mb-3 flex justify-between items-end flex-wrap pb-2">
+          <div className=""></div>
           <div className="search-container">
             <Search postType="posts"></Search>
           </div>

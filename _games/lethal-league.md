@@ -6,7 +6,7 @@ score: 7
 date: 2015-12-30
 completed: false
 awards:
-  - name: Game of the Stream
+  - name: Game of the Year
     year: "2015"
     type: Bronze
 modified_date: 2022-07-04

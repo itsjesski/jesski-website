@@ -6,8 +6,8 @@ score: 8
 date: 2015-12-29
 completed: true
 awards:
-  - name: Game of the Stream
-    year: "2019"
+  - name: Game of the Year
+    year: "2015"
     type: Silver
 modified_date: 2022-07-04
 screenshots: []
