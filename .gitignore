@@ -39,3 +39,6 @@ local
 
 # csv
 src/scripts/csv
+
+# cache
+public/cache
