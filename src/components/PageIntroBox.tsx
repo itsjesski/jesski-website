@@ -57,7 +57,7 @@ const PageIntroBox: React.FC<{}> = (props) => {
 
       {streamIsOnline && (
         <div className="pl-2 grid grid-cols-12 gap-4">
-          <div className="col-span-8">
+          <div className="col-span-9">
             <h1 className="text-fbstyle-highlight">Firebottle is live!</h1>
             <p>
               The Twitch stream is on air right now, and you&apos;re missing
@@ -75,7 +75,9 @@ const PageIntroBox: React.FC<{}> = (props) => {
               </a>
             </Link>
           </div>
-          <div className="col-span-4">logo</div>
+          <div className="col-span-3 flex justify-center align-middle">
+            <img src={firebotImage} alt="firebot logo" className="w-1/2"></img>
+          </div>
         </div>
       )}
 
