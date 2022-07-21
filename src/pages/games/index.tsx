@@ -4,6 +4,7 @@ import { Listbox } from '@headlessui/react';
 import Link from 'next/link';
 
 import { GameCard } from '../../components/GameCard';
+import { PageIntroBox } from '../../components/PageIntroBox';
 import Pagination from '../../components/Pagination';
 import Search from '../../components/Search';
 import { Content } from '../../content/Content';
@@ -82,7 +83,7 @@ const PostsIndex: React.FC<{}> = () => {
       }
     >
       <Content>
-        <div className="index-header mb-10 items-end flex-wrap pb-2 flex justify-between bg-slate-700 p-3 shadow-steam">
+        <PageIntroBox>
           <div className="pl-2">
             <h1>Games</h1>
             <p>
@@ -105,7 +106,7 @@ const PostsIndex: React.FC<{}> = () => {
               </Link>
             </div>
           </div>
-        </div>
+        </PageIntroBox>
         <div className="index-header border-b-slate-400 border-solid border-b-2 mb-3 items-end flex-wrap pb-2 flex justify-between">
           <div className="pl-2"></div>
           <div className="flex justify-between items-center pl-2 pr-2">

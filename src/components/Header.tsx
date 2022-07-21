@@ -40,7 +40,7 @@ const Header: React.FC<{}> = () => {
         </div>
 
         <div className="flex md:order-2">
-          <Link href="https://twitch.tv/FirebottleTV">
+          <Link href="https://twitch.tv/FirebottleTV" target={'_blank'}>
             <a>
               <button
                 type="button"
