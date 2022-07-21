@@ -13,23 +13,17 @@ const Pagination: React.FC<Props> = ({
   handleNextPage,
 }) => {
   return (
-    <div className="pagination-button-wrapper">
-      <a
-        className="inline-block text-sm px-4 py-2 mr-4 leading-none border rounded text-white border-white hover:border-transparent hover:text-slate-500 hover:bg-white cursor-pointer"
-        onClick={() => handlePrevPage(currentPage)}
-      >
-        Prev
+    <div className="pagination-button-wrapper flex justify-center align-middle mt-6">
+      <a onClick={() => handlePrevPage(currentPage)}>
+        <button>Prev</button>
       </a>
 
-      <span className="pagination-page-info">
+      <span className="pagination-page-info ml-4 mr-4">
         Page {currentPage} of {totalPages}
       </span>
 
-      <a
-        className="inline-block text-sm px-4 py-2 ml-4 mr-4 leading-none border rounded text-white border-white hover:border-transparent hover:text-slate-500 hover:bg-white cursor-pointer"
-        onClick={() => handleNextPage(currentPage)}
-      >
-        Next
+      <a onClick={() => handleNextPage(currentPage)}>
+        <button> Next</button>
       </a>
     </div>
   );

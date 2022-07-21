@@ -19,6 +19,9 @@ module.exports = {
         steam: '0 0 7px 0px #000',
       },
       colors: {
+        fbstyle: {
+          highlight: '#ebb11f',
+        },
         reviewscore: {
           1: '#ff4545',
           2: '#ff4545',

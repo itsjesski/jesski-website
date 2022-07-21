@@ -6,8 +6,6 @@ import axios from 'axios';
 
 const flatCache = require('flat-cache');
 
-const cache = flatCache.load('twitch', path.resolve('public/cache/'));
-
 export type TwitchCache = {
   status: {
     online: boolean;
@@ -30,6 +28,7 @@ export const twitchSecrets: TwitchSecrets = {
 };
 
 export function getDataFromTwitchCache(key: string) {
+  const cache = flatCache.load('twitch', path.resolve('public/cache/'));
   return cache.getKey(key);
 }
 
@@ -67,6 +66,7 @@ async function getStreamLiveStatusFromAPI(
 }
 
 async function cacheOnlineStatus() {
+  const cache = flatCache.load('twitch', path.resolve('public/cache/'));
   const currentTime = Date.now();
   const onlineStatus = await getStreamLiveStatusFromAPI('firebottletv');
   cache.setKey('status', { online: onlineStatus, time: currentTime });
@@ -79,6 +79,7 @@ async function cacheOnlineStatus() {
  * @returns boolean
  */
 export async function getTwitchLiveStatus(): Promise<any | null> {
+  const cache = flatCache.load('twitch', path.resolve('public/cache/'));
   const status = cache.getKey('status');
 
   if (status != null && status.time != null) {

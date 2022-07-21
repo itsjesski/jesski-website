@@ -1,11 +1,31 @@
 @tailwind base;
 
+h1 {
+  @apply text-2xl font-semibold mb-4
+}
+
+h2 {
+  @apply text-slate-50 text-xl font-semibold
+}
+
+h3 {
+  @apply text-base font-semibold text-slate-50;
+}
+
 a {
   @apply text-slate-50;
 }
 
 a:hover {
-  @apply underline;
+  @apply text-fbstyle-highlight;
+}
+
+button {
+  @apply flex items-center leading-none border text-white border-white hover:border-transparent hover:text-slate-900 hover:bg-fbstyle-highlight font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-3 md:mr-0
+}
+
+p {
+  @apply mb-2 mt-2
 }
 
 @tailwind components;

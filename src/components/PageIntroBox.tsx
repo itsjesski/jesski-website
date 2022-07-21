@@ -6,7 +6,23 @@ import Link from 'next/link';
 import { Spinner } from './Spinner';
 
 const PageIntroBox: React.FC<{}> = (props) => {
-  const [streamIsOnline, setStreamIsOnline] = useState();
+  const [streamIsOnline, setStreamIsOnline] = useState<boolean>();
+  const [firebotImage, setFirebotImage] = useState<string>();
+
+  function pickFirebotImage() {
+    const logos = [
+      'angel.png',
+      'cry.png',
+      'firebot.png',
+      'lenny.png',
+      'party.png',
+    ];
+
+    const logo = logos[Math.floor(Math.random() * logos.length)];
+    const logoUrl = `/assets/images/firebot/${logo}`;
+
+    setFirebotImage(logoUrl);
+  }
 
   async function getOnlineStatus() {
     try {
@@ -22,12 +38,17 @@ const PageIntroBox: React.FC<{}> = (props) => {
   }
 
   useEffect(() => {
-    if (streamIsOnline != null) return;
-    getOnlineStatus();
-  }, [streamIsOnline]);
+    if (streamIsOnline == null) {
+      getOnlineStatus();
+    }
+
+    if (firebotImage == null) {
+      pickFirebotImage();
+    }
+  }, [firebotImage, streamIsOnline]);
 
   return (
-    <div className="index-header mb-10 items-end flex-wrap pb-2 flex justify-around bg-slate-700 p-3 shadow-steam">
+    <div className="index-header items-end flex-wrap flex justify-around mb-32 mt-10">
       {streamIsOnline == null && (
         <div className="pl-2">
           <Spinner></Spinner>
@@ -35,27 +56,37 @@ const PageIntroBox: React.FC<{}> = (props) => {
       )}
 
       {streamIsOnline && (
-        <div className="pl-2">
-          <h1>Firebottle is live!</h1>
-          <p>
-            The Twitch stream is on air right now, and you&apos;re missing out!
-            If you&apos;d like to join in and become part of the community, just
-            click the button below!
-          </p>
-          <Link href="https://twitch.tv/FirebottleTV" target={'_blank'}>
-            <a>
-              <button
-                type="button"
-                className="flex items-center leading-none border text-white border-white hover:border-transparent hover:text-slate-500 hover:bg-white font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-3 md:mr-0"
-              >
-                Watch Live
-              </button>
-            </a>
-          </Link>
+        <div className="pl-2 grid grid-cols-12 gap-4">
+          <div className="col-span-8">
+            <h1 className="text-fbstyle-highlight">Firebottle is live!</h1>
+            <p>
+              The Twitch stream is on air right now, and you&apos;re missing
+              out! If you&apos;d like to join in and become part of the
+              community, just click the button below!
+            </p>
+            <Link href="https://twitch.tv/FirebottleTV" target={'_blank'}>
+              <a>
+                <button
+                  type="button"
+                  className="flex items-center leading-none border text-white border-white hover:border-transparent hover:text-slate-500 hover:bg-white font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-3 md:mr-0"
+                >
+                  Watch Live
+                </button>
+              </a>
+            </Link>
+          </div>
+          <div className="col-span-4">logo</div>
         </div>
       )}
 
-      {streamIsOnline === false && props.children}
+      {streamIsOnline === false && (
+        <div className="pl-2 grid grid-cols-12 gap-4">
+          <div className="col-span-9">{props.children}</div>
+          <div className="col-span-3 flex justify-center align-middle">
+            <img src={firebotImage} alt="firebot logo" className="w-1/2"></img>
+          </div>
+        </div>
+      )}
     </div>
   );
 };

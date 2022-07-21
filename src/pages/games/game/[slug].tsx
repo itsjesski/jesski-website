@@ -193,8 +193,8 @@ const GameDetailsPage: React.FC<{ post: GameDetails }> = (props) => {
             <div className="p-4 mt-4">
               {props.post.content !== '' && (
                 <div>
-                  <div className="review mb-4">
-                    <h2>Firebottle&apos;s Review:</h2>
+                  <div className="review">
+                    <h2 className="text-fbstyle-highlight">Review</h2>
                   </div>
                   <div
                     className="content"
@@ -207,7 +207,7 @@ const GameDetailsPage: React.FC<{ post: GameDetails }> = (props) => {
               )}
               {igdbData?.summary != null && (
                 <div className="description mt-14">
-                  <h2 className="mb-4">Description:</h2>
+                  <h2 className="text-fbstyle-highlight">Description</h2>
                   <div
                     className="content"
                     dangerouslySetInnerHTML={{

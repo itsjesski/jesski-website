@@ -4,7 +4,6 @@ import { format } from 'date-fns';
 import Link from 'next/link';
 
 import { FBGame } from '../utils/Posts';
-import { GameAwardBox } from './GameAwardBox';
 import { GameScoreBox } from './GameScoreBox';
 
 const GameCard: React.FC<{ game: FBGame; size: string }> = ({ game, size }) => {
@@ -39,12 +38,6 @@ const GameCard: React.FC<{ game: FBGame; size: string }> = ({ game, size }) => {
             className="block group-hover:opacity-40 transition-opacity duration-700 w-full"
           ></img>
         </div>
-
-        {game.awards?.length > 0 && (
-          <div className="absolute bottom-0 left-0 md:block hidden">
-            <GameAwardBox awards={game.awards}></GameAwardBox>
-          </div>
-        )}
 
         <div className="absolute bottom-0 right-0">
           <GameScoreBox score={game.score}></GameScoreBox>

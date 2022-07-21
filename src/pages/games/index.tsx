@@ -84,30 +84,24 @@ const PostsIndex: React.FC<{}> = () => {
     >
       <Content>
         <PageIntroBox>
-          <div className="pl-2">
-            <h1>Games</h1>
-            <p>
-              Since 2015 I&apos;ve been keeping track of all the games I have
-              played and creating tiny reviews. Below you will find games of all
-              types and sizes. While I may not enjoy everything, I am very
-              thankful to all of the devs for the thousands of hours of
-              enjoyment.
-            </p>
-            <div className="mt-6">
-              <Link href="/games/awards">
-                <a>
-                  <button
-                    type="button"
-                    className="leading-none border text-white border-white hover:border-transparent hover:text-slate-500 hover:bg-white font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-3 md:mr-0"
-                  >
-                    Game of the Year Picks {'>'}
-                  </button>
-                </a>
-              </Link>
-            </div>
+          <h1 className="text-fbstyle-highlight">Games</h1>
+          <p>
+            Since 2015 I&apos;ve been keeping track of all the games I have
+            played and creating tiny reviews. Below you will find games of all
+            types and sizes. I am very thankful to all of the devs for the
+            thousands of hours of enjoyment.
+          </p>
+          <div className="mt-6">
+            <Link href="/games/awards">
+              <a>
+                <button type="button" className="">
+                  Game of the Year Picks {'>'}
+                </button>
+              </a>
+            </Link>
           </div>
         </PageIntroBox>
-        <div className="index-header border-b-slate-400 border-solid border-b-2 mb-3 items-end flex-wrap pb-2 flex justify-between">
+        <div className="index-header mb-3 items-end flex-wrap pb-2 flex justify-between">
           <div className="pl-2"></div>
           <div className="flex justify-between items-center pl-2 pr-2">
             <div className="filter relative w-1/2 mr-2  md:w-1/2 sm:w-full">
