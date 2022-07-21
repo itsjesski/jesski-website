@@ -21,3 +21,6 @@ This project was built as a website for the Firebottle stream community.
 - [Twurple](https://twurple.js.org) for making Twitch API calls.
 - [IGDB API Node](https://www.npmjs.com/package/igdb-api-node) for IGDB API calls.
 - [Flat Cache](https://github.com/royriojas/flat-cache) for caching API calls.
+
+### Deployment
+Deployment happens automatically when merging a branch into main. Digital Ocean picks up on the merge, builds everything, and deploys it to https://firebottle.info
