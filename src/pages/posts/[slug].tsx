@@ -42,11 +42,20 @@ const DisplayPost = (props: FBPost) => (
       />
     }
   >
-    <h1 className="text-center font-bold text-3xl text-slate-400">
-      {props.title}
-    </h1>
-    <div className="text-center text-sm mb-8">
-      {format(new Date(props.date), 'LLLL d, yyyy')}
+    <div
+      className="details-header bg-blend-overlay bg-no-repeat bg-cover bg-center pt-60 pb-60 flex justify-center items-center shadow-steam mb-10"
+      style={{
+        backgroundImage: `linear-gradient(rgba(22, 101, 52, 0.9), rgba(30, 64, 175, 0.9)),url(${props.image})`,
+      }}
+    >
+      <div className="bg-slate-800 pl-20 pr-20 pt-10 pb-10 shadow-steam">
+        <h1 className="text-center font-bold text-3xl text-white text-shadow-lg">
+          {props.title}
+          <div className="text-center text-sm">
+            {format(new Date(props.date), 'LLLL d, yyyy')}
+          </div>
+        </h1>
+      </div>
     </div>
 
     <Content>

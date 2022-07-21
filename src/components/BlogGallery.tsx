@@ -18,7 +18,7 @@ const BlogCardList: React.FC<{}> = () => {
     );
   }, [fbPosts]);
   return (
-    <div className="flex flex-wrap justify-between">
+    <div className="flex flex-wrap">
       {fbPosts?.map((elt) => (
         <BlogCard post={elt} key={elt.slug}></BlogCard>
       ))}
