@@ -27,9 +27,9 @@ const PageIntroBox: React.FC<{}> = (props) => {
   }, [streamIsOnline]);
 
   return (
-    <div className="index-header mb-10 items-end flex-wrap pb-2 flex justify-between bg-slate-700 p-3 shadow-steam">
+    <div className="index-header mb-10 items-end flex-wrap pb-2 flex justify-around bg-slate-700 p-3 shadow-steam">
       {streamIsOnline == null && (
-        <div className="pl-2 flex items-center justify-center text-center">
+        <div className="pl-2">
           <Spinner></Spinner>
         </div>
       )}
