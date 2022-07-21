@@ -29,6 +29,10 @@ export const twitchSecrets: TwitchSecrets = {
       : '',
 };
 
+export function getDataFromTwitchCache(key: string) {
+  return cache.getKey(key);
+}
+
 export async function getTwitchAccessToken(): Promise<string> {
   return axios({
     method: 'post',
@@ -71,15 +75,14 @@ async function cacheOnlineStatus() {
 }
 
 /**
- * This will get the online status from the cache, unless 60 seconds has passed then it pulls from the api again.
+ * Pull from cache, else pull from api and cache it.
  * @returns boolean
  */
 export async function getTwitchLiveStatus(): Promise<any | null> {
   const status = cache.getKey('status');
 
-  if (status != null) {
-    const currentTime = Date.now();
-    const timeDiff = (currentTime - status.time) / 1000;
+  if (status != null && status.time != null) {
+    const timeDiff = (Date.now() - status.time) / 1000;
     const seconds = Math.round(timeDiff);
 
     if (seconds > 60) {
