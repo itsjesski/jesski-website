@@ -1,10 +1,6 @@
-import axios from 'axios';
 import igdb from 'igdb-api-node';
 
-type TwitchSecrets = {
-  client_id: string;
-  client_secret: string;
-};
+import { getTwitchAccessToken, twitchSecrets } from './Twitch';
 
 export type Genres = [
   {
@@ -35,33 +31,6 @@ export type IGDBGame = {
   aggregated_rating: number;
   summary: string;
 };
-
-const twitchSecrets: TwitchSecrets = {
-  client_id:
-    process.env.TWITCH_CLIENT_ID != null ? process.env.TWITCH_CLIENT_ID : '',
-  client_secret:
-    process.env.TWITCH_CLIENT_SECRET != null
-      ? process.env.TWITCH_CLIENT_SECRET
-      : '',
-};
-
-async function getTwitchAccessToken(): Promise<string | undefined> {
-  return axios({
-    method: 'post',
-    url: 'https://id.twitch.tv/oauth2/token',
-    data: {
-      client_id: twitchSecrets.client_id,
-      client_secret: twitchSecrets.client_secret,
-      grant_type: 'client_credentials',
-    },
-  })
-    .then((response) => {
-      return response.data.access_token;
-    })
-    .catch(() => {
-      return '';
-    });
-}
 
 export function getBigCoverImage(cover: Cover): Cover {
   if (cover == null) {

@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 
 import { GameAwardGallery } from '../../components/GameAwardGallery';
+import { PageIntroBox } from '../../components/PageIntroBox';
 import { Content } from '../../content/Content';
 import { Meta } from '../../layout/Meta';
 import { Main } from '../../templates/Main';
@@ -56,7 +57,7 @@ const PostsIndex: React.FC<{}> = () => {
       }
     >
       <Content>
-        <div className="index-header mb-10 items-end flex-wrap pb-2 flex justify-between bg-slate-700 p-3 shadow-steam">
+        <PageIntroBox>
           <div className="pl-2">
             <h1>Game of the Year Awards</h1>
             <p>
@@ -67,7 +68,7 @@ const PostsIndex: React.FC<{}> = () => {
               choices are below!
             </p>
           </div>
-        </div>
+        </PageIntroBox>
         <div className="post-index">
           <div className="flex flex-wrap">
             {validYears?.map((year: number) => (

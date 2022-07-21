@@ -28,6 +28,16 @@ module.exports = {
       topLevelAwait: true,
       layers: true,
     };
+
+    // eslint-disable-next-line no-param-reassign
+    config.resolve = {
+      ...config.resolve,
+      fallback: {
+        fs: false,
+        path: false,
+        os: false,
+      },
+    };
     return config;
   },
   env: {

@@ -1,5 +1,6 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 
+import axios from 'axios';
 import Link from 'next/link';
 
 import { Navbar } from '../navigation/Navbar';
@@ -8,6 +9,25 @@ import { Logo } from './Logo';
 
 const Header: React.FC<{}> = () => {
   const [isNavExpanded, setIsNavExpanded] = useState(false);
+  const [streamIsOnline, setStreamIsOnline] = useState();
+
+  async function getOnlineStatus() {
+    try {
+      const streamStatus = await axios.request({
+        url: '/api/twitch/online',
+        baseURL: process.env.SITE_URL,
+      });
+      setStreamIsOnline(streamStatus.data.status);
+    } catch (error) {
+      // eslint-disable-next-line no-console
+      console.log(error);
+    }
+  }
+
+  useEffect(() => {
+    if (streamIsOnline != null) return;
+    getOnlineStatus();
+  }, [streamIsOnline]);
 
   return (
     <nav className="px-2 sm:px-4 py-2.5 rounded w-full">
@@ -20,13 +40,18 @@ const Header: React.FC<{}> = () => {
         </div>
 
         <div className="flex md:order-2">
-          <Link href="https://twitch.tv/FirebottleTV">
+          <Link href="https://twitch.tv/FirebottleTV" target={'_blank'}>
             <a>
               <button
                 type="button"
-                className="leading-none border text-white border-white hover:border-transparent hover:text-slate-500 hover:bg-white font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-3 md:mr-0"
+                className="flex items-center leading-none border text-white border-white hover:border-transparent hover:text-slate-500 hover:bg-white font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-3 md:mr-0"
               >
                 Twitch
+                {streamIsOnline && (
+                  <svg height="20" width="20">
+                    <circle cx="10" cy="10" r="5" fill="green" />
+                  </svg>
+                )}
               </button>
             </a>
           </Link>
@@ -97,6 +122,11 @@ const Header: React.FC<{}> = () => {
             <li className="block py-2 pr-4 pl-3 text-white rounded md:bg-transparent  md:p-0 dark:text-white">
               <Link href="/games">
                 <a>Games</a>
+              </Link>
+            </li>
+            <li className="block py-2 pr-4 pl-3 text-white rounded md:bg-transparent  md:p-0 dark:text-white">
+              <Link href="/games/awards">
+                <a>GOTY</a>
               </Link>
             </li>
           </Navbar>

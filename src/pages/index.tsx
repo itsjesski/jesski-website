@@ -2,6 +2,7 @@ import React from 'react';
 
 import { BlogGallery } from '../components/BlogGallery';
 import { GameGallery } from '../components/GameGallery';
+import { PageIntroBox } from '../components/PageIntroBox';
 import { Content } from '../content/Content';
 import { Meta } from '../layout/Meta';
 import { Main } from '../templates/Main';
@@ -10,7 +11,7 @@ import { AppConfig } from '../utils/AppConfig';
 const Index = () => (
   <Main meta={<Meta title="Home" description={AppConfig.description} />}>
     <Content>
-      <div className="index-header mb-10 items-end flex-wrap pb-2 flex justify-between bg-slate-700 p-3 shadow-steam">
+      <PageIntroBox>
         <div className="pl-2">
           <h1>Welcome!</h1>
           <p>
@@ -21,7 +22,7 @@ const Index = () => (
             met while pursuing all of these fun hobbies.
           </p>
         </div>
-      </div>
+      </PageIntroBox>
       <GameGallery></GameGallery>
       <BlogGallery></BlogGallery>
     </Content>
