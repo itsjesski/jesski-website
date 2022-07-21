@@ -67,7 +67,7 @@ const PostsIndex: React.FC<{}> = () => {
             not get updated often. But, I hope what you do find is interesting.
           </p>
         </PageIntroBox>
-        <div className="border-b-slate-400 border-solid border-b-2 mb-3 flex justify-between items-end flex-wrap pb-2">
+        <div className="mb-3 flex justify-between items-end flex-wrap pb-2">
           <div className=""></div>
           <div className="search-container">
             <Search postType="posts"></Search>

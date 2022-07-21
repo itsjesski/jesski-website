@@ -101,7 +101,7 @@ const PostsIndex: React.FC<{}> = () => {
             </Link>
           </div>
         </PageIntroBox>
-        <div className="index-header border-b-slate-400 border-solid border-b-2 mb-3 items-end flex-wrap pb-2 flex justify-between">
+        <div className="index-header mb-3 items-end flex-wrap pb-2 flex justify-between">
           <div className="pl-2"></div>
           <div className="flex justify-between items-center pl-2 pr-2">
             <div className="filter relative w-1/2 mr-2  md:w-1/2 sm:w-full">
