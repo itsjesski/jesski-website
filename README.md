@@ -1,12 +1,13 @@
 # firebottle-website
 
 ### What is this?
-This project was built as a personal website for Firebottle. 
+This project was built as a website for the Firebottle stream community.
 
 ### Features
 - Static site generator
 - Markdown files for posts
 - Automatic SEO based on fields in the markdown files.
+- API calls to Twitch and IGDB for pulling game and stream resources.
 
 ### Developer experience:
 
@@ -17,5 +18,6 @@ This project was built as a personal website for Firebottle.
 - Linter with [ESLint](https://eslint.org)
 - Code Formatter with [Prettier](https://prettier.io)
 - SEO metadata, [JSON-LD](https://developers.google.com/search/docs/guides/intro-structured-data) and [Open Graph](https://ogp.me/) tags with [Next SEO](https://github.com/garmeeh/next-seo)
+- [Twurple](https://twurple.js.org) for making Twitch API calls.
 - [IGDB API Node](https://www.npmjs.com/package/igdb-api-node) for IGDB API calls.
-- [Flat Cache](https://github.com/royriojas/flat-cache) for caching third party api responses.
+- [Flat Cache](https://github.com/royriojas/flat-cache) for caching API calls.
