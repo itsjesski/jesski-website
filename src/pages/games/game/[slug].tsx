@@ -218,7 +218,7 @@ const GameDetailsPage: React.FC<{ post: GameDetails }> = (props) => {
               )}
               {props.post.videos.length > 0 && (
                 <div className="description mt-14">
-                  <h2 className="mb-4">Archive Video:</h2>
+                  <h2 className="text-fbstyle-highlight">Archive Video</h2>
                   <div className="content">
                     <ReactPlayer
                       url={props.post.videos[0]}
