@@ -15,7 +15,7 @@ const Main = (props: IMainProps) => (
     {props.meta}
 
     <div className="mx-auto page-wrapper">
-      <div className="flex bg-slate-700 p-3 border-b-2 border-slate-300">
+      <div className="flex p-3">
         <Header></Header>
       </div>
 

@@ -34,7 +34,7 @@ const Header: React.FC<{}> = () => {
       <div className="container flex flex-wrap justify-between items-center mx-auto">
         <div className="mr-3 h-6 sm:h-9 flex items-center">
           <Logo></Logo>
-          <span className="self-center text-xl font-semibold whitespace-nowrap dark:text-white">
+          <span className="self-center text-xl font-semibold whitespace-nowrap dark:text-white text-fbstyle-highlight">
             {AppConfig.title}
           </span>
         </div>
@@ -42,10 +42,7 @@ const Header: React.FC<{}> = () => {
         <div className="flex md:order-2">
           <Link href="https://twitch.tv/FirebottleTV" target={'_blank'}>
             <a>
-              <button
-                type="button"
-                className="flex items-center leading-none border text-white border-white hover:border-transparent hover:text-slate-500 hover:bg-white font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-3 md:mr-0"
-              >
+              <button type="button" className="">
                 Twitch
                 {streamIsOnline && (
                   <svg height="20" width="20">
@@ -58,7 +55,7 @@ const Header: React.FC<{}> = () => {
 
           <button
             type="button"
-            className="inline-flex items-center p-2 text-sm text-white rounded-lg md:hidden hover:bg-slate-500 focus:outline-none focus:ring-2 focus:ring-slate-400"
+            className="md:hidden"
             aria-controls="navbar"
             aria-expanded={isNavExpanded}
             onClick={() => {
@@ -104,27 +101,27 @@ const Header: React.FC<{}> = () => {
           }
         >
           <Navbar>
-            <li className="block py-2 pr-4 pl-3 text-white rounded md:bg-transparent md:p-0 dark:text-white">
+            <li className="block py-2 pr-4 pl-3 text-white rounded md:bg-transparent md:p-0">
               <Link href="/">
                 <a>Home</a>
               </Link>
             </li>
-            <li className="block py-2 pr-4 pl-3 text-white rounded md:bg-transparent md:p-0 dark:text-white">
+            <li className="block py-2 pr-4 pl-3 text-white rounded md:bg-transparent md:p-0">
               <Link href="/about">
                 <a>About</a>
               </Link>
             </li>
-            <li className="block py-2 pr-4 pl-3 text-white rounded md:bg-transparent  md:p-0 dark:text-white">
+            <li className="block py-2 pr-4 pl-3 text-white rounded md:bg-transparent  md:p-0">
               <Link href="/posts">
                 <a>Blog</a>
               </Link>
             </li>
-            <li className="block py-2 pr-4 pl-3 text-white rounded md:bg-transparent  md:p-0 dark:text-white">
+            <li className="block py-2 pr-4 pl-3 text-white rounded md:bg-transparent  md:p-0">
               <Link href="/games">
                 <a>Games</a>
               </Link>
             </li>
-            <li className="block py-2 pr-4 pl-3 text-white rounded md:bg-transparent  md:p-0 dark:text-white">
+            <li className="block py-2 pr-4 pl-3 text-white rounded md:bg-transparent  md:p-0">
               <Link href="/games/awards">
                 <a>GOTY</a>
               </Link>

@@ -58,16 +58,14 @@ const PostsIndex: React.FC<{}> = () => {
     >
       <Content>
         <PageIntroBox>
-          <div className="pl-2">
-            <h1>Game of the Year Awards</h1>
-            <p>
-              Since 2015 I&apos;ve selected three games to win the Game of the
-              Year award. These are all selected from games I played, not
-              nessessarily games released that year. I started keeping track in
-              December 2015, so 2015 is a strange year. Regardless, all of my
-              choices are below!
-            </p>
-          </div>
+          <h1 className="text-fbstyle-highlight">Game of the Year Awards</h1>
+          <p>
+            Since 2015 I&apos;ve selected three games to win the Game of the
+            Year award. These are all selected from games I played, not
+            nessessarily games released that year. I started keeping track in
+            December 2015, so 2015 is a strange year. Regardless, all of my
+            choices are below!
+          </p>
         </PageIntroBox>
         <div className="post-index">
           <div className="flex flex-wrap">

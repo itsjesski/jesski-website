@@ -12,16 +12,14 @@ const Index = () => (
   <Main meta={<Meta title="Home" description={AppConfig.description} />}>
     <Content>
       <PageIntroBox>
-        <div className="pl-2">
-          <h1>Welcome!</h1>
-          <p>
-            You&apos;ve entered the world of Firebottle. Here you&apos;ll find
-            tidbits from all of my different passions from video games, to
-            developement, books, entertainment, and more. This site serves as a
-            hub for my ramblings and sharing info with amazing friends I&apos;ve
-            met while pursuing all of these fun hobbies.
-          </p>
-        </div>
+        <h1 className="text-fbstyle-highlight">Welcome!</h1>
+        <p>
+          You&apos;ve entered the world of Firebottle. Here you&apos;ll find
+          tidbits from all of my different passions from video games, to
+          developement, books, entertainment, and more. This site serves as a
+          hub for my ramblings and sharing info with amazing friends I&apos;ve
+          met while pursuing all of these fun hobbies.
+        </p>
       </PageIntroBox>
       <GameGallery></GameGallery>
       <BlogGallery></BlogGallery>
