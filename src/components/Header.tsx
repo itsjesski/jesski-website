@@ -124,6 +124,11 @@ const Header: React.FC<{}> = () => {
                 <a>Games</a>
               </Link>
             </li>
+            <li className="block py-2 pr-4 pl-3 text-white rounded md:bg-transparent  md:p-0 dark:text-white">
+              <Link href="/games/awards">
+                <a>GOTY</a>
+              </Link>
+            </li>
           </Navbar>
         </div>
       </div>
