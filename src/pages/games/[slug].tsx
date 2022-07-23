@@ -5,14 +5,14 @@ import { format } from 'date-fns';
 import { GetStaticPaths, GetStaticProps } from 'next';
 import ReactPlayer from 'react-player';
 
-import { posts } from '../../../../public/cache/_games';
-import { Content } from '../../../content/Content';
-import { Meta } from '../../../layout/Meta';
-import { Main } from '../../../templates/Main';
-import { filterPostFields } from '../../../utils/ApiHelper';
-import { getGenreString, IGDBGame } from '../../../utils/IGDB';
-import { markdownToHtml } from '../../../utils/Markdown';
-import { GameAwards, GameResponse } from '../../../utils/Posts';
+import { posts } from '../../../public/cache/_games';
+import { Content } from '../../content/Content';
+import { Meta } from '../../layout/Meta';
+import { Main } from '../../templates/Main';
+import { filterPostFields } from '../../utils/ApiHelper';
+import { getGenreString, IGDBGame } from '../../utils/IGDB';
+import { markdownToHtml } from '../../utils/Markdown';
+import { GameAwards, GameResponse } from '../../utils/Posts';
 
 type IPostUrl = {
   slug: string;

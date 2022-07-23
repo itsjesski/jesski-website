@@ -28,7 +28,7 @@ const GameCard: React.FC<{ game: FBGame; size: string }> = ({ game, size }) => {
   return (
     <div className={`p-2  ${getStyles(size)}`}>
       <div className="group overflow-hidden relative w-full shadow-steam">
-        <Link href="/games/game/[slug]" as={`/games/game/${game.slug}`}>
+        <Link href="/games/[slug]" as={`/games/${game.slug}`}>
           <a className="absolute z-10 top-0 bottom-0 left-0 right-0"></a>
         </Link>
         <div className="w-full h-full flex items-center justify-center">
