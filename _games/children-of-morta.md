@@ -4,7 +4,7 @@ title: Children of Morta
 description: Children of Morta - Review
 score: 8
 date: 2022-07-23
-completed: false
+completed: TRUE
 awards: []
 modified_date: 2022-07-23
 screenshots: []
