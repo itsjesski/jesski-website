@@ -1,8 +1,9 @@
 export const AppConfig = {
   site_name: 'Firebottle',
-  title: 'FirebottleTV',
-  description: 'This is a website for Firebottle',
-  url: 'https://example.com',
+  title: 'Firebottle',
+  description:
+    'A site for all things Firebottle and the Firebottle stream community.',
+  url: 'https://firebottle.info',
   locale: 'en',
   author: 'Firebottle',
   pagination_size: 24,
