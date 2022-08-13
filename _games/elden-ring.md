@@ -7,7 +7,7 @@ date: 2022-04-03
 completed: true
 awards: []
 modified_date: 2022-07-04
-screenshots: []
+screenshots: ['\assets\images\screenshots\elden-ring\despair.jfif']
 cover: //images.igdb.com/igdb/image/upload/t_cover_big/co4jni.jpg
 image: //images.igdb.com/igdb/image/upload/t_screenshot_huge/scagdr.jpg
 videos: []

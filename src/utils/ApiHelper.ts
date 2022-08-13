@@ -60,6 +60,21 @@ export function getPostsByAward(
   return awardPosts;
 }
 
+export function getPostsWithScreenshots(posts: any): any[] {
+  const screenshotPosts = posts.reduce(
+    (screenshotGames: FBGame[], post: FBGame) => {
+      const { screenshots } = post;
+      if (screenshots.length > 0) {
+        screenshotGames.push(post);
+      }
+      return screenshotGames;
+    },
+    []
+  );
+
+  return screenshotPosts;
+}
+
 export function getPageResults(posts: any[], page: string): any[] {
   // eslint-disable-next-line no-restricted-globals
   const pageNum = !isNaN(parseInt(page, 10)) ? parseInt(page, 10) : 1;

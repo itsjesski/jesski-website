@@ -26,7 +26,7 @@ export default async function handler(
   }
 
   // Paginate
-  result = getPageResults(posts, page);
+  result = getPageResults(result, page);
 
   // Filter post fields
   result = filterPostFields(result, fields);

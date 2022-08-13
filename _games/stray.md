@@ -7,7 +7,19 @@ date: 2022-07-28
 completed: true
 awards: []
 modified_date: 2022-07-28
-screenshots: []
+screenshots: [
+  '\assets\images\screenshots\stray\library.webp', 
+  '\assets\images\screenshots\stray\nature.jfif',
+  '\assets\images\screenshots\stray\city.jfif',
+  '\assets\images\screenshots\stray\creepy.jfif',
+  '\assets\images\screenshots\stray\light.jfif',
+  '\assets\images\screenshots\stray\nap.jfif',
+  '\assets\images\screenshots\stray\rock-on.jfif',
+  '\assets\images\screenshots\stray\friend.jfif',
+  '\assets\images\screenshots\stray\abandoned.jfif',
+  '\assets\images\screenshots\stray\tunnels.jfif',
+  '\assets\images\screenshots\stray\surface.jfif'
+]
 cover: //images.igdb.com/igdb/image/upload/t_cover_big/co4tt2.png
 image: //images.igdb.com/igdb/image/upload/t_original/sc8bil.jpg
 videos: ['https://www.youtube.com/playlist?list=PLMDR1hlaVsmdDus3z52jXwfuOIcF9ytok']

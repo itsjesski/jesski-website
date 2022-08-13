@@ -7,7 +7,11 @@ date: 2015-12-25
 completed: true
 awards: []
 modified_date: 2022-07-04
-screenshots: []
+screenshots: [
+  '\assets\images\screenshots\fallout-4\city.jfif',
+  '\assets\images\screenshots\fallout-4\save-lives.jfif',
+  '\assets\images\screenshots\fallout-4\blimp.jfif'
+]
 cover: //images.igdb.com/igdb/image/upload/t_cover_big/co1yc6.jpg
 image: //images.igdb.com/igdb/image/upload/t_screenshot_huge/whhptvhci1bdoqolofjo.jpg
 videos: []

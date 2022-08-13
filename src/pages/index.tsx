@@ -3,6 +3,7 @@ import React from 'react';
 import { BlogGallery } from '../components/BlogGallery';
 import { GameGallery } from '../components/GameGallery';
 import { PageIntroBox } from '../components/PageIntroBox';
+import { ScreenshotGallery } from '../components/ScreenshotGallery';
 import { Content } from '../content/Content';
 import { Meta } from '../layout/Meta';
 import { Main } from '../templates/Main';
@@ -22,6 +23,7 @@ const Index = () => (
         </p>
       </PageIntroBox>
       <GameGallery></GameGallery>
+      <ScreenshotGallery></ScreenshotGallery>
       <BlogGallery></BlogGallery>
     </Content>
   </Main>

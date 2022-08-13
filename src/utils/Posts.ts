@@ -5,6 +5,7 @@ export type PostItems = {
 };
 
 export type FBPost = {
+  screenshots: any;
   title: string;
   description: string;
   date: string;
@@ -147,7 +148,10 @@ async function searchPosts(
     console.log(error);
   }
 
-  return [];
+  return {
+    results: [],
+    totalPosts: 0,
+  };
 }
 
 export async function searchBlogPosts(
@@ -193,7 +197,7 @@ export async function getGamePostBySlug(
 export async function getGamePostByAward(
   award: string,
   year: string
-): Promise<any> {
+): Promise<GameResponse> {
   let apiUrl = `/api/games/awards`;
   const encodedAward = encodeURIComponent(award);
   const encodedYear = encodeURIComponent(year);
@@ -211,5 +215,44 @@ export async function getGamePostByAward(
     console.log(error);
   }
 
-  return [];
+  return {
+    results: [],
+    totalPosts: 0,
+  };
+}
+
+export async function getGamePostsWithScreenshots(
+  fields: string[],
+  page: number = 1,
+  sort: string = ''
+): Promise<GameResponse> {
+  let apiUrl = `/api/games/screenshots`;
+  const encodedFields = encodeURIComponent(fields.join(','));
+  const encodedSort = encodeURIComponent(sort);
+
+  apiUrl = `${apiUrl}?page=${page}`;
+
+  if (fields.length > 0) {
+    apiUrl = `${apiUrl}&fields=${encodedFields}`;
+  }
+
+  if (sort.length > 0) {
+    apiUrl = `${apiUrl}&sort=${encodedSort}`;
+  }
+
+  try {
+    const response = await axios.request({
+      url: apiUrl,
+      baseURL: process.env.SITE_URL,
+    });
+    return response.data;
+  } catch (error) {
+    // eslint-disable-next-line no-console
+    console.log(error);
+  }
+
+  return {
+    results: [],
+    totalPosts: 0,
+  };
 }

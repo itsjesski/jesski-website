@@ -7,7 +7,13 @@ date: 2016-08-16
 completed: false
 awards: []
 modified_date: 2022-07-04
-screenshots: []
+screenshots: [
+  '\assets\images\screenshots\no-mans-sky\creature.jfif',
+  '\assets\images\screenshots\no-mans-sky\curious.jfif',
+  '\assets\images\screenshots\no-mans-sky\friends.jfif',
+  '\assets\images\screenshots\no-mans-sky\gek.jfif',
+  '\assets\images\screenshots\no-mans-sky\safety.jfif'
+]
 cover: //images.igdb.com/igdb/image/upload/t_cover_big/co4xe0.jpg
 image: //images.igdb.com/igdb/image/upload/t_screenshot_huge/bynzojxiouy00pqw1utm.jpg
 videos: []
