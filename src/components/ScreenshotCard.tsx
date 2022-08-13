@@ -29,7 +29,7 @@ const ScreenshotCard: React.FC<{ post: FBPost }> = ({ post }) => {
     <div className="p-2 xl:w-1/3 md:w-full w-full">
       <div className="group overflow-hidden relative w-full shadow-steam">
         <a
-          className="absolute z-10 top-0 bottom-0 left-0 right-0"
+          className="absolute z-10 top-0 bottom-0 left-0 right-0 cursor-pointer"
           onClick={() => setIsOpen(true)}
         ></a>
 
