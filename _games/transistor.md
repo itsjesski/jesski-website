@@ -7,7 +7,11 @@ date: 2016-02-17
 completed: true
 awards: []
 modified_date: 2022-07-04
-screenshots: []
+screenshots: [
+  '\assets\images\screenshots\transistor\bathroom.jfif',
+  '\assets\images\screenshots\transistor\dress.jfif',
+  '\assets\images\screenshots\transistor\pizza.jfif'
+]
 cover: //images.igdb.com/igdb/image/upload/t_cover_big/co1pi1.jpg
 image: //images.igdb.com/igdb/image/upload/t_screenshot_huge/tvt0adsfs1cad8m2g3m5.jpg
 videos: []

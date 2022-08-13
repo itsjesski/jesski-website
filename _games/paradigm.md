@@ -10,7 +10,9 @@ awards:
     year: "2017"
     type: Gold
 modified_date: 2022-07-04
-screenshots: []
+screenshots: [
+  '\assets\images\screenshots\paradigm\memes.jfif'
+]
 cover: //images.igdb.com/igdb/image/upload/t_cover_big/jag5vnsvydjwpiy0ni9o.png
 image: //images.igdb.com/igdb/image/upload/t_original/osh4dlxtk64gbepydves.jpg
 videos: []

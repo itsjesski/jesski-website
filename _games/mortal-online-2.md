@@ -7,7 +7,7 @@ date: 2022-02-07
 completed: false
 awards: []
 modified_date: 2022-07-15
-screenshots: []
+screenshots: ['\assets\images\screenshots\mortal-online-2\castle.jfif']
 cover: //images.igdb.com/igdb/image/upload/t_cover_big/co4995.jpg
 image: //images.igdb.com/igdb/image/upload/t_screenshot_huge/sc7xco.jpg
 videos: []

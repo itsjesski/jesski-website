@@ -3,6 +3,7 @@ import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import { format } from 'date-fns';
 import { GetStaticPaths, GetStaticProps } from 'next';
+import Lightbox from 'react-image-lightbox';
 import ReactPlayer from 'react-player';
 
 import { posts } from '../../../public/cache/_games';
@@ -13,6 +14,7 @@ import { filterPostFields } from '../../utils/ApiHelper';
 import { getGenreString, IGDBGame } from '../../utils/IGDB';
 import { markdownToHtml } from '../../utils/Markdown';
 import { GameAwards, GameResponse } from '../../utils/Posts';
+import 'react-image-lightbox/style.css'; // This only needs to be imported once in your app
 
 type IPostUrl = {
   slug: string;
@@ -31,6 +33,7 @@ type GameDetails = {
   completed: boolean;
   awards: GameAwards | [];
   videos: string[];
+  screenshots: string[];
 };
 
 function getPostBySlug(slug: string, fields: string): GameResponse {
@@ -48,6 +51,9 @@ function getPostBySlug(slug: string, fields: string): GameResponse {
 
 const GameDetailsPage: React.FC<{ post: GameDetails }> = (props) => {
   const [igdbData, setIgdbData] = useState<IGDBGame>();
+  const [photoIndex, setPhotoIndex] = useState<number>();
+  const [isOpen, setIsOpen] = useState<boolean>();
+  const images = props.post.screenshots;
 
   function getReviewDifference(
     fbReview: number,
@@ -88,11 +94,22 @@ const GameDetailsPage: React.FC<{ post: GameDetails }> = (props) => {
       });
   }
 
+  function getPhotoIndex() {
+    if (photoIndex == null) {
+      return 0;
+    }
+    return photoIndex;
+  }
+
   useEffect(() => {
     if (igdbData == null) {
       updateIGDBData(props.post?.id);
     }
-  });
+
+    if (photoIndex == null) {
+      setPhotoIndex(0);
+    }
+  }, [igdbData, photoIndex, props.post.id]);
 
   return (
     <div>
@@ -194,7 +211,10 @@ const GameDetailsPage: React.FC<{ post: GameDetails }> = (props) => {
               {props.post.content !== '' && (
                 <div>
                   <div className="review">
-                    <h2 className="text-fbstyle-highlight">Review</h2>
+                    <h2>
+                      Firebottle{' '}
+                      <span className="text-fbstyle-highlight">Review</span>
+                    </h2>
                   </div>
                   <div
                     className="content"
@@ -207,7 +227,10 @@ const GameDetailsPage: React.FC<{ post: GameDetails }> = (props) => {
               )}
               {igdbData?.summary != null && (
                 <div className="description mt-14">
-                  <h2 className="text-fbstyle-highlight">Description</h2>
+                  <h2 className="mb-6">
+                    IGDB{' '}
+                    <span className="text-fbstyle-highlight">Description</span>
+                  </h2>
                   <div
                     className="content"
                     dangerouslySetInnerHTML={{
@@ -218,7 +241,10 @@ const GameDetailsPage: React.FC<{ post: GameDetails }> = (props) => {
               )}
               {props.post.videos.length > 0 && (
                 <div className="description mt-14">
-                  <h2 className="text-fbstyle-highlight">Archive Video</h2>
+                  <h2 className="mb-6">
+                    Archive{' '}
+                    <span className="text-fbstyle-highlight">Video</span>
+                  </h2>
                   <div className="content">
                     <ReactPlayer
                       url={props.post.videos[0]}
@@ -230,10 +256,62 @@ const GameDetailsPage: React.FC<{ post: GameDetails }> = (props) => {
                   </div>
                 </div>
               )}
+              {props.post.screenshots.length > 0 && (
+                <div className="description mt-14">
+                  <div className="gallery-title mb-6 flex justify-between items-end flex-wrap">
+                    <h2 className="mb-0">
+                      Screenshot{' '}
+                      <span className="text-fbstyle-highlight">Gallery</span>
+                    </h2>
+                    <div className="text-sm text-gray-400 font-bold">
+                      <a
+                        className="cursor-pointer"
+                        onClick={() => setIsOpen(true)}
+                      >
+                        View Full Gallery {'>'}
+                      </a>
+                    </div>
+                  </div>
+                  <div className="content">
+                    <div className="flex flex-wrap">
+                      {props.post.screenshots[0] && (
+                        <div className="screenshot w-full p-1">
+                          <a
+                            className="cursor-pointer"
+                            onClick={() => setIsOpen(true)}
+                          >
+                            <img
+                              src={props.post.screenshots[0]}
+                              alt="screenshot"
+                            ></img>
+                          </a>
+                        </div>
+                      )}
+                    </div>
+                  </div>
+                </div>
+              )}
             </div>
           </Content>
         </div>
       </div>
+
+      {isOpen && (
+        <Lightbox
+          mainSrc={images[getPhotoIndex()]}
+          nextSrc={images[(getPhotoIndex() + 1) % images.length]}
+          prevSrc={
+            images[(getPhotoIndex() + images.length - 1) % images.length]
+          }
+          onCloseRequest={() => setIsOpen(false)}
+          onMovePrevRequest={() =>
+            setPhotoIndex((getPhotoIndex() + images.length - 1) % images.length)
+          }
+          onMoveNextRequest={() =>
+            setPhotoIndex((getPhotoIndex() + 1) % images.length)
+          }
+        />
+      )}
     </div>
   );
 };
@@ -273,7 +351,7 @@ export const getStaticProps: GetStaticProps<
 > = async ({ params }) => {
   const post = getPostBySlug(
     params!.slug,
-    'title,description,date,modified_date,content,slug,score,cover,image,completed,id,awards,videos'
+    'title,description,date,modified_date,content,slug,score,cover,image,completed,id,awards,videos,screenshots'
   );
 
   const postResult = post.results[0];
@@ -291,6 +369,7 @@ export const getStaticProps: GetStaticProps<
     completed: postResult.completed ? postResult.completed : false,
     awards: postResult.awards,
     videos: postResult.videos,
+    screenshots: postResult.screenshots,
     content,
   };
 
