@@ -2,7 +2,7 @@
 id: 182278
 title: Multiversus
 description: Multiversus - Review
-score: 9
+score: 7
 date: 2022-08-11
 completed: false
 awards: []
