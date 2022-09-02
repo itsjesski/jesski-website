@@ -46,7 +46,9 @@ const ScreenshotCard: React.FC<{ post: FBPost }> = ({ post }) => {
             ></img>
           )}
         </div>
-
+        <div className="p-3">
+          <h2>{post?.title}</h2>
+        </div>
         <div
           className="absolute bg-gradient-to-br duration-700 from-green-800 to-blue-800 text-white block left-0 right-0 top-full text-base h-full w-full opacity-50 
     transition-all group-hover:top-0 group-hover:opacity-100"
