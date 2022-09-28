@@ -10,7 +10,7 @@ modified_date: 2022-09-04
 screenshots: []
 cover: //images.igdb.com/igdb/image/upload/t_cover_big/co55md.png
 image: //images.igdb.com/igdb/image/upload/t_original/sccrhf.jpg
-videos: []
+videos: ['https://www.youtube.com/playlist?list=PLMDR1hlaVsmez-BV29mDGs0fftJD-5kKf']
 ---
 This game really does seem like it'd be perfect for me. I love the cute look mixed with the cult theme. I love the evil animal crossing vibes it gives. It really is a neat concept that unfortunately is held back by a lot of different issues.
 
