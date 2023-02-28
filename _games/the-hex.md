@@ -1,14 +1,16 @@
 ---
-id: 31819
-title: The Hex
-description: The Hex - Review
-score: 9
+id: 107482
+title: Swag & Sorcery
+description: Swag & Sorcery - Review
+score: 90
 date: 2019-06-03
 completed: true
-awards: []
-modified_date: 2022-07-04
+goty: []
+modified_date: 2023-02-28
 screenshots: []
-cover: //images.igdb.com/igdb/image/upload/t_cover_big/rbw9ltnum893cnarcg5g.jpg
-image: //images.igdb.com/igdb/image/upload/t_screenshot_huge/sc5iti.jpg
+tags:
+  - Hidden Gems
 videos: []
+cover: //images.igdb.com/igdb/image/upload/t_cover_big/co2ri6.jpg
+image: //images.igdb.com/igdb/image/upload/t_screenshot_huge/tc1swt1ryhkprlj2vesr.jpg
 ---

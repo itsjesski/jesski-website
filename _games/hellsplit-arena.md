@@ -2,14 +2,15 @@
 id: 117599
 title: "Hellsplit: Arena"
 description: "Hellsplit: Arena - Review"
-score: 5
+score: 70
 date: 2022-04-03
 completed: false
-awards: []
-modified_date: 2022-07-04
+goty: []
+modified_date: 2023-02-28
 screenshots: []
-cover: //images.igdb.com/igdb/image/upload/t_cover_big/co1q4x.jpg
-image: //images.igdb.com/igdb/image/upload/t_screenshot_huge/sc6gc9.jpg
+tags: []
 videos: []
+cover: //images.igdb.com/igdb/image/upload/t_cover_big/co1q4x.jpg
+image: //images.igdb.com/igdb/image/upload/t_screenshot_huge/sc6gca.jpg
 ---
 It's fine! A neat looking arena fighter. I think I like it more than blade and sorcery.

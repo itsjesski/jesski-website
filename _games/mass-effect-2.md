@@ -2,14 +2,15 @@
 id: 74
 title: Mass Effect 2
 description: Mass Effect 2 - Review
-score: 10
+score: 100
 date: 2017-02-15
 completed: true
-awards: []
-modified_date: 2022-07-04
+goty: []
+modified_date: 2023-02-28
 screenshots: []
-cover: //images.igdb.com/igdb/image/upload/t_cover_big/co20ac.jpg
-image: //images.igdb.com/igdb/image/upload/t_screenshot_huge/xsdmofyywtzsgrcadaym.jpg
+tags: []
 videos: []
+cover: //images.igdb.com/igdb/image/upload/t_cover_big/co20ac.jpg
+image: //images.igdb.com/igdb/image/upload/t_screenshot_huge/k22nwxzx6eb4ek7xbjps.jpg
 ---
 Still one of my favorite games of all time.

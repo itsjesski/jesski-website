@@ -2,17 +2,17 @@
 id: 112939
 title: Later Alligator
 description: Later Alligator - Review
-score: 10
+score: 100
 date: 2019-09-21
 completed: true
-awards:
-  - name: Game of the Year
-    year: "2019"
-    type: Silver
-modified_date: 2022-07-04
+goty:
+  - Silver
+modified_date: 2023-02-28
 screenshots: []
-cover: //images.igdb.com/igdb/image/upload/t_cover_big/co2ovn.jpg
-image: //images.igdb.com/igdb/image/upload/t_screenshot_huge/sc5wyy.jpg
+tags:
+  - Hidden Gems
 videos: []
+cover: //images.igdb.com/igdb/image/upload/t_cover_big/co2ovn.jpg
+image: //images.igdb.com/igdb/image/upload/t_screenshot_huge/sc5wyv.jpg
 ---
 Great silly writing and very unexpected mini games. Super wholesome.

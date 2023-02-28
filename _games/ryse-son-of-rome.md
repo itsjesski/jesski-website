@@ -2,14 +2,15 @@
 id: 3812
 title: "Ryse: Son of Rome"
 description: "Ryse: Son of Rome - Review"
-score: 7
+score: 70
 date: 2017-02-19
 completed: true
-awards: []
-modified_date: 2022-07-04
+goty: []
+modified_date: 2023-02-28
 screenshots: []
-cover: //images.igdb.com/igdb/image/upload/t_cover_big/co2r7y.jpg
-image: //images.igdb.com/igdb/image/upload/t_screenshot_huge/ge3kaicmwekuiqknrj61.jpg
+tags: []
 videos: []
+cover: //images.igdb.com/igdb/image/upload/t_cover_big/co2r7y.jpg
+image: //images.igdb.com/igdb/image/upload/t_screenshot_huge/j4pow4dmjte50rflcqxe.jpg
 ---
 The story and graphics are what hold this one up. The gameplay is very blah and repetitive.

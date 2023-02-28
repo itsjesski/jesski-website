@@ -1,15 +1,16 @@
 ---
-id: 198368
-title: Mario Odyssey
-description: Mario Odyssey - Review
-score: 10
+id: 26758
+title: Super Mario Odyssey
+description: Super Mario Odyssey - Review
+score: 100
 date: 2017-11-06
 completed: true
-awards: []
-modified_date: 2022-07-04
+goty: []
+modified_date: 2023-02-28
 screenshots: []
-cover: //images.igdb.com/igdb/image/upload/t_cover_big/co4oqt.jpg
-image: //images.igdb.com/igdb/image/upload/t_screenshot_huge/qgcn3akcfv4rvojqdbvb.jpg
+tags: []
 videos: []
+cover: //images.igdb.com/igdb/image/upload/t_cover_big/co1mxf.jpg
+image: //images.igdb.com/igdb/image/upload/t_screenshot_huge/kmbewcsuuytnsxvemltw.jpg
 ---
 Perfect.

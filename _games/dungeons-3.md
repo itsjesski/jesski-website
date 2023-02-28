@@ -2,14 +2,15 @@
 id: 27353
 title: Dungeons 3
 description: Dungeons 3 - Review
-score: 7
+score: 70
 date: 2021-05-05
 completed: false
-awards: []
-modified_date: 2022-07-04
+goty: []
+modified_date: 2023-02-28
 screenshots: []
-cover: //images.igdb.com/igdb/image/upload/t_cover_big/co2fm9.png
-image: //images.igdb.com/igdb/image/upload/t_screenshot_huge/dizfmjdedrekrjaixkyb.jpg
+tags: []
 videos: []
+cover: //images.igdb.com/igdb/image/upload/t_cover_big/co2fm9.jpg
+image: //images.igdb.com/igdb/image/upload/t_screenshot_huge/v9ylwkqbw8a7poolfwi2.jpg
 ---
 Like dungeon keeper, but more modern.

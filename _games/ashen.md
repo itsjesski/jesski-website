@@ -2,14 +2,16 @@
 id: 17001
 title: Ashen
 description: Ashen - Review
-score: 9
+score: 90
 date: 2018-12-15
 completed: true
-awards: []
-modified_date: 2022-07-04
+goty: []
+modified_date: 2023-02-28
 screenshots: []
-cover: //images.igdb.com/igdb/image/upload/t_cover_big/co4o0i.png
-image: //images.igdb.com/igdb/image/upload/t_screenshot_huge/sc77nt.jpg
+tags:
+  - Hidden Gems
 videos: []
+cover: //images.igdb.com/igdb/image/upload/t_cover_big/co4o0i.jpg
+image: //images.igdb.com/igdb/image/upload/t_screenshot_huge/sc77nt.jpg
 ---
 Great dark souls rpg with very cool bossfights and multiplayer mechanics.

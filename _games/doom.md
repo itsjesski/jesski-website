@@ -1,15 +1,16 @@
 ---
-id: 121503
-title: Doom
-description: Doom - Review
-score: 9
+id: 76217
+title: DOOM
+description: DOOM - Review
+score: 90
 date: 2016-05-20
 completed: true
-awards: []
-modified_date: 2022-07-04
+goty: []
+modified_date: 2023-02-28
 screenshots: []
-cover: //images.igdb.com/igdb/image/upload/t_cover_big/co1rnt.jpg
-image: //images.igdb.com/igdb/image/upload/t_screenshot_huge/sc97sc.jpg
+tags: []
 videos: []
+cover: //images.igdb.com/igdb/image/upload/t_cover_big/co5klh.jpg
+image: //images.igdb.com/igdb/image/upload/t_screenshot_huge/rvmp93jwfhlmfd0nr3u5.jpg
 ---
 Fantastic single player. Meh, multiplayer.

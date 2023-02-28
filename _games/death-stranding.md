@@ -2,14 +2,15 @@
 id: 19564
 title: Death Stranding
 description: Death Stranding - Review
-score: 8
+score: 80
 date: 2019-11-08
 completed: false
-awards: []
-modified_date: 2022-07-04
+goty: []
+modified_date: 2023-02-28
 screenshots: []
-cover: //images.igdb.com/igdb/image/upload/t_cover_big/co316v.jpg
-image: //images.igdb.com/igdb/image/upload/t_screenshot_huge/sc6l0g.jpg
+tags: []
 videos: []
+cover: //images.igdb.com/igdb/image/upload/t_cover_big/co5vq8.jpg
+image: //images.igdb.com/igdb/image/upload/t_screenshot_huge/sc6l0a.jpg
 ---
 It's good, but it just takes soooo long to get things done. Fairly repetitive.

@@ -2,14 +2,15 @@
 id: 11155
 title: Dreams
 description: Dreams - Review
-score: 10
+score: 100
 date: 2019-09-12
 completed: false
-awards: []
-modified_date: 2022-07-04
+goty: []
+modified_date: 2023-02-28
 screenshots: []
-cover: //images.igdb.com/igdb/image/upload/t_cover_big/co4rmx.png
-image: //images.igdb.com/igdb/image/upload/t_screenshot_huge/qbz2djvuvquujq8bsjex.jpg
+tags: []
 videos: []
+cover: //images.igdb.com/igdb/image/upload/t_cover_big/co4rmx.jpg
+image: //images.igdb.com/igdb/image/upload/t_screenshot_huge/uwplkgojeuqxjjna2tjv.jpg
 ---
 I love it so much.

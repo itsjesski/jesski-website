@@ -1,15 +1,16 @@
 ---
 id: 105049
-title: "Remnant: From The Ashes"
-description: "Remnant: From The Ashes - Review"
-score: 9
+title: "Remnant: From the Ashes"
+description: "Remnant: From the Ashes - Review"
+score: 90
 date: 2019-10-15
 completed: true
-awards: []
-modified_date: 2022-07-04
+goty: []
+modified_date: 2023-02-28
 screenshots: []
-cover: //images.igdb.com/igdb/image/upload/t_cover_big/co1m4w.jpg
-image: //images.igdb.com/igdb/image/upload/t_screenshot_huge/sc6dwx.jpg
+tags: []
 videos: []
+cover: //images.igdb.com/igdb/image/upload/t_cover_big/co1m4w.jpg
+image: //images.igdb.com/igdb/image/upload/t_screenshot_huge/sc6dwy.jpg
 ---
 Very good rpg shooter.

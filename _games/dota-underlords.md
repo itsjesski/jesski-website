@@ -1,15 +1,16 @@
 ---
 id: 119416
-title: DOTA Underlords
-description: DOTA Underlords - Review
-score: 7
+title: Dota Underlords
+description: Dota Underlords - Review
+score: 70
 date: 2019-07-22
 completed: false
-awards: []
-modified_date: 2022-07-04
+goty: []
+modified_date: 2023-02-28
 screenshots: []
-cover: //images.igdb.com/igdb/image/upload/t_cover_big/co2ffj.jpg
-image: //images.igdb.com/igdb/image/upload/t_screenshot_huge/sc7frw.jpg
+tags: []
 videos: []
+cover: //images.igdb.com/igdb/image/upload/t_cover_big/co2ffj.jpg
+image: //images.igdb.com/igdb/image/upload/t_screenshot_huge/sc6pkg.jpg
 ---
 Standard auto chess game.

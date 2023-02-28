@@ -1,5 +1,5 @@
 import { posts } from '../../../../public/cache/_games';
-import { getPostsByAward } from '../../../utils/ApiHelper';
+import { getPostsByGOTYYear } from '../../../utils/ApiHelper';
 
 export default async function handler(
   req: { query: { fields: string; award: string; year: string } },
@@ -7,12 +7,12 @@ export default async function handler(
     json: (results: any) => void;
   }
 ) {
-  const { award, year } = req.query;
+  const { year } = req.query;
 
   let result = posts;
 
-  // Get only posts that have an award named after the award variable.
-  result = getPostsByAward(result, award, year);
+  // Get only posts that have an award.
+  result = getPostsByGOTYYear(result, year);
 
   const response = {
     results: result,

@@ -2,14 +2,15 @@
 id: 105629
 title: The Shapeshifting Detective
 description: The Shapeshifting Detective - Review
-score: 9
+score: 90
 date: 2019-01-10
 completed: true
-awards: []
-modified_date: 2022-07-04
+goty: []
+modified_date: 2023-02-28
 screenshots: []
-cover: //images.igdb.com/igdb/image/upload/t_cover_big/co2fzb.jpg
-image: //images.igdb.com/igdb/image/upload/t_screenshot_huge/sc5ifj.jpg
+tags: []
 videos: []
+cover: //images.igdb.com/igdb/image/upload/t_cover_big/co2fzb.jpg
+image: //images.igdb.com/igdb/image/upload/t_screenshot_huge/sc5ifo.jpg
 ---
 Great story with some funny voice acting.

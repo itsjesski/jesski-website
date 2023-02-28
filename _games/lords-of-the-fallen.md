@@ -1,15 +1,16 @@
 ---
-id: 4847
+id: 194987
 title: Lords of the Fallen
 description: Lords of the Fallen - Review
-score: 3
+score: 30
 date: 2016-05-16
 completed: false
-awards: []
-modified_date: 2022-07-04
+goty: []
+modified_date: 2023-02-28
 screenshots: []
-cover: //images.igdb.com/igdb/image/upload/t_cover_big/co1nzt.png
-image: //images.igdb.com/igdb/image/upload/t_screenshot_huge/zpengo6mkmz5shyocukf.jpg
+tags: []
 videos: []
+cover: //images.igdb.com/igdb/image/upload/t_cover_big/co5rl5.jpg
+image: //images.igdb.com/igdb/image/upload/t_screenshot_huge/scjtht.jpg
 ---
 Bah. Heavy dark souls. Good looking and terrible gameplay.

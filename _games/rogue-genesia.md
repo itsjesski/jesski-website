@@ -1,15 +1,16 @@
 ---
 id: 211066
-title: Rogue Genesia
-description: Rogue Genesia - Review
-score: 8
+title: "Rogue: Genesia"
+description: "Rogue: Genesia - Review"
+score: 80
 date: 2022-10-07
 completed: true
-awards: []
-modified_date: 2022-10-07
+goty: []
+modified_date: 2023-02-28
 screenshots: []
-cover: //images.igdb.com/igdb/image/upload/t_cover_big/co52to.png
-image: //images.igdb.com/igdb/image/upload/t_original/scixrl.jpg
+tags: []
 videos: []
+cover: //images.igdb.com/igdb/image/upload/t_cover_big/co64pp.jpg
+image: //images.igdb.com/igdb/image/upload/t_screenshot_huge/scixrl.jpg
 ---
-Like vampire survivors, except it looks better and plays better in my opinion.
+Vampire survivor-ish game. I like it quite a bit.

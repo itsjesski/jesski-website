@@ -2,14 +2,16 @@
 id: 55190
 title: Pikuniku
 description: Pikuniku - Review
-score: 9
+score: 90
 date: 2019-02-16
 completed: true
-awards: []
-modified_date: 2022-07-04
+goty: []
+modified_date: 2023-02-28
 screenshots: []
+tags:
+  - Weird
+videos: []
 cover: //images.igdb.com/igdb/image/upload/t_cover_big/co2gb6.jpg
 image: //images.igdb.com/igdb/image/upload/t_screenshot_huge/sc5sbn.jpg
-videos: []
 ---
 Great simple game with some wonderful moments.

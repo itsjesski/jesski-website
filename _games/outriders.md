@@ -2,14 +2,15 @@
 id: 102058
 title: Outriders
 description: Outriders - Review
-score: 6
+score: 60
 date: 2022-07-17
 completed: true
-awards: []
-modified_date: 2022-07-17
+goty: []
+modified_date: 2023-02-28
 screenshots: []
-cover: //images.igdb.com/igdb/image/upload/t_cover_big/co2e4r.png
-image: //images.igdb.com/igdb/image/upload/t_original/sc8g13.jpg
+tags: []
 videos: []
+cover: //images.igdb.com/igdb/image/upload/t_cover_big/co2e4r.jpg
+image: //images.igdb.com/igdb/image/upload/t_screenshot_huge/sc8g1c.jpg
 ---
-It's a fun co-op experience. The game itself is sort of janky and buggy feeling. However, the co-op makes up for it a little bit. We completed the full story, monster hunting, and the last big raid of the main game.
+Good co-op. Buggy and a little janky.

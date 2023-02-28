@@ -2,14 +2,15 @@
 id: 197266
 title: Tinyfolks
 description: Tinyfolks - Review
-score: 9
+score: 80
 date: 2022-10-14
-completed: TRUE
-awards: []
-modified_date: 2022-10-14
+completed: true
+goty: []
+modified_date: 2023-02-28
 screenshots: []
-cover: //images.igdb.com/igdb/image/upload/t_cover_big/co4txq.png
-image: //images.igdb.com/igdb/image/upload/t_original/scgltb.jpg
+tags: []
 videos: []
+cover: //images.igdb.com/igdb/image/upload/t_cover_big/co4txq.jpg
+image: //images.igdb.com/igdb/image/upload/t_screenshot_huge/scglt6.jpg
 ---
-It's sort of like a simplified darkest dungeon. I love the ability to specialize classes in this, it adds a ton of customization. Really great little game that I'd recommend to any darkest dungeon fans.
+Simplified darkest dungeon! Super fun.

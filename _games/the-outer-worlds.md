@@ -1,15 +1,16 @@
 ---
-id: 113114
-title: The Outer Worlds
-description: The Outer Worlds - Review
-score: 9
+id: 11737
+title: Outer Wilds
+description: Outer Wilds - Review
+score: 90
 date: 2019-11-07
 completed: true
-awards: []
-modified_date: 2022-07-04
+goty: []
+modified_date: 2023-02-28
 screenshots: []
-cover: //images.igdb.com/igdb/image/upload/t_cover_big/co2eew.jpg
-image: //images.igdb.com/igdb/image/upload/t_screenshot_huge/sc68w2.jpg
+tags: []
 videos: []
+cover: //images.igdb.com/igdb/image/upload/t_cover_big/co65ac.jpg
+image: //images.igdb.com/igdb/image/upload/t_screenshot_huge/g3wcomoxrsuet9cuhl9q.jpg
 ---
 Great rpg with some amazing dialog and characters.

@@ -1,14 +1,15 @@
 ---
 id: 107178
-title: Textorcist
-description: Textorcist - Review
-score: 6
+title: The Textorcist
+description: The Textorcist - Review
+score: 60
 date: 2019-05-15
 completed: false
-awards: []
-modified_date: 2022-07-04
+goty: []
+modified_date: 2023-02-28
 screenshots: []
-cover: //images.igdb.com/igdb/image/upload/t_cover_big/co2kft.jpg
-image: //images.igdb.com/igdb/image/upload/t_screenshot_huge/cnqle2y5qqcuhemykeay.jpg
+tags: []
 videos: []
+cover: //images.igdb.com/igdb/image/upload/t_cover_big/co2kft.jpg
+image: //images.igdb.com/igdb/image/upload/t_screenshot_huge/sycup8ie7nqrdzrdhpzd.jpg
 ---

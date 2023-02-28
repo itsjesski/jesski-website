@@ -2,14 +2,15 @@
 id: 186597
 title: Strange Horticulture
 description: Strange Horticulture - Review
-score: 10
+score: 90
 date: 2022-10-29
 completed: true
-awards: []
-modified_date: 2022-10-29
+goty: []
+modified_date: 2023-02-28
 screenshots: []
-cover: //images.igdb.com/igdb/image/upload/t_cover_big/co4bsb.png
-image: //images.igdb.com/igdb/image/upload/t_original/scf5ny.jpg
+tags: []
 videos: []
+cover: //images.igdb.com/igdb/image/upload/t_cover_big/co4bsb.jpg
+image: //images.igdb.com/igdb/image/upload/t_screenshot_huge/scf5nx.jpg
 ---
-I really like this game a lot. The gameplay is simple, but adds just enough to keep you going. The story is a great little mystery that you can influence the outcome of by picking and choosing how you react throughout the game. Honestly, just identifying plants was fun for me. Definitely recommended.
+What an amazing little game! Such a neat spooky story.

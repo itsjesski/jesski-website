@@ -1,15 +1,16 @@
 ---
 id: 33172
-title: "Runes: The forgotten Path"
-description: "Runes: The forgotten Path - Review"
-score: 7
+title: "Runes: The Forgotten Path"
+description: "Runes: The Forgotten Path - Review"
+score: 70
 date: 2018-11-25
 completed: false
-awards: []
-modified_date: 2022-07-04
+goty: []
+modified_date: 2023-02-28
 screenshots: []
-cover: //images.igdb.com/igdb/image/upload/t_cover_big/co3c5z.jpg
-image: //images.igdb.com/igdb/image/upload/t_screenshot_huge/yk2gbuzydqnxmc7qy5cd.jpg
+tags: []
 videos: []
+cover: //images.igdb.com/igdb/image/upload/t_cover_big/co3c5z.jpg
+image: //images.igdb.com/igdb/image/upload/t_screenshot_huge/nvv10ojc9n0mp2piy85u.jpg
 ---
 Seems like it could be neat, but these puzzles are tough!

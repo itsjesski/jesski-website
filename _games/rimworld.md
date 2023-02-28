@@ -1,15 +1,16 @@
 ---
 id: 9789
-title: Rimworld
-description: Rimworld - Review
-score: 6
+title: RimWorld
+description: RimWorld - Review
+score: 60
 date: 2017-01-07
 completed: false
-awards: []
-modified_date: 2022-07-04
+goty: []
+modified_date: 2023-02-28
 screenshots: []
+tags: []
+videos: []
 cover: //images.igdb.com/igdb/image/upload/t_cover_big/co1j6x.jpg
 image: //images.igdb.com/igdb/image/upload/t_screenshot_huge/gxgriu76xfdltv0ln5xp.jpg
-videos: []
 ---
 A good strategy building game, but very deep and involved. Will take me a lot of time to learn this one I think.

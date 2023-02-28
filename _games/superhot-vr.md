@@ -1,15 +1,16 @@
 ---
 id: 25632
-title: Superhot VR
-description: Superhot VR - Review
-score: 9
+title: SuperHot VR
+description: SuperHot VR - Review
+score: 90
 date: 2017-06-24
 completed: true
-awards: []
-modified_date: 2022-07-04
+goty: []
+modified_date: 2023-02-28
 screenshots: []
-cover: //images.igdb.com/igdb/image/upload/t_cover_big/co24uu.jpg
-image: //images.igdb.com/igdb/image/upload/t_screenshot_huge/vxyqzdd3l98pb8vo3aef.jpg
+tags: []
 videos: []
+cover: //images.igdb.com/igdb/image/upload/t_cover_big/co24uu.jpg
+image: //images.igdb.com/igdb/image/upload/t_screenshot_huge/xyrg68ek1eajcblclb3n.jpg
 ---
 Maybe my favorite VR game so far. So fun to mess around in.

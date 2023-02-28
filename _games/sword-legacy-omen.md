@@ -1,15 +1,16 @@
 ---
 id: 74734
-title: Sword Legacy Omen
-description: Sword Legacy Omen - Review
-score: 7
+title: "Sword Legacy: Omen"
+description: "Sword Legacy: Omen - Review"
+score: 70
 date: 2018-09-01
 completed: false
-awards: []
-modified_date: 2022-07-04
+goty: []
+modified_date: 2023-02-28
 screenshots: []
-cover: //images.igdb.com/igdb/image/upload/t_cover_big/co276w.jpg
-image: //images.igdb.com/igdb/image/upload/t_screenshot_huge/hipggydu07xslrm1p3dd.jpg
+tags: []
 videos: []
+cover: //images.igdb.com/igdb/image/upload/t_cover_big/co276w.jpg
+image: //images.igdb.com/igdb/image/upload/t_screenshot_huge/euns2tnz7fywrmao1ddq.jpg
 ---
 Fun, but did not keep my interest in the story.

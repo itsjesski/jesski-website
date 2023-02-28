@@ -31,7 +31,7 @@ type GameDetails = {
   image: string;
   cover: string;
   completed: boolean;
-  awards: GameAwards | [];
+  goty: GameAwards | [];
   videos: string[];
   screenshots: string[];
 };
@@ -64,18 +64,18 @@ const GameDetailsPage: React.FC<{ post: GameDetails }> = (props) => {
     }
 
     const newCriticReview = Math.floor(criticReview);
-    const newFBReview = Math.floor(fbReview * 10);
+    const newFBReview = Math.floor(fbReview);
 
     const difference = Math.round(newFBReview - newCriticReview);
     let diffText = '';
     if (difference < 0) {
       diffText = `Firebottle's score was ${Math.abs(
         difference
-      )} lower than the critics.`;
+      )} points lower than the critics.`;
     } else if (difference === 0) {
       diffText = `Firebottle's score was exactly the same as the critics!`;
     } else {
-      diffText = `Firebottle's score was ${difference} higher than the critics.`;
+      diffText = `Firebottle's score was ${difference} points higher than the critics.`;
     }
     return diffText;
   }
@@ -160,14 +160,12 @@ const GameDetailsPage: React.FC<{ post: GameDetails }> = (props) => {
                 Awards:{' '}
               </span>
               <span className="relative z-20">
-                {props.post?.awards.length === 0 && (
+                {props.post?.goty.length === 0 && (
                   <span className="text-positive">None</span>
                 )}
-                {props.post?.awards?.map((award) => (
-                  <div key={award.type + award.year + award.name}>
-                    <span className="text-positive">
-                      {award.name}: {award.type} - {award.year}
-                    </span>
+                {props.post?.goty?.map((goty) => (
+                  <div key={goty}>
+                    <span className="text-positive">GOTY {goty}</span>
                   </div>
                 ))}
               </span>
@@ -351,7 +349,7 @@ export const getStaticProps: GetStaticProps<
 > = async ({ params }) => {
   const post = getPostBySlug(
     params!.slug,
-    'title,description,date,modified_date,content,slug,score,cover,image,completed,id,awards,videos,screenshots'
+    'title,description,date,modified_date,content,slug,score,cover,image,completed,id,goty,videos,screenshots'
   );
 
   const postResult = post.results[0];
@@ -367,7 +365,7 @@ export const getStaticProps: GetStaticProps<
     cover: postResult.cover ? postResult.cover : '',
     image: postResult.image ? postResult.image : '',
     completed: postResult.completed ? postResult.completed : false,
-    awards: postResult.awards,
+    goty: postResult.goty,
     videos: postResult.videos,
     screenshots: postResult.screenshots,
     content,

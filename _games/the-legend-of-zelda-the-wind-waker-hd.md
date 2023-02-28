@@ -1,15 +1,16 @@
 ---
-id: 45133
+id: 2276
 title: "The Legend of Zelda: The Wind Waker HD"
 description: "The Legend of Zelda: The Wind Waker HD - Review"
-score: 10
+score: 100
 date: 2016-12-29
 completed: true
-awards: []
-modified_date: 2022-07-04
+goty: []
+modified_date: 2023-02-28
 screenshots: []
-cover: //images.igdb.com/igdb/image/upload/t_cover_big/co3z6x.jpg
-image: //images.igdb.com/igdb/image/upload/t_screenshot_huge/sc8qcg.jpg
+tags: []
 videos: []
+cover: //images.igdb.com/igdb/image/upload/t_cover_big/co3ozi.jpg
+image: //images.igdb.com/igdb/image/upload/t_screenshot_huge/ufxcarhopdgganl26on6.jpg
 ---
 Yes.

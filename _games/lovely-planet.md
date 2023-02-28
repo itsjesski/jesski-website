@@ -2,14 +2,16 @@
 id: 14326
 title: Lovely Planet
 description: Lovely Planet - Review
-score: 4
+score: 40
 date: 2016-05-21
 completed: false
-awards: []
-modified_date: 2022-07-04
+goty: []
+modified_date: 2023-02-28
 screenshots: []
-cover: //images.igdb.com/igdb/image/upload/t_cover_big/co4vyz.jpg
-image: //images.igdb.com/igdb/image/upload/t_screenshot_huge/ltw82qryxihe3umwmlxj.jpg
+tags:
+  - Weird
 videos: []
+cover: //images.igdb.com/igdb/image/upload/t_cover_big/co4vyz.jpg
+image: //images.igdb.com/igdb/image/upload/t_screenshot_huge/dhvfcv40fx67ydvy8izi.jpg
 ---
 Wut

@@ -1,15 +1,16 @@
 ---
-id: 156200
+id: 36550
 title: "Yakuza: Like a Dragon"
 description: "Yakuza: Like a Dragon - Review"
-score: 8
+score: 80
 date: 2020-12-02
 completed: true
-awards: []
-modified_date: 2022-07-04
+goty: []
+modified_date: 2023-02-28
 screenshots: []
-cover: //images.igdb.com/igdb/image/upload/t_cover_big/co2em9.png
-image: //images.igdb.com/igdb/image/upload/t_screenshot_huge/scbabw.jpg
-videos: ['https://www.youtube.com/playlist?list=PLMDR1hlaVsmdARWXB4SUYhNPf-0p8uXZn']
+tags: []
+videos: []
+cover: //images.igdb.com/igdb/image/upload/t_cover_big/co2em9.jpg
+image: //images.igdb.com/igdb/image/upload/t_screenshot_huge/sc6wyo.jpg
 ---
 Fun story, good characters, terrible boss mechanics and game design forcing you to hit level walls constantly.

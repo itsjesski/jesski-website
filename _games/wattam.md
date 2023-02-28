@@ -2,14 +2,15 @@
 id: 28818
 title: Wattam
 description: Wattam - Review
-score: 7
+score: 70
 date: 2019-12-26
 completed: true
-awards: []
-modified_date: 2022-07-04
+goty: []
+modified_date: 2023-02-28
 screenshots: []
-cover: //images.igdb.com/igdb/image/upload/t_cover_big/co2600.jpg
-image: //images.igdb.com/igdb/image/upload/t_screenshot_huge/sdidpauim6nb8ts5i9x8.jpg
+tags: []
 videos: []
+cover: //images.igdb.com/igdb/image/upload/t_cover_big/co2600.jpg
+image: //images.igdb.com/igdb/image/upload/t_screenshot_huge/d82fa0ppew3uolxrzacz.jpg
 ---
 Pretty good, crazy game.

@@ -1,15 +1,16 @@
 ---
-id: 111364
-title: Tormentum
-description: Tormentum - Review
-score: 8
+id: 9035
+title: "Tormentum: Dark Sorrow"
+description: "Tormentum: Dark Sorrow - Review"
+score: 80
 date: 2016-10-14
 completed: true
-awards: []
-modified_date: 2022-07-04
+goty: []
+modified_date: 2023-02-28
 screenshots: []
-cover: //images.igdb.com/igdb/image/upload/t_cover_big/co1sqe.jpg
-image: //images.igdb.com/igdb/image/upload/t_screenshot_huge/sc5n11.jpg
+tags: []
 videos: []
+cover: //images.igdb.com/igdb/image/upload/t_cover_big/vcxh5hwaxucjo2ilkzoq.jpg
+image: //images.igdb.com/igdb/image/upload/t_screenshot_huge/g1bm19vypwkjajj4epgr.jpg
 ---
 Fantastic art and interesting story. Very well balanced puzzles.

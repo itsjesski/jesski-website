@@ -1,15 +1,17 @@
 ---
 id: 26869
-title: world of horror
-description: world of horror - Review
-score: 7
+title: World of Horror
+description: World of Horror - Review
+score: 70
 date: 2020-03-21
 completed: false
-awards: []
-modified_date: 2022-07-04
+goty: []
+modified_date: 2023-02-28
 screenshots: []
-cover: //images.igdb.com/igdb/image/upload/t_cover_big/co1xh7.jpg
-image: //images.igdb.com/igdb/image/upload/t_screenshot_huge/n9w4p5yagz8bdr2lx1c0.jpg
+tags:
+  - Hidden Gems
 videos: []
+cover: //images.igdb.com/igdb/image/upload/t_cover_big/co1xh7.jpg
+image: //images.igdb.com/igdb/image/upload/t_screenshot_huge/mv8ljrkebzhcy1gqpzoj.jpg
 ---
 Fun! the story gets sort of lost sometimes.

@@ -2,13 +2,14 @@
 id: 35371
 title: Colony Survival
 description: Colony Survival - Review
-score: 8
+score: 80
 date: 2019-07-15
 completed: false
-awards: []
-modified_date: 2022-07-04
+goty: []
+modified_date: 2023-02-28
 screenshots: []
-cover: //images.igdb.com/igdb/image/upload/t_cover_big/co26xd.jpg
-image: //images.igdb.com/igdb/image/upload/t_screenshot_huge/al3tefzzb0l3qrjeayje.jpg
+tags: []
 videos: []
+cover: //images.igdb.com/igdb/image/upload/t_cover_big/co26xd.jpg
+image: //images.igdb.com/igdb/image/upload/t_screenshot_huge/gwozlpfdaxlnoj8tgddx.jpg
 ---

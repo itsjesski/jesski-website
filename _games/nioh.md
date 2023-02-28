@@ -2,17 +2,16 @@
 id: 12571
 title: Nioh
 description: Nioh - Review
-score: 10
+score: 100
 date: 2018-02-01
 completed: true
-awards:
-  - name: Game of the Year
-    year: "2018"
-    type: Bronze
-modified_date: 2022-07-04
+goty:
+  - Bronze
+modified_date: 2023-02-28
 screenshots: []
-cover: //images.igdb.com/igdb/image/upload/t_cover_big/co20xg.jpg
-image: //images.igdb.com/igdb/image/upload/t_screenshot_huge/bcjbepvdgpvur966q3j2.jpg
+tags: []
 videos: []
+cover: //images.igdb.com/igdb/image/upload/t_cover_big/co20xg.jpg
+image: //images.igdb.com/igdb/image/upload/t_screenshot_huge/kdqodedr8zwnweddu63y.jpg
 ---
 Amazing souls-like experience with unique story.

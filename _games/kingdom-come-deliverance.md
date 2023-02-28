@@ -1,14 +1,15 @@
 ---
 id: 4843
-title: Kingdom Come Deliverance
-description: Kingdom Come Deliverance - Review
-score: 8
+title: "Kingdom Come: Deliverance"
+description: "Kingdom Come: Deliverance - Review"
+score: 80
 date: 2019-05-10
 completed: false
-awards: []
-modified_date: 2022-07-04
+goty: []
+modified_date: 2023-02-28
 screenshots: []
-cover: //images.igdb.com/igdb/image/upload/t_cover_big/co4aqi.jpg
-image: //images.igdb.com/igdb/image/upload/t_screenshot_huge/rajzvbqovrcbdykkqpaz.jpg
+tags: []
 videos: []
+cover: //images.igdb.com/igdb/image/upload/t_cover_big/co4aqi.jpg
+image: //images.igdb.com/igdb/image/upload/t_screenshot_huge/husdtaexowgllpe3ho5n.jpg
 ---

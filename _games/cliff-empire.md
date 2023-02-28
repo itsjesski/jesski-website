@@ -2,13 +2,14 @@
 id: 99124
 title: Cliff Empire
 description: Cliff Empire - Review
-score: 7
+score: 70
 date: 2019-07-08
 completed: false
-awards: []
-modified_date: 2022-07-04
+goty: []
+modified_date: 2023-02-28
 screenshots: []
-cover: //images.igdb.com/igdb/image/upload/t_cover_big/co1ush.jpg
-image: //images.igdb.com/igdb/image/upload/t_screenshot_huge/oxfcuayvs4xgviseaeov.jpg
+tags: []
 videos: []
+cover: //images.igdb.com/igdb/image/upload/t_cover_big/co1ush.jpg
+image: //images.igdb.com/igdb/image/upload/t_screenshot_huge/obiucwtfl4ombposeta8.jpg
 ---

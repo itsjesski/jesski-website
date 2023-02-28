@@ -2,14 +2,15 @@
 id: 12561
 title: Nova-111
 description: Nova-111 - Review
-score: 5
+score: 50
 date: 2017-01-17
 completed: false
-awards: []
-modified_date: 2022-07-04
+goty: []
+modified_date: 2023-02-28
 screenshots: []
-cover: //images.igdb.com/igdb/image/upload/t_cover_big/co2qv1.jpg
-image: //images.igdb.com/igdb/image/upload/t_screenshot_huge/dajfwgqt7pnbubpeussv.jpg
+tags: []
 videos: []
+cover: //images.igdb.com/igdb/image/upload/t_cover_big/co2qv1.jpg
+image: //images.igdb.com/igdb/image/upload/t_screenshot_huge/guzvhfw29vzkzvamseuy.jpg
 ---
 A fun little game that is similar to necrodancer without the rhythm aspects.

@@ -2,14 +2,15 @@
 id: 124286
 title: Cthulhu Saves Christmas
 description: Cthulhu Saves Christmas - Review
-score: 7
+score: 70
 date: 2020-12-22
 completed: true
-awards: []
-modified_date: 2022-07-04
+goty: []
+modified_date: 2023-02-28
 screenshots: []
+tags: []
+videos: []
 cover: //images.igdb.com/igdb/image/upload/t_cover_big/co1vdz.jpg
-image: //images.igdb.com/igdb/image/upload/t_screenshot_huge/sc7xwk.jpg
-videos: ['https://www.youtube.com/playlist?list=PLMDR1hlaVsme4aVaGBF3TUz_u85cfHC5c']
+image: //images.igdb.com/igdb/image/upload/t_screenshot_huge/sc7xwn.jpg
 ---
 Funny writing, good characters, kinda repetitive gameplay.

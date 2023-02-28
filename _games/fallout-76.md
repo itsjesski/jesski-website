@@ -2,14 +2,15 @@
 id: 103020
 title: Fallout 76
 description: Fallout 76 - Review
-score: 7
+score: 70
 date: 2020-05-27
 completed: true
-awards: []
-modified_date: 2022-07-04
+goty: []
+modified_date: 2023-02-28
 screenshots: []
-cover: //images.igdb.com/igdb/image/upload/t_cover_big/co1yc4.jpg
-image: //images.igdb.com/igdb/image/upload/t_screenshot_huge/ftxjtsbifgl3xo98nbpb.jpg
+tags: []
 videos: []
+cover: //images.igdb.com/igdb/image/upload/t_cover_big/co1yc4.jpg
+image: //images.igdb.com/igdb/image/upload/t_screenshot_huge/cdczbyjrjg6zlz0nmg1c.jpg
 ---
 Despite it's flaws, still a pretty fun game.

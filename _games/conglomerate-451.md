@@ -2,14 +2,15 @@
 id: 116593
 title: Conglomerate 451
 description: Conglomerate 451 - Review
-score: 7
+score: 70
 date: 2019-09-22
 completed: false
-awards: []
-modified_date: 2022-07-04
+goty: []
+modified_date: 2023-02-28
 screenshots: []
-cover: //images.igdb.com/igdb/image/upload/t_cover_big/co1k9k.jpg
-image: //images.igdb.com/igdb/image/upload/t_screenshot_huge/sc6kl4.jpg
+tags: []
 videos: []
+cover: //images.igdb.com/igdb/image/upload/t_cover_big/co1k9k.jpg
+image: //images.igdb.com/igdb/image/upload/t_screenshot_huge/sc6cf0.jpg
 ---
 It's okay. A cool twist on the genre.

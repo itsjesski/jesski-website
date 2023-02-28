@@ -2,14 +2,15 @@
 id: 9327
 title: Please, Don't Touch Anything
 description: Please, Don't Touch Anything - Review
-score: 4
+score: 40
 date: 2016-08-01
 completed: true
-awards: []
-modified_date: 2022-07-04
+goty: []
+modified_date: 2023-02-28
 screenshots: []
-cover: //images.igdb.com/igdb/image/upload/t_cover_big/co1r5i.jpg
-image: //images.igdb.com/igdb/image/upload/t_screenshot_huge/xciucs26pudrnovaq1bp.jpg
+tags: []
 videos: []
+cover: //images.igdb.com/igdb/image/upload/t_cover_big/co1r5i.jpg
+image: //images.igdb.com/igdb/image/upload/t_screenshot_huge/g7jo6x0aqmg8mufolwxn.jpg
 ---
 Push buttons, things happen.

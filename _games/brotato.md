@@ -2,14 +2,16 @@
 id: 199116
 title: Brotato
 description: Brotato - Review
-score: 8
+score: 80
 date: 2022-12-14
 completed: true
-awards: []
-modified_date: 2022-12-14
+goty: []
+modified_date: 2023-02-28
 screenshots: []
-cover: //images.igdb.com/igdb/image/upload/t_cover_big/co4pcj.png
-image: //images.igdb.com/igdb/image/upload/t_original/scgrj2.jpg
+tags:
+  - Hidden Gems
 videos: []
+cover: //images.igdb.com/igdb/image/upload/t_cover_big/co4pcj.jpg
+image: //images.igdb.com/igdb/image/upload/t_screenshot_huge/scgrj2.jpg
 ---
-Another vampire survivors type of game, except this one has a ton to it. There are dozens of classes to choose from, crazy unique builds (including pacifist), and a ton of fun to use weapons. I think this might be my favorite of the genre so far.
+A really good vampire survior type game!

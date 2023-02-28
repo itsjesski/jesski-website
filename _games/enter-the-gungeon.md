@@ -2,14 +2,15 @@
 id: 11182
 title: Enter the Gungeon
 description: Enter the Gungeon - Review
-score: 7
+score: 70
 date: 2016-04-07
 completed: false
-awards: []
-modified_date: 2022-07-04
+goty: []
+modified_date: 2023-02-28
 screenshots: []
-cover: //images.igdb.com/igdb/image/upload/t_cover_big/co1rdg.jpg
-image: //images.igdb.com/igdb/image/upload/t_screenshot_huge/ya9xbnow26nirgauee8t.jpg
+tags: []
 videos: []
+cover: //images.igdb.com/igdb/image/upload/t_cover_big/co1rdg.jpg
+image: //images.igdb.com/igdb/image/upload/t_screenshot_huge/md5sbeeei4gh07txtcta.jpg
 ---
 Mix of nuclear throne and binding of issac. Really great roguelike that I could see myself spending many hours in.

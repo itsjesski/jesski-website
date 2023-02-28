@@ -38,7 +38,7 @@ const PostsIndex: React.FC<{}> = () => {
 
   function updateBlogPosts(newPage: number, sort: string = '') {
     getGamePosts(
-      ['id', 'title', 'date', 'slug', 'score', 'image', 'cover', 'awards'],
+      ['id', 'title', 'date', 'slug', 'score', 'image', 'cover', 'goty'],
       newPage,
       sort
     ).then((gamePosts) => {

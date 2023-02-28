@@ -40,7 +40,7 @@ const Header: React.FC<{}> = () => {
         </div>
 
         <div className="flex md:order-2">
-          <Link href="https://twitch.tv/FirebottleTV" target={'_blank'}>
+          <Link href="https://twitch.tv/PotionHoarders" target="_blank">
             <a>
               <button type="button" className="">
                 Twitch
@@ -109,11 +109,6 @@ const Header: React.FC<{}> = () => {
             <li className="block py-2 pr-4 pl-3 text-white rounded md:bg-transparent md:p-0">
               <Link href="/about">
                 <a>About</a>
-              </Link>
-            </li>
-            <li className="block py-2 pr-4 pl-3 text-white rounded md:bg-transparent  md:p-0">
-              <Link href="/posts">
-                <a>Blog</a>
               </Link>
             </li>
             <li className="block py-2 pr-4 pl-3 text-white rounded md:bg-transparent  md:p-0">

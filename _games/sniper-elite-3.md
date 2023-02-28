@@ -1,15 +1,16 @@
 ---
 id: 8366
-title: Sniper Elite 3
-description: Sniper Elite 3 - Review
-score: 6
+title: Sniper Elite III
+description: Sniper Elite III - Review
+score: 70
 date: 2022-07-04
 completed: true
-awards: []
-modified_date: 2022-07-04
+goty: []
+modified_date: 2023-02-28
 screenshots: []
+tags: []
+videos: []
 cover: //images.igdb.com/igdb/image/upload/t_cover_big/co2e40.jpg
-image: //images.igdb.com/igdb/image/upload/t_screenshot_huge/p90jqxaiystxsklzuqra.jpg
-videos: ['https://www.youtube.com/playlist?list=PLMDR1hlaVsmdsX8wMfM-zYxaD5JIs3ksB']
+image: //images.igdb.com/igdb/image/upload/t_screenshot_huge/e7mglih4ucsrfhnkgb2b.jpg
 ---
 Better than 2, but really short campaign.

@@ -2,14 +2,15 @@
 id: 32617
 title: Rec Room
 description: Rec Room - Review
-score: 7
+score: 70
 date: 2016-12-05
 completed: false
-awards: []
-modified_date: 2022-07-04
+goty: []
+modified_date: 2023-02-28
 screenshots: []
+tags: []
+videos: []
 cover: //images.igdb.com/igdb/image/upload/t_cover_big/co24pa.jpg
 image: //images.igdb.com/igdb/image/upload/t_screenshot_huge/uwukh0kgfxmcgs4mxgra.jpg
-videos: []
 ---
 Very fun. Super impressed that this is free.

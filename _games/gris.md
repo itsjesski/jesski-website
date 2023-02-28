@@ -1,15 +1,16 @@
 ---
 id: 22917
-title: Gris
-description: Gris - Review
-score: 7
+title: GRIS
+description: GRIS - Review
+score: 70
 date: 2020-09-09
 completed: true
-awards: []
-modified_date: 2022-07-04
+goty: []
+modified_date: 2023-02-28
 screenshots: []
-cover: //images.igdb.com/igdb/image/upload/t_cover_big/co1qv5.jpg
-image: //images.igdb.com/igdb/image/upload/t_screenshot_huge/zvnpffwff0em3mwhbpyl.jpg
+tags: []
 videos: []
+cover: //images.igdb.com/igdb/image/upload/t_cover_big/co1qv5.jpg
+image: //images.igdb.com/igdb/image/upload/t_screenshot_huge/r6zh3o4ot1ora3oaxzfk.jpg
 ---
 Great music and story. But little direction on the puzzles and locations of star pieces is frustrating at times.

@@ -1,15 +1,16 @@
 ---
 id: 115840
-title: "Silence "
-description: Silence  - Review
-score: 7
+title: Silence
+description: Silence - Review
+score: 70
 date: 2017-07-19
 completed: true
-awards: []
-modified_date: 2022-07-04
+goty: []
+modified_date: 2023-02-28
 screenshots: []
-cover: //images.igdb.com/igdb/image/upload/t_cover_big/co25hx.jpg
-image: //images.igdb.com/igdb/image/upload/t_screenshot_huge/sc6dbc.jpg
+tags: []
 videos: []
+cover: //images.igdb.com/igdb/image/upload/t_cover_big/co25hx.jpg
+image: //images.igdb.com/igdb/image/upload/t_screenshot_huge/sc6dbd.jpg
 ---
 Great game with a wonderful art style. The loading screens were a huge pain since a lot of puzzles were based around two locations.

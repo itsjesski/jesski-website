@@ -20,13 +20,9 @@ export type PostResponse = {
   totalPosts: number;
 };
 
-export type GameAward = {
-  name: string;
-  year: string;
-  type: string;
-};
+export type GameAwards = string[];
 
-export type GameAwards = [GameAward];
+export type GameTags = string[];
 
 export type FBGame = {
   id: number;
@@ -39,7 +35,8 @@ export type FBGame = {
   slug: string;
   content: string;
   cover: string;
-  awards: GameAwards;
+  goty: GameAwards;
+  tags: GameTags;
   image: string;
   completed: boolean;
   videos: string[];
@@ -194,15 +191,11 @@ export async function getGamePostBySlug(
   return getPostBySlug('games', slug, fields);
 }
 
-export async function getGamePostByAward(
-  award: string,
-  year: string
-): Promise<GameResponse> {
+export async function getGamePostByAward(year: string): Promise<GameResponse> {
   let apiUrl = `/api/games/awards`;
-  const encodedAward = encodeURIComponent(award);
   const encodedYear = encodeURIComponent(year);
 
-  apiUrl = `${apiUrl}?award=${encodedAward}&year=${encodedYear}`;
+  apiUrl = `${apiUrl}?year=${encodedYear}`;
 
   try {
     const response = await axios.request({

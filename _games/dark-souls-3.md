@@ -1,15 +1,16 @@
 ---
 id: 11133
-title: Dark Souls 3
-description: Dark Souls 3 - Review
-score: 10
+title: Dark Souls III
+description: Dark Souls III - Review
+score: 100
 date: 2016-04-21
-completed: false
-awards: []
-modified_date: 2022-07-04
+completed: true
+goty: []
+modified_date: 2023-02-28
 screenshots: []
-cover: //images.igdb.com/igdb/image/upload/t_cover_big/co1vcf.jpg
-image: //images.igdb.com/igdb/image/upload/t_screenshot_huge/wlefrkqqtxge3lo81cis.jpg
+tags: []
 videos: []
+cover: //images.igdb.com/igdb/image/upload/t_cover_big/co1vcf.jpg
+image: https://images.igdb.com/igdb/image/upload/t_screenshot_huge/scknql.jpg
 ---
 An absolutely amazing game. The scenery is beautiful, the gameplay is perfect, the pvp is so much fun.

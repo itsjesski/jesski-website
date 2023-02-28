@@ -1,15 +1,16 @@
 ---
 id: 26855
-title: "Dead Cells "
-description: Dead Cells  - Review
-score: 9
+title: Dead Cells
+description: Dead Cells - Review
+score: 90
 date: 2018-08-23
 completed: false
-awards: []
-modified_date: 2022-07-04
+goty: []
+modified_date: 2023-02-28
 screenshots: []
-cover: //images.igdb.com/igdb/image/upload/t_cover_big/co1rgj.jpg
-image: //images.igdb.com/igdb/image/upload/t_screenshot_huge/oflx1thhhuqzovoev99l.jpg
+tags: []
 videos: []
+cover: //images.igdb.com/igdb/image/upload/t_cover_big/co5vwu.jpg
+image: //images.igdb.com/igdb/image/upload/t_screenshot_huge/ikkm7a4sokicgfw7fmz5.jpg
 ---
 The best RL

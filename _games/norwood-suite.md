@@ -1,15 +1,17 @@
 ---
-id: 68369
-title: Norwood Suite
-description: Norwood Suite - Review
-score: 6
+id: 122559
+title: Mini Motorways
+description: Mini Motorways - Review
+score: 60
 date: 2021-07-14
 completed: true
-awards: []
-modified_date: 2022-07-04
+goty: []
+modified_date: 2023-02-28
 screenshots: []
-cover: //images.igdb.com/igdb/image/upload/t_cover_big/co1txc.jpg
-image: //images.igdb.com/igdb/image/upload/t_screenshot_huge/komcki5pcujzdv2bwwfx.jpg
+tags:
+  - Weird
 videos: []
+cover: //images.igdb.com/igdb/image/upload/t_cover_big/co2p9v.jpg
+image: //images.igdb.com/igdb/image/upload/t_screenshot_huge/sc7c84.jpg
 ---
 Slightly better than off-peak, because it has a bit of a story and mystery to it.

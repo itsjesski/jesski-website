@@ -1,15 +1,16 @@
 ---
-id: 115060
+id: 3968
 title: Dragon's Dogma
 description: Dragon's Dogma - Review
-score: 7
+score: 70
 date: 2017-09-20
 completed: true
-awards: []
-modified_date: 2022-07-04
+goty: []
+modified_date: 2023-02-28
 screenshots: []
-cover: //images.igdb.com/igdb/image/upload/t_cover_big/co2180.png
-image: //images.igdb.com/igdb/image/upload/t_screenshot_huge/anmahuqr9deocfbqj3qw.jpg
+tags: []
 videos: []
+cover: //images.igdb.com/igdb/image/upload/t_cover_big/co2180.jpg
+image: //images.igdb.com/igdb/image/upload/t_screenshot_huge/iiaxisrar6gzctxv84xk.jpg
 ---
 A good idea, but it has so many poorly executed mechanics. 

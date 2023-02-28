@@ -1,15 +1,16 @@
 ---
 id: 378
-title: Metal Gear Rising Revengence
-description: Metal Gear Rising Revengence - Review
-score: 9
+title: "Metal Gear Rising: Revengeance"
+description: "Metal Gear Rising: Revengeance - Review"
+score: 90
 date: 2018-09-01
 completed: true
-awards: []
-modified_date: 2022-07-04
+goty: []
+modified_date: 2023-02-28
 screenshots: []
-cover: //images.igdb.com/igdb/image/upload/t_cover_big/co2l1t.jpg
-image: //images.igdb.com/igdb/image/upload/t_screenshot_huge/wggh9gnigj6x0bzvpgvq.jpg
+tags: []
 videos: []
+cover: //images.igdb.com/igdb/image/upload/t_cover_big/co2l1t.jpg
+image: //images.igdb.com/igdb/image/upload/t_screenshot_huge/nyzak3efjolrqz4twy0p.jpg
 ---
 This game is goofy as hell and I love it.

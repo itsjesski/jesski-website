@@ -2,14 +2,15 @@
 id: 131705
 title: Sludge Life
 description: Sludge Life - Review
-score: 3
+score: 30
 date: 2022-01-02
 completed: false
-awards: []
-modified_date: 2022-07-04
+goty: []
+modified_date: 2023-02-28
 screenshots: []
-cover: //images.igdb.com/igdb/image/upload/t_cover_big/co28np.jpg
-image: //images.igdb.com/igdb/image/upload/t_screenshot_huge/sc82ro.jpg
+tags: []
 videos: []
+cover: //images.igdb.com/igdb/image/upload/t_cover_big/co28np.jpg
+image: //images.igdb.com/igdb/image/upload/t_screenshot_huge/sc82rq.jpg
 ---
 Didn't give it much time because it seemed boring. The style didn't really grab me.

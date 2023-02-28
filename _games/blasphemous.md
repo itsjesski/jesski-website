@@ -1,15 +1,16 @@
 ---
-id: 26820
-title: Blasphemous
-description: Blasphemous - Review
-score: 6
+id: 11155
+title: Dreams
+description: Dreams - Review
+score: 60
 date: 2019-09-11
 completed: false
-awards: []
-modified_date: 2022-07-04
+goty: []
+modified_date: 2023-02-28
 screenshots: []
-cover: //images.igdb.com/igdb/image/upload/t_cover_big/co2eyn.jpg
-image: //images.igdb.com/igdb/image/upload/t_screenshot_huge/lglt9dkqc4vcndib1uej.jpg
+tags: []
 videos: []
+cover: //images.igdb.com/igdb/image/upload/t_cover_big/co4rmx.jpg
+image: //images.igdb.com/igdb/image/upload/t_screenshot_huge/mgfg0fbinm8m8fqfpcd2.jpg
 ---
 Meh. Good art style and movement, but not for me.

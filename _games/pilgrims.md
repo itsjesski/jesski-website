@@ -2,14 +2,15 @@
 id: 122766
 title: Pilgrims
 description: Pilgrims - Review
-score: 6
+score: 70
 date: 2022-03-05
 completed: true
-awards: []
-modified_date: 2022-07-04
+goty: []
+modified_date: 2023-02-28
 screenshots: []
-cover: //images.igdb.com/igdb/image/upload/t_cover_big/co26cn.png
-image: //images.igdb.com/igdb/image/upload/t_screenshot_huge/sc76rv.jpg
+tags: []
 videos: []
+cover: //images.igdb.com/igdb/image/upload/t_cover_big/co26cn.jpg
+image: //images.igdb.com/igdb/image/upload/t_screenshot_huge/sc76rt.jpg
 ---
 Short but pretty fun

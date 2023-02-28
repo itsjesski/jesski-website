@@ -1,15 +1,16 @@
 ---
 id: 76410
-title: "Warhammer 40,000: Gladius"
-description: "Warhammer 40,000: Gladius - Review"
-score: 6
+title: "Warhammer 40,000: Gladius - Relics of War"
+description: "Warhammer 40,000: Gladius - Relics of War - Review"
+score: 80
 date: 2022-06-05
-completed: false
-awards: []
-modified_date: 2022-07-04
+completed: true
+goty: []
+modified_date: 2023-02-28
 screenshots: []
-cover: //images.igdb.com/igdb/image/upload/t_cover_big/co26g5.png
-image: //images.igdb.com/igdb/image/upload/t_screenshot_huge/sc9xlt.jpg
+tags: []
 videos: []
+cover: //images.igdb.com/igdb/image/upload/t_cover_big/co26g5.jpg
+image: //images.igdb.com/igdb/image/upload/t_screenshot_huge/gjwwrhzcqqu4djqkwgur.jpg
 ---
 Fun 40k game that seems to slow down too much as games move on.

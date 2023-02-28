@@ -2,14 +2,16 @@
 id: 9136
 title: Gorogoa
 description: Gorogoa - Review
-score: 8
+score: 80
 date: 2018-02-15
 completed: true
-awards: []
-modified_date: 2022-07-04
+goty: []
+modified_date: 2023-02-28
 screenshots: []
-cover: //images.igdb.com/igdb/image/upload/t_cover_big/co3kby.jpg
-image: //images.igdb.com/igdb/image/upload/t_screenshot_huge/ejthqpdoramuc53bhi5z.jpg
+tags:
+  - Hidden Gems
 videos: []
+cover: //images.igdb.com/igdb/image/upload/t_cover_big/co3kby.jpg
+image: //images.igdb.com/igdb/image/upload/t_screenshot_huge/scjsyy.jpg
 ---
 Really unique puzzler with a lot of Woaaaah moments. 

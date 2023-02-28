@@ -1,14 +1,15 @@
 ---
-id: 172449
+id: 102995
 title: Lovecraft's Untold Stories
 description: Lovecraft's Untold Stories - Review
-score: 8
+score: 80
 date: 2019-02-14
 completed: false
-awards: []
-modified_date: 2022-07-04
+goty: []
+modified_date: 2023-02-28
 screenshots: []
-cover: //images.igdb.com/igdb/image/upload/t_cover_big/co3vn3.jpg
-image: //images.igdb.com/igdb/image/upload/t_screenshot_huge/scdrrr.jpg
+tags: []
 videos: []
+cover: //images.igdb.com/igdb/image/upload/t_cover_big/co1l5m.jpg
+image: //images.igdb.com/igdb/image/upload/t_screenshot_huge/oi392iaqc5akagc4fevr.jpg
 ---

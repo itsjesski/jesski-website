@@ -10,7 +10,13 @@ export type IGameScoreProps = {
  * @returns
  */
 function getStyles(gameScore: number | string): string {
-  switch (gameScore) {
+  const firstDigit = parseInt(String(gameScore)[0], 10);
+
+  if (String(gameScore).length >= 3) {
+    return 'bg-reviewscore-10';
+  }
+
+  switch (firstDigit) {
     case 1:
       return `bg-reviewscore-1`;
     case 2:
@@ -29,8 +35,6 @@ function getStyles(gameScore: number | string): string {
       return `bg-reviewscore-8`;
     case 9:
       return `bg-reviewscore-9`;
-    case 10:
-      return `bg-reviewscore-10`;
     default:
       return `bg-slate-100`;
   }

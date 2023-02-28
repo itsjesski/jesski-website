@@ -2,14 +2,15 @@
 id: 20875
 title: Project Highrise
 description: Project Highrise - Review
-score: 5
+score: 50
 date: 2017-02-16
 completed: false
-awards: []
-modified_date: 2022-07-04
+goty: []
+modified_date: 2023-02-28
 screenshots: []
-cover: //images.igdb.com/igdb/image/upload/t_cover_big/co27o6.jpg
-image: //images.igdb.com/igdb/image/upload/t_screenshot_huge/zvsxaksnrkumjjuikbpv.jpg
+tags: []
 videos: []
+cover: //images.igdb.com/igdb/image/upload/t_cover_big/co27o6.jpg
+image: //images.igdb.com/igdb/image/upload/t_screenshot_huge/dvlffnz1ml52nk8njjmo.jpg
 ---
 Let me make the game go faster! I'm tired of waiting on money.

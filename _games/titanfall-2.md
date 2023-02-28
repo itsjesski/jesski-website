@@ -1,15 +1,16 @@
 ---
-id: 17447
-title: Titanfall 2
-description: Titanfall 2 - Review
-score: 9
+id: 322
+title: Blade Runner
+description: Blade Runner - Review
+score: 90
 date: 2019-12-17
 completed: true
-awards: []
-modified_date: 2022-07-04
+goty: []
+modified_date: 2023-02-28
 screenshots: []
-cover: //images.igdb.com/igdb/image/upload/t_cover_big/fhbeilnghyhhmjqhinqa.jpg
-image: //images.igdb.com/igdb/image/upload/t_screenshot_huge/eaekyhzn9mhhmmlxunbn.jpg
+tags: []
 videos: []
+cover: //images.igdb.com/igdb/image/upload/t_cover_big/co1zz1.jpg
+image: //images.igdb.com/igdb/image/upload/t_screenshot_huge/sc80n4.jpg
 ---
 Great campaign, but short. Good multiplayer co-op mode.

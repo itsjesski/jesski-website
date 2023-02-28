@@ -19,12 +19,8 @@ type TwitchSecrets = {
 };
 
 export const twitchSecrets: TwitchSecrets = {
-  client_id:
-    process.env.TWITCH_CLIENT_ID != null ? process.env.TWITCH_CLIENT_ID : '',
-  client_secret:
-    process.env.TWITCH_CLIENT_SECRET != null
-      ? process.env.TWITCH_CLIENT_SECRET
-      : '',
+  client_id: '2vge8b9fogxfey8tmn1f0m6i8neqnf',
+  client_secret: 'd3f3n29z1nkqy7639i1mq66fsjdqvu',
 };
 
 export function getDataFromTwitchCache(key: string) {
@@ -68,7 +64,7 @@ async function getStreamLiveStatusFromAPI(
 async function cacheOnlineStatus() {
   const cache = flatCache.load('twitch', path.resolve('public/cache/'));
   const currentTime = Date.now();
-  const onlineStatus = await getStreamLiveStatusFromAPI('firebottletv');
+  const onlineStatus = await getStreamLiveStatusFromAPI('potionhoarders');
   cache.setKey('status', { online: onlineStatus, time: currentTime });
   cache.save();
   return onlineStatus;

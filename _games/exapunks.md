@@ -2,14 +2,15 @@
 id: 106122
 title: Exapunks
 description: Exapunks - Review
-score: 8
+score: 80
 date: 2018-12-05
 completed: false
-awards: []
-modified_date: 2022-07-04
+goty: []
+modified_date: 2023-02-28
 screenshots: []
-cover: //images.igdb.com/igdb/image/upload/t_cover_big/co1hcq.jpg
-image: //images.igdb.com/igdb/image/upload/t_screenshot_huge/noyyigkc35e4u3rgsfia.jpg
+tags: []
 videos: []
+cover: //images.igdb.com/igdb/image/upload/t_cover_big/co1hcq.jpg
+image: //images.igdb.com/igdb/image/upload/t_screenshot_huge/ujqcgjp2vz5bozwkn9lo.jpg
 ---
 Holy crap. What a cool game that is just brutally difficult. Major coding involved.

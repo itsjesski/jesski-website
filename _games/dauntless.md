@@ -1,15 +1,16 @@
 ---
-id: 26166
-title: Dauntless
-description: Dauntless - Review
-score: 7
+id: 107219
+title: Hamsterdam
+description: Hamsterdam - Review
+score: 70
 date: 2019-08-15
 completed: false
-awards: []
-modified_date: 2022-07-04
+goty: []
+modified_date: 2023-02-28
 screenshots: []
-cover: //images.igdb.com/igdb/image/upload/t_cover_big/co249w.jpg
-image: //images.igdb.com/igdb/image/upload/t_screenshot_huge/sc62s0.jpg
+tags: []
 videos: []
+cover: //images.igdb.com/igdb/image/upload/t_cover_big/co1i9r.jpg
+image: //images.igdb.com/igdb/image/upload/t_screenshot_huge/sc5nh7.jpg
 ---
 A great monster hunter clone. Fun to play with friends, but gets grindy.

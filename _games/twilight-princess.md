@@ -1,15 +1,16 @@
 ---
-id: 1036
-title: Twilight Princess
-description: Twilight Princess - Review
-score: 8
+id: 18017
+title: "The Legend of Zelda: Twilight Princess HD"
+description: "The Legend of Zelda: Twilight Princess HD - Review"
+score: 80
 date: 2017-01-14
 completed: true
-awards: []
-modified_date: 2022-07-04
+goty: []
+modified_date: 2023-02-28
 screenshots: []
-cover: //images.igdb.com/igdb/image/upload/t_cover_big/co3mtv.jpg
-image: //images.igdb.com/igdb/image/upload/t_screenshot_huge/pozco1vcpglnqv6igo9g.jpg
+tags: []
 videos: []
+cover: //images.igdb.com/igdb/image/upload/t_cover_big/co3mqa.jpg
+image: //images.igdb.com/igdb/image/upload/t_screenshot_huge/sjqspf6qqnxumzfepgqk.jpg
 ---
 Fun game, but very different from other zelda games. Good story.

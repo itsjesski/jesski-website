@@ -1,15 +1,17 @@
 ---
 id: 121338
-title: Frog Detective 2
-description: Frog Detective 2 - Review
-score: 7
+title: "Frog Detective 2: The Case of the Invisible Wizard"
+description: "Frog Detective 2: The Case of the Invisible Wizard - Review"
+score: 70
 date: 2019-12-15
 completed: true
-awards: []
-modified_date: 2022-07-04
+goty: []
+modified_date: 2023-02-28
 screenshots: []
-cover: //images.igdb.com/igdb/image/upload/t_cover_big/co1umw.jpg
-image: //images.igdb.com/igdb/image/upload/t_screenshot_huge/sc6xfl.jpg
+tags:
+  - Weird
 videos: []
+cover: //images.igdb.com/igdb/image/upload/t_cover_big/co1umw.jpg
+image: //images.igdb.com/igdb/image/upload/t_screenshot_huge/sc6xfh.jpg
 ---
 Pretty good, but not as good as number one.

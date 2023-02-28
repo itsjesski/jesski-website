@@ -1,15 +1,17 @@
 ---
-id: 113107
-title: "Sayonara Wild Hearts "
-description: Sayonara Wild Hearts  - Review
-score: 10
+id: 54996
+title: Jurassic World Evolution
+description: Jurassic World Evolution - Review
+score: 100
 date: 2019-09-22
 completed: true
-awards: []
-modified_date: 2022-07-04
+goty: []
+modified_date: 2023-02-28
 screenshots: []
-cover: //images.igdb.com/igdb/image/upload/t_cover_big/co2gx1.jpg
-image: //images.igdb.com/igdb/image/upload/t_screenshot_huge/sc5rmz.jpg
+tags:
+  - Hidden Gems
 videos: []
+cover: //images.igdb.com/igdb/image/upload/t_cover_big/co1uzy.jpg
+image: //images.igdb.com/igdb/image/upload/t_screenshot_huge/o0hgcycjchwphgvtsfwv.jpg
 ---
 Wow. Crazy awesome game.

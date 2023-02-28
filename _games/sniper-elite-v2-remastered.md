@@ -1,15 +1,16 @@
 ---
 id: 116191
-title: "Sniper Elite v2: Remastered"
-description: "Sniper Elite v2: Remastered - Review"
-score: 5
+title: Sniper Elite V2 Remastered
+description: Sniper Elite V2 Remastered - Review
+score: 50
 date: 2022-07-02
 completed: true
-awards: []
-modified_date: 2022-07-04
+goty: []
+modified_date: 2023-02-28
 screenshots: []
+tags: []
+videos: []
 cover: //images.igdb.com/igdb/image/upload/t_cover_big/co2urq.jpg
-image: //images.igdb.com/igdb/image/upload/t_screenshot_huge/sc6fhu.jpg
-videos: ['https://www.youtube.com/playlist?list=PLMDR1hlaVsmcbGOiI-LrvbKotM_A9wlLk']
+image: //images.igdb.com/igdb/image/upload/t_screenshot_huge/sc6fhv.jpg
 ---
 Its okay, pretty janky sometimes.

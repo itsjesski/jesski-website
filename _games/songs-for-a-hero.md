@@ -1,15 +1,16 @@
 ---
-id: 19719
+id: 222283
 title: Songs for a Hero
 description: Songs for a Hero - Review
-score: 7
+score: 60
 date: 2021-03-22
 completed: true
-awards: []
-modified_date: 2022-07-04
+goty: []
+modified_date: 2023-02-28
 screenshots: []
-cover: //images.igdb.com/igdb/image/upload/t_cover_big/co2k79.png
-image: //images.igdb.com/igdb/image/upload/t_screenshot_huge/sc8qi0.jpg
-videos: ['https://www.youtube.com/playlist?list=PLMDR1hlaVsmfnU1odt5a7Wn2f4Ucbdgq3']
+tags: []
+videos: []
+cover: //images.igdb.com/igdb/image/upload/t_cover_big/co5lqp.jpg
+image: //images.igdb.com/igdb/image/upload/t_screenshot_huge/scjfg8.jpg
 ---
 Pretty good? The singing voice can get grating after a bit.

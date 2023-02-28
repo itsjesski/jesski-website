@@ -7,7 +7,7 @@ import { GameCard } from './GameCard';
 
 const GameCardList: React.FC<{}> = () => {
   const [fbPosts, setPostData] = useState<FBGame[]>();
-  const numberPosts = 6;
+  const numberPosts = 18;
 
   useEffect(() => {
     if (fbPosts != null) return;

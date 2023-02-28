@@ -2,14 +2,16 @@
 id: 134602
 title: Bugsnax
 description: Bugsnax - Review
-score: 8
+score: 80
 date: 2020-12-08
 completed: true
-awards: []
-modified_date: 2022-07-04
+goty: []
+modified_date: 2023-02-28
 screenshots: []
+tags:
+  - Weird
+videos: []
 cover: //images.igdb.com/igdb/image/upload/t_cover_big/co45t5.jpg
 image: //images.igdb.com/igdb/image/upload/t_screenshot_huge/sceeqq.jpg
-videos: ['https://www.youtube.com/playlist?list=PLMDR1hlaVsmcB2FcFwPfcyDEqZPPoW1eO']
 ---
 Fun game with a crazy story, but nothing too mind blowing.

@@ -2,14 +2,15 @@
 id: 19560
 title: God of War
 description: God of War - Review
-score: 9
+score: 90
 date: 2020-01-01
 completed: true
-awards: []
-modified_date: 2022-07-04
+goty: []
+modified_date: 2023-02-28
 screenshots: []
+tags: []
+videos: []
 cover: //images.igdb.com/igdb/image/upload/t_cover_big/co1tmu.jpg
 image: //images.igdb.com/igdb/image/upload/t_screenshot_huge/ywrkjcrbeemmb51flsfj.jpg
-videos: []
 ---
 Amazing game

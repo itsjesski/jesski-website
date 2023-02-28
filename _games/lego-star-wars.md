@@ -1,15 +1,16 @@
 ---
-id: 6844
-title: Lego Star Wars
-description: Lego Star Wars - Review
-score: 5
+id: 2681
+title: "LEGO Star Wars: The Video Game"
+description: "LEGO Star Wars: The Video Game - Review"
+score: 50
 date: 2016-01-05
 completed: false
-awards: []
-modified_date: 2022-07-04
+goty: []
+modified_date: 2023-02-28
 screenshots: []
-cover: //images.igdb.com/igdb/image/upload/t_cover_big/co2qk2.jpg
-image: //images.igdb.com/igdb/image/upload/t_screenshot_huge/g1nimshnk1bqblaj60dt.jpg
+tags: []
 videos: []
+cover: //images.igdb.com/igdb/image/upload/t_cover_big/co4930.jpg
+image: //images.igdb.com/igdb/image/upload/t_screenshot_huge/mengyedzpswfvlhpdsxr.jpg
 ---
 Another lego game!

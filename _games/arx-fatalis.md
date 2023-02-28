@@ -2,14 +2,15 @@
 id: 602
 title: Arx Fatalis
 description: Arx Fatalis - Review
-score: 7
+score: 70
 date: 2022-10-14
 completed: false
-awards: []
-modified_date: 2022-10-14
+goty: []
+modified_date: 2023-02-28
 screenshots: []
-cover: //images.igdb.com/igdb/image/upload/t_cover_big/co2zpp.png
-image: //images.igdb.com/igdb/image/upload/t_original/akxbxzevbfrgv2ywwlhn.jpg
+tags: []
 videos: []
+cover: //images.igdb.com/igdb/image/upload/t_cover_big/co2zpp.jpg
+image: //images.igdb.com/igdb/image/upload/t_screenshot_huge/rh38jcrw6ergqz7g3wsf.jpg
 ---
-It's a fun game, very similar to a fantasy anachronox. However, the middle feels like it gets bogged down a bit with backtracking.
+A neat RPG with some good humor.

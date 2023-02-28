@@ -58,13 +58,13 @@ const PageIntroBox: React.FC<{}> = (props) => {
       {streamIsOnline && (
         <div className="pl-2 grid grid-cols-12 gap-4">
           <div className="col-span-9">
-            <h1 className="text-fbstyle-highlight">Firebottle is live!</h1>
+            <h1 className="text-fbstyle-highlight">Potion Hoarders is live!</h1>
             <p>
               The Twitch stream is on air right now, and you&apos;re missing
               out! If you&apos;d like to join in and become part of the
               community, just click the button below!
             </p>
-            <Link href="https://twitch.tv/FirebottleTV" target={'_blank'}>
+            <Link href="https://twitch.tv/PotionHoarders" target="_blank">
               <a>
                 <button
                   type="button"

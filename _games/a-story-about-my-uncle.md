@@ -2,14 +2,15 @@
 id: 7211
 title: A Story About My Uncle
 description: A Story About My Uncle - Review
-score: 7
+score: 70
 date: 2016-06-22
 completed: true
-awards: []
-modified_date: 2022-07-04
+goty: []
+modified_date: 2023-02-28
 screenshots: []
+tags: []
+videos: []
 cover: //images.igdb.com/igdb/image/upload/t_cover_big/co21sm.jpg
 image: //images.igdb.com/igdb/image/upload/t_screenshot_huge/vbkxvxt4fexkne4pfsf8.jpg
-videos: []
 ---
 Pretty good story, and difficult but not overly dumb platforming

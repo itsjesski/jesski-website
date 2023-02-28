@@ -1,15 +1,16 @@
 ---
 id: 18185
-title: wartile
-description: wartile - Review
-score: 7
+title: Wartile
+description: Wartile - Review
+score: 70
 date: 2020-03-30
 completed: false
-awards: []
-modified_date: 2022-07-04
+goty: []
+modified_date: 2023-02-28
 screenshots: []
-cover: //images.igdb.com/igdb/image/upload/t_cover_big/co24f0.jpg
-image: //images.igdb.com/igdb/image/upload/t_screenshot_huge/pbedi5cip3nvt3nym5wk.jpg
+tags: []
 videos: []
+cover: //images.igdb.com/igdb/image/upload/t_cover_big/co24f0.jpg
+image: //images.igdb.com/igdb/image/upload/t_screenshot_huge/v3ubnff97kfdswtha3kq.jpg
 ---
 Cool looking strategy game

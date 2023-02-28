@@ -1,15 +1,16 @@
 ---
-id: 112723
-title: Warhammer Chaosbane
-description: Warhammer Chaosbane - Review
-score: 8
+id: 103168
+title: "Warhammer: Chaosbane"
+description: "Warhammer: Chaosbane - Review"
+score: 80
 date: 2020-05-08
 completed: true
-awards: []
-modified_date: 2022-07-04
+goty: []
+modified_date: 2023-02-28
 screenshots: []
-cover: //images.igdb.com/igdb/image/upload/t_cover_big/co3lu8.jpg
-image: //images.igdb.com/igdb/image/upload/t_screenshot_huge/sc5wqy.jpg
+tags: []
 videos: []
+cover: //images.igdb.com/igdb/image/upload/t_cover_big/co2nix.jpg
+image: //images.igdb.com/igdb/image/upload/t_screenshot_huge/sc5jtm.jpg
 ---
 A fun ARPG with crazy hordes to fight.

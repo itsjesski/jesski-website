@@ -2,14 +2,15 @@
 id: 27927
 title: Tower Unite
 description: Tower Unite - Review
-score: 8
+score: 80
 date: 2016-07-09
 completed: false
-awards: []
-modified_date: 2022-07-04
+goty: []
+modified_date: 2023-02-28
 screenshots: []
-cover: //images.igdb.com/igdb/image/upload/t_cover_big/co2rq6.jpg
-image: //images.igdb.com/igdb/image/upload/t_screenshot_huge/vxmbcys45hdgqwwwlsdo.jpg
+tags: []
 videos: []
+cover: //images.igdb.com/igdb/image/upload/t_cover_big/co2rq6.jpg
+image: //images.igdb.com/igdb/image/upload/t_screenshot_huge/kwsj3okhacfpho2x7jiu.jpg
 ---
 Surprisingly fun. This game will get infinitely better with patches. Hopefully the playerbase remains around for it.

@@ -1,15 +1,16 @@
 ---
-id: 466
+id: 7609
 title: Until Dawn
 description: Until Dawn - Review
-score: 8
+score: 80
 date: 2017-10-13
 completed: true
-awards: []
-modified_date: 2022-07-04
+goty: []
+modified_date: 2023-02-28
 screenshots: []
-cover: //images.igdb.com/igdb/image/upload/t_cover_big/co3lu2.jpg
-image: //images.igdb.com/igdb/image/upload/t_screenshot_huge/xiksv6i1nh2owk0atzwf.jpg
+tags: []
 videos: []
+cover: //images.igdb.com/igdb/image/upload/t_cover_big/co2s5q.jpg
+image: //images.igdb.com/igdb/image/upload/t_screenshot_huge/ehiszyxmgglxgmmclp9s.jpg
 ---
 A great horror game that makes you question everyones choices just like a real horror movie! The "dont move" mechanic kinda sucks. To many possible deaths right at the end too.

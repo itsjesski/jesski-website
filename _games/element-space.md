@@ -2,14 +2,15 @@
 id: 106401
 title: Element Space
 description: Element Space - Review
-score: 8
+score: 80
 date: 2018-11-11
 completed: false
-awards: []
-modified_date: 2022-07-04
+goty: []
+modified_date: 2023-02-28
 screenshots: []
-cover: //images.igdb.com/igdb/image/upload/t_cover_big/co2c9m.jpg
-image: //images.igdb.com/igdb/image/upload/t_screenshot_huge/hd9hmqb4m5njkrbickk9.jpg
+tags: []
 videos: []
+cover: //images.igdb.com/igdb/image/upload/t_cover_big/co2c9m.jpg
+image: //images.igdb.com/igdb/image/upload/t_screenshot_huge/mwgpv95y8nzko10xwgay.jpg
 ---
 Early Access: Looks like it'll be awesome fun.

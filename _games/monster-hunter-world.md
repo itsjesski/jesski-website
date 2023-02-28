@@ -1,15 +1,16 @@
 ---
 id: 36926
-title: Monster Hunter World
-description: Monster Hunter World - Review
-score: 9
+title: "Monster Hunter: World"
+description: "Monster Hunter: World - Review"
+score: 90
 date: 2018-02-16
 completed: false
-awards: []
-modified_date: 2022-07-04
+goty: []
+modified_date: 2023-02-28
 screenshots: []
-cover: //images.igdb.com/igdb/image/upload/t_cover_big/co1rst.jpg
-image: //images.igdb.com/igdb/image/upload/t_screenshot_huge/afmdmszdechkmzrhq7zm.jpg
+tags: []
 videos: []
+cover: //images.igdb.com/igdb/image/upload/t_cover_big/co1rst.jpg
+image: //images.igdb.com/igdb/image/upload/t_screenshot_huge/ghcjheumz1norh0rwaxk.jpg
 ---
 Great game, but the multiplayer implementation is just weird. Also weapons need more variety.

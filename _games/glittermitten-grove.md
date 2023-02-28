@@ -2,14 +2,16 @@
 id: 26628
 title: Glittermitten Grove
 description: Glittermitten Grove - Review
-score: 5
+score: 50
 date: 2017-04-01
 completed: false
-awards: []
-modified_date: 2022-07-04
+goty: []
+modified_date: 2023-02-28
 screenshots: []
+tags:
+  - Weird
+videos: []
 cover: //images.igdb.com/igdb/image/upload/t_cover_big/fv7xwmif8lynpkwbahyb.jpg
 image: //images.igdb.com/igdb/image/upload/t_screenshot_huge/qudkjgaqn9v42lckjwmy.jpg
-videos: []
 ---
 Mini-games are great. But the overworld and symbol puzzle thing ruins it.

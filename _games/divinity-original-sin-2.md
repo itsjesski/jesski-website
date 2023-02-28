@@ -1,15 +1,16 @@
 ---
-id: 154209
-title: Divinity Original Sin 2
-description: Divinity Original Sin 2 - Review
-score: 9
+id: 11800
+title: "Divinity: Original Sin II"
+description: "Divinity: Original Sin II - Review"
+score: 90
 date: 2017-10-01
 completed: false
-awards: []
-modified_date: 2022-07-04
+goty: []
+modified_date: 2023-02-28
 screenshots: []
-cover: //images.igdb.com/igdb/image/upload/t_cover_big/co3cpv.jpg
-image: //images.igdb.com/igdb/image/upload/t_screenshot_huge/scaw80.jpg
+tags: []
 videos: []
+cover: //images.igdb.com/igdb/image/upload/t_cover_big/co1y5v.jpg
+image: //images.igdb.com/igdb/image/upload/t_screenshot_huge/cvhhkfnz77nfalywwfcl.jpg
 ---
-Greatest RPG.
+A very fun RPG that has a few drawn out sections that really slow things down.

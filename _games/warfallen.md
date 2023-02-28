@@ -2,14 +2,15 @@
 id: 82438
 title: WarFallen
 description: WarFallen - Review
-score: 1
+score: 10
 date: 2019-01-12
 completed: false
-awards: []
-modified_date: 2022-07-04
+goty: []
+modified_date: 2023-02-28
 screenshots: []
-cover: //images.igdb.com/igdb/image/upload/t_cover_big/co1hig.jpg
-image: //images.igdb.com/igdb/image/upload/t_screenshot_huge/tajmlbzhrv8jho3amtpj.jpg
+tags: []
 videos: []
+cover: //images.igdb.com/igdb/image/upload/t_cover_big/co1hig.jpg
+image: //images.igdb.com/igdb/image/upload/t_screenshot_huge/gy2icvmtz4wv2zi9zuom.jpg
 ---
 Maybe the worst game I've played in a long time.

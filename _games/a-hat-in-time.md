@@ -1,20 +1,17 @@
 ---
 id: 6705
-title: A Hat In Time
-description: A Hat In Time - Review
-score: 10
+title: A Hat in Time
+description: A Hat in Time - Review
+score: 100
 date: 2017-12-27
 completed: true
-awards: []
-modified_date: 2022-07-04
-screenshots: [
-  '\assets\images\screenshots\a-hat-in-time\chaos.jfif',
-  '\assets\images\screenshots\a-hat-in-time\color.jfif',
-  '\assets\images\screenshots\a-hat-in-time\cool.jfif',
-  '\assets\images\screenshots\a-hat-in-time\mask.jfif'
-]
-cover: //images.igdb.com/igdb/image/upload/t_cover_big/co4xnl.jpg
-image: //images.igdb.com/igdb/image/upload/t_screenshot_huge/oo7kp0l7meyqme68shm2.jpg
+goty: []
+modified_date: 2023-02-28
+screenshots: []
+tags:
+  - Hidden Gems
 videos: []
+cover: //images.igdb.com/igdb/image/upload/t_cover_big/co5pl5.jpg
+image: //images.igdb.com/igdb/image/upload/t_screenshot_huge/sc5qky.jpg
 ---
 Fantastic platformer.

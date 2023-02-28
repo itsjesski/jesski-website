@@ -1,15 +1,16 @@
 ---
 id: 9062
-title: STRAFE
-description: STRAFE - Review
-score: 6
+title: Strafe
+description: Strafe - Review
+score: 60
 date: 2017-12-20
 completed: false
-awards: []
-modified_date: 2022-07-04
+goty: []
+modified_date: 2023-02-28
 screenshots: []
+tags: []
+videos: []
 cover: //images.igdb.com/igdb/image/upload/t_cover_big/jegkipvyqqhur5uheqgs.jpg
 image: //images.igdb.com/igdb/image/upload/t_screenshot_huge/lcgamticzvmjzouxzgmc.jpg
-videos: []
 ---
 Difficult roguelike that really brings back 90s shooter feelings.

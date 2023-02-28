@@ -2,14 +2,15 @@
 id: 81207
 title: Outpost Zero
 description: Outpost Zero - Review
-score: 8
+score: 80
 date: 2019-07-20
 completed: false
-awards: []
-modified_date: 2022-07-04
+goty: []
+modified_date: 2023-02-28
 screenshots: []
-cover: //images.igdb.com/igdb/image/upload/t_cover_big/teppdsitr8wwcqc2kjiu.jpg
-image: //images.igdb.com/igdb/image/upload/t_screenshot_huge/bzyxxzsswpscdsdlbkyl.jpg
+tags: []
 videos: []
+cover: //images.igdb.com/igdb/image/upload/t_cover_big/teppdsitr8wwcqc2kjiu.jpg
+image: //images.igdb.com/igdb/image/upload/t_screenshot_huge/lziggynhjrcjgpluidku.jpg
 ---
 A solid game with fun building mechanics.

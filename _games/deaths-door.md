@@ -1,18 +1,17 @@
 ---
 id: 145099
-title: Deaths Door
-description: Deaths Door - Review
-score: 10
+title: Death's Door
+description: Death's Door - Review
+score: 100
 date: 2021-07-28
 completed: true
-awards:
-  - name: Game of the Year
-    year: "2021"
-    type: Gold
-modified_date: 2022-07-04
+goty:
+  - Gold
+modified_date: 2023-02-28
 screenshots: []
-cover: //images.igdb.com/igdb/image/upload/t_cover_big/co45xc.jpg
-image: //images.igdb.com/igdb/image/upload/t_screenshot_huge/sc96b9.jpg
+tags: []
 videos: []
+cover: //images.igdb.com/igdb/image/upload/t_cover_big/co45xc.jpg
+image: //images.igdb.com/igdb/image/upload/t_screenshot_huge/sc96b5.jpg
 ---
 Love this game! Love the style, the story, it's awesome.

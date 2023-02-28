@@ -2,14 +2,15 @@
 id: 10760
 title: "Bloodstained: Ritual of the Night"
 description: "Bloodstained: Ritual of the Night - Review"
-score: 7
+score: 70
 date: 2019-06-20
 completed: false
-awards: []
-modified_date: 2022-07-04
+goty: []
+modified_date: 2023-02-28
 screenshots: []
-cover: //images.igdb.com/igdb/image/upload/t_cover_big/co2eir.jpg
-image: //images.igdb.com/igdb/image/upload/t_screenshot_huge/wkyizzyxr3c0tiqrvty0.jpg
+tags: []
 videos: []
+cover: //images.igdb.com/igdb/image/upload/t_cover_big/co5qgf.jpg
+image: //images.igdb.com/igdb/image/upload/t_screenshot_huge/wkyizzyxr3c0tiqrvty0.jpg
 ---
 Pretty great platformer!

@@ -1,15 +1,16 @@
 ---
-id: 19545
-title: Observer
-description: Observer - Review
-score: 5
+id: 20454
+title: Pinstripe
+description: Pinstripe - Review
+score: 50
 date: 2017-10-05
 completed: false
-awards: []
-modified_date: 2022-07-04
+goty: []
+modified_date: 2023-02-28
 screenshots: []
-cover: //images.igdb.com/igdb/image/upload/t_cover_big/co256h.jpg
-image: //images.igdb.com/igdb/image/upload/t_screenshot_huge/jb7utprj4ujiic1obgvr.jpg
+tags: []
 videos: []
+cover: //images.igdb.com/igdb/image/upload/t_cover_big/wdvojtqymc24siasqjde.jpg
+image: //images.igdb.com/igdb/image/upload/t_screenshot_huge/pfep6foc5zuxpejpt8pa.jpg
 ---
 A very slow game whose horror focus is on jump scares. The story itself is very interesting and would have been an amazing game had they skipped the horror part.

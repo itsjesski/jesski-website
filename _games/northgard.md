@@ -2,13 +2,14 @@
 id: 18918
 title: Northgard
 description: Northgard - Review
-score: 7
+score: 70
 date: 2019-06-15
 completed: false
-awards: []
-modified_date: 2022-07-04
+goty: []
+modified_date: 2023-02-28
 screenshots: []
-cover: //images.igdb.com/igdb/image/upload/t_cover_big/guqifzispzew1rubnyzd.jpg
-image: //images.igdb.com/igdb/image/upload/t_screenshot_huge/ynt3qpvbb1f31o4lqnbx.jpg
+tags: []
 videos: []
+cover: //images.igdb.com/igdb/image/upload/t_cover_big/guqifzispzew1rubnyzd.jpg
+image: //images.igdb.com/igdb/image/upload/t_screenshot_huge/lqkupxuned8fqcawk3l8.jpg
 ---

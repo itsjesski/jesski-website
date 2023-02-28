@@ -2,14 +2,15 @@
 id: 125110
 title: Grimm's Hollow
 description: Grimm's Hollow - Review
-score: 7
+score: 70
 date: 2020-06-05
 completed: true
-awards: []
-modified_date: 2022-07-04
+goty: []
+modified_date: 2023-02-28
 screenshots: []
-cover: //images.igdb.com/igdb/image/upload/t_cover_big/co2j8j.jpg
-image: //images.igdb.com/igdb/image/upload/t_screenshot_huge/sc781x.jpg
+tags: []
 videos: []
+cover: //images.igdb.com/igdb/image/upload/t_cover_big/co2j8j.jpg
+image: //images.igdb.com/igdb/image/upload/t_screenshot_huge/sc781y.jpg
 ---
 Good little feel good story.

@@ -1,14 +1,15 @@
 ---
 id: 110294
-title: Pandemic Express
-description: Pandemic Express - Review
-score: 3
+title: "Pandemic Express: Zombie Escape"
+description: "Pandemic Express: Zombie Escape - Review"
+score: 30
 date: 2019-06-01
 completed: false
-awards: []
-modified_date: 2022-07-04
+goty: []
+modified_date: 2023-02-28
 screenshots: []
+tags: []
+videos: []
 cover: //images.igdb.com/igdb/image/upload/t_cover_big/co2g0h.jpg
 image: //images.igdb.com/igdb/image/upload/t_screenshot_huge/sc605s.jpg
-videos: []
 ---

@@ -2,14 +2,15 @@
 id: 26571
 title: Alien Caseno
 description: Alien Caseno - Review
-score: 6
+score: 60
 date: 2019-08-15
 completed: true
-awards: []
-modified_date: 2022-07-04
+goty: []
+modified_date: 2023-02-28
 screenshots: []
-cover: //images.igdb.com/igdb/image/upload/t_cover_big/co1x85.jpg
-image: //images.igdb.com/igdb/image/upload/t_screenshot_huge/scehqe.jpg
+tags: []
 videos: []
+cover: //images.igdb.com/igdb/image/upload/t_cover_big/co1x85.jpg
+image: //images.igdb.com/igdb/image/upload/t_screenshot_huge/scehqc.jpg
 ---
 You wander around.

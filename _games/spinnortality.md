@@ -2,13 +2,14 @@
 id: 51471
 title: Spinnortality
 description: Spinnortality - Review
-score: 8
+score: 80
 date: 2019-06-06
 completed: false
-awards: []
-modified_date: 2022-07-04
+goty: []
+modified_date: 2023-02-28
 screenshots: []
-cover: //images.igdb.com/igdb/image/upload/t_cover_big/co2wo3.jpg
-image: //images.igdb.com/igdb/image/upload/t_screenshot_huge/nemantx2nfsmurisamgh.jpg
+tags: []
 videos: []
+cover: //images.igdb.com/igdb/image/upload/t_cover_big/co2wo3.jpg
+image: //images.igdb.com/igdb/image/upload/t_screenshot_huge/gnbv77cjlmo13ap340ea.jpg
 ---

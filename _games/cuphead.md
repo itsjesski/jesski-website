@@ -1,15 +1,16 @@
 ---
-id: 9061
+id: 237497
 title: Cuphead
 description: Cuphead - Review
-score: 9
+score: 90
 date: 2017-11-27
 completed: false
-awards: []
-modified_date: 2022-07-04
+goty: []
+modified_date: 2023-02-28
 screenshots: []
-cover: //images.igdb.com/igdb/image/upload/t_cover_big/co49fq.jpg
-image: //images.igdb.com/igdb/image/upload/t_screenshot_huge/sqho6e7tv9verg6j1tvv.jpg
+tags: []
 videos: []
+cover: //images.igdb.com/igdb/image/upload/t_cover_big/co65ip.jpg
+image: ""
 ---
 Although I havent finished, this game is amazing. The love that went into it absolutely shows. Every boss is super unique.

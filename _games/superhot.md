@@ -1,15 +1,16 @@
 ---
 id: 7205
-title: Superhot
-description: Superhot - Review
-score: 5
+title: SuperHot
+description: SuperHot - Review
+score: 50
 date: 2016-10-18
 completed: true
-awards: []
-modified_date: 2022-07-04
+goty: []
+modified_date: 2023-02-28
 screenshots: []
+tags: []
+videos: []
 cover: //images.igdb.com/igdb/image/upload/t_cover_big/co2656.jpg
 image: //images.igdb.com/igdb/image/upload/t_screenshot_huge/x5rhyqreyktajtvzg91t.jpg
-videos: []
 ---
 Neat mechanic, but very short game. Story could be cool if expanded.

@@ -2,14 +2,15 @@
 id: 493
 title: Heavy Rain
 description: Heavy Rain - Review
-score: 8
+score: 80
 date: 2019-10-04
 completed: true
-awards: []
-modified_date: 2022-07-04
+goty: []
+modified_date: 2023-02-28
 screenshots: []
+tags: []
+videos: []
 cover: //images.igdb.com/igdb/image/upload/t_cover_big/co3rhy.jpg
 image: //images.igdb.com/igdb/image/upload/t_screenshot_huge/k2zmtm03stdzyw9pqivu.jpg
-videos: []
 ---
 Great story and a really fun time.

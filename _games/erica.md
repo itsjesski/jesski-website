@@ -2,14 +2,15 @@
 id: 75240
 title: Erica
 description: Erica - Review
-score: 9
+score: 90
 date: 2019-09-02
 completed: true
-awards: []
-modified_date: 2022-07-04
+goty: []
+modified_date: 2023-02-28
 screenshots: []
+tags: []
+videos: []
 cover: //images.igdb.com/igdb/image/upload/t_cover_big/co1p7n.jpg
 image: //images.igdb.com/igdb/image/upload/t_screenshot_huge/sc6wfd.jpg
-videos: []
 ---
 OMG. I loved the entire thing!

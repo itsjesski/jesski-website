@@ -1,15 +1,16 @@
 ---
 id: 34521
-title: Okhlos
-description: Okhlos - Review
-score: 6
+title: "Okhlos: Omega"
+description: "Okhlos: Omega - Review"
+score: 60
 date: 2016-08-18
 completed: false
-awards: []
-modified_date: 2022-07-04
+goty: []
+modified_date: 2023-02-28
 screenshots: []
-cover: //images.igdb.com/igdb/image/upload/t_cover_big/co21f1.jpg
-image: //images.igdb.com/igdb/image/upload/t_screenshot_huge/c1op6qm1ztw1quu4qjfb.jpg
+tags: []
 videos: []
+cover: //images.igdb.com/igdb/image/upload/t_cover_big/co21f1.jpg
+image: //images.igdb.com/igdb/image/upload/t_screenshot_huge/c9aok4lkvhbpnjlx9oz9.jpg
 ---
 A neat little roguelike unlike any I have seen before. Gets a bit repetitive.

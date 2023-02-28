@@ -2,14 +2,15 @@
 id: 137684
 title: Space Court
 description: Space Court - Review
-score: 7
+score: 50
 date: 2020-12-31
 completed: true
-awards: []
-modified_date: 2022-07-04
+goty: []
+modified_date: 2023-02-28
 screenshots: []
+tags: []
+videos: []
 cover: //images.igdb.com/igdb/image/upload/t_cover_big/co2opn.jpg
 image: //images.igdb.com/igdb/image/upload/t_screenshot_huge/sc9zcg.jpg
-videos: []
 ---
 PORCS ARE BEST

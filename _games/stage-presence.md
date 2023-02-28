@@ -2,14 +2,15 @@
 id: 34744
 title: Stage Presence
 description: Stage Presence - Review
-score: 1
+score: 10
 date: 2017-02-21
 completed: false
-awards: []
-modified_date: 2022-07-04
+goty: []
+modified_date: 2023-02-28
 screenshots: []
+tags: []
+videos: []
 cover: //images.igdb.com/igdb/image/upload/t_cover_big/co24tx.jpg
 image: //images.igdb.com/igdb/image/upload/t_screenshot_huge/arjzxutifz55vh3iges8.jpg
-videos: []
 ---
 Maybe the most broken and least fun game I've played. You literally just say thing into a microphone at random volumes. The karaoke is completely broken and that would have been the only fun part. 

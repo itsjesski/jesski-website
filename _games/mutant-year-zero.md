@@ -1,15 +1,16 @@
 ---
 id: 89560
-title: Mutant Year Zero
-description: Mutant Year Zero - Review
-score: 9
+title: "Mutant Year Zero: Road to Eden"
+description: "Mutant Year Zero: Road to Eden - Review"
+score: 90
 date: 2018-12-25
 completed: true
-awards: []
-modified_date: 2022-07-04
+goty: []
+modified_date: 2023-02-28
 screenshots: []
-cover: //images.igdb.com/igdb/image/upload/t_cover_big/co1z3b.jpg
-image: //images.igdb.com/igdb/image/upload/t_screenshot_huge/sflapn0biorvzgvnlneq.jpg
+tags: []
 videos: []
+cover: //images.igdb.com/igdb/image/upload/t_cover_big/co1z3b.jpg
+image: //images.igdb.com/igdb/image/upload/t_screenshot_huge/goqlsgrfhc1fhqznpvak.jpg
 ---
 Great xcom style game with simplified mechanics and fun story.

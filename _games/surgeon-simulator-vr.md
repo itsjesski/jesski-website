@@ -1,15 +1,16 @@
 ---
-id: 33128
-title: Surgeon Simulator VR
-description: Surgeon Simulator VR - Review
-score: 5
+id: 26299
+title: "Surgeon Simulator: Experience Reality"
+description: "Surgeon Simulator: Experience Reality - Review"
+score: 50
 date: 2016-12-17
 completed: false
-awards: []
-modified_date: 2022-07-04
+goty: []
+modified_date: 2023-02-28
 screenshots: []
-cover: //images.igdb.com/igdb/image/upload/t_cover_big/co42ql.jpg
-image: //images.igdb.com/igdb/image/upload/t_screenshot_huge/sf8lmcelxhyx8kddmnkg.jpg
+tags: []
 videos: []
+cover: //images.igdb.com/igdb/image/upload/t_cover_big/co1v3m.jpg
+image: //images.igdb.com/igdb/image/upload/t_screenshot_huge/qcpylbhmpmoxwo0h4ctl.jpg
 ---
 Surgeon sim! 

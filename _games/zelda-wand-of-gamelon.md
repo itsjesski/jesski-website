@@ -1,15 +1,16 @@
 ---
 id: 8533
-title: "Zelda: Wand of Gamelon"
-description: "Zelda: Wand of Gamelon - Review"
-score: 3
+title: "Zelda: The Wand of Gamelon"
+description: "Zelda: The Wand of Gamelon - Review"
+score: 30
 date: 2021-01-10
 completed: true
-awards: []
-modified_date: 2022-07-04
+goty: []
+modified_date: 2023-02-28
 screenshots: []
-cover: //images.igdb.com/igdb/image/upload/t_cover_big/co2lh6.jpg
-image: //images.igdb.com/igdb/image/upload/t_screenshot_huge/sc6kw6.jpg
+tags: []
 videos: []
+cover: //images.igdb.com/igdb/image/upload/t_cover_big/co60tx.jpg
+image: https://images.igdb.com/igdb/image/upload/t_screenshot_huge/sckkdr.jpg
 ---
 The best game I've ever played.

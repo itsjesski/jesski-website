@@ -2,14 +2,15 @@
 id: 83731
 title: Beat Saber
 description: Beat Saber - Review
-score: 9
+score: 90
 date: 2018-08-23
 completed: false
-awards: []
-modified_date: 2022-07-04
+goty: []
+modified_date: 2023-02-28
 screenshots: []
-cover: //images.igdb.com/igdb/image/upload/t_cover_big/co20ux.jpg
-image: //images.igdb.com/igdb/image/upload/t_screenshot_huge/w2f30bcbyxcblxece4nd.jpg
+tags: []
 videos: []
+cover: //images.igdb.com/igdb/image/upload/t_cover_big/co20ux.jpg
+image: //images.igdb.com/igdb/image/upload/t_screenshot_huge/psimaprjda5od1szsyz0.jpg
 ---
 Absolutely incredible, but needs mods.

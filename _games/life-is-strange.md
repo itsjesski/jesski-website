@@ -2,14 +2,15 @@
 id: 7599
 title: Life is Strange
 description: Life is Strange - Review
-score: 10
+score: 100
 date: 2017-06-01
 completed: true
-awards: []
-modified_date: 2022-07-04
-screenshots: ['\assets\images\screenshots\life-is-strange\love.jfif']
-cover: //images.igdb.com/igdb/image/upload/t_cover_big/co1r8e.jpg
-image: //images.igdb.com/igdb/image/upload/t_screenshot_huge/b6rjjpluz7vzprxny8oi.jpg
+goty: []
+modified_date: 2023-02-28
+screenshots: []
+tags: []
 videos: []
+cover: //images.igdb.com/igdb/image/upload/t_cover_big/co1r8e.jpg
+image: //images.igdb.com/igdb/image/upload/t_screenshot_huge/lszanbcwri0hqwpktbk0.jpg
 ---
 Very good writing. Maybe the best middle of game twist ever.

@@ -2,18 +2,15 @@
 id: 3022
 title: Transistor
 description: Transistor - Review
-score: 8
+score: 90
 date: 2016-02-17
 completed: true
-awards: []
-modified_date: 2022-07-04
-screenshots: [
-  '\assets\images\screenshots\transistor\bathroom.jfif',
-  '\assets\images\screenshots\transistor\dress.jfif',
-  '\assets\images\screenshots\transistor\pizza.jfif'
-]
-cover: //images.igdb.com/igdb/image/upload/t_cover_big/co1pi1.jpg
-image: //images.igdb.com/igdb/image/upload/t_screenshot_huge/tvt0adsfs1cad8m2g3m5.jpg
+goty: []
+modified_date: 2023-02-28
+screenshots: []
+tags: []
 videos: []
+cover: //images.igdb.com/igdb/image/upload/t_cover_big/co1pi1.jpg
+image: //images.igdb.com/igdb/image/upload/t_screenshot_huge/axc7016mm1qftco88y4y.jpg
 ---
 Another older game, but one of my top ten favorites. Unique battles system and an extremely interesting story.

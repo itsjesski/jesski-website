@@ -1,15 +1,16 @@
 ---
-id: 141542
-title: Ark
-description: Ark - Review
-score: 7
+id: 10239
+title: "Ark: Survival Evolved"
+description: "Ark: Survival Evolved - Review"
+score: 70
 date: 2016-08-29
 completed: false
-awards: []
-modified_date: 2022-07-04
+goty: []
+modified_date: 2023-02-28
 screenshots: []
-cover: //images.igdb.com/igdb/image/upload/t_cover_big/co4v2q.jpg
-image: //images.igdb.com/igdb/image/upload/t_screenshot_huge/schds3.jpg
+tags: []
 videos: []
+cover: //images.igdb.com/igdb/image/upload/t_cover_big/co493k.jpg
+image: //images.igdb.com/igdb/image/upload/t_screenshot_huge/sc6vnc.jpg
 ---
 Surprisingly fun. Did not see myself liking this game until I got onto a Bronto. <3

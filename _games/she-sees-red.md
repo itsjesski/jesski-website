@@ -1,15 +1,16 @@
 ---
 id: 118645
-title: She Sees red
-description: She Sees red - Review
-score: 7
+title: She Sees Red
+description: She Sees Red - Review
+score: 70
 date: 2020-05-28
 completed: true
-awards: []
-modified_date: 2022-07-04
+goty: []
+modified_date: 2023-02-28
 screenshots: []
+tags: []
+videos: []
 cover: //images.igdb.com/igdb/image/upload/t_cover_big/co233q.jpg
 image: //images.igdb.com/igdb/image/upload/t_screenshot_huge/sc6lyv.jpg
-videos: []
 ---
 Good quick little FMVV game.

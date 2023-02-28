@@ -2,13 +2,14 @@
 id: 119315
 title: Devolver Bootleg
 description: Devolver Bootleg - Review
-score: 7
+score: 70
 date: 2019-06-09
-completed: false
-awards: []
-modified_date: 2022-07-04
+completed: true
+goty: []
+modified_date: 2023-02-28
 screenshots: []
-cover: //images.igdb.com/igdb/image/upload/t_cover_big/co4a5b.jpg
-image: //images.igdb.com/igdb/image/upload/t_screenshot_huge/sc6lba.jpg
+tags: []
 videos: []
+cover: //images.igdb.com/igdb/image/upload/t_cover_big/co4a5b.jpg
+image: //images.igdb.com/igdb/image/upload/t_screenshot_huge/sc6lb9.jpg
 ---

@@ -1,15 +1,16 @@
 ---
 id: 29004
-title: "Life is Strange: Before The Storm"
-description: "Life is Strange: Before The Storm - Review"
-score: 10
+title: "Life is Strange: Before the Storm"
+description: "Life is Strange: Before the Storm - Review"
+score: 100
 date: 2017-12-28
 completed: true
-awards: []
-modified_date: 2022-07-04
+goty: []
+modified_date: 2023-02-28
 screenshots: []
-cover: //images.igdb.com/igdb/image/upload/t_cover_big/co1twj.jpg
-image: //images.igdb.com/igdb/image/upload/t_screenshot_huge/h6vdetua4guqfrhochzk.jpg
+tags: []
 videos: []
+cover: //images.igdb.com/igdb/image/upload/t_cover_big/co1twj.jpg
+image: //images.igdb.com/igdb/image/upload/t_screenshot_huge/cjawxs0ys3sbqpnkyhga.jpg
 ---
 Great story, great plot points. A few open questions and plotlines that never get tied up, but great overall.

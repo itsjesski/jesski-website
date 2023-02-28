@@ -1,14 +1,16 @@
 ---
 id: 116419
-title: Cadence of Hyrule
-description: Cadence of Hyrule - Review
-score: 8
+title: "Cadence of Hyrule: Crypt of the NecroDancer Featuring the Legend of Zelda"
+description: "Cadence of Hyrule: Crypt of the NecroDancer Featuring the Legend
+  of Zelda - Review"
+score: 80
 date: 2019-06-13
 completed: true
-awards: []
-modified_date: 2022-07-04
+goty: []
+modified_date: 2023-02-28
 screenshots: []
-cover: //images.igdb.com/igdb/image/upload/t_cover_big/co1qgt.jpg
-image: //images.igdb.com/igdb/image/upload/t_screenshot_huge/scahqb.jpg
+tags: []
 videos: []
+cover: //images.igdb.com/igdb/image/upload/t_cover_big/co1qgt.jpg
+image: //images.igdb.com/igdb/image/upload/t_screenshot_huge/scahqc.jpg
 ---

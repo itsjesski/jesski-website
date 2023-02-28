@@ -27,30 +27,23 @@ export function filterPostFields(posts: any, fields: string): any[] {
   return posts.map((post: any) => pick(post, filter));
 }
 
-export function getPostsByAward(
-  posts: any,
-  award: string,
-  year: string
-): any[] {
+export function getPostsByGOTYYear(posts: any, year: string): any[] {
   const awardPosts = posts.reduce((awardedGames: FBGame[], post: FBGame) => {
-    const { awards } = post;
-    if (awards.length > 0) {
+    const { goty, date } = post;
+    if (goty.length > 0 && date.split('-')[0] === year) {
       // eslint-disable-next-line no-restricted-syntax
-      for (const gameAward of awards) {
-        if (
-          gameAward.name.toLowerCase() === award.toLowerCase() &&
-          gameAward.year === year
-        ) {
-          switch (gameAward.type.toLowerCase()) {
-            case 'gold':
-              insertAt(awardedGames, 0, post);
-              break;
-            case 'silver':
-              insertAt(awardedGames, 1, post);
-              break;
-            default:
-              awardedGames.push(post);
-          }
+      for (const gameAward of goty) {
+        switch (gameAward.toLowerCase()) {
+          case 'gold':
+            insertAt(awardedGames, 0, post);
+            break;
+          case 'silver':
+            insertAt(awardedGames, 1, post);
+            break;
+          case 'bronze':
+            awardedGames.push(post);
+            break;
+          default:
         }
       }
     }

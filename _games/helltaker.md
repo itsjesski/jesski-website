@@ -2,14 +2,15 @@
 id: 133152
 title: Helltaker
 description: Helltaker - Review
-score: 7
+score: 70
 date: 2020-09-28
 completed: true
-awards: []
-modified_date: 2022-07-04
+goty: []
+modified_date: 2023-02-28
 screenshots: []
-cover: //images.igdb.com/igdb/image/upload/t_cover_big/co279z.jpg
-image: //images.igdb.com/igdb/image/upload/t_screenshot_huge/sc8apw.jpg
+tags: []
 videos: []
+cover: //images.igdb.com/igdb/image/upload/t_cover_big/co279z.jpg
+image: //images.igdb.com/igdb/image/upload/t_screenshot_huge/sc8apy.jpg
 ---
 Characters are cool! Wish the game was only puzzles and a bit longer.

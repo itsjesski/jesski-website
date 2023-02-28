@@ -1,15 +1,16 @@
 ---
-id: 76882
-title: Sekiro
-description: Sekiro - Review
-score: N/A
+id: 115201
+title: Unrailed!
+description: Unrailed! - Review
+score: .nan
 date: 2020-01-08
 completed: false
-awards: []
-modified_date: 2022-07-04
+goty: []
+modified_date: 2023-02-28
 screenshots: []
-cover: //images.igdb.com/igdb/image/upload/t_cover_big/co2a23.jpg
-image: //images.igdb.com/igdb/image/upload/t_screenshot_huge/sri6brei6tvapyyk6tse.jpg
+tags: []
 videos: []
+cover: //images.igdb.com/igdb/image/upload/t_cover_big/co2jx0.jpg
+image: //images.igdb.com/igdb/image/upload/t_screenshot_huge/sc8pzu.jpg
 ---
 Can't git gud? Then git chicken.

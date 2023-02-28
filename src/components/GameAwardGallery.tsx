@@ -9,7 +9,7 @@ const GameCardList: React.FC<{ year: string }> = ({ year }) => {
   useEffect(() => {
     if (fbPosts != null) return;
 
-    getGamePostByAward('Game of the Year', year).then((gamePosts) => {
+    getGamePostByAward(year).then((gamePosts) => {
       // We only have 1st through 3rd place.
       setPostData(gamePosts.results);
     });

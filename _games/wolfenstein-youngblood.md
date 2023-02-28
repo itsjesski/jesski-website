@@ -2,14 +2,15 @@
 id: 103301
 title: "Wolfenstein: Youngblood"
 description: "Wolfenstein: Youngblood - Review"
-score: 5
+score: 50
 date: 2019-08-01
 completed: false
-awards: []
-modified_date: 2022-07-04
+goty: []
+modified_date: 2023-02-28
 screenshots: []
-cover: //images.igdb.com/igdb/image/upload/t_cover_big/co21by.jpg
-image: //images.igdb.com/igdb/image/upload/t_screenshot_huge/sc6dk1.jpg
+tags: []
 videos: []
+cover: //images.igdb.com/igdb/image/upload/t_cover_big/co21by.jpg
+image: //images.igdb.com/igdb/image/upload/t_screenshot_huge/sc6djy.jpg
 ---
 Bad implementation and bad options. Can't turn off headbob. Got sick.,

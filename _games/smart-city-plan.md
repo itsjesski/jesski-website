@@ -1,15 +1,16 @@
 ---
 id: 122273
-title: smart city plan
-description: smart city plan - Review
-score: 7
+title: Smart City Plan
+description: Smart City Plan - Review
+score: 70
 date: 2020-03-14
 completed: false
-awards: []
-modified_date: 2022-07-04
+goty: []
+modified_date: 2023-02-28
 screenshots: []
-cover: //images.igdb.com/igdb/image/upload/t_cover_big/co1qat.jpg
-image: //images.igdb.com/igdb/image/upload/t_screenshot_huge/sc74sz.jpg
+tags: []
 videos: []
+cover: //images.igdb.com/igdb/image/upload/t_cover_big/co1qat.jpg
+image: //images.igdb.com/igdb/image/upload/t_screenshot_huge/sc74sy.jpg
 ---
 good indie city builder, though not a ton to separate it from others

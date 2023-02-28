@@ -1,15 +1,16 @@
 ---
 id: 24989
-title: Hellsign
-description: Hellsign - Review
-score: 5
+title: HellSign
+description: HellSign - Review
+score: 50
 date: 2018-11-11
 completed: false
-awards: []
-modified_date: 2022-07-04
+goty: []
+modified_date: 2023-02-28
 screenshots: []
-cover: //images.igdb.com/igdb/image/upload/t_cover_big/co1u8r.jpg
-image: //images.igdb.com/igdb/image/upload/t_screenshot_huge/vifcugaigutqevhcpxw5.jpg
+tags: []
 videos: []
+cover: //images.igdb.com/igdb/image/upload/t_cover_big/co1u8r.jpg
+image: //images.igdb.com/igdb/image/upload/t_screenshot_huge/m9wko3nn4vv9xgndlngl.jpg
 ---
 Shows promise, but writing is god awful.

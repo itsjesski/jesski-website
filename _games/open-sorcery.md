@@ -2,14 +2,15 @@
 id: 27444
 title: Open Sorcery
 description: Open Sorcery - Review
-score: 7
+score: 70
 date: 2018-03-03
 completed: true
-awards: []
-modified_date: 2022-07-04
+goty: []
+modified_date: 2023-02-28
 screenshots: []
-cover: //images.igdb.com/igdb/image/upload/t_cover_big/co22sw.jpg
-image: //images.igdb.com/igdb/image/upload/t_screenshot_huge/aevrljwnwkdn0niiqems.jpg
+tags: []
 videos: []
+cover: //images.igdb.com/igdb/image/upload/t_cover_big/co22sw.jpg
+image: //images.igdb.com/igdb/image/upload/t_screenshot_huge/h28xv0snqdgdrwtsbrcu.jpg
 ---
 Wow, this is very good.

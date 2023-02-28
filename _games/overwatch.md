@@ -2,14 +2,15 @@
 id: 8173
 title: Overwatch
 description: Overwatch - Review
-score: 10
+score: 100
 date: 2016-05-29
 completed: false
-awards: []
-modified_date: 2022-07-04
+goty: []
+modified_date: 2023-02-28
 screenshots: []
-cover: //images.igdb.com/igdb/image/upload/t_cover_big/co1rcb.jpg
-image: //images.igdb.com/igdb/image/upload/t_screenshot_huge/bpcshm1ryzyf4nwu0rkt.jpg
+tags: []
 videos: []
+cover: //images.igdb.com/igdb/image/upload/t_cover_big/co1rcb.jpg
+image: //images.igdb.com/igdb/image/upload/t_screenshot_huge/ao0jpev6qtvqlftjlhv5.jpg
 ---
 Fantastic.

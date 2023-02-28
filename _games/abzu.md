@@ -2,14 +2,15 @@
 id: 7352
 title: Abzu
 description: Abzu - Review
-score: 6
+score: 60
 date: 2017-02-22
 completed: true
-awards: []
-modified_date: 2022-07-04
+goty: []
+modified_date: 2023-02-28
 screenshots: []
-cover: //images.igdb.com/igdb/image/upload/t_cover_big/co28sy.jpg
-image: //images.igdb.com/igdb/image/upload/t_screenshot_huge/qyjlxhmghgdwyur7ptk3.jpg
+tags: []
 videos: []
+cover: //images.igdb.com/igdb/image/upload/t_cover_big/co28sy.jpg
+image: //images.igdb.com/igdb/image/upload/t_screenshot_huge/rdsm1mvbg5tgcpnb6ptz.jpg
 ---
 Very pretty game with a great soundtrack. But, it's pretty much just a showpiece for those two things.

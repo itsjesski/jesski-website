@@ -31,7 +31,7 @@ const PostsIndex: React.FC<{}> = () => {
       'score',
       'image',
       'cover',
-      'awards',
+      'goty',
     ]).then((gamePosts) => {
       setPostData(gamePosts.results);
     });

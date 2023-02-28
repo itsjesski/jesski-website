@@ -1,15 +1,16 @@
 ---
 id: 1262
-title: "South Park: Stick of Truth"
-description: "South Park: Stick of Truth - Review"
-score: 8
+title: "South Park: The Stick of Truth"
+description: "South Park: The Stick of Truth - Review"
+score: 80
 date: 2017-08-26
 completed: true
-awards: []
-modified_date: 2022-07-04
+goty: []
+modified_date: 2023-02-28
 screenshots: []
-cover: //images.igdb.com/igdb/image/upload/t_cover_big/co1v8x.jpg
-image: //images.igdb.com/igdb/image/upload/t_screenshot_huge/bjwrnizsisnykyj2unls.jpg
+tags: []
 videos: []
+cover: //images.igdb.com/igdb/image/upload/t_cover_big/co1v8x.jpg
+image: //images.igdb.com/igdb/image/upload/t_screenshot_huge/oyb4wcxtuc5egvqyw7u9.jpg
 ---
 Great gameplay. Maybe not 100% stream safe!
