@@ -68,13 +68,15 @@ const PostsIndex: React.FC<{}> = () => {
           </p>
         </PageIntroBox>
         <div className="post-index">
-          <div className="flex flex-wrap">
-            {validYears?.map((year: number) => (
-              <GameAwardGallery
-                year={year.toString()}
-                key={year.toString()}
-              ></GameAwardGallery>
-            ))}
+          <div className="flex">
+            <div className="award-wrap flex flex-wrap">
+              {validYears?.map((year: number) => (
+                <GameAwardGallery
+                  year={year.toString()}
+                  key={year.toString()}
+                ></GameAwardGallery>
+              ))}
+            </div>
           </div>
         </div>
       </Content>

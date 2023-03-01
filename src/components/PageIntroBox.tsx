@@ -48,7 +48,7 @@ const PageIntroBox: React.FC<{}> = (props) => {
   }, [firebotImage, streamIsOnline]);
 
   return (
-    <div className="index-header items-end flex-wrap flex justify-around mb-32 mt-10">
+    <div className="index-header items-end flex-wrap flex justify-around mb-10 mt-10">
       {streamIsOnline == null && (
         <div className="pl-2">
           <Spinner></Spinner>
@@ -83,8 +83,8 @@ const PageIntroBox: React.FC<{}> = (props) => {
 
       {streamIsOnline === false && (
         <div className="pl-2 grid grid-cols-12 gap-4">
-          <div className="col-span-9">{props.children}</div>
-          <div className="col-span-3 flex justify-center align-middle">
+          <div className="col-span-12 md:col-span-9">{props.children}</div>
+          <div className="col-span-3 hidden justify-end align-middle md:flex">
             <img src={firebotImage} alt="firebot logo" className="w-1/2"></img>
           </div>
         </div>

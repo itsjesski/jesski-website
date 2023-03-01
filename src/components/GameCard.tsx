@@ -39,7 +39,10 @@ const GameCard: React.FC<{ game: FBGame; size: string }> = ({ game, size }) => {
           ></img>
         </div>
 
-        <div className="absolute bottom-0 right-0">
+        <div className="bottom-0 left-0 w-full bg-white flex p-1 shadow-steam">
+          <div className="smallTitle text-slate-900 text-sm overflow-hidden truncate font-semibold w-3/4">
+            {game.title}
+          </div>
           <GameScoreBox score={game.score}></GameScoreBox>
         </div>
 

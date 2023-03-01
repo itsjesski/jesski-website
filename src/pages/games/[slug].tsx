@@ -69,13 +69,11 @@ const GameDetailsPage: React.FC<{ post: GameDetails }> = (props) => {
     const difference = Math.round(newFBReview - newCriticReview);
     let diffText = '';
     if (difference < 0) {
-      diffText = `Firebottle's score was ${Math.abs(
-        difference
-      )} points lower than the critics.`;
+      diffText = `-${Math.abs(difference)} points`;
     } else if (difference === 0) {
-      diffText = `Firebottle's score was exactly the same as the critics!`;
+      diffText = `Nailed it`;
     } else {
-      diffText = `Firebottle's score was ${difference} points higher than the critics.`;
+      diffText = `+${difference} points`;
     }
     return diffText;
   }
@@ -129,12 +127,6 @@ const GameDetailsPage: React.FC<{ post: GameDetails }> = (props) => {
       <div className="details-content md:flex">
         <div className="details-sidebar shadow-steam bg-slate-800 p-4 mt-4 mr-4 md:w-1/4 w-full">
           <div className="firebottle-details border-b-slate-700 border-solid border-b-2 pb-2 mb-2">
-            <div className="genre">
-              <span className="uppercase text-gray-400 whitespace-nowrap text-xs md:text-sm">
-                Firebottle Rating:{' '}
-              </span>
-              <span className="relative z-20">{props.post?.score}</span>
-            </div>
             <div className="whitespace-nowrap overflow-hidden overflow-ellipsis relative z-20">
               <span className="uppercase text-gray-400 whitespace-nowrap text-xs md:text-sm">
                 Played:{' '}
@@ -153,6 +145,14 @@ const GameDetailsPage: React.FC<{ post: GameDetails }> = (props) => {
                 <span className="text-positive">
                   {props.post?.completed === true ? 'Complete' : 'Incomplete'}
                 </span>
+              </span>
+            </div>
+            <div className="genre">
+              <span className="uppercase text-gray-400 whitespace-nowrap text-xs md:text-sm">
+                Genre:{' '}
+              </span>
+              <span className="relative z-20">
+                {igdbData?.genres != null && getGenreString(igdbData?.genres)}
               </span>
             </div>
             <div className="relative z-20">
@@ -174,13 +174,11 @@ const GameDetailsPage: React.FC<{ post: GameDetails }> = (props) => {
           <div className="game-info border-b-slate-700 border-solid border-b-2 pb-2 mb-2">
             <div className="genre">
               <span className="uppercase text-gray-400 whitespace-nowrap text-xs md:text-sm">
-                Genre:{' '}
+                Firebottle Rating:{' '}
               </span>
-              <span className="relative z-20">
-                {igdbData?.genres != null && getGenreString(igdbData?.genres)}
-              </span>
+              <span className="relative z-20">{props.post?.score}</span>
             </div>
-            <div className="genre">
+            <div className="crating">
               <span className="uppercase text-gray-400 whitespace-nowrap text-xs md:text-sm">
                 Critics Rating:{' '}
               </span>
@@ -190,17 +188,17 @@ const GameDetailsPage: React.FC<{ post: GameDetails }> = (props) => {
                 {igdbData?.aggregated_rating == null && 'N/A'}
               </span>
             </div>
-          </div>
-          <div className="pb-2 mb-2">
-            <span className="uppercase text-gray-400 whitespace-nowrap text-xs md:text-sm">
-              Difference:{' '}
-            </span>
-            <span className="relative z-20">
-              {getReviewDifference(
-                props.post?.score,
-                igdbData?.aggregated_rating
-              )}
-            </span>
+            <div className="cdifference">
+              <span className="uppercase text-gray-400 whitespace-nowrap text-xs md:text-sm">
+                Difference:{' '}
+              </span>
+              <span className="relative z-20">
+                {getReviewDifference(
+                  props.post?.score,
+                  igdbData?.aggregated_rating
+                )}
+              </span>
+            </div>
           </div>
         </div>
         <div className="md:w-3/4 w-full">
@@ -251,41 +249,6 @@ const GameDetailsPage: React.FC<{ post: GameDetails }> = (props) => {
                       width="100%"
                       height="100%"
                     />
-                  </div>
-                </div>
-              )}
-              {props.post.screenshots.length > 0 && (
-                <div className="description mt-14">
-                  <div className="gallery-title mb-6 flex justify-between items-end flex-wrap">
-                    <h2 className="mb-0">
-                      Screenshot{' '}
-                      <span className="text-fbstyle-highlight">Gallery</span>
-                    </h2>
-                    <div className="text-sm text-gray-400 font-bold">
-                      <a
-                        className="cursor-pointer"
-                        onClick={() => setIsOpen(true)}
-                      >
-                        View Full Gallery {'>'}
-                      </a>
-                    </div>
-                  </div>
-                  <div className="content">
-                    <div className="flex flex-wrap">
-                      {props.post.screenshots[0] && (
-                        <div className="screenshot w-full p-1">
-                          <a
-                            className="cursor-pointer"
-                            onClick={() => setIsOpen(true)}
-                          >
-                            <img
-                              src={props.post.screenshots[0]}
-                              alt="screenshot"
-                            ></img>
-                          </a>
-                        </div>
-                      )}
-                    </div>
                   </div>
                 </div>
               )}

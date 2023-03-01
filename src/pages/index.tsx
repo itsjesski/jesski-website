@@ -11,7 +11,7 @@ const Index = () => (
   <Main meta={<Meta title="Home" description={AppConfig.description} />}>
     <Content>
       <PageIntroBox>
-        <h1 className="text-fbstyle-highlight">Welcome!</h1>
+        <h1 className="text-fbstyle-highlight">Hello!</h1>
         <p>
           You&apos;ve entered the world of Firebottle. Here you&apos;ll find
           tidbits from all of my different passions from video games, to

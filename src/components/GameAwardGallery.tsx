@@ -25,10 +25,11 @@ const GameCardList: React.FC<{ year: string }> = ({ year }) => {
 
 const GameAwardGallery: React.FC<{ year: string }> = ({ year }) => (
   <>
-    <section className="game-gallery gallery-widget mb-20 w-full">
-      <div className="gallery-title mb-3 flex justify-between items-end flex-wrap border-b-slate-700 border-solid border-b-2 pb-2 pl-2 pr-2">
-        <h1 className="mb-0">Games of the Year</h1>
-        <span className="font-bold text-fbstyle-highlight">{year}</span>
+    <section className="game-gallery gallery-widget flex-auto w-2/5 md:w--full m-2">
+      <div className="gallery-title mb-3 border-b-slate-700 border-solid border-b-2 pb-2 pl-2 pr-2">
+        <h1 className="mb-0">
+          Best Games of <span className="text-fbstyle-highlight">{year}</span>
+        </h1>
       </div>
       <div className="gallery-content">
         <GameCardList year={year}></GameCardList>
