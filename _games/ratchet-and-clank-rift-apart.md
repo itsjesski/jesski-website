@@ -1,0 +1,16 @@
+---
+id: 134582
+title: "Ratchet & Clank: Rift Apart"
+description: "Ratchet & Clank: Rift Apart - Review"
+score: 90
+date: 2023-04-19
+completed: true
+goty: []
+modified_date: 2023-05-22
+screenshots: []
+tags: []
+videos: []
+cover: //images.igdb.com/igdb/image/upload/t_cover_big/co2str.jpg
+image: //images.igdb.com/igdb/image/upload/t_screenshot_huge/scag37.jpg
+---
+I love ratchet and clank games. This one has a lot of neat ideas and continues the crazy weapons from previous games.

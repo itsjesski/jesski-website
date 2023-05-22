@@ -2,11 +2,11 @@
 id: 211066
 title: "Rogue: Genesia"
 description: "Rogue: Genesia - Review"
-score: 80
+score: 70
 date: 2022-10-07
 completed: true
 goty: []
-modified_date: 2023-03-01
+modified_date: 2023-05-22
 screenshots: []
 tags: []
 videos: []

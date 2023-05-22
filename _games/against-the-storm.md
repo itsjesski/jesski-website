@@ -2,11 +2,11 @@
 id: 147519
 title: Against the Storm
 description: Against the Storm - Review
-score: 80
+score: 90
 date: 2023-01-12
 completed: false
 goty: []
-modified_date: 2023-03-01
+modified_date: 2023-05-22
 screenshots: []
 tags: []
 videos: []

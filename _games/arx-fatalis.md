@@ -2,11 +2,11 @@
 id: 602
 title: Arx Fatalis
 description: Arx Fatalis - Review
-score: 70
+score: 60
 date: 2022-10-14
 completed: false
 goty: []
-modified_date: 2023-03-01
+modified_date: 2023-05-22
 screenshots: []
 tags: []
 videos: []

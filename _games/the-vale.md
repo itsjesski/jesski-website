@@ -2,11 +2,11 @@
 id: 165212
 title: "The Vale: Shadow of the Crown"
 description: "The Vale: Shadow of the Crown - Review"
-score: 70
+score: 60
 date: 2022-09-16
 completed: false
 goty: []
-modified_date: 2023-03-01
+modified_date: 2023-05-22
 screenshots: []
 tags: []
 videos: []

@@ -2,11 +2,11 @@
 id: 135998
 title: "Warhammer 40,000: Darktide"
 description: "Warhammer 40,000: Darktide - Review"
-score: 80
+score: 60
 date: 2022-12-14
 completed: true
 goty: []
-modified_date: 2023-03-01
+modified_date: 2023-05-22
 screenshots: []
 tags: []
 videos: []
