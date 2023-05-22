@@ -11,6 +11,7 @@
     "build-prod": "run-s clean build export",
     "clean": "rimraf .next out",
     "lint": "next lint",
+    "lintfix": "npx eslint \"./src/\" --fix",
     "build-types": "tsc --noEmit --pretty",
     "prepare": "husky install",
     "cache-posts": "npx ts-node --skip-project ./src/scripts/PostCache.ts",
@@ -19,7 +20,7 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "npm run cache-posts && git add cache"
+      "pre-commit": "npx eslint \"./src/\" --fix && npm run cache-posts && git add cache"
     }
   },
   "dependencies": {
