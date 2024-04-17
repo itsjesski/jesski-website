@@ -24,3 +24,5 @@ This project was built as a website for the Firebottle stream community.
 
 ### Deployment
 Deployment happens automatically when merging a branch into main. Digital Ocean picks up on the merge, builds everything, and deploys it to https://firebottle.info
+
+![image](https://github.com/Firebottle/firebottle-website/assets/17416635/0f04b0f0-1364-4a67-b1af-e834dbf04a64)
