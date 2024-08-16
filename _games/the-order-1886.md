@@ -3,10 +3,11 @@ id: 3048
 title: "The Order: 1886"
 description: "The Order: 1886 - Review"
 score: 90
-date: 2017-04-01T00:00:00.000Z
+date: 2017-04-01
 completed: true
-goty: []
-modified_date: 2024-08-16T00:00:00.000Z
+goty:
+  - ""
+modified_date: 2024-08-16
 screenshots: []
 videos: []
 cover: //images.igdb.com/igdb/image/upload/t_cover_big/co2rn6.jpg

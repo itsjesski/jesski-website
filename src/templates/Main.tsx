@@ -11,7 +11,7 @@ type IMainProps = {
 };
 
 const Main = (props: IMainProps) => (
-  <div className="antialiased w-full text-white">
+  <div className="antialiased w-full ">
     {props.meta}
 
     <div className="mx-auto page-wrapper">

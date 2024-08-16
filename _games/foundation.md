@@ -3,10 +3,11 @@ id: 88392
 title: Foundation
 description: Foundation - Review
 score: 80
-date: 2022-05-23T00:00:00.000Z
+date: 2022-05-23
 completed: false
-goty: []
-modified_date: 2024-08-16T00:00:00.000Z
+goty:
+  - ""
+modified_date: 2024-08-16
 screenshots: []
 videos: []
 cover: //images.igdb.com/igdb/image/upload/t_cover_big/co1qv6.jpg

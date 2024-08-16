@@ -3,10 +3,11 @@ id: 1318
 title: "XCOM: Enemy Unknown"
 description: "XCOM: Enemy Unknown - Review"
 score: 80
-date: 2016-01-15T00:00:00.000Z
+date: 2016-01-15
 completed: false
-goty: []
-modified_date: 2024-08-16T00:00:00.000Z
+goty:
+  - ""
+modified_date: 2024-08-16
 screenshots: []
 videos: []
 cover: //images.igdb.com/igdb/image/upload/t_cover_big/co29i2.jpg

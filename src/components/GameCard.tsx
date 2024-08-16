@@ -29,7 +29,7 @@ const GameCard: React.FC<{ game: FBGame; size: string }> = ({ game, size }) => {
     <div className={`p-2  ${getStyles(size)}`}>
       <div className="group overflow-hidden relative w-full shadow-steam">
         <Link href="/games/[slug]" as={`/games/${game.slug}`}>
-          <a className="absolute z-10 top-0 bottom-0 left-0 right-0"></a>
+          <a className="absolute z-10 top-0 bottom-0 left-0 right-0 text-cstyle-highlight"></a>
         </Link>
         <div className="w-full h-full flex items-center justify-center">
           <img
@@ -40,7 +40,7 @@ const GameCard: React.FC<{ game: FBGame; size: string }> = ({ game, size }) => {
         </div>
 
         <div className="bottom-0 left-0 w-full bg-white flex p-1 shadow-steam">
-          <div className="smallTitle text-slate-900 text-sm overflow-hidden truncate font-semibold w-3/4">
+          <div className="smallTitle text-cstyle-highlight text-sm overflow-hidden truncate font-semibold w-3/4">
             {game.title}
           </div>
           <GameScoreBox score={game.score}></GameScoreBox>
@@ -58,17 +58,19 @@ const GameCard: React.FC<{ game: FBGame; size: string }> = ({ game, size }) => {
           </div>
         </div>
         <div
-          className="absolute  bg-gradient-to-br duration-700 from-green-800 to-blue-800 text-white block left-0 right-0 top-full text-base h-2/3 w-full opacity-50 
+          className="absolute  bg-gradient-to-br duration-700 from-cstyle-lighttext to-cstyle-background  block left-0 right-0 top-full text-base h-2/3 w-full opacity-50 
     transition-all group-hover:top-1/3 group-hover:opacity-100"
         >
           <div className="py-4 text-xs px-7">
-            <div className="text-lg font-bold">{game?.title}</div>
+            <div className="text-lg font-bold text-cstyle-highlight">
+              {game?.title}
+            </div>
             <div className="whitespace-nowrap overflow-hidden overflow-ellipsis relative z-20">
-              <span className="uppercase text-gray-400 whitespace-nowrap text-xs md:text-sm">
-                Played:{' '}
+              <span className="text-cstyle-text whitespace-nowrap text-xs md:text-sm">
+                Played on{' '}
               </span>
               <span className="whitespace-nowrap overflow-hidden overflow-ellipsis relative z-20">
-                <span className="text-positive">
+                <span className="text-cstyle-text whitespace-nowrap text-xs md:text-sm">
                   {format(new Date(game.date), 'LLL d, yyyy')}
                 </span>
               </span>

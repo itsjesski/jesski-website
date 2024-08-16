@@ -117,49 +117,47 @@ const GameDetailsPage: React.FC<{ post: GameDetails }> = (props) => {
           backgroundImage: `linear-gradient(rgba(22, 101, 52, 0.9), rgba(30, 64, 175, 0.9)),url(${props.post.image})`,
         }}
       >
-        <div className="bg-slate-800 pl-20 pr-20 pt-10 pb-10 shadow-steam">
-          <h1 className="text-center font-bold text-3xl text-white text-shadow-lg">
+        <div className="bg-cstyle-text pl-20 pr-20 pt-10 pb-10 shadow-steam">
+          <h1 className="text-center font-bold text-3xl text-cstyle-highlight text-shadow-lg">
             {props.post?.title}
           </h1>
         </div>
       </div>
 
       <div className="details-content md:flex">
-        <div className="details-sidebar shadow-steam bg-slate-800 p-4 mt-4 mr-4 md:w-1/4 w-full">
-          <div className="jesski-details border-b-slate-700 border-solid border-b-2 pb-2 mb-2">
+        <div className="details-sidebar shadow-steam bg-cstyle-highlight p-4 mt-4 mr-4 md:w-1/4 w-full">
+          <div className="jesski-details border-b-cstyle-text border-solid border-b-2 pb-2 mb-2">
             <div className="whitespace-nowrap overflow-hidden overflow-ellipsis relative z-20">
-              <span className="uppercase text-gray-400 whitespace-nowrap text-xs md:text-sm">
+              <span className="text-cstyle-text whitespace-nowrap font-bold">
                 Played:{' '}
               </span>
-              <span className="whitespace-nowrap overflow-hidden overflow-ellipsis relative z-20">
+              <span className="whitespace-nowrap overflow-hidden overflow-ellipsis relative z-20 text-cstyle-text">
                 <span className="text-positive">
                   {format(new Date(props.post?.date), 'LLL d, yyyy')}
                 </span>
               </span>
             </div>
             <div className="whitespace-nowrap overflow-hidden overflow-ellipsis relative z-20">
-              <span className="uppercase text-gray-400 whitespace-nowrap text-xs md:text-sm">
-                Finished?:{' '}
+              <span className="text-cstyle-text whitespace-nowrap font-bold">
+                Completed:{' '}
               </span>
-              <span className="whitespace-nowrap overflow-hidden overflow-ellipsis relative z-20">
+              <span className="whitespace-nowrap overflow-hidden overflow-ellipsis relative z-20 text-cstyle-text">
                 <span className="text-positive">
-                  {props.post?.completed === true ? 'Complete' : 'Incomplete'}
+                  {props.post?.completed === true ? 'Yes' : 'No'}
                 </span>
               </span>
             </div>
             <div className="genre">
-              <span className="uppercase text-gray-400 whitespace-nowrap text-xs md:text-sm">
+              <span className="text-cstyle-text whitespace-nowrap font-bold">
                 Genre:{' '}
               </span>
-              <span className="relative z-20">
+              <span className="relative z-20 text-cstyle-text">
                 {igdbData?.genres != null && getGenreString(igdbData?.genres)}
               </span>
             </div>
             <div className="relative z-20">
-              <span className="uppercase text-gray-400 text-xs md:text-sm">
-                Awards:{' '}
-              </span>
-              <span className="relative z-20">
+              <span className="text-cstyle-text font-bold">Awards: </span>
+              <span className="relative z-20 text-cstyle-text">
                 {props.post?.goty.length === 0 && (
                   <span className="text-positive">None</span>
                 )}
@@ -173,26 +171,28 @@ const GameDetailsPage: React.FC<{ post: GameDetails }> = (props) => {
           </div>
           <div className="game-info border-b-slate-700 border-solid border-b-2 pb-2 mb-2">
             <div className="genre">
-              <span className="uppercase text-gray-400 whitespace-nowrap text-xs md:text-sm">
+              <span className="text-cstyle-text whitespace-nowrap font-bold">
                 Jesski Rating:{' '}
               </span>
-              <span className="relative z-20">{props.post?.score}</span>
+              <span className="relative z-20 text-cstyle-text">
+                {props.post?.score}
+              </span>
             </div>
             <div className="crating">
-              <span className="uppercase text-gray-400 whitespace-nowrap text-xs md:text-sm">
+              <span className="text-cstyle-text whitespace-nowrap font-bold">
                 Critics Rating:{' '}
               </span>
-              <span className="relative z-20">
+              <span className="relative z-20 text-cstyle-text">
                 {igdbData?.aggregated_rating != null &&
                   Math.floor(igdbData?.aggregated_rating)}
                 {igdbData?.aggregated_rating == null && 'N/A'}
               </span>
             </div>
             <div className="cdifference">
-              <span className="uppercase text-gray-400 whitespace-nowrap text-xs md:text-sm">
+              <span className="text-cstyle-text whitespace-nowrap font-bold">
                 Difference:{' '}
               </span>
-              <span className="relative z-20">
+              <span className="relative z-20 text-cstyle-text">
                 {getReviewDifference(
                   props.post?.score,
                   igdbData?.aggregated_rating
@@ -209,7 +209,7 @@ const GameDetailsPage: React.FC<{ post: GameDetails }> = (props) => {
                   <div className="review">
                     <h2>
                       Jesski{' '}
-                      <span className="text-fbstyle-highlight">Review</span>
+                      <span className="text-cstyle-highlight">Review</span>
                     </h2>
                   </div>
                   <div
@@ -225,7 +225,7 @@ const GameDetailsPage: React.FC<{ post: GameDetails }> = (props) => {
                 <div className="description mt-14">
                   <h2 className="mb-6">
                     IGDB{' '}
-                    <span className="text-fbstyle-highlight">Description</span>
+                    <span className="text-cstyle-highlight">Description</span>
                   </h2>
                   <div
                     className="content"
@@ -238,8 +238,7 @@ const GameDetailsPage: React.FC<{ post: GameDetails }> = (props) => {
               {props.post.videos.length > 0 && (
                 <div className="description mt-14">
                   <h2 className="mb-6">
-                    Archive{' '}
-                    <span className="text-fbstyle-highlight">Video</span>
+                    Archive <span className="text-cstyle-highlight">Video</span>
                   </h2>
                   <div className="content">
                     <ReactPlayer

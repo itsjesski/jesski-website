@@ -3,10 +3,11 @@ id: 215769
 title: "Cyberpunk 2077: Phantom Liberty"
 description: "Cyberpunk 2077: Phantom Liberty - Review"
 score: 80
-date: 2023-10-02T00:00:00.000Z
+date: 2023-10-02
 completed: true
-goty: []
-modified_date: 2024-08-16T00:00:00.000Z
+goty:
+  - ""
+modified_date: 2024-08-16
 screenshots: []
 videos: []
 cover: //images.igdb.com/igdb/image/upload/t_cover_big/co7566.jpg

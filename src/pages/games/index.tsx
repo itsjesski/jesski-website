@@ -84,7 +84,7 @@ const PostsIndex: React.FC<{}> = () => {
     >
       <Content>
         <PageIntroBox>
-          <h1 className="text-fbstyle-highlight">Games</h1>
+          <h1 className="text-cstyle-highlight">Games</h1>
           <p>
             Since 2015 I&apos;ve been keeping track of all the games I have
             played and creating tiny reviews. Below you will find games of all

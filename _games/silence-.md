@@ -3,10 +3,11 @@ id: 115840
 title: Silence
 description: Silence - Review
 score: 70
-date: 2017-07-19T00:00:00.000Z
+date: 2017-07-19
 completed: true
-goty: []
-modified_date: 2024-08-16T00:00:00.000Z
+goty:
+  - ""
+modified_date: 2024-08-16
 screenshots: []
 videos: []
 cover: //images.igdb.com/igdb/image/upload/t_cover_big/co25hx.jpg

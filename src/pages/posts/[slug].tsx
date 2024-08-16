@@ -49,7 +49,7 @@ const DisplayPost = (props: FBPost) => (
       }}
     >
       <div className="bg-slate-800 pl-20 pr-20 pt-10 pb-10 shadow-steam">
-        <h1 className="text-center font-bold text-3xl text-white text-shadow-lg">
+        <h1 className="text-center font-bold text-3xl  text-shadow-lg">
           {props.title}
           <div className="text-center text-sm">
             {format(new Date(props.date), 'LLLL d, yyyy')}

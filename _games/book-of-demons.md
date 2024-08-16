@@ -3,10 +3,11 @@ id: 22747
 title: Book of Demons
 description: Book of Demons - Review
 score: 70
-date: 2018-02-22T00:00:00.000Z
+date: 2018-02-22
 completed: false
-goty: []
-modified_date: 2024-08-16T00:00:00.000Z
+goty:
+  - ""
+modified_date: 2024-08-16
 screenshots: []
 videos: []
 cover: //images.igdb.com/igdb/image/upload/t_cover_big/co1z5u.jpg

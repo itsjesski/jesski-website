@@ -3,10 +3,11 @@ id: 117271
 title: Chained Echoes
 description: Chained Echoes - Review
 score: 90
-date: 2023-01-21T00:00:00.000Z
+date: 2023-01-21
 completed: true
-goty: []
-modified_date: 2024-08-16T00:00:00.000Z
+goty:
+  - ""
+modified_date: 2024-08-16
 screenshots: []
 videos: []
 cover: //images.igdb.com/igdb/image/upload/t_cover_big/co544u.jpg

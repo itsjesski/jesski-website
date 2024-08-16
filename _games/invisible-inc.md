@@ -3,10 +3,11 @@ id: 6044
 title: Invisible, Inc.
 description: Invisible, Inc. - Review
 score: 70
-date: 2016-01-26T00:00:00.000Z
+date: 2016-01-26
 completed: false
-goty: []
-modified_date: 2024-08-16T00:00:00.000Z
+goty:
+  - ""
+modified_date: 2024-08-16
 screenshots: []
 videos: []
 cover: //images.igdb.com/igdb/image/upload/t_cover_big/co2efb.jpg

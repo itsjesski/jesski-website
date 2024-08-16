@@ -3,10 +3,11 @@ id: 134821
 title: "Werewolf: The Apocalypse - Heart of the Forest"
 description: "Werewolf: The Apocalypse - Heart of the Forest - Review"
 score: 60
-date: 2023-06-05T00:00:00.000Z
+date: 2023-06-05
 completed: true
-goty: []
-modified_date: 2024-08-16T00:00:00.000Z
+goty:
+  - ""
+modified_date: 2024-08-16
 screenshots: []
 videos: []
 cover: //images.igdb.com/igdb/image/upload/t_cover_big/co2i51.jpg

@@ -3,10 +3,11 @@ id: 138500
 title: That Coin Game
 description: That Coin Game - Review
 score: 60
-date: 2020-04-28T00:00:00.000Z
+date: 2020-04-28
 completed: false
-goty: []
-modified_date: 2024-08-16T00:00:00.000Z
+goty:
+  - ""
+modified_date: 2024-08-16
 screenshots: []
 videos: []
 cover: //images.igdb.com/igdb/image/upload/t_cover_big/co2rkg.jpg

@@ -3,11 +3,11 @@ id: 17000
 title: Stardew Valley
 description: Stardew Valley - Review
 score: 100
-date: 2016-03-07T00:00:00.000Z
+date: 2016-03-07
 completed: true
 goty:
   - Silver
-modified_date: 2024-08-16T00:00:00.000Z
+modified_date: 2024-08-16
 screenshots: []
 videos: []
 cover: //images.igdb.com/igdb/image/upload/t_cover_big/xrpmydnu9rpxvxfjkiu7.jpg

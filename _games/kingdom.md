@@ -3,10 +3,11 @@ id: 13686
 title: "Kingdom: Classic"
 description: "Kingdom: Classic - Review"
 score: 50
-date: 2016-03-28T00:00:00.000Z
+date: 2016-03-28
 completed: false
-goty: []
-modified_date: 2024-08-16T00:00:00.000Z
+goty:
+  - ""
+modified_date: 2024-08-16
 screenshots: []
 videos: []
 cover: //images.igdb.com/igdb/image/upload/t_cover_big/co28fs.jpg

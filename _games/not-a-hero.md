@@ -3,10 +3,11 @@ id: 6045
 title: Not a Hero
 description: Not a Hero - Review
 score: 40
-date: 2016-04-30T00:00:00.000Z
+date: 2016-04-30
 completed: false
-goty: []
-modified_date: 2024-08-16T00:00:00.000Z
+goty:
+  - ""
+modified_date: 2024-08-16
 screenshots: []
 videos: []
 cover: //images.igdb.com/igdb/image/upload/t_cover_big/co2gjr.jpg

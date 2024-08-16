@@ -3,10 +3,11 @@ id: 9498
 title: "Deus Ex: Mankind Divided"
 description: "Deus Ex: Mankind Divided - Review"
 score: 60
-date: 2016-08-03T00:00:00.000Z
+date: 2016-08-03
 completed: true
-goty: []
-modified_date: 2024-08-16T00:00:00.000Z
+goty:
+  - ""
+modified_date: 2024-08-16
 screenshots: []
 videos: []
 cover: //images.igdb.com/igdb/image/upload/t_cover_big/co25jt.jpg

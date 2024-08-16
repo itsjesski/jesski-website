@@ -3,10 +3,11 @@ id: 14404
 title: Kona
 description: Kona - Review
 score: 60
-date: 2017-10-08T00:00:00.000Z
+date: 2017-10-08
 completed: true
-goty: []
-modified_date: 2024-08-16T00:00:00.000Z
+goty:
+  - ""
+modified_date: 2024-08-16
 screenshots: []
 videos: []
 cover: //images.igdb.com/igdb/image/upload/t_cover_big/co5vwz.jpg

@@ -60,7 +60,7 @@ const PostsIndex: React.FC<{}> = () => {
     >
       <Content>
         <PageIntroBox>
-          <h1 className="text-fbstyle-highlight">Blog</h1>
+          <h1 className="text-cstyle-highlight">Blog</h1>
           <p>
             Below you&apos;ll find a bunch of notes and ramblings on various
             different things I feel like writing about. To be honest, this may

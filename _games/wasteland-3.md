@@ -3,10 +3,11 @@ id: 24863
 title: Wasteland 3
 description: Wasteland 3 - Review
 score: 80
-date: 2020-09-18T00:00:00.000Z
+date: 2020-09-18
 completed: false
-goty: []
-modified_date: 2024-08-16T00:00:00.000Z
+goty:
+  - ""
+modified_date: 2024-08-16
 screenshots: []
 videos: []
 cover: //images.igdb.com/igdb/image/upload/t_cover_big/co2620.jpg

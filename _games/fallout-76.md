@@ -3,10 +3,11 @@ id: 103020
 title: Fallout 76
 description: Fallout 76 - Review
 score: 70
-date: 2020-05-27T00:00:00.000Z
+date: 2020-05-27
 completed: true
-goty: []
-modified_date: 2024-08-16T00:00:00.000Z
+goty:
+  - ""
+modified_date: 2024-08-16
 screenshots: []
 videos: []
 cover: //images.igdb.com/igdb/image/upload/t_cover_big/co1yc4.jpg

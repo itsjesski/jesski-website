@@ -3,10 +3,11 @@ id: 1062
 title: Alan Wake
 description: Alan Wake - Review
 score: 70
-date: 2017-06-09T00:00:00.000Z
+date: 2017-06-09
 completed: true
-goty: []
-modified_date: 2024-08-16T00:00:00.000Z
+goty:
+  - ""
+modified_date: 2024-08-16
 screenshots: []
 videos: []
 cover: //images.igdb.com/igdb/image/upload/t_cover_big/co2dft.jpg

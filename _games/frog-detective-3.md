@@ -3,10 +3,11 @@ id: 161552
 title: "Frog Detective 3: Corruption at Cowboy County"
 description: "Frog Detective 3: Corruption at Cowboy County - Review"
 score: 70
-date: 2022-11-02T00:00:00.000Z
+date: 2022-11-02
 completed: true
-goty: []
-modified_date: 2024-08-16T00:00:00.000Z
+goty:
+  - ""
+modified_date: 2024-08-16
 screenshots: []
 videos: []
 cover: //images.igdb.com/igdb/image/upload/t_cover_big/co3zz6.jpg

@@ -7,7 +7,7 @@ export type IGameScoreProps = {
 const GameScoreBox = (props: IGameScoreProps) => (
   <>
     <div
-      className={`game-score align-middle text-sm text-slate-500 w-1/4 text-right`}
+      className={`game-score align-middle text-sm text-cstyle-lighttext w-1/4 text-right`}
     >
       {props.score}%
     </div>

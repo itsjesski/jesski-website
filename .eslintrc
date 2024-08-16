@@ -27,6 +27,8 @@
         "project": "./tsconfig.json"
       },
       "rules": {
+        "no-param-reassign": "off",
+        "no-plusplus": "off",
         "prettier/prettier": [
           "error",
           {

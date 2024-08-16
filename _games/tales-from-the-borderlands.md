@@ -3,11 +3,11 @@ id: 6707
 title: Tales from the Borderlands
 description: Tales from the Borderlands - Review
 score: 100
-date: 2016-09-27T00:00:00.000Z
+date: 2016-09-27
 completed: true
 goty:
   - Bronze
-modified_date: 2024-08-16T00:00:00.000Z
+modified_date: 2024-08-16
 screenshots: []
 videos: []
 cover: //images.igdb.com/igdb/image/upload/t_cover_big/co20tr.jpg

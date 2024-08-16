@@ -3,10 +3,11 @@ id: 1377
 title: "Spec Ops: The Line"
 description: "Spec Ops: The Line - Review"
 score: 50
-date: 2016-11-18T00:00:00.000Z
+date: 2016-11-18
 completed: true
-goty: []
-modified_date: 2024-08-16T00:00:00.000Z
+goty:
+  - ""
+modified_date: 2024-08-16
 screenshots: []
 videos: []
 cover: //images.igdb.com/igdb/image/upload/t_cover_big/co2acb.jpg

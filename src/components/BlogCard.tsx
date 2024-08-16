@@ -29,7 +29,7 @@ const BlogCard: React.FC<{ post: FBPost }> = ({ post }) => {
           </div>
         </div>
         <div
-          className="absolute bg-gradient-to-br duration-700 from-green-800 to-blue-800 text-white block left-0 right-0 top-full text-base h-full w-full opacity-50 
+          className="absolute bg-gradient-to-br duration-700 from-green-800 to-blue-800  block left-0 right-0 top-full text-base h-full w-full opacity-50 
     transition-all group-hover:top-0 group-hover:opacity-100"
         >
           <div className="py-4 text-xs px-7 p-2">

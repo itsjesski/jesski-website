@@ -3,10 +3,11 @@ id: 113112
 title: Hades
 description: Hades - Review
 score: 80
-date: 2019-03-05T00:00:00.000Z
+date: 2019-03-05
 completed: false
-goty: []
-modified_date: 2024-08-16T00:00:00.000Z
+goty:
+  - ""
+modified_date: 2024-08-16
 screenshots: []
 videos: []
 cover: //images.igdb.com/igdb/image/upload/t_cover_big/co39vc.jpg

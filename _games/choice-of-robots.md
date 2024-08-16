@@ -3,10 +3,11 @@ id: 13093
 title: Choice of Robots
 description: Choice of Robots - Review
 score: 70
-date: 2018-03-03T00:00:00.000Z
+date: 2018-03-03
 completed: true
-goty: []
-modified_date: 2024-08-16T00:00:00.000Z
+goty:
+  - ""
+modified_date: 2024-08-16
 screenshots: []
 videos: []
 cover: //images.igdb.com/igdb/image/upload/t_cover_big/wrcxdr4vhb5tbru4hax7.jpg

@@ -126,6 +126,61 @@ async function getFileName(sheetRow: any) {
 //   );
 // }
 
+function convertAndCompare(
+  newFrontMatterValue: any,
+  frontMatterValue: any,
+  type: string
+) {
+  let newValue;
+  switch (type) {
+    case 'Rating':
+      newValue = parseInt(newFrontMatterValue, 10) * 10;
+      break;
+    case 'Completed':
+      newValue = String(newFrontMatterValue).toLowerCase() === 'true';
+      break;
+    case 'GOTY':
+      newValue =
+        newFrontMatterValue !== ''
+          ? String(newFrontMatterValue).split(',')
+          : [''];
+
+      // Clean arrays.
+      newValue = newValue.filter((value: string) => value !== '');
+      frontMatterValue = frontMatterValue.filter(
+        (value: string) => value !== ''
+      );
+
+      if (newValue.length === frontMatterValue.length) {
+        return false;
+      }
+      break;
+    default:
+      newValue = newFrontMatterValue;
+  }
+
+  return JSON.stringify(newValue) !== JSON.stringify(frontMatterValue);
+}
+
+function needsUpdated(newFrontMatter: any, frontMatter: any) {
+  const fieldsToCheck = [
+    // Google Sheets vs MD
+    ['Rating', 'score'],
+    ['Completed', 'completed'],
+    ['GOTY', 'goty'],
+  ];
+
+  return fieldsToCheck.some((field) => {
+    const newFrontMatterFieldName = field[0];
+    const frontMatterFieldName = field[1];
+    return convertAndCompare(
+      newFrontMatter[newFrontMatterFieldName],
+      frontMatter[frontMatterFieldName],
+      newFrontMatterFieldName
+    );
+  });
+}
+
 /**
  * Edits the content of the md file that exists in both the file and google sheets.
  * @param sheetRow
@@ -143,6 +198,10 @@ async function editGameMDFile(sheetRow: any) {
 
   // eslint-disable-next-line prefer-const
   let { data: frontMatter, content } = matter(await readFile(filepath));
+
+  if (!needsUpdated(sheetRow, frontMatter)) {
+    return;
+  }
 
   // Here we are forcing an update of any fields found in the CSV and skipping fields pulled from IGDB.
   frontMatter = {
@@ -189,7 +248,7 @@ async function editGameMDFile(sheetRow: any) {
   //   saveFileFromSite(igdb[0].screenshots[0].url, 'bg', slug);
   // }
 
-  console.log(`Finished editing ${slug}.md.`);
+  console.log(`Updated ${slug}.md.`);
 }
 
 /**
@@ -231,7 +290,7 @@ async function createNewGameMDFile(sheetRow: any) {
     return;
   }
 
-  // If a file already exists using just the game name, then attack the igdb id as well.
+  // If a file already exists using just the game name, then attach the igdb id as well.
   if (fs.existsSync(`./_games/${slug}.md`)) {
     filepath = `./_games/${slug}-${igdb[0].id}.md`;
     slug = `${slug}-${igdb[0].id}`;
@@ -293,7 +352,15 @@ async function writeGameMDFile(sheetRow: any) {
 }
 
 export default function createGameFiles() {
+  console.log(
+    'Checking to see if we have any new games to add or update. Please wait...'
+  );
   const filePath = './src/scripts/csv/games.csv';
+
+  // Get total number of lines in the file
+  const totalLines = fs.readFileSync(filePath, 'utf8').split('\n').length - 1;
+  let processedLines = 0;
+
   const csvstream = csv
     .parseFile(filePath, { headers: true })
     .on('data', async function (row) {
@@ -306,9 +373,15 @@ export default function createGameFiles() {
 
       // when done resume the stream
       csvstream.resume();
+
+      // Increment processed lines and log progress
+      processedLines++;
+      if (processedLines % 50 === 0) {
+        console.log(`Progress: ${processedLines}/${totalLines}`);
+      }
     })
     .on('end', function () {
-      console.log('We are done!');
+      console.log('We are finished updating files.');
     })
     .on('error', function (error) {
       console.log(error);

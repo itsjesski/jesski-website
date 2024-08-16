@@ -3,10 +3,10 @@ id: 13677
 title: Downwell
 description: Downwell - Review
 score: 60
-date: 2015-12-19T00:00:00.000Z
+date: 2015-12-19
 completed: false
 goty: []
-modified_date: 2024-08-16T00:00:00.000Z
+modified_date: 2024-08-16
 screenshots: []
 videos: []
 cover: //images.igdb.com/igdb/image/upload/t_cover_big/co284e.jpg

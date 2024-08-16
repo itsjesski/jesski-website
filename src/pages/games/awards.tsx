@@ -58,7 +58,7 @@ const PostsIndex: React.FC<{}> = () => {
     >
       <Content>
         <PageIntroBox>
-          <h1 className="text-fbstyle-highlight">Game of the Year Awards</h1>
+          <h1 className="text-cstyle-highlight">Game of the Year Awards</h1>
           <p>
             Since 2015 I&apos;ve selected three games to win the Game of the
             Year award. These are all selected from games I played, not

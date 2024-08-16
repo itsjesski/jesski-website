@@ -3,10 +3,11 @@ id: 8389
 title: ToeJam & Earl
 description: ToeJam & Earl - Review
 score: 40
-date: 2021-02-25T00:00:00.000Z
+date: 2021-02-25
 completed: false
-goty: []
-modified_date: 2024-08-16T00:00:00.000Z
+goty:
+  - ""
+modified_date: 2024-08-16
 screenshots: []
 videos: []
 cover: //images.igdb.com/igdb/image/upload/t_cover_big/co2rpb.jpg

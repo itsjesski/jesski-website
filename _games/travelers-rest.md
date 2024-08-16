@@ -3,10 +3,11 @@ id: 121967
 title: Travellers Rest
 description: Travellers Rest - Review
 score: 60
-date: 2022-04-30T00:00:00.000Z
+date: 2022-04-30
 completed: false
-goty: []
-modified_date: 2024-08-16T00:00:00.000Z
+goty:
+  - ""
+modified_date: 2024-08-16
 screenshots: []
 videos: []
 cover: //images.igdb.com/igdb/image/upload/t_cover_big/co4w4l.jpg

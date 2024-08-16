@@ -3,11 +3,11 @@ id: 34939
 title: Eco
 description: Eco - Review
 score: 90
-date: 2021-02-12T00:00:00.000Z
+date: 2021-02-12
 completed: false
 goty:
   - Silver
-modified_date: 2024-08-16T00:00:00.000Z
+modified_date: 2024-08-16
 screenshots: []
 videos: []
 cover: //images.igdb.com/igdb/image/upload/t_cover_big/co1wlv.jpg

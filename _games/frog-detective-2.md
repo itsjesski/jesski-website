@@ -3,10 +3,11 @@ id: 121338
 title: "Frog Detective 2: The Case of the Invisible Wizard"
 description: "Frog Detective 2: The Case of the Invisible Wizard - Review"
 score: 70
-date: 2019-12-15T00:00:00.000Z
+date: 2019-12-15
 completed: true
-goty: []
-modified_date: 2024-08-16T00:00:00.000Z
+goty:
+  - ""
+modified_date: 2024-08-16
 screenshots: []
 videos: []
 cover: //images.igdb.com/igdb/image/upload/t_cover_big/co1umw.jpg

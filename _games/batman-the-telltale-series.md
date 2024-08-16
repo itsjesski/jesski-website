@@ -3,10 +3,11 @@ id: 14746
 title: "Batman: The Telltale Series"
 description: "Batman: The Telltale Series - Review"
 score: 60
-date: 2017-06-03T00:00:00.000Z
+date: 2017-06-03
 completed: true
-goty: []
-modified_date: 2024-08-16T00:00:00.000Z
+goty:
+  - ""
+modified_date: 2024-08-16
 screenshots: []
 videos: []
 cover: //images.igdb.com/igdb/image/upload/t_cover_big/co1u65.jpg

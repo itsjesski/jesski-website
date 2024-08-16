@@ -34,8 +34,8 @@ const Header: React.FC<{}> = () => {
       <div className="container flex flex-wrap justify-between items-center mx-auto">
         <div className="mr-3 h-6 sm:h-9 flex items-center">
           <Logo></Logo>
-          <span className="self-center text-xl font-semibold whitespace-nowrap dark:text-white text-fbstyle-highlight">
-            {AppConfig.title}
+          <span className="self-center text-xl font-semibold whitespace-nowrap dark: text-cstyle-highlight">
+            <Link href="/">{AppConfig.title}</Link>
           </span>
         </div>
 
@@ -101,22 +101,22 @@ const Header: React.FC<{}> = () => {
           }
         >
           <Navbar>
-            <li className="block py-2 pr-4 pl-3 text-white rounded md:bg-transparent md:p-0">
+            <li className="block py-2 pr-4 pl-3  rounded md:bg-transparent md:p-0">
               <Link href="/">
                 <a>Home</a>
               </Link>
             </li>
-            <li className="block py-2 pr-4 pl-3 text-white rounded md:bg-transparent md:p-0">
+            <li className="block py-2 pr-4 pl-3  rounded md:bg-transparent md:p-0">
               <Link href="/about">
                 <a>About</a>
               </Link>
             </li>
-            <li className="block py-2 pr-4 pl-3 text-white rounded md:bg-transparent  md:p-0">
+            <li className="block py-2 pr-4 pl-3  rounded md:bg-transparent  md:p-0">
               <Link href="/games">
                 <a>Games</a>
               </Link>
             </li>
-            <li className="block py-2 pr-4 pl-3 text-white rounded md:bg-transparent  md:p-0">
+            <li className="block py-2 pr-4 pl-3  rounded md:bg-transparent  md:p-0">
               <Link href="/games/awards">
                 <a>GOTY</a>
               </Link>
