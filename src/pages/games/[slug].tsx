@@ -3,7 +3,6 @@ import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import { format } from 'date-fns';
 import { GetStaticPaths, GetStaticProps } from 'next';
-import Lightbox from 'react-image-lightbox';
 import ReactPlayer from 'react-player';
 
 import { posts } from '../../../public/cache/_games';
@@ -14,7 +13,6 @@ import { filterPostFields } from '../../utils/ApiHelper';
 import { getGenreString, IGDBGame } from '../../utils/IGDB';
 import { markdownToHtml } from '../../utils/Markdown';
 import { GameAwards, GameResponse } from '../../utils/Posts';
-import 'react-image-lightbox/style.css'; // This only needs to be imported once in your app
 
 type IPostUrl = {
   slug: string;
@@ -52,8 +50,6 @@ function getPostBySlug(slug: string, fields: string): GameResponse {
 const GameDetailsPage: React.FC<{ post: GameDetails }> = (props) => {
   const [igdbData, setIgdbData] = useState<IGDBGame>();
   const [photoIndex, setPhotoIndex] = useState<number>();
-  const [isOpen, setIsOpen] = useState<boolean>();
-  const images = props.post.screenshots;
 
   function getReviewDifference(
     fbReview: number,
@@ -90,13 +86,6 @@ const GameDetailsPage: React.FC<{ post: GameDetails }> = (props) => {
       .catch(() => {
         return '';
       });
-  }
-
-  function getPhotoIndex() {
-    if (photoIndex == null) {
-      return 0;
-    }
-    return photoIndex;
   }
 
   useEffect(() => {
@@ -255,23 +244,6 @@ const GameDetailsPage: React.FC<{ post: GameDetails }> = (props) => {
           </Content>
         </div>
       </div>
-
-      {isOpen && (
-        <Lightbox
-          mainSrc={images[getPhotoIndex()]}
-          nextSrc={images[(getPhotoIndex() + 1) % images.length]}
-          prevSrc={
-            images[(getPhotoIndex() + images.length - 1) % images.length]
-          }
-          onCloseRequest={() => setIsOpen(false)}
-          onMovePrevRequest={() =>
-            setPhotoIndex((getPhotoIndex() + images.length - 1) % images.length)
-          }
-          onMoveNextRequest={() =>
-            setPhotoIndex((getPhotoIndex() + 1) % images.length)
-          }
-        />
-      )}
     </div>
   );
 };

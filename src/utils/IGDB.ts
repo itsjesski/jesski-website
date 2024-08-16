@@ -1,6 +1,5 @@
-import igdb from 'igdb-api-node';
-
 import { getTwitchAccessToken, twitchSecrets } from './Twitch';
+import axios from 'axios';
 
 export type Genres = [
   {
@@ -69,15 +68,21 @@ export function getBigScreenshotImage(
 
 export async function getGameByName(
   name: string,
-  requested_fields: '*' | [any, ...any[]] = ['name']
+  requested_fields: Array<any> = ['name']
 ): Promise<IGDBGame[]> {
-  const accessToken = await getTwitchAccessToken();
-  const client = await igdb(twitchSecrets.client_id, accessToken);
   const cleanName = decodeURIComponent(name);
-  const response = await client
-    .fields(requested_fields)
-    .search(cleanName)
-    .request('/games');
+  const accessToken = await getTwitchAccessToken();
+
+  const response = await axios({
+    url: 'https://api.igdb.com/v4/games',
+    method: 'POST',
+    headers: {
+      Accept: 'application/json',
+      'Client-ID': twitchSecrets.client_id,
+      Authorization: `Bearer ${accessToken}`,
+    },
+    data: `fields ${requested_fields.join(',')}; where name = "${cleanName}";`,
+  });
 
   const modifiedResponse = response.data[0];
 
@@ -108,15 +113,19 @@ export async function getGameByName(
 
 export async function getGameByID(
   id: number,
-  requested_fields: '*' | [any, ...any[]] = ['name']
+  requested_fields: Array<any> = ['name']
 ): Promise<IGDBGame[]> {
   const accessToken = await getTwitchAccessToken();
-  const client = await igdb(twitchSecrets.client_id, accessToken);
-
-  const response = await client
-    .fields(requested_fields)
-    .where(`id = ${id}`)
-    .request('/games');
+  const response = await axios({
+    url: 'https://api.igdb.com/v4/games',
+    method: 'POST',
+    headers: {
+      Accept: 'application/json',
+      'Client-ID': twitchSecrets.client_id,
+      Authorization: `Bearer ${accessToken}`,
+    },
+    data: `fields ${requested_fields.join(',')}; where id = ${id};`,
+  });
 
   const modifiedResponse = response.data[0];
 
