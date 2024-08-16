@@ -19,7 +19,7 @@ This project was built as a personal website for myself.
 - Code Formatter with [Prettier](https://prettier.io)
 - SEO metadata, [JSON-LD](https://developers.google.com/search/docs/guides/intro-structured-data) and [Open Graph](https://ogp.me/) tags with [Next SEO](https://github.com/garmeeh/next-seo)
 - [Twurple](https://twurple.js.org) for making Twitch API calls.
-- [IGDB API Node](https://www.npmjs.com/package/igdb-api-node) for IGDB API calls.
+- [IGDB API](https://api-docs.igdb.com/?javascript#game) for game information.
 - [Flat Cache](https://github.com/royriojas/flat-cache) for caching API calls.
 
 ### Deployment
