@@ -58,7 +58,7 @@ const PageIntroBox: React.FC<{}> = (props) => {
       {streamIsOnline && (
         <div className="pl-2 grid grid-cols-12 gap-4">
           <div className="col-span-9">
-            <h1 className="text-fbstyle-highlight">Potion Hoarders is live!</h1>
+            <h1 className="text-fbstyle-highlight">Jesski is live!</h1>
             <p>
               The Twitch stream is on air right now, and you&apos;re missing
               out! If you&apos;d like to join in and become part of the
