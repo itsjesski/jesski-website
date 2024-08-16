@@ -93,11 +93,9 @@ const PostsIndex: React.FC<{}> = () => {
           </p>
           <div className="mt-6">
             <Link href="/games/awards">
-              <a>
-                <button type="button" className="">
-                  Game of the Year Picks {'>'}
-                </button>
-              </a>
+              <button type="button" className="">
+                Game of the Year Picks {'>'}
+              </button>
             </Link>
           </div>
         </PageIntroBox>

@@ -41,16 +41,14 @@ const Header: React.FC<{}> = () => {
 
         <div className="flex md:order-2">
           <Link href="https://twitch.tv/Jesski" target="_blank">
-            <a>
-              <button type="button" className="">
-                Twitch
-                {streamIsOnline && (
-                  <svg height="20" width="20">
-                    <circle cx="10" cy="10" r="5" fill="green" />
-                  </svg>
-                )}
-              </button>
-            </a>
+            <button type="button" className="">
+              Twitch
+              {streamIsOnline && (
+                <svg height="20" width="20">
+                  <circle cx="10" cy="10" r="5" fill="green" />
+                </svg>
+              )}
+            </button>
           </Link>
 
           <button
@@ -102,24 +100,16 @@ const Header: React.FC<{}> = () => {
         >
           <Navbar>
             <li className="block py-2 pr-4 pl-3  rounded md:bg-transparent md:p-0">
-              <Link href="/">
-                <a>Home</a>
-              </Link>
+              <Link href="/">Home</Link>
             </li>
             <li className="block py-2 pr-4 pl-3  rounded md:bg-transparent md:p-0">
-              <Link href="/about">
-                <a>About</a>
-              </Link>
+              <Link href="/about">About</Link>
             </li>
             <li className="block py-2 pr-4 pl-3  rounded md:bg-transparent  md:p-0">
-              <Link href="/games">
-                <a>Games</a>
-              </Link>
+              <Link href="/games">Games</Link>
             </li>
             <li className="block py-2 pr-4 pl-3  rounded md:bg-transparent  md:p-0">
-              <Link href="/games/awards">
-                <a>GOTY</a>
-              </Link>
+              <Link href="/games/awards">GOTY</Link>
             </li>
           </Navbar>
         </div>

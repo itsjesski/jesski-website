@@ -24,7 +24,7 @@ const Main = (props: IMainProps) => (
       <div className="border-t border-slate-300 text-center py-8 text-sm">
         © Copyright {new Date().getFullYear()} {AppConfig.title}. Game data from{' '}
         <Link href="https://igdb.com" target="_blank">
-          <a>IGDB.com</a>
+          IGDB.com
         </Link>
       </div>
     </div>

@@ -34,9 +34,7 @@ const BlogGallery = () => (
           Recent <span className="text-cstyle-highlight">Posts</span>
         </h1>
         <div className="text-sm text-gray-400 font-bold">
-          <Link href="/posts">
-            <a>View All Posts {'>'}</a>
-          </Link>
+          <Link href="/posts">View All Posts {'>'}</Link>
         </div>
       </div>
       <div className="gallery-content">

@@ -81,13 +81,15 @@ export default function Search(Props: Props) {
         <div className="absolute mt-3 w-full bg-slate-50 text-slate-400 border border-slate-300 rounded-lg focus:ring-slate-500 focus:border-slate-500 shadow-2xl z-20">
           {results?.map(({ slug, title, date }) => (
             <div className="" key={slug}>
-              <Link href={`/${postType}/${slug}`} as={`/${postType}/${slug}`}>
-                <a className="text-slate-900 hover:bg-slate-100 pl-4 pr-4 pt-2 pb-2 flex justify-between flex-col border rounded-lg border-slate-50">
-                  <span className="text-sm">{title}</span>
-                  <span className="text-xs text-slate-500">
-                    {format(new Date(date), 'LLL d, yyyy')}
-                  </span>
-                </a>
+              <Link
+                href={`/${postType}/${slug}`}
+                as={`/${postType}/${slug}`}
+                className="text-slate-900 hover:bg-slate-100 pl-4 pr-4 pt-2 pb-2 flex justify-between flex-col border rounded-lg border-slate-50"
+              >
+                <span className="text-sm">{title}</span>
+                <span className="text-xs text-slate-500">
+                  {format(new Date(date), 'LLL d, yyyy')}
+                </span>
               </Link>
             </div>
           ))}

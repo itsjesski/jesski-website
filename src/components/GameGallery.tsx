@@ -42,9 +42,7 @@ const GameGallery = () => (
           Recent <span className="text-cstyle-highlight">Games</span>
         </h1>
         <div className="text-sm text-gray-400 font-bold">
-          <Link href="/games">
-            <a>View All Games {'>'}</a>
-          </Link>
+          <Link href="/games">View All Games {'>'}</Link>
         </div>
       </div>
       <div className="gallery-content">
