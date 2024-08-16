@@ -64,7 +64,7 @@ const PageIntroBox: React.FC<{}> = (props) => {
               out! If you&apos;d like to join in and become part of the
               community, just click the button below!
             </p>
-            <Link href="https://twitch.tv/PotionHoarders" target="_blank">
+            <Link href="https://twitch.tv/Jesski" target="_blank">
               <a>
                 <button
                   type="button"

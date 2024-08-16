@@ -64,7 +64,7 @@ async function getStreamLiveStatusFromAPI(
 async function cacheOnlineStatus() {
   const cache = flatCache.load('twitch', path.resolve('public/cache/'));
   const currentTime = Date.now();
-  const onlineStatus = await getStreamLiveStatusFromAPI('potionhoarders');
+  const onlineStatus = await getStreamLiveStatusFromAPI('Jesski');
   cache.setKey('status', { online: onlineStatus, time: currentTime });
   cache.save();
   return onlineStatus;
