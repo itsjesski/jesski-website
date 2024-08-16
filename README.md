@@ -1,7 +1,7 @@
-# firebottle-website
+# Personal Website
 
 ### What is this?
-This project was built as a website for the Firebottle stream community.
+This project was built as a personal website for myself.
 
 ### Features
 - Static site generator
@@ -23,6 +23,4 @@ This project was built as a website for the Firebottle stream community.
 - [Flat Cache](https://github.com/royriojas/flat-cache) for caching API calls.
 
 ### Deployment
-Deployment happens automatically when merging a branch into main. Digital Ocean picks up on the merge, builds everything, and deploys it to https://firebottle.info
-
-![image](https://github.com/Firebottle/firebottle-website/assets/17416635/0f04b0f0-1364-4a67-b1af-e834dbf04a64)
+Deployment happens automatically when merging a branch into main. Digital Ocean picks up on the merge, builds everything, and deploys it.
