@@ -3,12 +3,11 @@ id: 194464
 title: Escape Academy
 description: Escape Academy - Review
 score: 60
-date: 2022-07-16
+date: 2022-07-16T00:00:00.000Z
 completed: true
 goty: []
-modified_date: 2024-04-17
+modified_date: 2024-08-16T00:00:00.000Z
 screenshots: []
-tags: []
 videos: []
 cover: //images.igdb.com/igdb/image/upload/t_cover_big/co4kjz.jpg
 image: //images.igdb.com/igdb/image/upload/t_screenshot_huge/scg8mq.jpg

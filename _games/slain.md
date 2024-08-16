@@ -3,12 +3,11 @@ id: 18509
 title: "Slain: Back From Hell"
 description: "Slain: Back From Hell - Review"
 score: 40
-date: 2016-03-26
+date: 2016-03-26T00:00:00.000Z
 completed: false
 goty: []
-modified_date: 2024-04-17
+modified_date: 2024-08-16T00:00:00.000Z
 screenshots: []
-tags: []
 videos: []
 cover: //images.igdb.com/igdb/image/upload/t_cover_big/co2rbn.jpg
 image: //images.igdb.com/igdb/image/upload/t_screenshot_huge/wfgwrutp5cmuipfzybhx.jpg

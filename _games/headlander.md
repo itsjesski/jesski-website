@@ -3,13 +3,11 @@ id: 15857
 title: Headlander
 description: Headlander - Review
 score: 70
-date: 2016-08-10
+date: 2016-08-10T00:00:00.000Z
 completed: true
 goty: []
-modified_date: 2024-04-17
+modified_date: 2024-08-16T00:00:00.000Z
 screenshots: []
-tags:
-  - Weird
 videos: []
 cover: //images.igdb.com/igdb/image/upload/t_cover_big/uyhtdsepz3tsqi9j55m5.jpg
 image: //images.igdb.com/igdb/image/upload/t_screenshot_huge/p0jnojmwaoak5bpyetrw.jpg

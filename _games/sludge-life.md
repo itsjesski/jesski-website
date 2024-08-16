@@ -3,12 +3,11 @@ id: 131705
 title: Sludge Life
 description: Sludge Life - Review
 score: 30
-date: 2022-01-02
+date: 2022-01-02T00:00:00.000Z
 completed: false
 goty: []
-modified_date: 2024-04-17
+modified_date: 2024-08-16T00:00:00.000Z
 screenshots: []
-tags: []
 videos: []
 cover: //images.igdb.com/igdb/image/upload/t_cover_big/co28np.jpg
 image: //images.igdb.com/igdb/image/upload/t_screenshot_huge/sc82rq.jpg

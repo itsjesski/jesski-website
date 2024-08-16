@@ -3,13 +3,12 @@ id: 1942
 title: "The Witcher 3: Wild Hunt"
 description: "The Witcher 3: Wild Hunt - Review"
 score: 100
-date: 2016-07-13
+date: 2016-07-13T00:00:00.000Z
 completed: true
 goty:
   - Gold
-modified_date: 2024-04-17
+modified_date: 2024-08-16T00:00:00.000Z
 screenshots: []
-tags: []
 videos: []
 cover: //images.igdb.com/igdb/image/upload/t_cover_big/co1wyy.jpg
 image: //images.igdb.com/igdb/image/upload/t_screenshot_huge/sciabe.jpg

@@ -3,12 +3,11 @@ id: 3225
 title: No Man's Sky
 description: No Man's Sky - Review
 score: 50
-date: 2016-08-16
+date: 2016-08-16T00:00:00.000Z
 completed: false
 goty: []
-modified_date: 2024-04-17
+modified_date: 2024-08-16T00:00:00.000Z
 screenshots: []
-tags: []
 videos: []
 cover: //images.igdb.com/igdb/image/upload/t_cover_big/co5j66.jpg
 image: //images.igdb.com/igdb/image/upload/t_screenshot_huge/s6p3zqbfof7kncyp7ocf.jpg

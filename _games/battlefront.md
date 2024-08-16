@@ -3,12 +3,11 @@ id: 2113
 title: Star Wars Battlefront
 description: Star Wars Battlefront - Review
 score: 40
-date: 2015-12-20
+date: 2015-12-20T00:00:00.000Z
 completed: false
 goty: []
-modified_date: 2024-04-17
+modified_date: 2024-08-16T00:00:00.000Z
 screenshots: []
-tags: []
 videos: []
 cover: //images.igdb.com/igdb/image/upload/t_cover_big/co2res.jpg
 image: //images.igdb.com/igdb/image/upload/t_screenshot_huge/hqqy1bqm4h5bhyfmff7p.jpg

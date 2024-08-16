@@ -3,12 +3,11 @@ id: 233585
 title: Hi-Fi Rush
 description: Hi-Fi Rush - Review
 score: 90
-date: 2023-02-03
-completed: false
+date: 2023-02-03T00:00:00.000Z
+completed: true
 goty: []
-modified_date: 2024-04-17
+modified_date: 2024-08-16T00:00:00.000Z
 screenshots: []
-tags: []
 videos: []
 cover: //images.igdb.com/igdb/image/upload/t_cover_big/co6219.jpg
 image: //images.igdb.com/igdb/image/upload/t_screenshot_huge/sckrmi.jpg

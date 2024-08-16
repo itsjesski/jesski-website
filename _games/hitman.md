@@ -3,12 +3,11 @@ id: 11157
 title: HITMAN
 description: HITMAN - Review
 score: 70
-date: 2016-12-09
+date: 2016-12-09T00:00:00.000Z
 completed: true
 goty: []
-modified_date: 2024-04-17
+modified_date: 2024-08-16T00:00:00.000Z
 screenshots: []
-tags: []
 videos: []
 cover: //images.igdb.com/igdb/image/upload/t_cover_big/co2fgr.jpg
 image: //images.igdb.com/igdb/image/upload/t_screenshot_huge/o16ahdv5mh6m7pj2kb58.jpg

@@ -126,7 +126,7 @@ const GameDetailsPage: React.FC<{ post: GameDetails }> = (props) => {
 
       <div className="details-content md:flex">
         <div className="details-sidebar shadow-steam bg-slate-800 p-4 mt-4 mr-4 md:w-1/4 w-full">
-          <div className="firebottle-details border-b-slate-700 border-solid border-b-2 pb-2 mb-2">
+          <div className="jesski-details border-b-slate-700 border-solid border-b-2 pb-2 mb-2">
             <div className="whitespace-nowrap overflow-hidden overflow-ellipsis relative z-20">
               <span className="uppercase text-gray-400 whitespace-nowrap text-xs md:text-sm">
                 Played:{' '}
@@ -174,7 +174,7 @@ const GameDetailsPage: React.FC<{ post: GameDetails }> = (props) => {
           <div className="game-info border-b-slate-700 border-solid border-b-2 pb-2 mb-2">
             <div className="genre">
               <span className="uppercase text-gray-400 whitespace-nowrap text-xs md:text-sm">
-                Firebottle Rating:{' '}
+                Jesski Rating:{' '}
               </span>
               <span className="relative z-20">{props.post?.score}</span>
             </div>
@@ -208,7 +208,7 @@ const GameDetailsPage: React.FC<{ post: GameDetails }> = (props) => {
                 <div>
                   <div className="review">
                     <h2>
-                      Firebottle{' '}
+                      Jesski{' '}
                       <span className="text-fbstyle-highlight">Review</span>
                     </h2>
                   </div>

@@ -3,12 +3,11 @@ id: 102057
 title: "Age of Wonders: Planetfall"
 description: "Age of Wonders: Planetfall - Review"
 score: 60
-date: 2019-08-20
+date: 2019-08-20T00:00:00.000Z
 completed: false
 goty: []
-modified_date: 2024-04-17
+modified_date: 2024-08-16T00:00:00.000Z
 screenshots: []
-tags: []
 videos: []
 cover: //images.igdb.com/igdb/image/upload/t_cover_big/co1r6n.jpg
 image: //images.igdb.com/igdb/image/upload/t_screenshot_huge/bpyn3rwecv9opnzjps7u.jpg

@@ -3,12 +3,11 @@ id: 26836
 title: "Project: Gorgon"
 description: "Project: Gorgon - Review"
 score: 70
-date: 2020-02-01
+date: 2020-02-01T00:00:00.000Z
 completed: false
 goty: []
-modified_date: 2024-04-17
+modified_date: 2024-08-16T00:00:00.000Z
 screenshots: []
-tags: []
 videos: []
 cover: //images.igdb.com/igdb/image/upload/t_cover_big/co2r0k.jpg
 image: //images.igdb.com/igdb/image/upload/t_screenshot_huge/sc8m8a.jpg

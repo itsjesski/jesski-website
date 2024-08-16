@@ -3,12 +3,11 @@ id: 12510
 title: "Renowned Explorers: International Society"
 description: "Renowned Explorers: International Society - Review"
 score: 40
-date: 2016-04-09
+date: 2016-04-09T00:00:00.000Z
 completed: false
 goty: []
-modified_date: 2024-04-17
+modified_date: 2024-08-16T00:00:00.000Z
 screenshots: []
-tags: []
 videos: []
 cover: //images.igdb.com/igdb/image/upload/t_cover_big/co2h13.jpg
 image: //images.igdb.com/igdb/image/upload/t_screenshot_huge/mldxru2wt0qrdzenbqxa.jpg

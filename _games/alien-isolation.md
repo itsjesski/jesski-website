@@ -3,12 +3,11 @@ id: 4754
 title: "Alien: Isolation"
 description: "Alien: Isolation - Review"
 score: 50
-date: 2016-02-19
+date: 2016-02-19T00:00:00.000Z
 completed: false
 goty: []
-modified_date: 2024-04-17
+modified_date: 2024-08-16T00:00:00.000Z
 screenshots: []
-tags: []
 videos: []
 cover: //images.igdb.com/igdb/image/upload/t_cover_big/co1vzu.jpg
 image: //images.igdb.com/igdb/image/upload/t_screenshot_huge/nkvu96w7jyzcbkh0fsmi.jpg

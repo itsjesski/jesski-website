@@ -3,12 +3,11 @@ id: 578
 title: "Warhammer 40,000: Space Marine"
 description: "Warhammer 40,000: Space Marine - Review"
 score: 90
-date: 2016-02-11
+date: 2016-02-11T00:00:00.000Z
 completed: true
 goty: []
-modified_date: 2024-04-17
+modified_date: 2024-08-16T00:00:00.000Z
 screenshots: []
-tags: []
 videos: []
 cover: //images.igdb.com/igdb/image/upload/t_cover_big/co1tx9.jpg
 image: //images.igdb.com/igdb/image/upload/t_screenshot_huge/lmcpajjkxsrtd2ojankq.jpg

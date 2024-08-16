@@ -3,12 +3,11 @@ id: 20454
 title: Pinstripe
 description: Pinstripe - Review
 score: 50
-date: 2017-10-05
+date: 2017-10-05T00:00:00.000Z
 completed: false
 goty: []
-modified_date: 2024-04-17
+modified_date: 2024-08-16T00:00:00.000Z
 screenshots: []
-tags: []
 videos: []
 cover: //images.igdb.com/igdb/image/upload/t_cover_big/wdvojtqymc24siasqjde.jpg
 image: //images.igdb.com/igdb/image/upload/t_screenshot_huge/pfep6foc5zuxpejpt8pa.jpg

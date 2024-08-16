@@ -26,6 +26,8 @@ async function updateFrontMatter(filename: string) {
   //   frontMatter.created = new Date(frontMatter.created).getTime();
   // }
 
+  // delete frontmatter.tags;
+
   frontMatter.videos = [];
 
   const newContent = `---\n${stringify(frontMatter)}---\n${content}`;

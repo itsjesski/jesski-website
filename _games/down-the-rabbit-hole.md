@@ -3,12 +3,11 @@ id: 130002
 title: Down the Rabbit Hole VR
 description: Down the Rabbit Hole VR - Review
 score: 60
-date: 2020-10-23
+date: 2020-10-23T00:00:00.000Z
 completed: true
 goty: []
-modified_date: 2024-04-17
+modified_date: 2024-08-16T00:00:00.000Z
 screenshots: []
-tags: []
 videos: []
 cover: //images.igdb.com/igdb/image/upload/t_cover_big/co1zjm.jpg
 image: //images.igdb.com/igdb/image/upload/t_screenshot_huge/sc81gb.jpg

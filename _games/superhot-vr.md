@@ -3,12 +3,11 @@ id: 25632
 title: SuperHot VR
 description: SuperHot VR - Review
 score: 90
-date: 2017-06-24
+date: 2017-06-24T00:00:00.000Z
 completed: true
 goty: []
-modified_date: 2024-04-17
+modified_date: 2024-08-16T00:00:00.000Z
 screenshots: []
-tags: []
 videos: []
 cover: //images.igdb.com/igdb/image/upload/t_cover_big/co24uu.jpg
 image: //images.igdb.com/igdb/image/upload/t_screenshot_huge/xyrg68ek1eajcblclb3n.jpg

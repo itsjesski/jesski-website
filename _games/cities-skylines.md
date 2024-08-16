@@ -3,12 +3,11 @@ id: 9066
 title: "Cities: Skylines"
 description: "Cities: Skylines - Review"
 score: 80
-date: 2017-03-25
+date: 2017-03-25T00:00:00.000Z
 completed: false
 goty: []
-modified_date: 2024-04-17
+modified_date: 2024-08-16T00:00:00.000Z
 screenshots: []
-tags: []
 videos: []
 cover: //images.igdb.com/igdb/image/upload/t_cover_big/co1mx3.jpg
 image: //images.igdb.com/igdb/image/upload/t_screenshot_huge/p6hvd2hk2j3yaqya2b8b.jpg

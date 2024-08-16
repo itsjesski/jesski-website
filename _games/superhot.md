@@ -3,12 +3,11 @@ id: 7205
 title: SuperHot
 description: SuperHot - Review
 score: 50
-date: 2016-10-18
+date: 2016-10-18T00:00:00.000Z
 completed: true
 goty: []
-modified_date: 2024-04-17
+modified_date: 2024-08-16T00:00:00.000Z
 screenshots: []
-tags: []
 videos: []
 cover: //images.igdb.com/igdb/image/upload/t_cover_big/co2656.jpg
 image: //images.igdb.com/igdb/image/upload/t_screenshot_huge/x5rhyqreyktajtvzg91t.jpg

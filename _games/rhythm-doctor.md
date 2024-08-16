@@ -3,13 +3,11 @@ id: 27907
 title: Rhythm Doctor
 description: Rhythm Doctor - Review
 score: 80
-date: 2021-03-12
+date: 2021-03-12T00:00:00.000Z
 completed: false
 goty: []
-modified_date: 2024-04-17
+modified_date: 2024-08-16T00:00:00.000Z
 screenshots: []
-tags:
-  - Hidden Gems
 videos: []
 cover: //images.igdb.com/igdb/image/upload/t_cover_big/co4ehu.jpg
 image: //images.igdb.com/igdb/image/upload/t_screenshot_huge/ihow38z1nsdx5zopblrh.jpg

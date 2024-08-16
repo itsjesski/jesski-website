@@ -3,12 +3,11 @@ id: 916
 title: Toonstruck
 description: Toonstruck - Review
 score: 60
-date: 2017-05-02
+date: 2017-05-02T00:00:00.000Z
 completed: false
 goty: []
-modified_date: 2024-04-17
+modified_date: 2024-08-16T00:00:00.000Z
 screenshots: []
-tags: []
 videos: []
 cover: //images.igdb.com/igdb/image/upload/t_cover_big/co2g0a.jpg
 image: //images.igdb.com/igdb/image/upload/t_screenshot_huge/aagjn2rpx1bysrj2dctf.jpg

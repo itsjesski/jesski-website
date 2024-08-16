@@ -3,13 +3,11 @@ id: 17847
 title: The Magic Circle
 description: The Magic Circle - Review
 score: 80
-date: 2016-04-04
+date: 2016-04-04T00:00:00.000Z
 completed: true
 goty: []
-modified_date: 2024-04-17
+modified_date: 2024-08-16T00:00:00.000Z
 screenshots: []
-tags:
-  - Weird
 videos: []
 cover: //images.igdb.com/igdb/image/upload/t_cover_big/co5s0e.jpg
 image: //images.igdb.com/igdb/image/upload/t_screenshot_huge/l7ammxbjb6qcwpzhyejg.jpg

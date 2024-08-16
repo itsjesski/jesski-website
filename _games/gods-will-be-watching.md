@@ -3,12 +3,11 @@ id: 7543
 title: Gods Will Be Watching
 description: Gods Will Be Watching - Review
 score: 30
-date: 2016-04-27
+date: 2016-04-27T00:00:00.000Z
 completed: true
 goty: []
-modified_date: 2024-04-17
+modified_date: 2024-08-16T00:00:00.000Z
 screenshots: []
-tags: []
 videos: []
 cover: //images.igdb.com/igdb/image/upload/t_cover_big/co2h1o.jpg
 image: //images.igdb.com/igdb/image/upload/t_screenshot_huge/thaplj78qftvrt15hlgt.jpg

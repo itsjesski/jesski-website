@@ -3,12 +3,11 @@ id: 3188
 title: "Murdered: Soul Suspect"
 description: "Murdered: Soul Suspect - Review"
 score: 80
-date: 2020-08-19
+date: 2020-08-19T00:00:00.000Z
 completed: true
 goty: []
-modified_date: 2024-04-17
+modified_date: 2024-08-16T00:00:00.000Z
 screenshots: []
-tags: []
 videos: []
 cover: //images.igdb.com/igdb/image/upload/t_cover_big/co1r7a.jpg
 image: //images.igdb.com/igdb/image/upload/t_screenshot_huge/cmwxqtawxope2ainripy.jpg

@@ -3,12 +3,11 @@ id: 18081
 title: Devil Daggers
 description: Devil Daggers - Review
 score: 80
-date: 2016-02-26
+date: 2016-02-26T00:00:00.000Z
 completed: false
 goty: []
-modified_date: 2024-04-17
+modified_date: 2024-08-16T00:00:00.000Z
 screenshots: []
-tags: []
 videos: []
 cover: //images.igdb.com/igdb/image/upload/t_cover_big/co1uz6.jpg
 image: //images.igdb.com/igdb/image/upload/t_screenshot_huge/u0lcisf7tiyhwjtqxlce.jpg

@@ -3,12 +3,11 @@ id: 125701
 title: MMORPG Tycoon 2
 description: MMORPG Tycoon 2 - Review
 score: 70
-date: 2020-05-05
+date: 2020-05-05T00:00:00.000Z
 completed: false
 goty: []
-modified_date: 2024-04-17
+modified_date: 2024-08-16T00:00:00.000Z
 screenshots: []
-tags: []
 videos: []
 cover: //images.igdb.com/igdb/image/upload/t_cover_big/co1u2c.jpg
 image: //images.igdb.com/igdb/image/upload/t_screenshot_huge/sc7dj3.jpg

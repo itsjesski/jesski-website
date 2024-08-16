@@ -3,12 +3,11 @@ id: 36929
 title: "Pathfinder: Kingmaker"
 description: "Pathfinder: Kingmaker - Review"
 score: 60
-date: 2018-10-18
+date: 2018-10-18T00:00:00.000Z
 completed: false
 goty: []
-modified_date: 2024-04-17
+modified_date: 2024-08-16T00:00:00.000Z
 screenshots: []
-tags: []
 videos: []
 cover: //images.igdb.com/igdb/image/upload/t_cover_big/co29gf.jpg
 image: //images.igdb.com/igdb/image/upload/t_screenshot_huge/vktadmop9amynhoqf8xb.jpg

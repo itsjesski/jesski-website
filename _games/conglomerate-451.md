@@ -3,12 +3,11 @@ id: 116593
 title: Conglomerate 451
 description: Conglomerate 451 - Review
 score: 70
-date: 2019-09-22
+date: 2019-09-22T00:00:00.000Z
 completed: false
 goty: []
-modified_date: 2024-04-17
+modified_date: 2024-08-16T00:00:00.000Z
 screenshots: []
-tags: []
 videos: []
 cover: //images.igdb.com/igdb/image/upload/t_cover_big/co1k9k.jpg
 image: //images.igdb.com/igdb/image/upload/t_screenshot_huge/sc6cf0.jpg

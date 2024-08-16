@@ -3,12 +3,11 @@ id: 11447
 title: Guild of Dungeoneering
 description: Guild of Dungeoneering - Review
 score: 70
-date: 2017-07-21
+date: 2017-07-21T00:00:00.000Z
 completed: false
 goty: []
-modified_date: 2024-04-17
+modified_date: 2024-08-16T00:00:00.000Z
 screenshots: []
-tags: []
 videos: []
 cover: //images.igdb.com/igdb/image/upload/t_cover_big/co1r24.jpg
 image: //images.igdb.com/igdb/image/upload/t_screenshot_huge/tqdll4novv9jsvlbu9yt.jpg

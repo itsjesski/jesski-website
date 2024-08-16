@@ -3,12 +3,11 @@ id: 27117
 title: Into the Breach
 description: Into the Breach - Review
 score: 90
-date: 2018-03-03
+date: 2018-03-03T00:00:00.000Z
 completed: false
 goty: []
-modified_date: 2024-04-17
+modified_date: 2024-08-16T00:00:00.000Z
 screenshots: []
-tags: []
 videos: []
 cover: //images.igdb.com/igdb/image/upload/t_cover_big/co2gjp.jpg
 image: //images.igdb.com/igdb/image/upload/t_screenshot_huge/zlw2k9ehpqpxs5dafguo.jpg

@@ -3,12 +3,11 @@ id: 109462
 title: "Animal Crossing: New Horizons"
 description: "Animal Crossing: New Horizons - Review"
 score: 90
-date: 2020-03-26
+date: 2020-03-26T00:00:00.000Z
 completed: false
 goty: []
-modified_date: 2024-04-17
+modified_date: 2024-08-16T00:00:00.000Z
 screenshots: []
-tags: []
 videos: []
 cover: //images.igdb.com/igdb/image/upload/t_cover_big/co3wls.jpg
 image: //images.igdb.com/igdb/image/upload/t_screenshot_huge/sc836u.jpg

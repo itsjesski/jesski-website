@@ -3,12 +3,11 @@ id: 35463
 title: Software Inc.
 description: Software Inc. - Review
 score: 70
-date: 2018-07-15
+date: 2018-07-15T00:00:00.000Z
 completed: false
 goty: []
-modified_date: 2024-04-17
+modified_date: 2024-08-16T00:00:00.000Z
 screenshots: []
-tags: []
 videos: []
 cover: //images.igdb.com/igdb/image/upload/t_cover_big/co1nrm.jpg
 image: //images.igdb.com/igdb/image/upload/t_screenshot_huge/wyctdrm9bg289spug6z9.jpg

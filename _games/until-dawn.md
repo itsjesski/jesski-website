@@ -3,12 +3,11 @@ id: 7609
 title: Until Dawn
 description: Until Dawn - Review
 score: 80
-date: 2017-10-13
+date: 2017-10-13T00:00:00.000Z
 completed: true
 goty: []
-modified_date: 2024-04-17
+modified_date: 2024-08-16T00:00:00.000Z
 screenshots: []
-tags: []
 videos: []
 cover: //images.igdb.com/igdb/image/upload/t_cover_big/co2s5q.jpg
 image: //images.igdb.com/igdb/image/upload/t_screenshot_huge/ehiszyxmgglxgmmclp9s.jpg

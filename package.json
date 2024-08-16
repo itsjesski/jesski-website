@@ -1,11 +1,11 @@
 {
-  "name": "firebottle-website",
+  "name": "jesski-website",
   "version": "1.0.0",
   "proxy": "http://localhost:3000",
   "scripts": {
     "dev": "npm run compile-games-from-csv && npm run cache-posts && next dev",
     "build": "npm run cache-posts && next build",
-    "start": "next start",
+    "start": "npm run build && next start",
     "build-stats": "cross-env ANALYZE=true npm run build",
     "export": "next export",
     "build-prod": "run-s clean build export",

@@ -54,7 +54,7 @@ const PostsIndex: React.FC<{}> = () => {
       meta={
         <Meta
           title="Blog Posts"
-          description="Blog posts from the mind of Firebottle."
+          description="Blog posts from the mind of Jesski."
         />
       }
     >

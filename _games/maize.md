@@ -3,13 +3,11 @@ id: 19518
 title: Maize
 description: Maize - Review
 score: 80
-date: 2017-02-05
+date: 2017-02-05T00:00:00.000Z
 completed: true
 goty: []
-modified_date: 2024-04-17
+modified_date: 2024-08-16T00:00:00.000Z
 screenshots: []
-tags:
-  - Weird
 videos: []
 cover: //images.igdb.com/igdb/image/upload/t_cover_big/co1z33.jpg
 image: //images.igdb.com/igdb/image/upload/t_screenshot_huge/fwtsi62g4l41hwulnrdn.jpg

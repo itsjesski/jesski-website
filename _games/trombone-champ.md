@@ -3,13 +3,11 @@ id: 149821
 title: Trombone Champ
 description: Trombone Champ - Review
 score: 70
-date: 2022-09-28
+date: 2022-09-28T00:00:00.000Z
 completed: false
 goty: []
-modified_date: 2024-04-17
+modified_date: 2024-08-16T00:00:00.000Z
 screenshots: []
-tags:
-  - Hidden Gems
 videos: []
 cover: //images.igdb.com/igdb/image/upload/t_cover_big/co44zl.jpg
 image: //images.igdb.com/igdb/image/upload/t_screenshot_huge/sca3ib.jpg

@@ -155,7 +155,6 @@ async function editGameMDFile(sheetRow: any) {
     goty: sheetRow.GOTY !== '' ? String(sheetRow.GOTY).split(',') : [],
     modified_date: getCurrentDate(),
     screenshots: frontMatter.screenshots,
-    tags: sheetRow.Tags !== '' ? String(sheetRow.Tags).split(',') : [],
     videos: frontMatter.videos,
     cover: frontMatter.cover,
     image: frontMatter.image,

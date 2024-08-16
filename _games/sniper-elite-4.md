@@ -3,12 +3,11 @@ id: 18366
 title: Sniper Elite 4
 description: Sniper Elite 4 - Review
 score: 80
-date: 2022-07-07
+date: 2022-07-07T00:00:00.000Z
 completed: true
 goty: []
-modified_date: 2024-04-17
+modified_date: 2024-08-16T00:00:00.000Z
 screenshots: []
-tags: []
 videos: []
 cover: //images.igdb.com/igdb/image/upload/t_cover_big/co24t8.jpg
 image: //images.igdb.com/igdb/image/upload/t_screenshot_huge/nq9g9m7clqzjxjc4kolg.jpg

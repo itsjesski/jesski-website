@@ -3,12 +3,11 @@ id: 23275
 title: Streets of Rogue
 description: Streets of Rogue - Review
 score: 60
-date: 2017-03-31
+date: 2017-03-31T00:00:00.000Z
 completed: false
 goty: []
-modified_date: 2024-04-17
+modified_date: 2024-08-16T00:00:00.000Z
 screenshots: []
-tags: []
 videos: []
 cover: //images.igdb.com/igdb/image/upload/t_cover_big/co1rbv.jpg
 image: //images.igdb.com/igdb/image/upload/t_screenshot_huge/vxyzkbhhnphagleixn5j.jpg
