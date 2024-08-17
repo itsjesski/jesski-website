@@ -14,13 +14,13 @@ export type TwitchCache = {
 };
 
 type TwitchSecrets = {
-  client_id: string;
-  client_secret: string;
+  client_id: any;
+  client_secret: any;
 };
 
 export const twitchSecrets: TwitchSecrets = {
-  client_id: '2vge8b9fogxfey8tmn1f0m6i8neqnf',
-  client_secret: 'd3f3n29z1nkqy7639i1mq66fsjdqvu',
+  client_id: process.env.TWITCH_CLIENT_ID,
+  client_secret: process.env.TWITCH_CLIENT_SECRET,
 };
 
 export function getDataFromTwitchCache(key: string) {
