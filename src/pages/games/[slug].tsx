@@ -107,7 +107,7 @@ const GameDetailsPage: React.FC<{ post: GameDetails }> = (props) => {
         }}
       >
         <div className="bg-cstyle-text pl-20 pr-20 pt-10 pb-10 shadow-steam">
-          <h1 className="text-center font-bold text-3xl text-cstyle-highlight text-shadow-lg">
+          <h1 className="text-center font-bold text-3xl text-cstyle-highlight text-shadow-lg before:content-none">
             {props.post?.title}
           </h1>
         </div>

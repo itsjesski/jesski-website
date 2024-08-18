@@ -27,9 +27,9 @@ const GameAwardGallery: React.FC<{ year: string }> = ({ year }) => (
   <>
     <section className="game-gallery gallery-widget flex-auto w-2/5 md:w--full m-2">
       <div className="gallery-title mb-3 border-b-slate-700 border-solid border-b-2 pb-2 pl-2 pr-2">
-        <h1 className="mb-0">
+        <h2 className="mb-0">
           Best Games of <span className="text-cstyle-highlight">{year}</span>
-        </h1>
+        </h2>
       </div>
       <div className="gallery-content">
         <GameCardList year={year}></GameCardList>
