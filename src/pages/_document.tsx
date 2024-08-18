@@ -8,7 +8,7 @@ class MyDocument extends Document {
     return (
       <Html lang={AppConfig.locale}>
         <Head />
-        <body className="bg-cstyle-background text-black">
+        <body className="bg-cstyle-background text-black bg-[url('/assets/images/general/Background.png')]">
           <Main />
           <NextScript />
         </body>

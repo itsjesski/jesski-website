@@ -1,7 +1,7 @@
 @tailwind base;
 
 h1 {
-  @apply text-2xl font-semibold mb-4
+  @apply text-2xl font-semibold mb-4 before:content-[url('/assets/images/stickers/4.png')] before:object-contain before:inline-block before:relative before:-bottom-3
 }
 
 h2 {
