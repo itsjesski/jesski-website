@@ -69,7 +69,6 @@ async function getPostBySlug(
   try {
     const response = await axios.request({
       url: apiUrl,
-      baseURL: process.env.SITE_URL,
     });
     return response.data;
   } catch (error) {
@@ -110,7 +109,6 @@ async function getPosts(
   try {
     const response = await axios.request({
       url: apiUrl,
-      baseURL: process.env.SITE_URL,
     });
     return response.data;
   } catch (error) {
@@ -137,7 +135,6 @@ async function searchPosts(
   try {
     const response = await axios.request({
       url: apiUrl,
-      baseURL: process.env.SITE_URL,
     });
     return response.data;
   } catch (error) {
@@ -200,7 +197,6 @@ export async function getGamePostByAward(year: string): Promise<GameResponse> {
   try {
     const response = await axios.request({
       url: apiUrl,
-      baseURL: process.env.SITE_URL,
     });
     return response.data;
   } catch (error) {
@@ -236,7 +232,6 @@ export async function getGamePostsWithScreenshots(
   try {
     const response = await axios.request({
       url: apiUrl,
-      baseURL: process.env.SITE_URL,
     });
     return response.data;
   } catch (error) {

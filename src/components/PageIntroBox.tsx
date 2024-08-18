@@ -35,7 +35,6 @@ const PageIntroBox: React.FC<{}> = (props) => {
     try {
       const streamStatus = await axios.request({
         url: '/api/twitch/online',
-        baseURL: process.env.SITE_URL,
       });
       setStreamIsOnline(streamStatus.data.status);
     } catch (error) {
