@@ -1,6 +1,11 @@
 import React, { useEffect, useState } from 'react';
 
-import { Listbox } from '@headlessui/react';
+import {
+  Listbox,
+  ListboxButton,
+  ListboxOption,
+  ListboxOptions,
+} from '@headlessui/react';
 import Link from 'next/link';
 
 import { GameCard } from '../../components/GameCard';
@@ -28,6 +33,7 @@ const PostsIndex: React.FC<{}> = () => {
   const [totalPages, setTotalPages] = useState<number>(() => {
     return 1;
   });
+
   const sorters = [
     { id: 1, name: 'Played (ASC)', value: 'date:asc', unavailable: false },
     { id: 2, name: 'Played (DESC)', value: 'date:desc', unavailable: false },
@@ -84,8 +90,8 @@ const PostsIndex: React.FC<{}> = () => {
     >
       <Content>
         <PageIntroBox>
-          <h1 className="text-cstyle-highlight">Games</h1>
-          <p>
+          <h1 className="text-white text-4xl">Games</h1>
+          <p className="text-white">
             Since 2015 I&apos;ve been keeping track of all the games I have
             played and creating tiny reviews. Below you will find games of all
             types and sizes. I am very thankful to all of the devs for the
@@ -104,7 +110,7 @@ const PostsIndex: React.FC<{}> = () => {
           <div className="flex justify-between items-center pl-2 pr-2">
             <div className="filter relative w-1/2 mr-2  md:w-1/2 sm:w-full">
               <Listbox value={sorters} onChange={handleSortChange}>
-                <Listbox.Button className="bg-slate-50 border border-slate-300 text-slate-900 text-sm rounded-lg focus:ring-slate-500 focus:border-slate-500 w-full p-2.5 pr-4 flex justify-between">
+                <ListboxButton className="bg-slate-50 border border-slate-300 text-slate-900 text-sm rounded-lg focus:ring-slate-500 focus:border-slate-500 w-full p-2.5 pr-4 flex justify-between">
                   <svg
                     className="-mr-1 ml-2 h-5 w-5"
                     xmlns="http://www.w3.org/2000/svg"
@@ -119,19 +125,22 @@ const PostsIndex: React.FC<{}> = () => {
                     />
                   </svg>
                   {selectedSort.name}
-                </Listbox.Button>
-                <Listbox.Options className="absolute w-full bg-slate-50 text-slate-400 border border-slate-300 rounded-lg focus:ring-slate-500 focus:border-slate-500 shadow-2xl z-20 mt-1">
+                </ListboxButton>
+                <ListboxOptions
+                  anchor="bottom"
+                  className="bg-slate-50 border border-slate-300 text-slate-900 text-sm rounded-lg focus:ring-slate-500 focus:border-slate-500 p-2.5"
+                >
                   {sorters.map((sorter) => (
-                    <Listbox.Option
+                    <ListboxOption
                       key={sorter.id}
                       value={sorter}
                       disabled={sorter.unavailable}
-                      className="text-slate-900 hover:bg-slate-100 pl-4 pr-4 pt-2 pb-2 flex justify-between flex-col border rounded-lg border-slate-50 text-sm cursor-pointer"
+                      className="text-slate-900 hover:bg-slate-100 pl-4 pr-4 pt-2 pb-2 rounded-lg text-sm cursor-pointer"
                     >
                       {sorter.name}
-                    </Listbox.Option>
+                    </ListboxOption>
                   ))}
-                </Listbox.Options>
+                </ListboxOptions>
               </Listbox>
             </div>
             <div className="search-container">

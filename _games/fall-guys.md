@@ -2,12 +2,11 @@
 id: 119313
 title: Fall Guys
 description: Fall Guys - Review
-score: 70
+score: 60
 date: 2020-08-08
 completed: false
-goty:
-  - ""
-modified_date: 2024-08-16
+goty: []
+modified_date: 2024-09-06
 screenshots: []
 videos: []
 cover: //images.igdb.com/igdb/image/upload/t_cover_big/co4vs3.jpg

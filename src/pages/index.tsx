@@ -11,8 +11,10 @@ const Index = () => (
   <Main meta={<Meta title="Home" description={AppConfig.description} />}>
     <Content>
       <PageIntroBox>
-        <h1 className="text-cstyle-highlight">Hi, my name is Jessica.</h1>
-        <p>
+        <h1 className="text-white font-semibold text-4xl">
+          Hi, my name is Jessica.
+        </h1>
+        <p className="text-white">
           You&apos;ve entered the world of Jesski, aka Jessica. Here you&apos;ll
           find tidbits from all of my different passions from video games, to
           web development, books, entertainment, and more. This site serves as a

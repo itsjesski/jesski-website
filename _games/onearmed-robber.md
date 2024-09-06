@@ -2,12 +2,11 @@
 id: 263205
 title: One-Armed Robber
 description: One-Armed Robber - Review
-score: 60
+score: 50
 date: 2024-01-26
 completed: true
-goty:
-  - ""
-modified_date: 2024-08-16
+goty: []
+modified_date: 2024-09-06
 screenshots: []
 videos: []
 cover: //images.igdb.com/igdb/image/upload/t_cover_big/co7jcg.jpg

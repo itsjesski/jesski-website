@@ -1,41 +1,36 @@
 @tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 h1 {
-  @apply text-2xl font-semibold mb-4 before:content-[url('/assets/images/stickers/4.png')] before:object-contain before:inline-block before:relative before:-bottom-3
+  @apply text-2xl font-semibold mb-4 before:content-[url('/assets/images/stickers/4.png')] before:object-contain before:inline-block before:relative before:-bottom-3 before:pr-4;
 }
 
 h2 {
-  @apply text-xl font-semibold before:content-[url('/assets/images/stickers/5.png')] before:object-contain before:inline-block before:relative before:-bottom-3
+  @apply text-xl font-semibold before:content-[url('/assets/images/stickers/5.png')] before:object-contain before:inline-block before:relative before:-bottom-3 before:pr-4;
 }
 
 h3 {
-  @apply text-base font-semibold before:content-[url('/assets/images/stickers/8.png')] before:object-contain before:inline-block before:relative before:-bottom-3;
+  @apply text-base font-semibold before:content-[url('/assets/images/stickers/8.png')] before:object-contain before:inline-block before:relative before:-bottom-3 before:pr-4;
 }
 
 h4 {
-  @apply text-base font-semibold before:content-[url('/assets/images/stickers/7.png')] before:object-contain before:inline-block before:relative before:-bottom-3;
+  @apply text-base font-semibold before:content-[url('/assets/images/stickers/7.png')] before:object-contain before:inline-block before:relative before:-bottom-3 before:pr-4;
 }
 
 h5 {
-  @apply text-base font-semibold before:content-[url('/assets/images/stickers/6.png')] before:object-contain before:inline-block before:relative before:-bottom-3;
+  @apply text-base font-semibold before:content-[url('/assets/images/stickers/6.png')] before:object-contain before:inline-block before:relative before:-bottom-3 before:pr-4;
 }
 
 a {
-  @apply text-cstyle-highlight;
+  @apply text-cstyle-green;
 }
 
 a:hover {
   @apply text-cstyle-lighttext;
 }
 
-button {
-  @apply flex items-center leading-none border  border-white hover:border-transparent hover:text-slate-900 hover:bg-cstyle-highlight font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-3 md:mr-0
-}
-
 p {
   @apply mb-6 mt-6
 }
 
-@tailwind components;
-
-@tailwind utilities;

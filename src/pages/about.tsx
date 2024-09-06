@@ -5,7 +5,7 @@ import { Meta } from '../layout/Meta';
 import { Main } from '../templates/Main';
 
 const About = () => (
-  <Main meta={<Meta title="Lorem ipsum" description="Lorem ipsum" />}>
+  <Main meta={<Meta title="About me" description="About Jesski" />}>
     <Content>
       <p>
         Hi! I created this site to get more contact with react, typescript,

@@ -107,14 +107,14 @@ const GameDetailsPage: React.FC<{ post: GameDetails }> = (props) => {
         }}
       >
         <div className="bg-cstyle-text pl-20 pr-20 pt-10 pb-10 shadow-steam">
-          <h1 className="text-center font-bold text-3xl text-cstyle-highlight text-shadow-lg before:content-none">
+          <h1 className="text-center font-bold text-3xl text-cstyle-green text-shadow-lg before:content-none">
             {props.post?.title}
           </h1>
         </div>
       </div>
 
       <div className="details-content md:flex">
-        <div className="details-sidebar shadow-steam bg-cstyle-highlight p-4 mt-4 mr-4 md:w-1/4 w-full">
+        <div className="details-sidebar shadow-steam bg-cstyle-green p-4 mt-4 mr-4 md:w-1/4 w-full">
           <div className="jesski-details border-b-cstyle-text border-solid border-b-2 pb-2 mb-2">
             <div className="whitespace-nowrap overflow-hidden overflow-ellipsis relative z-20">
               <span className="text-cstyle-text whitespace-nowrap font-bold">
@@ -197,8 +197,7 @@ const GameDetailsPage: React.FC<{ post: GameDetails }> = (props) => {
                 <div>
                   <div className="review">
                     <h2>
-                      Jesski{' '}
-                      <span className="text-cstyle-highlight">Review</span>
+                      Jesski <span className="text-cstyle-green">Review</span>
                     </h2>
                   </div>
                   <div
@@ -213,8 +212,7 @@ const GameDetailsPage: React.FC<{ post: GameDetails }> = (props) => {
               {igdbData?.summary != null && (
                 <div className="description mt-14">
                   <h2 className="mb-6">
-                    IGDB{' '}
-                    <span className="text-cstyle-highlight">Description</span>
+                    IGDB <span className="text-cstyle-green">Description</span>
                   </h2>
                   <div
                     className="content"
@@ -227,7 +225,7 @@ const GameDetailsPage: React.FC<{ post: GameDetails }> = (props) => {
               {props.post.videos.length > 0 && (
                 <div className="description mt-14">
                   <h2 className="mb-6">
-                    Archive <span className="text-cstyle-highlight">Video</span>
+                    Archive <span className="text-cstyle-green">Video</span>
                   </h2>
                   <div className="content">
                     <ReactPlayer
