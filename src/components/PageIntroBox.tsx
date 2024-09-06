@@ -55,7 +55,7 @@ const PageIntroBox: React.FC<{}> = (props) => {
   }, [firebotImage, streamIsOnline]);
 
   return (
-    <div className="index-header items-end flex-wrap flex justify-around mb-10 mt-10">
+    <div className="index-header items-end flex-wrap flex justify-around mb-3 bg-cstyle-green rounded pt-4">
       {streamIsOnline == null && (
         <div className="pl-2">
           <Spinner></Spinner>
@@ -65,11 +65,11 @@ const PageIntroBox: React.FC<{}> = (props) => {
       {streamIsOnline && (
         <div className="pl-2 grid grid-cols-12 gap-4">
           <div className="col-span-12 md:col-span-9 lg:col-span-10">
-            <h1 className="text-cstyle-highlight">Jesski is live on Twitch!</h1>
+            <h1 className=" text-white text-4xl">Jesski is live on Twitch!</h1>
             <p>
-              The Twitch stream is on air right now, and you&apos;re missing
-              out! If you&apos;d like to join in and become part of the
-              community, just click the button below!
+              The Twitch stream is live right now, and you&apos;re missing out!
+              If you&apos;d like to join in and become part of the community,
+              just click the button below!
             </p>
             <Link href="https://twitch.tv/Jesski" target="_blank">
               <button

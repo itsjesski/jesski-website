@@ -2,12 +2,11 @@
 id: 121087
 title: Ranch Simulator
 description: Ranch Simulator - Review
-score: 70
+score: 60
 date: 2023-07-21
 completed: true
-goty:
-  - ""
-modified_date: 2024-08-16
+goty: []
+modified_date: 2024-09-06
 screenshots: []
 videos: []
 cover: //images.igdb.com/igdb/image/upload/t_cover_big/co29nf.jpg

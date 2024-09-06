@@ -2,12 +2,11 @@
 id: 121894
 title: Black Book
 description: Black Book - Review
-score: 70
+score: 60
 date: 2021-08-26
 completed: false
-goty:
-  - ""
-modified_date: 2024-08-16
+goty: []
+modified_date: 2024-09-06
 screenshots: []
 videos: []
 cover: //images.igdb.com/igdb/image/upload/t_cover_big/co1wve.jpg

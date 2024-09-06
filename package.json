@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "proxy": "http://localhost:3000",
   "scripts": {
-    "dev": "npm run compile-games-from-csv && npm run cache-posts && next dev",
+    "dev": "npx dotenv-run-script compile-games-from-csv && npm run cache-posts && next dev",
     "build": "npm run cache-posts && next build",
     "start": "next start",
     "build-stats": "cross-env ANALYZE=true npm run build",
@@ -24,14 +24,16 @@
     }
   },
   "dependencies": {
-    "@headlessui/react": "^1.6.6",
+    "@headlessui/react": "^2.1.5",
+    "@headlessui/tailwindcss": "^0.2.1",
     "@mapbox/rehype-prism": "^0.7.0",
     "@twurple/api": "^5.1.7",
     "@twurple/auth": "^5.1.7",
     "axios": "^1.7.4",
     "cors": "^2.8.5",
     "date-fns": "^2.28.0",
-    "dotenv": "^16.0.1",
+    "dotenv": "^16.4.5",
+    "dotenv-run-script": "^0.4.1",
     "flat-cache": "^3.0.4",
     "fs": "^0.0.1-security",
     "fuzzy-search": "^3.2.1",

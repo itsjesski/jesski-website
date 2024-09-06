@@ -31,7 +31,7 @@ const BlogGallery = () => (
     <section className="blog-gallery gallery-widget mb-32">
       <div className="gallery-title mb-3 flex justify-between items-end flex-wrap pl-2 pr-2">
         <h1 className="mb-0">
-          Recent <span className="text-cstyle-highlight">Posts</span>
+          Recent <span className="text-cstyle-green">Posts</span>
         </h1>
         <div className="text-sm text-gray-400 font-bold">
           <Link href="/posts">View All Posts {'>'}</Link>

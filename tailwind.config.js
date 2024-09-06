@@ -21,10 +21,18 @@ module.exports = {
       colors: {
         cstyle: {
           background: '#eddbc8',
-          highlight: '#2A9D8F',
           text: '#403c37',
           lighttext: '#da9a8f',
           darktext: '#403c37',
+          brown: '#4C4741',
+          deepbrown: '#42312E',
+          lightbrown: '#eadace',
+          orangebrown: '#b47b60',
+          green: '#2a9d8f',
+          darkblue: '#202c39',
+          deepblue: '#283845',
+          yellow: '#f2d492',
+          orange: '#F29559',
         },
         reviewscore: {
           1: '#ff4545',
@@ -47,5 +55,8 @@ module.exports = {
     },
   },
   variants: {},
-  plugins: [require('tailwindcss-textshadow')],
+  plugins: [
+    require('tailwindcss-textshadow'),
+    require('@headlessui/tailwindcss'),
+  ],
 };

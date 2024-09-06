@@ -36,10 +36,10 @@ const GameCardList: React.FC<{}> = () => {
 
 const GameGallery = () => (
   <>
-    <section className="game-gallery gallery-widget mb-32">
+    <section className="game-gallery gallery-widget">
       <div className="gallery-title mb-3 flex justify-between items-end flex-wrap pl-2 pr-2">
         <h2 className="mb-0">
-          Recent <span className="text-cstyle-highlight">Games</span>
+          Recent <span className="text-cstyle-green">Games</span>
         </h2>
         <div className="text-sm text-gray-400 font-bold">
           <Link href="/games">View All Games {'>'}</Link>

@@ -2,12 +2,11 @@
 id: 159703
 title: "Warhammer 40,000: Shootas, Blood & Teef"
 description: "Warhammer 40,000: Shootas, Blood & Teef - Review"
-score: 50
+score: 30
 date: 2023-01-02
 completed: true
-goty:
-  - ""
-modified_date: 2024-08-16
+goty: []
+modified_date: 2024-09-06
 screenshots: []
 videos: []
 cover: //images.igdb.com/igdb/image/upload/t_cover_big/co4tav.jpg
