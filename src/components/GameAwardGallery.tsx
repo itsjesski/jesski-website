@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 
 import { FBGame, getGamePostByAward } from '../utils/Posts';
-import { GameCard } from './GameCard';
+import GameCard from './GameCard';
 
 const GameCardList: React.FC<{ year: string }> = ({ year }) => {
   const [fbPosts, setPostData] = useState<FBGame[]>();
@@ -38,4 +38,4 @@ const GameAwardGallery: React.FC<{ year: string }> = ({ year }) => (
   </>
 );
 
-export { GameAwardGallery };
+export default GameAwardGallery;

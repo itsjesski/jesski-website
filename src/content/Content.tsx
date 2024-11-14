@@ -8,4 +8,4 @@ const Content = (props: IContentProps) => (
   <div className="content">{props.children}</div>
 );
 
-export { Content };
+export default Content;

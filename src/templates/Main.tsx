@@ -2,8 +2,8 @@ import React, { ReactNode } from 'react';
 
 import Link from 'next/link';
 
-import { Header } from '../components/Header';
-import { AppConfig } from '../utils/AppConfig';
+import Header from '../components/Header';
+import AppConfig from '../utils/AppConfig';
 
 type IMainProps = {
   meta: ReactNode;
@@ -31,4 +31,4 @@ const Main = (props: IMainProps) => (
   </div>
 );
 
-export { Main };
+export default Main;

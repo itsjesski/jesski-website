@@ -1,13 +1,12 @@
 import React, { useEffect, useState } from 'react';
-
 import axios from 'axios';
 import Link from 'next/link';
-
-import { Spinner } from './Spinner';
+import Image from 'next/image';
+import Spinner from './Spinner';
 
 const PageIntroBox: React.FC<{}> = (props) => {
-  const [streamIsOnline, setStreamIsOnline] = useState<boolean>();
-  const [firebotImage, setFirebotImage] = useState<string>();
+  const [streamIsOnline, setStreamIsOnline] = useState<boolean | null>(null);
+  const [firebotImage, setFirebotImage] = useState<string>('');
 
   function pickFirebotImage() {
     const logos = [
@@ -26,7 +25,7 @@ const PageIntroBox: React.FC<{}> = (props) => {
     ];
 
     const logo = logos[Math.floor(Math.random() * logos.length)];
-    const logoUrl = `/assets/images/emotes/${logo}`;
+    const logoUrl = `https://jesski.com/assets/images/emotes/${logo}`;
 
     setFirebotImage(logoUrl);
   }
@@ -39,7 +38,6 @@ const PageIntroBox: React.FC<{}> = (props) => {
       });
       setStreamIsOnline(streamStatus.data.status);
     } catch (error) {
-      // eslint-disable-next-line no-console
       console.log(error);
     }
   }
@@ -49,7 +47,7 @@ const PageIntroBox: React.FC<{}> = (props) => {
       getOnlineStatus();
     }
 
-    if (firebotImage == null) {
+    if (!firebotImage) {
       pickFirebotImage();
     }
   }, [firebotImage, streamIsOnline]);
@@ -58,14 +56,13 @@ const PageIntroBox: React.FC<{}> = (props) => {
     <div className="index-header items-end flex-wrap flex justify-around mb-3 bg-cstyle-green rounded pt-4">
       {streamIsOnline == null && (
         <div className="pl-2">
-          <Spinner></Spinner>
+          <Spinner />
         </div>
       )}
-
       {streamIsOnline && (
         <div className="pl-2 grid grid-cols-12 gap-4">
           <div className="col-span-12 md:col-span-9 lg:col-span-10">
-            <h1 className=" text-white text-4xl">Jesski is live on Twitch!</h1>
+            <h1 className="text-white text-4xl">Jesski is live on Twitch!</h1>
             <p>
               The Twitch stream is live right now, and you&apos;re missing out!
               If you&apos;d like to join in and become part of the community,
@@ -74,18 +71,22 @@ const PageIntroBox: React.FC<{}> = (props) => {
             <Link href="https://twitch.tv/Jesski" target="_blank">
               <button
                 type="button"
-                className="flex items-center leading-none border  border-white hover:border-transparent hover:text-slate-500 hover:bg-white font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-3 md:mr-0"
+                className="flex items-center leading-none border border-white hover:border-transparent hover:text-slate-500 hover:bg-white font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-3 md:mr-0"
               >
                 Watch Live
               </button>
             </Link>
           </div>
           <div className="col-span-2 md:col-span-3 lg:col-span-2 flex justify-center align-middle">
-            <img
-              src={firebotImage}
-              alt="firebot logo"
-              className="w-full h-fit"
-            ></img>
+            {firebotImage && (
+              <Image
+                src={firebotImage}
+                alt="jesski emote"
+                width="178"
+                height="178"
+                className="w-full h-fit"
+              />
+            )}
           </div>
         </div>
       )}
@@ -96,11 +97,15 @@ const PageIntroBox: React.FC<{}> = (props) => {
             {props.children}
           </div>
           <div className="col-span-2 md:col-span-3 lg:col-span-2 hidden justify-end align-middle md:flex">
-            <img
-              src={firebotImage}
-              alt="firebot logo"
-              className="w-full h-fit"
-            ></img>
+            {firebotImage && (
+              <Image
+                src={firebotImage}
+                alt="jesski emote"
+                className="w-full h-fit"
+                width="178"
+                height="178"
+              />
+            )}
           </div>
         </div>
       )}
@@ -108,4 +113,4 @@ const PageIntroBox: React.FC<{}> = (props) => {
   );
 };
 
-export { PageIntroBox };
+export default PageIntroBox;

@@ -40,6 +40,18 @@ module.exports = {
     };
     return config;
   },
+  images: {
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'images.igdb.com',
+      },
+      {
+        protocol: 'https',
+        hostname: 'jesski.com',
+      },
+    ],
+  },
   env: {
     SITE_URL: process.env.SITE_URL,
     TWITCH_CLIENT_ID: process.env.TWITCH_CLIENT_ID,

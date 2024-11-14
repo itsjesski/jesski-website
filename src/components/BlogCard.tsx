@@ -2,6 +2,7 @@ import React from 'react';
 
 import { format } from 'date-fns';
 import Link from 'next/link';
+import Image from 'next/image';
 
 import { FBPost } from '../utils/Posts';
 
@@ -16,11 +17,11 @@ const BlogCard: React.FC<{ post: FBPost }> = ({ post }) => {
         ></Link>
         <div>
           {post?.image && (
-            <img
+            <Image
               src={post?.image}
               alt="post image"
               className="block group-hover:opacity-40 transition-opacity duration-700 w-full"
-            ></img>
+            ></Image>
           )}
         </div>
 
@@ -64,4 +65,4 @@ const BlogCard: React.FC<{ post: FBPost }> = ({ post }) => {
   );
 };
 
-export { BlogCard };
+export default BlogCard;

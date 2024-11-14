@@ -1,5 +1,5 @@
-import { getTwitchAccessToken, twitchSecrets } from './Twitch';
 import axios from 'axios';
+import { getTwitchAccessToken, twitchSecrets } from './Twitch';
 
 export type Genres = [
   {

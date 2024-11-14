@@ -3,9 +3,6 @@ import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import Link from 'next/link';
 
-import { Navbar } from '../navigation/Navbar';
-import { AppConfig } from '../utils/AppConfig';
-import { Logo } from './Logo';
 import {
   Menu,
   MenuButton,
@@ -13,6 +10,9 @@ import {
   MenuItems,
   MenuSeparator,
 } from '@headlessui/react';
+import Navbar from '../navigation/Navbar';
+import AppConfig from '../utils/AppConfig';
+import Logo from './Logo';
 
 const Header: React.FC<{}> = () => {
   const [streamIsOnline, setStreamIsOnline] = useState();
@@ -140,4 +140,4 @@ const Header: React.FC<{}> = () => {
     </nav>
   );
 };
-export { Header };
+export default Header;

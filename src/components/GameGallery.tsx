@@ -3,7 +3,7 @@ import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
 
 import { FBGame, getGamePosts } from '../utils/Posts';
-import { GameCard } from './GameCard';
+import GameCard from './GameCard';
 
 const GameCardList: React.FC<{}> = () => {
   const [fbPosts, setPostData] = useState<FBGame[]>();
@@ -52,4 +52,4 @@ const GameGallery = () => (
   </>
 );
 
-export { GameGallery };
+export default GameGallery;

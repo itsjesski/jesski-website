@@ -1,13 +1,13 @@
 import React, { useEffect, useState } from 'react';
 
-import { BlogCard } from '../../components/BlogCard';
-import { PageIntroBox } from '../../components/PageIntroBox';
+import BlogCard from '../../components/BlogCard';
+import PageIntroBox from '../../components/PageIntroBox';
 import Pagination from '../../components/Pagination';
 import Search from '../../components/Search';
-import { Content } from '../../content/Content';
-import { Meta } from '../../layout/Meta';
-import { Main } from '../../templates/Main';
-import { AppConfig } from '../../utils/AppConfig';
+import Content from '../../content/Content';
+import Meta from '../../layout/Meta';
+import Main from '../../templates/Main';
+import AppConfig from '../../utils/AppConfig';
 import { FBPost, getBlogPosts } from '../../utils/Posts';
 
 const PostsIndex: React.FC<{}> = () => {

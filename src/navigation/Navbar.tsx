@@ -10,4 +10,4 @@ const Navbar = (props: INavbarProps) => (
   </ul>
 );
 
-export { Navbar };
+export default Navbar;

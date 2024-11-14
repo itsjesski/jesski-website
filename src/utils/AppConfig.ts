@@ -1,4 +1,4 @@
-export const AppConfig = {
+const AppConfig = {
   site_name: 'Jesski',
   title: 'Jesski',
   description: 'A site for all things Jesski.',
@@ -7,3 +7,5 @@ export const AppConfig = {
   author: 'Jesski',
   pagination_size: 24,
 };
+
+export default AppConfig;

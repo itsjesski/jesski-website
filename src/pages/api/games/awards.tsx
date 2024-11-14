@@ -14,6 +14,17 @@ export default async function handler(
   // Get only posts that have an award.
   result = getPostsByGOTYYear(result, year);
 
+  // for each post, add https: to the "cover" and "image" fields
+  result = result.map((post) => {
+    if (post.cover && !post.cover.startsWith('https:')) {
+      post.cover = `https:${post.cover}`;
+    }
+    if (post.image && !post.image.startsWith('https:')) {
+      post.image = `https:${post.image}`;
+    }
+    return post;
+  });
+
   const response = {
     results: result,
     totalPosts: posts.length,

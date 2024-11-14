@@ -3,7 +3,7 @@ import React, { useEffect, useState } from 'react';
 import Link from 'next/link';
 
 import { FBPost, getBlogPosts } from '../utils/Posts';
-import { BlogCard } from './BlogCard';
+import BlogCard from './BlogCard';
 
 const BlogCardList: React.FC<{}> = () => {
   const [fbPosts, setPostData] = useState<FBPost[]>();
@@ -44,4 +44,4 @@ const BlogGallery = () => (
   </>
 );
 
-export { BlogGallery };
+export default BlogGallery;

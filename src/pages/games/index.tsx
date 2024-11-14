@@ -8,14 +8,14 @@ import {
 } from '@headlessui/react';
 import Link from 'next/link';
 
-import { GameCard } from '../../components/GameCard';
-import { PageIntroBox } from '../../components/PageIntroBox';
+import GameCard from '../../components/GameCard';
+import PageIntroBox from '../../components/PageIntroBox';
 import Pagination from '../../components/Pagination';
 import Search from '../../components/Search';
-import { Content } from '../../content/Content';
-import { Meta } from '../../layout/Meta';
-import { Main } from '../../templates/Main';
-import { AppConfig } from '../../utils/AppConfig';
+import Content from '../../content/Content';
+import Meta from '../../layout/Meta';
+import Main from '../../templates/Main';
+import AppConfig from '../../utils/AppConfig';
 import { FBGame, getGamePosts } from '../../utils/Posts';
 
 type GameSort = {

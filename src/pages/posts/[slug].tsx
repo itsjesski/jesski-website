@@ -4,11 +4,11 @@ import { format } from 'date-fns';
 import { GetStaticPaths, GetStaticProps } from 'next';
 
 import { posts } from '../../../public/cache/_posts';
-import { Content } from '../../content/Content';
-import { Meta } from '../../layout/Meta';
-import { Main } from '../../templates/Main';
+import Content from '../../content/Content';
+import Meta from '../../layout/Meta';
+import Main from '../../templates/Main';
 import { filterPostFields } from '../../utils/ApiHelper';
-import { markdownToHtml } from '../../utils/Markdown';
+import markdownToHtml from '../../utils/Markdown';
 import { FBPost, PostResponse } from '../../utils/Posts';
 
 type IPostUrl = {

@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from 'react';
 
-import { GameAwardGallery } from '../../components/GameAwardGallery';
-import { PageIntroBox } from '../../components/PageIntroBox';
-import { Content } from '../../content/Content';
-import { Meta } from '../../layout/Meta';
-import { Main } from '../../templates/Main';
+import GameAwardGallery from '../../components/GameAwardGallery';
+import PageIntroBox from '../../components/PageIntroBox';
+import Content from '../../content/Content';
+import Meta from '../../layout/Meta';
+import Main from '../../templates/Main';
 import { FBGame, getGamePosts } from '../../utils/Posts';
 
 const PostsIndex: React.FC<{}> = () => {
@@ -58,8 +58,8 @@ const PostsIndex: React.FC<{}> = () => {
     >
       <Content>
         <PageIntroBox>
-          <h1 className="text-cstyle-green">Game of the Year Awards</h1>
-          <p>
+          <h1 className="text-white">Game of the Year Awards</h1>
+          <p className="text-white">
             Since 2015 I&apos;ve selected three games to win the Game of the
             Year award. These are all selected from games I played, not
             nessessarily games released that year. I started keeping track in

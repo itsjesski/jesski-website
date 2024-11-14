@@ -3,6 +3,7 @@ import React from 'react';
 import { format } from 'date-fns';
 import Link from 'next/link';
 
+import Image from 'next/image';
 import { FBGame } from '../utils/Posts';
 import { GameScoreBox } from './GameScoreBox';
 
@@ -34,15 +35,17 @@ const GameCard: React.FC<{ game: FBGame; size: string }> = ({ game, size }) => {
           className="absolute z-10 top-0 bottom-0 left-0 right-0 text-cstyle-highlight"
         ></Link>
         <div className="w-full h-full flex items-center justify-center">
-          <img
+          <Image
             src={`${
               game.cover != null
-                ? `https://${game.cover}`
+                ? `${game.cover}`
                 : '/assets/images/general/placeholder.png'
             }`}
             alt="game image"
+            width="232"
+            height="310"
             className="block group-hover:opacity-40 transition-opacity duration-700 w-full"
-          ></img>
+          ></Image>
         </div>
 
         <div className="bottom-0 left-0 w-full bg-white flex p-1 shadow-steam">
@@ -55,11 +58,13 @@ const GameCard: React.FC<{ game: FBGame; size: string }> = ({ game, size }) => {
         <div className="absolute bg-black flex items-center group-hover:-top-0 group-hover:opacity-100 duration-700 top-full right-0 w-full opacity-0 h-1/3 transition-all">
           <div>
             {game?.image && (
-              <img
+              <Image
                 src={game?.image}
                 alt="game image"
+                width="232"
+                height="130"
                 className="block w-full h-full"
-              ></img>
+              ></Image>
             )}
           </div>
         </div>
@@ -88,4 +93,4 @@ const GameCard: React.FC<{ game: FBGame; size: string }> = ({ game, size }) => {
   );
 };
 
-export { GameCard };
+export default GameCard;

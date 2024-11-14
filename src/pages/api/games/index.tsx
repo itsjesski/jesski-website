@@ -20,6 +20,17 @@ export default async function handler(
 
   let result = posts;
 
+  // for each post, add https: to the "cover" and "image" fields
+  result = result.map((post) => {
+    if (post.cover && !post.cover.startsWith('https:')) {
+      post.cover = `https:${post.cover}`;
+    }
+    if (post.image && !post.image.startsWith('https:')) {
+      post.image = `https:${post.image}`;
+    }
+    return post;
+  });
+
   // Always sort first, then trim and filter after.
   if (sort) {
     result = sortPosts(result, sort);

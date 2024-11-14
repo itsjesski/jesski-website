@@ -3,15 +3,9 @@
   "version": "1.0.0",
   "proxy": "http://localhost:3000",
   "scripts": {
-    "dev": "npx dotenv-run-script compile-games-from-csv && npm run cache-posts && next dev",
+    "dev": "npx dotenv-run-script compile-games-from-csv && npm run cache-posts && npm run lint && next dev",
     "build": "npm run cache-posts && next build",
-    "start": "next start",
-    "build-stats": "cross-env ANALYZE=true npm run build",
-    "export": "next export",
-    "build-prod": "run-s clean build export",
-    "clean": "rimraf .next out",
-    "lint": "next lint",
-    "lintfix": "npx eslint \"./src/\" --fix",
+    "lint": "npx eslint \"./src/\" --fix",
     "build-types": "tsc --noEmit --pretty",
     "prepare": "husky install",
     "cache-posts": "npx ts-node --skip-project ./src/scripts/PostCache.ts",
@@ -20,7 +14,7 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "npx eslint \"./src/\" --fix && npm run cache-posts && git add cache"
+      "pre-commit": "npm run lint && npm run cache-posts && git add cache"
     }
   },
   "dependencies": {
