@@ -42,6 +42,10 @@ export async function getTwitchAccessToken(): Promise<string> {
       return response.data.access_token;
     })
     .catch(() => {
+      // eslint-disable-next-line no-console
+      console.error(
+        'Failed to get Twitch access token. Remember, the app has to be running to get environment variables.'
+      );
       return '';
     });
 }
