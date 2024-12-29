@@ -100,20 +100,22 @@ const Header: React.FC<{}> = () => {
                       About Me
                     </Link>
                   </MenuItem>
-                  <MenuItem>
-                    <Link
-                      href="https://twitch.tv/Jesski"
-                      target="_blank"
-                      className="block text-cstyle-green hover:text-cstyle-darkblue font-semibold"
-                    >
-                      Twitch
-                      {streamIsOnline && (
-                        <svg height="20" width="20">
-                          <circle cx="10" cy="10" r="5" fill="green" />
-                        </svg>
-                      )}
-                    </Link>
-                  </MenuItem>
+                  <div className="w-full">
+                    <MenuItem>
+                      <Link
+                        href="https://twitch.tv/Jesski"
+                        target="_blank"
+                        className="block text-cstyle-green hover:text-cstyle-darkblue font-semibold flex items-center"
+                      >
+                        Twitch
+                        {streamIsOnline && (
+                          <svg height="20" width="20" className="ml-2">
+                            <circle cx="10" cy="10" r="5" fill="green" />
+                          </svg>
+                        )}
+                      </Link>
+                    </MenuItem>
+                  </div>
                   <MenuSeparator className="my-1 h-px bg-cstyle-deepbrown"></MenuSeparator>
                   <MenuItem>
                     <Link

@@ -6,8 +6,8 @@ score: 100
 date: 2024-02-22
 completed: false
 goty:
-  - ""
-modified_date: 2024-08-16
+  - Gold
+modified_date: 2024-12-29
 screenshots: []
 videos: []
 cover: //images.igdb.com/igdb/image/upload/t_cover_big/co741o.jpg

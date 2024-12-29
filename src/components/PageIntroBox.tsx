@@ -38,6 +38,7 @@ const PageIntroBox: React.FC<{}> = (props) => {
       });
       setStreamIsOnline(streamStatus.data.status);
     } catch (error) {
+      // eslint-disable-next-line no-console
       console.log(error);
     }
   }
@@ -68,13 +69,12 @@ const PageIntroBox: React.FC<{}> = (props) => {
               If you&apos;d like to join in and become part of the community,
               just click the button below!
             </p>
-            <Link href="https://twitch.tv/Jesski" target="_blank">
-              <button
-                type="button"
-                className="flex items-center leading-none border border-white hover:border-transparent hover:text-slate-500 hover:bg-white font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-3 md:mr-0"
-              >
-                Watch Live
-              </button>
+            <Link
+              href="https://twitch.tv/Jesski"
+              target="_blank"
+              className="text-white font-bold"
+            >
+              Watch Now {'>'}
             </Link>
           </div>
           <div className="col-span-2 md:col-span-3 lg:col-span-2 flex justify-center align-middle">
