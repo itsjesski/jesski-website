@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "proxy": "http://localhost:3000",
   "scripts": {
+    "devmin": "npm run cache-posts && npm run lint && next dev",
     "dev": "npx dotenv-run-script compile-games-from-csv && npm run cache-posts && npm run lint && next dev",
     "build": "npm run cache-posts && next build",
     "lint": "npx eslint \"./src/\" --fix",

@@ -19,5 +19,5 @@
     "editor.formatOnSave": true,
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "cSpell.words": ["cstyle", "GOTY", "IGDB", "Lightbox", "Popupbox"]
+  "cSpell.words": ["cstyle", "GOTY", "IGDB", "Jesski", "Lightbox", "Popupbox"]
 }

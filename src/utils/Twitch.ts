@@ -1,10 +1,8 @@
 import path from 'path';
-
 import { ApiClient } from '@twurple/api';
 import { ClientCredentialsAuthProvider } from '@twurple/auth';
 import axios from 'axios';
-
-const flatCache = require('flat-cache');
+import flatCache from 'flat-cache';
 
 export type TwitchCache = {
   status: {
@@ -14,45 +12,44 @@ export type TwitchCache = {
 };
 
 type TwitchSecrets = {
-  client_id: any;
-  client_secret: any;
+  client_id: string;
+  client_secret: string;
 };
 
 export const twitchSecrets: TwitchSecrets = {
-  client_id: process.env.TWITCH_CLIENT_ID,
-  client_secret: process.env.TWITCH_CLIENT_SECRET,
+  client_id: process.env.TWITCH_CLIENT_ID as string,
+  client_secret: process.env.TWITCH_CLIENT_SECRET as string,
 };
 
+function loadCache() {
+  return flatCache.load('twitchCache', path.resolve('public/cache/'));
+}
+
 export function getDataFromTwitchCache(key: string) {
-  const cache = flatCache.load('twitch', path.resolve('public/cache/'));
+  const cache = loadCache();
   return cache.getKey(key);
 }
 
+async function cacheTwitchData(key: string, data: any) {
+  const cache = loadCache();
+  cache.setKey(key, { ...data, time: Date.now() });
+  cache.save();
+}
+
 export async function getTwitchAccessToken(): Promise<string> {
-  return axios({
+  const response = await axios({
     method: 'post',
     url: 'https://id.twitch.tv/oauth2/token',
-    data: {
+    params: {
       client_id: twitchSecrets.client_id,
       client_secret: twitchSecrets.client_secret,
       grant_type: 'client_credentials',
     },
-  })
-    .then((response) => {
-      return response.data.access_token;
-    })
-    .catch(() => {
-      // eslint-disable-next-line no-console
-      console.error(
-        'Failed to get Twitch access token. Remember, the app has to be running to get environment variables.'
-      );
-      return '';
-    });
+  });
+  return response.data.access_token;
 }
 
-async function getStreamLiveStatusFromAPI(
-  userName: string
-): Promise<Boolean | null> {
+async function getStreamLiveStatusFromAPI(userName: string): Promise<boolean> {
   const authProvider = new ClientCredentialsAuthProvider(
     twitchSecrets.client_id,
     twitchSecrets.client_secret
@@ -66,31 +63,23 @@ async function getStreamLiveStatusFromAPI(
 }
 
 async function cacheOnlineStatus() {
-  const cache = flatCache.load('twitch', path.resolve('public/cache/'));
-  const currentTime = Date.now();
   const onlineStatus = await getStreamLiveStatusFromAPI('Jesski');
-  cache.setKey('status', { online: onlineStatus, time: currentTime });
-  cache.save();
+  await cacheTwitchData('status', { online: onlineStatus });
   return onlineStatus;
 }
 
 /**
- * Pull from cache, else pull from api and cache it.
+ * Pull from cache, else pull from API and cache it.
  * @returns boolean
  */
-export async function getTwitchLiveStatus(): Promise<any | null> {
-  const cache = flatCache.load('twitch', path.resolve('public/cache/'));
-  const status = cache.getKey('status');
+export async function getTwitchLiveStatus(): Promise<boolean> {
+  const status = getDataFromTwitchCache('status') as {
+    online: boolean;
+    time: number;
+  } | null;
 
-  if (status != null && status.time != null) {
-    const timeDiff = (Date.now() - status.time) / 1000;
-    const seconds = Math.round(timeDiff);
-
-    if (seconds > 60) {
-      return cacheOnlineStatus();
-    }
-
-    return status?.online;
+  if (status && Date.now() - status.time < 60 * 1000) {
+    return status.online;
   }
 
   return cacheOnlineStatus();
