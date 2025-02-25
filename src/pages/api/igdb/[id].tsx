@@ -27,6 +27,7 @@ export default async function handler(
     'videos',
     'aggregated_rating',
     'summary',
+    'release_dates.date',
   ]);
 
   const gameData = game[0];

@@ -100,22 +100,6 @@ const Header: React.FC<{}> = () => {
                       About Me
                     </Link>
                   </MenuItem>
-                  <div className="w-full">
-                    <MenuItem>
-                      <Link
-                        href="https://twitch.tv/Jesski"
-                        target="_blank"
-                        className="block text-cstyle-green hover:text-cstyle-darkblue font-semibold flex items-center"
-                      >
-                        Twitch
-                        {streamIsOnline && (
-                          <svg height="20" width="20" className="ml-2">
-                            <circle cx="10" cy="10" r="5" fill="green" />
-                          </svg>
-                        )}
-                      </Link>
-                    </MenuItem>
-                  </div>
                   <MenuSeparator className="my-1 h-px bg-cstyle-deepbrown"></MenuSeparator>
                   <MenuItem>
                     <Link
@@ -133,6 +117,51 @@ const Header: React.FC<{}> = () => {
                       Game of the Year
                     </Link>
                   </MenuItem>
+                  <MenuSeparator className="my-1 h-px bg-cstyle-deepbrown"></MenuSeparator>
+                  <div className="w-full">
+                    <MenuItem>
+                      <Link
+                        href="https://twitch.tv/Jesski"
+                        target="_blank"
+                        className="block text-cstyle-green hover:text-cstyle-darkblue font-semibold flex items-center"
+                      >
+                        Twitch
+                      </Link>
+                    </MenuItem>
+                  </div>
+                  <div className="w-full">
+                    <MenuItem>
+                      <Link
+                        href="https://www.youtube.com/@JesskiVODs"
+                        target="_blank"
+                        className="block text-cstyle-green hover:text-cstyle-darkblue font-semibold flex items-center"
+                      >
+                        Youtube
+                      </Link>
+                    </MenuItem>
+                  </div>
+                  <div className="w-full">
+                    <MenuItem>
+                      <Link
+                        href="https://bsky.app/profile/jesski.com"
+                        target="_blank"
+                        className="block text-cstyle-green hover:text-cstyle-darkblue font-semibold flex items-center"
+                      >
+                        BlueSky
+                      </Link>
+                    </MenuItem>
+                  </div>
+                  <div className="w-full">
+                    <MenuItem>
+                      <Link
+                        href="https://ko-fi.com/jesski"
+                        target="_blank"
+                        className="block text-cstyle-green hover:text-cstyle-darkblue font-semibold flex items-center"
+                      >
+                        Kofi
+                      </Link>
+                    </MenuItem>
+                  </div>
                 </MenuItems>
               </Menu>
             </li>

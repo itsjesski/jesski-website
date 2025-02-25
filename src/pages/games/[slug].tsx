@@ -88,6 +88,12 @@ const GameDetailsPage: React.FC<{ post: GameDetails }> = (props) => {
       });
   }
 
+  const getReleaseDate = (releaseDate: number | undefined) => {
+    return releaseDate
+      ? format(new Date(releaseDate * 1000), 'LLL d, yyyy')
+      : 'Unknown';
+  };
+
   useEffect(() => {
     if (igdbData == null) {
       updateIGDBData(props.post?.id);
@@ -116,6 +122,16 @@ const GameDetailsPage: React.FC<{ post: GameDetails }> = (props) => {
       <div className="details-content md:flex">
         <div className="details-sidebar shadow-steam bg-cstyle-green p-4 mt-4 mr-4 md:w-1/4 w-full">
           <div className="jesski-details border-b-cstyle-text border-solid border-b-2 pb-2 mb-2">
+            <div className="whitespace-nowrap overflow-hidden overflow-ellipsis relative z-20">
+              <span className="text-cstyle-text whitespace-nowrap font-bold">
+                Release Date:{' '}
+              </span>
+              <span className="whitespace-nowrap overflow-hidden overflow-ellipsis relative z-20 text-cstyle-text">
+                <span className="text-positive">
+                  {getReleaseDate(igdbData?.release_dates[0]?.date)}
+                </span>
+              </span>
+            </div>
             <div className="whitespace-nowrap overflow-hidden overflow-ellipsis relative z-20">
               <span className="text-cstyle-text whitespace-nowrap font-bold">
                 Played:{' '}
