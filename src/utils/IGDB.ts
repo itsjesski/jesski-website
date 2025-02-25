@@ -1,4 +1,6 @@
 import axios from 'axios';
+import path from 'path';
+import flatCache from 'flat-cache';
 import { getTwitchAccessToken, twitchSecrets } from './Twitch';
 
 export type Genres = [
@@ -13,12 +15,10 @@ export type Cover = {
   url: string;
 };
 
-export type Screenshots = [
-  {
-    id: number;
-    url: string;
-  }
-];
+export type Screenshots = Array<{
+  id: number;
+  url: string;
+}>;
 
 export type IGDBGame = {
   id: number;
@@ -32,6 +32,21 @@ export type IGDBGame = {
   release_dates: Array<{ date: number; id: number }>;
 };
 
+function loadCache() {
+  return flatCache.load('igdbCache', path.resolve('public/cache/'));
+}
+
+export function getDataFromIGDBCache(key: string) {
+  const cache = loadCache();
+  return cache.getKey(key);
+}
+
+async function cacheIGDBData(key: string, data: any) {
+  const cache = loadCache();
+  cache.setKey(key, { ...data, time: Date.now() });
+  cache.save();
+}
+
 export function getBigCoverImage(cover: Cover): Cover {
   if (cover == null) {
     return {
@@ -39,120 +54,17 @@ export function getBigCoverImage(cover: Cover): Cover {
       url: '',
     };
   }
-  const modifiedCover = cover;
-  modifiedCover.url = cover.url.replace('t_thumb', 't_cover_big');
-
-  return cover;
+  return {
+    id: cover.id,
+    url: cover.url.replace('t_thumb', 't_cover_big'),
+  };
 }
 
-export function getBigScreenshotImage(
-  screenshotsArray: Screenshots
-): Screenshots {
-  if (screenshotsArray == null) {
-    return [
-      {
-        id: 0,
-        url: '',
-      },
-    ];
-  }
-
-  const modifiedScreenshots =
-    screenshotsArray[Math.floor(Math.random() * screenshotsArray.length)];
-  modifiedScreenshots.url = modifiedScreenshots.url.replace(
-    't_thumb',
-    't_screenshot_huge'
-  );
-
-  return [modifiedScreenshots];
-}
-
-export async function getGameByName(
-  name: string,
-  requested_fields: Array<any> = ['name']
-): Promise<IGDBGame[]> {
-  const cleanName = decodeURIComponent(name);
-  const accessToken = await getTwitchAccessToken();
-
-  const response = await axios({
-    url: 'https://api.igdb.com/v4/games',
-    method: 'POST',
-    headers: {
-      Accept: 'application/json',
-      'Client-ID': twitchSecrets.client_id,
-      Authorization: `Bearer ${accessToken}`,
-    },
-    data: `fields ${requested_fields.join(',')}; where name = "${cleanName}";`,
-  });
-
-  const modifiedResponse = response.data[0];
-
-  if (modifiedResponse == null) {
-    // eslint-disable-next-line no-console
-    console.log(`${name} could not be found in API!`);
-    return [];
-  }
-
-  // Get a random single screenshot.
-  if (modifiedResponse.screenshots != null) {
-    modifiedResponse.screenshots = getBigScreenshotImage(
-      modifiedResponse.screenshots
-    );
-  } else {
-    modifiedResponse.screenshots = [];
-  }
-
-  // Get big cover image.
-  if (modifiedResponse.cover) {
-    modifiedResponse.cover = getBigCoverImage(modifiedResponse.cover);
-  } else {
-    modifiedResponse.cover = [];
-  }
-
-  return [modifiedResponse];
-}
-
-export async function getGameByID(
-  id: number,
-  requested_fields: Array<any> = ['name']
-): Promise<IGDBGame[]> {
-  const accessToken = await getTwitchAccessToken();
-  const response = await axios({
-    url: 'https://api.igdb.com/v4/games',
-    method: 'POST',
-    headers: {
-      Accept: 'application/json',
-      'Client-ID': twitchSecrets.client_id,
-      Authorization: `Bearer ${accessToken}`,
-    },
-    data: `fields ${requested_fields.join(',')}; where id = ${id};`,
-  });
-
-  const modifiedResponse = response.data[0];
-
-  if (modifiedResponse == null) {
-    // eslint-disable-next-line no-console
-    console.log(`${id} could not be found in API!`);
-    return [];
-  }
-
-  // Get a random single screenshot.
-  if (modifiedResponse.screenshots != null) {
-    modifiedResponse.screenshots = getBigScreenshotImage(
-      modifiedResponse.screenshots
-    );
-  } else {
-    modifiedResponse.screenshots = [];
-  }
-
-  // Get big cover image.
-  if (modifiedResponse.cover) {
-    modifiedResponse.cover = getBigCoverImage(modifiedResponse.cover);
-  } else {
-    modifiedResponse.cover = [];
-  }
-
-  return [modifiedResponse];
+export function getBigScreenshotImage(screenshots: Screenshots): Screenshots {
+  return screenshots.map((screenshot) => ({
+    id: screenshot.id,
+    url: screenshot.url.replace('t_thumb', 't_screenshot_big'),
+  }));
 }
 
 export function getGenreString(genres: Genres): string {
@@ -161,4 +73,50 @@ export function getGenreString(genres: Genres): string {
   });
 
   return genresMap.join(', ');
+}
+
+export async function getGameByID(
+  id: number,
+  requested_fields: Array<any> = ['name', 'first_release_date', 'release_dates']
+): Promise<IGDBGame[]> {
+  const cacheKey = `game_${id}`;
+  const cachedData = getDataFromIGDBCache(cacheKey);
+
+  // Cache results for 7 days.
+  if (cachedData && Date.now() - cachedData.time < 7 * 24 * 60 * 60 * 1000) {
+    return cachedData.data;
+  }
+
+  const accessToken = await getTwitchAccessToken();
+  const response = await axios({
+    url: 'https://api.igdb.com/v4/games',
+    method: 'POST',
+    headers: {
+      'Client-ID': twitchSecrets.client_id,
+      Authorization: `Bearer ${accessToken}`,
+    },
+    data: `fields ${requested_fields.join(', ')}; where id = ${id};`,
+  });
+
+  const modifiedResponse = response.data.map((game: IGDBGame) => {
+    // Get a random single screenshot.
+    if (game.screenshots != null) {
+      game.screenshots = getBigScreenshotImage(game.screenshots);
+    } else {
+      game.screenshots = [];
+    }
+
+    // Get big cover image.
+    if (game.cover) {
+      game.cover = getBigCoverImage(game.cover);
+    } else {
+      game.cover = { id: 0, url: '' };
+    }
+
+    return game;
+  });
+
+  await cacheIGDBData(cacheKey, { data: modifiedResponse });
+
+  return modifiedResponse;
 }
