@@ -6,6 +6,7 @@ import Content from '../content/Content';
 import Meta from '../layout/Meta';
 import Main from '../templates/Main';
 import AppConfig from '../utils/AppConfig';
+import InformationSection from '../components/InformationSection';
 
 const Index = () => (
   <Main meta={<Meta title="Home" description={AppConfig.description} />}>
@@ -17,11 +18,12 @@ const Index = () => (
         <p className="text-white">
           You&apos;ve entered the world of Jesski, aka Jessica. Here you&apos;ll
           find tidbits from all of my different passions from video games, to
-          web development, books, entertainment, and more. This site serves as a
-          hub for my ramblings and sharing info with amazing friends I&apos;ve
-          met while pursuing all of these fun hobbies.
+          web development, books, crafts, and more. I also livestream on Twitch
+          and upload videos to YouTube. Feel free to explore and reach out to
+          me!
         </p>
       </PageIntroBox>
+      <InformationSection></InformationSection>
       <GameGallery></GameGallery>
     </Content>
   </Main>

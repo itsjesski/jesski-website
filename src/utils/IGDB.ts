@@ -29,6 +29,7 @@ export type IGDBGame = {
   videos: number[];
   aggregated_rating: number;
   summary: string;
+  release_dates: Array<{ date: number; id: number }>;
 };
 
 export function getBigCoverImage(cover: Cover): Cover {

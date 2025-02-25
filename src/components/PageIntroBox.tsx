@@ -54,7 +54,7 @@ const PageIntroBox: React.FC<{}> = (props) => {
   }, [firebotImage, streamIsOnline]);
 
   return (
-    <div className="index-header items-end flex-wrap flex justify-around mb-3 bg-cstyle-green rounded pt-4">
+    <div className="index-header items-end flex-wrap flex justify-around mb-3 bg-cstyle-green rounded p-2">
       {streamIsOnline == null && (
         <div className="pl-2">
           <Spinner />
@@ -62,35 +62,32 @@ const PageIntroBox: React.FC<{}> = (props) => {
       )}
       {streamIsOnline && (
         <div className="pl-2 grid grid-cols-12 gap-4">
-          <div className="col-span-12 md:col-span-9 lg:col-span-10">
-            <h1 className="text-white text-4xl">Jesski is live on Twitch!</h1>
+          <div className="col-span-12 md:col-span-6 lg:col-span-6 text-white flex flex-col justify-center">
+            <h1 className="text-4xl">Jesski is live streaming right now!</h1>
             <p>
-              The Twitch stream is live right now, and you&apos;re missing out!
-              If you&apos;d like to join in and become part of the community,
-              just click the button below!
+              Jess is live right now and you&apos;re missing out! You can click
+              the link below to join in and become part of the community.
             </p>
             <Link
               href="https://twitch.tv/Jesski"
               target="_blank"
-              className="text-white font-bold"
+              className="text-white font-bold mt-4"
             >
               Watch Now {'>'}
             </Link>
           </div>
-          <div className="col-span-2 md:col-span-3 lg:col-span-2 flex justify-center align-middle">
-            {firebotImage && (
-              <Image
-                src={firebotImage}
-                alt="jesski emote"
-                width="178"
-                height="178"
-                className="w-full h-fit"
-              />
-            )}
+          <div className="col-span-12 md:col-span-6 lg:col-span-6 flex justify-center items-center">
+            <iframe
+              src="https://player.twitch.tv/?channel=Jesski&parent=jesski.com"
+              height="480"
+              width="100%"
+              allowFullScreen={true}
+              frameBorder="0"
+              className="w-full m-4"
+            ></iframe>
           </div>
         </div>
       )}
-
       {streamIsOnline === false && (
         <div className="pl-2 grid grid-cols-12 gap-4">
           <div className="col-span-12 md:col-span-9 lg:col-span-10">
