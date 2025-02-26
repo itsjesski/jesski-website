@@ -13,6 +13,7 @@ import {
 import Navbar from '../navigation/Navbar';
 import AppConfig from '../utils/AppConfig';
 import Logo from './Logo';
+import { links } from '../utils/Links';
 
 const Header: React.FC<{}> = () => {
   const [streamIsOnline, setStreamIsOnline] = useState();
@@ -118,50 +119,19 @@ const Header: React.FC<{}> = () => {
                     </Link>
                   </MenuItem>
                   <MenuSeparator className="my-1 h-px bg-cstyle-deepbrown"></MenuSeparator>
-                  <div className="w-full">
-                    <MenuItem>
-                      <Link
-                        href="https://twitch.tv/Jesski"
-                        target="_blank"
-                        className="block text-cstyle-green hover:text-cstyle-darkblue font-semibold flex items-center"
-                      >
-                        Twitch
-                      </Link>
-                    </MenuItem>
-                  </div>
-                  <div className="w-full">
-                    <MenuItem>
-                      <Link
-                        href="https://www.youtube.com/@JesskiVODs"
-                        target="_blank"
-                        className="block text-cstyle-green hover:text-cstyle-darkblue font-semibold flex items-center"
-                      >
-                        Youtube
-                      </Link>
-                    </MenuItem>
-                  </div>
-                  <div className="w-full">
-                    <MenuItem>
-                      <Link
-                        href="https://bsky.app/profile/jesski.com"
-                        target="_blank"
-                        className="block text-cstyle-green hover:text-cstyle-darkblue font-semibold flex items-center"
-                      >
-                        BlueSky
-                      </Link>
-                    </MenuItem>
-                  </div>
-                  <div className="w-full">
-                    <MenuItem>
-                      <Link
-                        href="https://ko-fi.com/jesski"
-                        target="_blank"
-                        className="block text-cstyle-green hover:text-cstyle-darkblue font-semibold flex items-center"
-                      >
-                        Kofi
-                      </Link>
-                    </MenuItem>
-                  </div>
+                  {links.map((link, index) => (
+                    <div className="w-full" key={index}>
+                      <MenuItem>
+                        <Link
+                          href={link.url}
+                          target="_blank"
+                          className="block text-cstyle-green hover:text-cstyle-darkblue font-semibold flex items-center"
+                        >
+                          {link.name}
+                        </Link>
+                      </MenuItem>
+                    </div>
+                  ))}
                 </MenuItems>
               </Menu>
             </li>

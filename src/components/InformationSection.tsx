@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { addDays, set } from 'date-fns';
+import { links } from '../utils/Links';
 
 const InformationSection = () => {
   const [timeUntilNextStream, setTimeUntilNextStream] = useState('');
@@ -7,7 +8,7 @@ const InformationSection = () => {
   useEffect(() => {
     const calculateTimeUntilNextStream = () => {
       const now = new Date();
-      const daysOfWeek = [1, 2, 4, 5, 6]; // Monday, Tuesday, Thursday, Friday, Saturday
+      const streamDays = [1, 2, 4, 5, 6]; // Monday, Tuesday, Thursday, Friday, Saturday
       const streamHour = 19; // 7 PM CT
       const streamMinute = 0;
 
@@ -19,21 +20,20 @@ const InformationSection = () => {
       });
 
       if (
-        now.getDay() === 0 ||
-        now.getDay() === 3 ||
-        (now.getDay() === 6 && now.getHours() >= streamHour)
+        now.getDay() === 0 || // If today is Sunday
+        (now.getDay() === 6 && now.getHours() >= streamHour) // If it's Saturday and the stream time has passed
       ) {
-        // If today is Sunday or Wednesday, or it's Saturday and the stream time has passed, set to next Monday
+        // Set to next Monday
         nextStreamDate = addDays(nextStreamDate, (1 + 7 - now.getDay()) % 7);
       } else if (
         now.getHours() >= streamHour &&
-        daysOfWeek.includes(now.getDay())
+        streamDays.includes(now.getDay())
       ) {
         // If today is a stream day but the stream time has passed, set to next stream day
         nextStreamDate = addDays(nextStreamDate, 1);
       } else {
         // Find the next stream day
-        while (!daysOfWeek.includes(nextStreamDate.getDay())) {
+        while (!streamDays.includes(nextStreamDate.getDay())) {
           nextStreamDate = addDays(nextStreamDate, 1);
         }
       }
@@ -43,8 +43,9 @@ const InformationSection = () => {
       const minutes = Math.floor(
         (timeDifference % (1000 * 60 * 60)) / (1000 * 60)
       );
+      const seconds = Math.floor((timeDifference % (1000 * 60)) / 1000);
 
-      setTimeUntilNextStream(`${hours} hours and ${minutes} minutes`);
+      setTimeUntilNextStream(`${hours}h ${minutes}m ${seconds}s`);
     };
 
     const interval = setInterval(calculateTimeUntilNextStream, 1000);
@@ -85,7 +86,8 @@ const InformationSection = () => {
           will start in about: <br></br> {timeUntilNextStream}.
         </p>
         <p className="text-sm text-black mt-2">
-          If the steam isn&apos;t up, check discord for more info!
+          If the steam isn&apos;t up, check discord for more info! Schedule
+          could change at any time.
         </p>
       </div>
       <div className="flex flex-col items-start">
@@ -96,46 +98,18 @@ const InformationSection = () => {
           Here are some useful links to find me on other platforms:
         </p>
         <ul className="text-black">
-          <li>
-            <a
-              href="https://twitch.tv/Jesski"
-              target="_blank"
-              className="hover:underline"
-              rel="noreferrer"
-            >
-              Twitch
-            </a>
-          </li>
-          <li>
-            <a
-              href="https://www.youtube.com/@JesskiVODs"
-              target="_blank"
-              className="hover:underline"
-              rel="noreferrer"
-            >
-              YouTube
-            </a>
-          </li>
-          <li>
-            <a
-              href="https://bsky.app/profile/jesski.com"
-              target="_blank"
-              className="hover:underline"
-              rel="noreferrer"
-            >
-              BlueSky
-            </a>
-          </li>
-          <li>
-            <a
-              href="https://ko-fi.com/jesski"
-              target="_blank"
-              className="hover:underline"
-              rel="noreferrer"
-            >
-              Kofi
-            </a>
-          </li>
+          {links.map((link, index) => (
+            <li key={index}>
+              <a
+                href={link.url}
+                target="_blank"
+                className="hover:underline"
+                rel="noreferrer"
+              >
+                {link.name}
+              </a>
+            </li>
+          ))}
         </ul>
       </div>
       <div className="flex flex-col items-start">
