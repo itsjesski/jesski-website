@@ -25,7 +25,7 @@
     "@mapbox/rehype-prism": "^0.7.0",
     "@twurple/api": "^5.1.7",
     "@twurple/auth": "^5.1.7",
-    "axios": "^1.7.4",
+    "axios": "^1.8.2",
     "cors": "^2.8.5",
     "date-fns": "^2.28.0",
     "dotenv": "^16.4.5",
