@@ -48,8 +48,19 @@ const processImage = async (
     // Compress the resized image
     const compressedBuffer = await compressImage(resizedBuffer, ext);
 
-    // Write the compressed image back to the original location
-    await fs.writeFile(inputPath, new Uint8Array(compressedBuffer));
+    // Check if the compressed image is significantly smaller
+    const originalSize = (await fs.stat(inputPath)).size;
+    const compressedSize = compressedBuffer.length;
+
+    if (compressedSize < originalSize * 0.95) {
+      await fs.writeFile(inputPath, new Uint8Array(compressedBuffer));
+      console.log(`Compressed and resized: ${inputPath}`);
+    } else {
+      await fs.writeFile(inputPath, new Uint8Array(resizedBuffer));
+      console.log(
+        `Skipping compression for ${inputPath} as it did not compress significantly.`
+      );
+    }
 
     return true;
   } catch (error) {
@@ -66,7 +77,7 @@ const processImage = async (
     files.map(async (file: string) => {
       const success = await processImage(file, 1920, 1080); // Resize to 1920x1080
       if (success) {
-        console.log(`Compressed and resized: ${file}`);
+        console.log(`Processed: ${file}`);
       }
     })
   );
