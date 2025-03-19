@@ -17,14 +17,8 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "npm run lint && npm run cache-posts && git add cache && lint-staged"
+      "pre-commit": "npm run lint && npm run cache-posts && npm run compress-images && git add cache"
     }
-  },
-  "lint-staged": {
-    "public/assets/images/art/**/*.{jpg,png,svg}": [
-      "npm run compress-images",
-      "git add"
-    ]
   },
   "dependencies": {
     "@headlessui/react": "^2.1.5",
