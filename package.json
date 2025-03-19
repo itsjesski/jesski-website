@@ -17,7 +17,7 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "npm run lint && npm run cache-posts && npm run compress-images && git add"
+      "pre-commit": "npm run lint && npm run cache-posts && npm run compress-images && git add public"
     }
   },
   "lint-staged": {
