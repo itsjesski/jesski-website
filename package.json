@@ -65,6 +65,7 @@
     "@types/cors": "^2.8.12",
     "@types/flat-cache": "^2.0.0",
     "@types/fuzzy-search": "^2.1.2",
+    "@types/glob": "^8.1.0",
     "@types/node": "^17.0.15",
     "@types/react": "^17.0.39",
     "@types/react-js-pagination": "^3.0.4",
