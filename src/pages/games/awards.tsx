@@ -51,7 +51,7 @@ const PostsIndex: React.FC<{}> = () => {
     <Main
       meta={
         <Meta
-          title="Best of the best games | Jesski"
+          title="Best of the best games"
           description="Game reviews by Jesski."
         />
       }

@@ -10,7 +10,7 @@ const ArtJourney: React.FC = () => {
     <Main
       meta={
         <Meta
-          title="My Art Learning Journey | Jesski"
+          title="My Art Learning Journey"
           description="Welcome to my art journey! Here you can see my progress as I create a new piece of art every day."
         />
       }
