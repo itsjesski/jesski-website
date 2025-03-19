@@ -60,6 +60,7 @@ const processImage = async (
 
 (async () => {
   const files = glob.sync('public/assets/images/art/**/*.{jpg,jpeg,png,svg}');
+  console.log(`Processing ${files.length} images...`);
 
   await Promise.all(
     files.map(async (file: string) => {
