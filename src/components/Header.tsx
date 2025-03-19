@@ -101,6 +101,14 @@ const Header: React.FC<{}> = () => {
                       About Me
                     </Link>
                   </MenuItem>
+                  <MenuItem>
+                    <Link
+                      className="block text-cstyle-green hover:text-cstyle-darkblue font-semibold"
+                      href="/art"
+                    >
+                      Art
+                    </Link>
+                  </MenuItem>
                   <MenuSeparator className="my-1 h-px bg-cstyle-deepbrown"></MenuSeparator>
                   <MenuItem>
                     <Link
@@ -125,7 +133,7 @@ const Header: React.FC<{}> = () => {
                         <Link
                           href={link.url}
                           target="_blank"
-                          className="block text-cstyle-green hover:text-cstyle-darkblue font-semibold flex items-center"
+                          className="text-cstyle-green hover:text-cstyle-darkblue font-semibold flex items-center"
                         >
                           {link.name}
                         </Link>
