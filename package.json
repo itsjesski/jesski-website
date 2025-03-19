@@ -20,7 +20,7 @@
     }
   },
   "lint-staged": {
-    "public/assets/images/art/art-journey/**/*.{jpg,png,svg}": [
+    "public/assets/images/art/**/*.{jpg,png,svg}": [
       "node compress-images.js",
       "git add"
     ]
@@ -63,6 +63,9 @@
     "@types/cors": "^2.8.12",
     "@types/flat-cache": "^2.0.0",
     "@types/fuzzy-search": "^2.1.2",
+    "@types/imagemin": "^9.0.1",
+    "@types/imagemin-mozjpeg": "^8.0.4",
+    "@types/imagemin-svgo": "^10.0.5",
     "@types/node": "^17.0.15",
     "@types/react": "^17.0.39",
     "@types/react-js-pagination": "^3.0.4",
