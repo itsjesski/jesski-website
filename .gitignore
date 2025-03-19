@@ -42,5 +42,3 @@ src/scripts/csv
 
 # cache
 public/cache
-.husky/
-.husky/pre-commit
