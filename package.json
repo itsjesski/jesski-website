@@ -13,11 +13,11 @@
     "cache-posts": "npx ts-node --skip-project ./src/scripts/PostCache.ts",
     "compile-games-from-csv": "npx ts-node --skip-project ./src/scripts/GamesFromCSV.ts",
     "update-front-matter": "npx ts-node --skip-project ./src/scripts/FrontmatterChanger.ts",
-    "compress-images": "npx ts-node --skip-project ./src/scripts/compress-images.ts"
+    "compress-images": "npx ts-node --skip-project ./src/scripts/CompressImages.ts"
   },
   "husky": {
     "hooks": {
-      "pre-commit": "npm run lint && npm run cache-posts && npm run compress-images && git add cache"
+      "pre-commit": "npm run lint && npm run cache-posts && npm run compress-images && git add"
     }
   },
   "lint-staged": {
