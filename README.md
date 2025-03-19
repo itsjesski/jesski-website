@@ -21,6 +21,7 @@ This project was built as a personal website for myself.
 - [Twurple](https://twurple.js.org) for making Twitch API calls.
 - [IGDB API](https://api-docs.igdb.com/?javascript#game) for game information.
 - [Flat Cache](https://github.com/royriojas/flat-cache) for caching API calls.
+- [Sharp](https://sharp.pixelplumbing.com/) for image optimization and resizing.
 
 ### Deployment
 Deployment happens automatically when merging a branch into main. Digital Ocean picks up on the merge, builds everything, and deploys it.
