@@ -1,6 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import Lightbox from 'yet-another-react-lightbox';
 import 'yet-another-react-lightbox/styles.css';
+// Option 1: Keep using the Counter plugin but with improved styling
+import Counter from 'yet-another-react-lightbox/plugins/counter';
+import 'yet-another-react-lightbox/plugins/counter.css';
 import ArtCard from './ArtCard';
 
 const DailyArtChallenge: React.FC = () => {
@@ -48,12 +51,45 @@ const DailyArtChallenge: React.FC = () => {
           />
         ))}
       </div>
+
+      {/* OPTION 1: Using Counter plugin with fixed positioning */}
       {lightboxOpen && (
         <Lightbox
           slides={currentGallery.map((image) => ({ src: image }))}
           open={lightboxOpen}
           close={() => setLightboxOpen(false)}
           index={currentImageIndex}
+          plugins={[Counter]}
+          styles={{
+            container: {
+              backgroundColor: 'rgba(0, 0, 0, 0.8)',
+            },
+            root: {
+              position: 'fixed',
+              top: '10%',
+              bottom: '10%',
+              left: '10%',
+              right: '10%',
+              width: '80%',
+              height: '80%',
+            },
+          }}
+          counter={{
+            container: {
+              style: {
+                position: 'absolute',
+                top: 'auto',
+                bottom: '20px',
+                left: '50%',
+                transform: 'translateX(-50%)',
+                backgroundColor: 'rgba(0, 0, 0, 0.6)',
+                padding: '5px 10px',
+                borderRadius: '4px',
+                fontSize: '16px',
+                zIndex: 10,
+              },
+            },
+          }}
         />
       )}
     </div>
