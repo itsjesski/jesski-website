@@ -152,7 +152,6 @@ async function processImageFile(imagePath: string): Promise<void> {
 
     // Skip if post already exists
     if (fs.existsSync(postPath)) {
-      console.log(`Post already exists for ${title}, skipping...`);
       return;
     }
 
@@ -233,16 +232,9 @@ async function createArtFiles(): Promise<void> {
       `Found ${totalFiles} image files to process in all subdirectories.`
     );
 
-    // Process each image file
-    let processedFiles = 0;
-    let createdFiles = 0;
-
     await Promise.all(
       imageFiles.map(async (imagePath, index) => {
         await processImageFile(imagePath);
-
-        processedFiles++;
-        createdFiles++;
 
         // Log progress periodically
         if ((index + 1) % 10 === 0) {
@@ -251,9 +243,7 @@ async function createArtFiles(): Promise<void> {
       })
     );
 
-    console.log(
-      `Finished! Created ${createdFiles} art posts from ${processedFiles} images.`
-    );
+    console.log(`Finished creating art posts.`);
   } catch (error) {
     console.error('Error creating art posts:', error);
   }

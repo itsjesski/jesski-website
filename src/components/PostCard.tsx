@@ -17,7 +17,7 @@ const PostCard: React.FC<PostCardProps> = ({
       case 'game-review':
         return `/games/${post.slug}/`;
       default:
-        return `/posts/${post.slug}/`;
+        return `/blog/${post.slug}/`;
     }
   };
 
@@ -115,8 +115,7 @@ const PostCard: React.FC<PostCardProps> = ({
       Array.isArray(post.images)
     ) {
       e.preventDefault();
-      e.stopPropagation(); // Stop event propagation
-      console.log('Opening lightbox with images:', post.images); // Debug
+      e.stopPropagation();
       openLightbox(post.images, 0);
     }
     // For other post types, let the Link handle navigation

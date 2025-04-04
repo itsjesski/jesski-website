@@ -6,7 +6,6 @@ import Content from '../content/Content';
 import Meta from '../layout/Meta';
 import Main from '../templates/Main';
 import AppConfig from '../utils/AppConfig';
-import InformationSection from '../components/InformationSection';
 
 const Index: React.FC = () => (
   <Main meta={<Meta title="Home" description={AppConfig.description} />}>
@@ -24,7 +23,6 @@ const Index: React.FC = () => (
         </p>
       </PageIntroBox>
       <PostGallery limit={6} />
-      <InformationSection />
       <GameGallery />
     </Content>
   </Main>

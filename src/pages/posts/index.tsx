@@ -1,4 +1,5 @@
 import React, { useEffect, useState, useMemo } from 'react';
+import Lightbox from 'yet-another-react-lightbox';
 import PageIntroBox from '../../components/PageIntroBox';
 import Pagination from '../../components/Pagination';
 import Search from '../../components/Search';
@@ -9,6 +10,7 @@ import AppConfig from '../../utils/AppConfig';
 import { getAllPosts } from '../../utils/Posts';
 import { Post } from '../../types/Posts';
 import PostCard from '../../components/PostCard';
+import 'yet-another-react-lightbox/styles.css';
 
 type FilterType = 'all' | 'artwork' | 'game-review' | 'blog';
 
@@ -17,6 +19,11 @@ const AllPostsPage: React.FC = () => {
   const [allPosts, setAllPosts] = useState<Post[]>([]);
   const [page, setPage] = useState<number>(1);
   const [totalPages, setTotalPages] = useState<number>(1);
+  const [lightbox, setLightbox] = useState({
+    open: false,
+    slides: [] as { src: string }[],
+    index: 0,
+  });
 
   // Load posts on component mount
   useEffect(() => {
@@ -58,6 +65,15 @@ const AllPostsPage: React.FC = () => {
     setPage(newPage);
   };
 
+  // Function to open lightbox with given images
+  const openLightbox = (images: string[], index: number) => {
+    setLightbox({
+      open: true,
+      slides: images.map((src) => ({ src })),
+      index,
+    });
+  };
+
   return (
     <Main
       meta={
@@ -75,54 +91,52 @@ const AllPostsPage: React.FC = () => {
           </p>
         </PageIntroBox>
 
-        <div className="mb-3 flex justify-between items-end flex-wrap pb-2">
-          <div className="mb-4 flex justify-center">
-            <div className="inline-flex rounded-md shadow-sm" role="group">
-              <button
-                type="button"
-                className={`px-4 py-2 text-sm font-medium rounded-l-lg ${
-                  filter === 'all'
-                    ? 'bg-cstyle-highlight text-white'
-                    : 'bg-white text-gray-700 hover:bg-gray-100'
-                }`}
-                onClick={() => setFilter('all')}
-              >
-                All Posts
-              </button>
-              <button
-                type="button"
-                className={`px-4 py-2 text-sm font-medium ${
-                  filter === 'artwork'
-                    ? 'bg-cstyle-highlight text-white'
-                    : 'bg-white text-gray-700 hover:bg-gray-100'
-                }`}
-                onClick={() => setFilter('artwork')}
-              >
-                Art
-              </button>
-              <button
-                type="button"
-                className={`px-4 py-2 text-sm font-medium ${
-                  filter === 'game-review'
-                    ? 'bg-cstyle-highlight text-white'
-                    : 'bg-white text-gray-700 hover:bg-gray-100'
-                }`}
-                onClick={() => setFilter('game-review')}
-              >
-                Games
-              </button>
-              <button
-                type="button"
-                className={`px-4 py-2 text-sm font-medium rounded-r-lg ${
-                  filter === 'blog'
-                    ? 'bg-cstyle-highlight text-white'
-                    : 'bg-white text-gray-700 hover:bg-gray-100'
-                }`}
-                onClick={() => setFilter('blog')}
-              >
-                Blog
-              </button>
-            </div>
+        <div className="index-header mb-3 items-end flex-wrap pb-2 flex justify-between">
+          <div className="inline-flex rounded-md shadow-sm" role="group">
+            <button
+              type="button"
+              className={`px-4 py-2 text-sm font-medium rounded-l-lg ${
+                filter === 'all'
+                  ? 'bg-cstyle-highlight text-white'
+                  : 'bg-white text-gray-700 hover:bg-gray-100'
+              }`}
+              onClick={() => setFilter('all')}
+            >
+              All Posts
+            </button>
+            <button
+              type="button"
+              className={`px-4 py-2 text-sm font-medium ${
+                filter === 'artwork'
+                  ? 'bg-cstyle-highlight text-white'
+                  : 'bg-white text-gray-700 hover:bg-gray-100'
+              }`}
+              onClick={() => setFilter('artwork')}
+            >
+              Art
+            </button>
+            <button
+              type="button"
+              className={`px-4 py-2 text-sm font-medium ${
+                filter === 'game-review'
+                  ? 'bg-cstyle-highlight text-white'
+                  : 'bg-white text-gray-700 hover:bg-gray-100'
+              }`}
+              onClick={() => setFilter('game-review')}
+            >
+              Games
+            </button>
+            <button
+              type="button"
+              className={`px-4 py-2 text-sm font-medium rounded-r-lg ${
+                filter === 'blog'
+                  ? 'bg-cstyle-highlight text-white'
+                  : 'bg-white text-gray-700 hover:bg-gray-100'
+              }`}
+              onClick={() => setFilter('blog')}
+            >
+              Blog
+            </button>
           </div>
           <div className="search-container">
             <Search postType="posts"></Search>
@@ -137,10 +151,18 @@ const AllPostsPage: React.FC = () => {
             </p>
           </div>
         ) : (
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {currentPosts.map((post) => (
-              <PostCard key={`${post.type}-${post.slug}`} post={post} />
-            ))}
+          <div className="post-index">
+            <div className="flex flex-wrap">
+              {currentPosts.map((post) => (
+                <PostCard
+                  key={`${post.type}-${post.slug}`}
+                  post={post}
+                  openLightbox={
+                    post.type === 'artwork' ? openLightbox : undefined
+                  }
+                />
+              ))}
+            </div>
           </div>
         )}
       </Content>
@@ -153,6 +175,13 @@ const AllPostsPage: React.FC = () => {
           handleNextPage={handleNextPage}
         />
       )}
+
+      <Lightbox
+        open={lightbox.open}
+        close={() => setLightbox({ ...lightbox, open: false })}
+        slides={lightbox.slides}
+        index={lightbox.index}
+      />
     </Main>
   );
 };
