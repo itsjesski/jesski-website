@@ -1,15 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
-
-interface ArtCardProps {
-  gallery: {
-    name: string;
-    images: string[];
-    featuredImage: string;
-  };
-  openLightbox: (images: string[], index: number) => void;
-  size: string;
-}
+import { ArtCardProps } from '../types';
 
 const ArtCard: React.FC<ArtCardProps> = ({ gallery, openLightbox, size }) => {
   return (

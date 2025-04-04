@@ -2,7 +2,8 @@ import React, { useEffect, useState } from 'react';
 
 import Link from 'next/link';
 
-import { FBPost, getBlogPosts } from '../utils/Posts';
+import { getBlogPosts } from '../utils/Posts';
+import { FBPost } from '../types';
 import BlogCard from './BlogCard';
 
 const BlogCardList: React.FC<{}> = () => {

@@ -1,19 +1,13 @@
 import React from 'react';
-
 import { format } from 'date-fns';
 import { GetStaticPaths, GetStaticProps } from 'next';
-
 import { posts } from '../../../public/cache/_posts';
 import Content from '../../content/Content';
 import Meta from '../../layout/Meta';
 import Main from '../../templates/Main';
 import { filterPostFields } from '../../utils/ApiHelper';
 import markdownToHtml from '../../utils/Markdown';
-import { FBPost, PostResponse } from '../../utils/Posts';
-
-type IPostUrl = {
-  slug: string;
-};
+import { IPostUrl, FBPost, PostResponse } from '../../types';
 
 function getPostBySlug(slug: string, fields: string): PostResponse {
   let result = posts.filter((post) => {

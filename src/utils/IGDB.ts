@@ -2,35 +2,7 @@ import axios from 'axios';
 import path from 'path';
 import flatCache from 'flat-cache';
 import { getTwitchAccessToken, twitchSecrets } from './Twitch';
-
-export type Genres = [
-  {
-    id: number;
-    name: string;
-  }
-];
-
-export type Cover = {
-  id: number;
-  url: string;
-};
-
-export type Screenshots = Array<{
-  id: number;
-  url: string;
-}>;
-
-export type IGDBGame = {
-  id: number;
-  name: string;
-  cover: Cover;
-  genres: Genres;
-  screenshots: Screenshots;
-  videos: number[];
-  aggregated_rating: number;
-  summary: string;
-  release_dates: Array<{ date: number; id: number }>;
-};
+import { Cover, Screenshots, Genres, IGDBGame } from '../types';
 
 function loadCache() {
   return flatCache.load('igdbCache', path.resolve('public/cache/'));
@@ -38,12 +10,21 @@ function loadCache() {
 
 export function getDataFromIGDBCache(key: string) {
   const cache = loadCache();
-  return cache.getKey(key);
+  const data = cache.getKey(key);
+
+  if (data && data.expires > Date.now()) {
+    return data.data;
+  }
+  return null;
 }
 
-async function cacheIGDBData(key: string, data: any) {
+async function cacheIGDBData(key: string, data: any, ttl = 86400000) {
   const cache = loadCache();
-  cache.setKey(key, { ...data, time: Date.now() });
+  cache.setKey(key, {
+    data,
+    time: Date.now(),
+    expires: Date.now() + ttl,
+  });
   cache.save();
 }
 

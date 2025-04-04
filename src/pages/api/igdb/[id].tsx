@@ -1,6 +1,7 @@
 import Cors from 'cors';
 
-import { getGameByID, IGDBGame } from '../../../utils/IGDB';
+import { getGameByID } from '../../../utils/IGDB';
+import { IGDBGame } from '../../../types';
 import initMiddleware from '../../../utils/InitMiddleware';
 
 const cors = initMiddleware(

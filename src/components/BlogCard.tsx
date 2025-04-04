@@ -4,7 +4,7 @@ import { format } from 'date-fns';
 import Link from 'next/link';
 import Image from 'next/image';
 
-import { FBPost } from '../utils/Posts';
+import { FBPost } from '../types';
 
 const BlogCard: React.FC<{ post: FBPost }> = ({ post }) => {
   return (

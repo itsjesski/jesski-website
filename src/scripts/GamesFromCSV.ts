@@ -73,8 +73,10 @@ async function getFileName(sheetRow: any) {
   const igdb = sheetRow.IGDB;
 
   // See if file exists using game name, and if so make sure igdb id matches.
-  if (fs.existsSync(`./_games/${slug}.md`)) {
-    const { data: frontMatter } = matter(await readFile(`./_games/${slug}.md`));
+  if (fs.existsSync(`./_content/_games/${slug}.md`)) {
+    const { data: frontMatter } = matter(
+      await readFile(`./_content/_games/${slug}.md`)
+    );
 
     if (frontMatter.id === parseInt(sheetRow.IGDB, 10)) {
       return slug;
@@ -82,7 +84,7 @@ async function getFileName(sheetRow: any) {
   }
 
   // Otherwise, we have a duplicate game name for different games. So return slug + igdb as file name.
-  if (fs.existsSync(`./_games/${slug}-${igdb}.md`)) {
+  if (fs.existsSync(`./_content/_games/${slug}-${igdb}.md`)) {
     return `${slug}-${igdb}`;
   }
 
@@ -193,7 +195,7 @@ async function editGameMDFile(sheetRow: any) {
     return;
   }
 
-  const filepath = `./_games/${slug}.md`;
+  const filepath = `./_content/_games/${slug}.md`;
   // const igdb = null;
 
   // eslint-disable-next-line prefer-const
@@ -275,7 +277,7 @@ function getScreenshot(igdbData: any) {
  */
 async function createNewGameMDFile(sheetRow: any) {
   let slug = convertToSlug(sheetRow.Game);
-  let filepath = `./_games/${slug}.md`;
+  let filepath = `./_content/_games/${slug}.md`;
 
   const igdb = await getGameByID(sheetRow.IGDB, [
     'id',
@@ -291,8 +293,8 @@ async function createNewGameMDFile(sheetRow: any) {
   }
 
   // If a file already exists using just the game name, then attach the igdb id as well.
-  if (fs.existsSync(`./_games/${slug}.md`)) {
-    filepath = `./_games/${slug}-${igdb[0].id}.md`;
+  if (fs.existsSync(`./_content/_games/${slug}.md`)) {
+    filepath = `./_content/_games/${slug}-${igdb[0].id}.md`;
     slug = `${slug}-${igdb[0].id}`;
   }
 

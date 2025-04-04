@@ -3,7 +3,7 @@ import Main from '../../templates/Main';
 import PageIntroBox from '../../components/PageIntroBox';
 import Content from '../../content/Content';
 import Meta from '../../layout/Meta';
-import DailyArtChallenge from '../../components/ArtChallenge';
+import DailyArtChallenge from '../../components/ArtGallery';
 
 const ArtJourney: React.FC = () => {
   return (

@@ -7,22 +7,18 @@ const withBundleAnalyzer = require('@next/bundle-analyzer')({
 
 const baseUrl = '';
 
-module.exports = withBundleAnalyzer({
+// Single consolidated configuration
+const nextConfig = {
   poweredByHeader: false,
   trailingSlash: true,
   basePath: baseUrl,
-  env: {
-    baseUrl,
-  },
-  // The starter code load resources from `public` folder with `router.basePath` in React components.
-  // So, the source code is "basePath-ready".
-  // You can remove `basePath` if you don't need it.
   reactStrictMode: true,
-});
 
-module.exports = {
+  // Performance optimizations
+  swcMinify: true, // Faster minification
+  compress: true, // Better compression
+
   webpack: (config) => {
-    // this will override the experiments
     // eslint-disable-next-line no-param-reassign
     config.experiments = {
       topLevelAwait: true,
@@ -38,8 +34,15 @@ module.exports = {
         os: false,
       },
     };
+
+    // Add production optimization
+    if (process.env.NODE_ENV === 'production') {
+      // Add production-only webpack optimizations if needed
+    }
+
     return config;
   },
+
   images: {
     remotePatterns: [
       {
@@ -51,10 +54,34 @@ module.exports = {
         hostname: 'jesski.com',
       },
     ],
+    // Optimize common image sizes
+    deviceSizes: [640, 750, 828, 1080, 1200, 1920],
+    // Enable modern image formats
+    formats: ['image/webp'],
   },
+
+  // Static file headers for better caching
+  async headers() {
+    return [
+      {
+        source: '/assets/:path*',
+        headers: [
+          {
+            key: 'Cache-Control',
+            value: 'public, max-age=31536000, immutable',
+          },
+        ],
+      },
+    ];
+  },
+
   env: {
+    baseUrl,
     SITE_URL: process.env.SITE_URL,
     TWITCH_CLIENT_ID: process.env.TWITCH_CLIENT_ID,
     TWITCH_CLIENT_SECRET: process.env.TWITCH_CLIENT_SECRET,
   },
 };
+
+// Apply the bundle analyzer wrapper
+module.exports = withBundleAnalyzer(nextConfig);
