@@ -11,7 +11,13 @@ import Main from '../../templates/Main';
 import { filterPostFields } from '../../utils/ApiHelper';
 import { getGenreString } from '../../utils/IGDB';
 import markdownToHtml from '../../utils/Markdown';
-import { IGDBGame, IPostUrl, GameDetails, GameResponse } from '../../types';
+import {
+  IGDBGame,
+  IPostUrl,
+  GameDetails,
+  GameResponse,
+  FBGame,
+} from '../../types';
 
 function getPostBySlug(slug: string, fields: string): GameResponse {
   let result = posts.filter((post) => {
@@ -21,7 +27,7 @@ function getPostBySlug(slug: string, fields: string): GameResponse {
   result = filterPostFields(result, fields);
 
   return {
-    results: result,
+    results: result as FBGame[],
     totalPosts: posts.length,
   };
 }

@@ -39,7 +39,7 @@ export interface PostItems {
 }
 
 export type FBPost = {
-  screenshots: any;
+  screenshots?: any;
   title: string;
   description: string;
   date: string;
@@ -70,10 +70,11 @@ export type FBGame = {
   content: string;
   cover: string;
   goty: GameAwards | [];
-  tags: GameTags;
+  tags?: GameTags;
   image: string;
   completed: boolean;
-  videos: string[];
+  videos?: string[];
+  type?: string;
 };
 
 export type GameResponse = {

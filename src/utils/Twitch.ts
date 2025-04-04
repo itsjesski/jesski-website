@@ -26,6 +26,12 @@ async function cacheTwitchData(key: string, data: any) {
 }
 
 export async function getTwitchAccessToken(): Promise<string> {
+  if (!twitchSecrets.client_id || !twitchSecrets.client_secret) {
+    // eslint-disable-next-line no-console
+    console.error('Missing Twitch credentials. Check your .env file.');
+    throw new Error('Missing client id');
+  }
+
   const response = await axios({
     method: 'post',
     url: 'https://id.twitch.tv/oauth2/token',

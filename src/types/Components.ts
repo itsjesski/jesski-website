@@ -9,6 +9,8 @@ export interface ChildrenProps {
 export interface PostCardProps {
   post: Post;
   className?: string;
+  size?: 'small' | 'medium' | 'large';
+  openLightbox?: (images: string[], index: number) => void;
 }
 
 // ArtCard component

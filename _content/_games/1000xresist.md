@@ -2,14 +2,12 @@
 id: 218282
 title: 1000xResist
 description: 1000xResist - Review
-score: 70
+score: 60
 date: 2025-02-20
 completed: true
 goty: []
-modified_date: 2025-02-24
+modified_date: 2025-04-04
 screenshots: []
-tags:
-  - undefined
 videos: []
 cover: //images.igdb.com/igdb/image/upload/t_cover_big/co87zq.jpg
 image: //images.igdb.com/igdb/image/upload/t_screenshot_huge/sciyms.jpg

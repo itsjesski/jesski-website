@@ -1,9 +1,11 @@
+/* eslint-disable no-console */
 import * as fs from 'fs';
 import { join } from 'path';
 import matter from 'gray-matter';
 import { PostItems } from '../types/Posts';
 
 // Update to reference subdirectories within _content folder
+// Use the directories that exist in your project
 const postTypes = ['_content/_posts', '_content/_games', '_content/_art'];
 
 function getPostSlugs(postType: string): string[] {
@@ -16,6 +18,26 @@ function getPostBySlug(postType: string, slug: string): PostItems {
   const postsDirectory = join(process.cwd(), postType);
   const realSlug = slug.replace(/\.md$/, '');
   const fullPath = join(postsDirectory, `${realSlug}.md`);
+
+  // Check if file exists
+  if (!fs.existsSync(fullPath)) {
+    return {
+      slug: realSlug,
+      content: '',
+      title: 'Missing Post',
+      date: new Date().toISOString().split('T')[0],
+      type: (() => {
+        if (postType.includes('_games')) {
+          return 'game-review';
+        }
+        if (postType.includes('_art')) {
+          return 'artwork';
+        }
+        return 'blog';
+      })(),
+    };
+  }
+
   const fileContents = fs.readFileSync(fullPath, 'utf8');
   const { data, content } = matter(fileContents);
   const items: PostItems = {};
@@ -65,30 +87,26 @@ function generatePostTypeCache(postType: string): void {
   // Extract the actual post type name (remove _content/ prefix)
   const cacheFileName = postType.split('/').pop() || postType;
 
-  const fileContents = `export const posts: any[] = ${getPostsForCache(
-    postType
-  )}`;
+  const fileContents = `export const posts = ${getPostsForCache(postType)}`;
 
+  // Ensure cache directory exists
   try {
-    fs.readdirSync('public/cache');
-  } catch (e) {
     fs.mkdirSync('public/cache', { recursive: true });
+  } catch (e) {
+    // Directory already exists
   }
 
   fs.writeFile(`public/cache/${cacheFileName}.ts`, fileContents, (err) => {
     if (err) {
-      // eslint-disable-next-line no-console
       console.log(`Error caching ${cacheFileName}.`);
     }
-    // eslint-disable-next-line no-console
     console.log(`${cacheFileName} posts were cached.`);
   });
 }
 
 /**
- * When this script is run it'll create a file in /cache for each post type.
+ * This will create a file in /cache for each post type.
  * These files will contain a variable with post data for all of the related posts.
- * This is used in searches and other areas of the site to make things faster.
  */
 postTypes.forEach((postType) => {
   generatePostTypeCache(postType);
