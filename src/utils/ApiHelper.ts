@@ -1,5 +1,5 @@
 import AppConfig from './AppConfig';
-import { FBGame } from './Posts';
+import { FBGame } from '../types';
 
 const sortArray = require('sort-array');
 

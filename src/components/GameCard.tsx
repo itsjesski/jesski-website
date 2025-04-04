@@ -4,8 +4,8 @@ import { format } from 'date-fns';
 import Link from 'next/link';
 
 import Image from 'next/image';
-import { FBGame } from '../utils/Posts';
-import { GameScoreBox } from './GameScoreBox';
+import GameScoreBox from './GameScoreBox';
+import { FBGame } from '../types';
 
 const GameCard: React.FC<{ game: FBGame; size: string }> = ({ game, size }) => {
   /**

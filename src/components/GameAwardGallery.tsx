@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 
-import { FBGame, getGamePostByAward } from '../utils/Posts';
+import { getGamePostByAward } from '../utils/Posts';
+import { FBGame } from '../types';
 import GameCard from './GameCard';
 
 const GameCardList: React.FC<{ year: string }> = ({ year }) => {

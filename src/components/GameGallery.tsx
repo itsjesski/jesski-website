@@ -2,7 +2,8 @@ import React, { useState, useEffect } from 'react';
 
 import Link from 'next/link';
 
-import { FBGame, getGamePosts } from '../utils/Posts';
+import { getGamePosts } from '../utils/Posts';
+import { FBGame } from '../types';
 import GameCard from './GameCard';
 
 const GameCardList: React.FC<{}> = () => {

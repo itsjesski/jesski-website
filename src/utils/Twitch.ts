@@ -3,18 +3,7 @@ import { ApiClient } from '@twurple/api';
 import { ClientCredentialsAuthProvider } from '@twurple/auth';
 import axios from 'axios';
 import flatCache from 'flat-cache';
-
-export type TwitchCache = {
-  status: {
-    online: boolean;
-    time: number;
-  };
-};
-
-type TwitchSecrets = {
-  client_id: string;
-  client_secret: string;
-};
+import { TwitchSecrets } from '../types';
 
 export const twitchSecrets: TwitchSecrets = {
   client_id: process.env.TWITCH_CLIENT_ID as string,
@@ -32,11 +21,21 @@ export function getDataFromTwitchCache(key: string) {
 
 async function cacheTwitchData(key: string, data: any) {
   const cache = loadCache();
-  cache.setKey(key, { ...data, time: Date.now() });
+  cache.setKey(key, {
+    ...data,
+    time: Date.now(),
+    expires: Date.now() + 5 * 60 * 1000, // 5 minute expiration
+  });
   cache.save();
 }
 
 export async function getTwitchAccessToken(): Promise<string> {
+  if (!twitchSecrets.client_id || !twitchSecrets.client_secret) {
+    // eslint-disable-next-line no-console
+    console.error('Missing Twitch credentials. Check your .env file.');
+    throw new Error('Missing client id');
+  }
+
   const response = await axios({
     method: 'post',
     url: 'https://id.twitch.tv/oauth2/token',
@@ -76,9 +75,11 @@ export async function getTwitchLiveStatus(): Promise<boolean> {
   const status = getDataFromTwitchCache('status') as {
     online: boolean;
     time: number;
+    expires: number;
   } | null;
 
-  if (status && Date.now() - status.time < 60 * 1000) {
+  // Use explicit expiration instead of fixed time window
+  if (status && Date.now() < status.expires) {
     return status.online;
   }
 

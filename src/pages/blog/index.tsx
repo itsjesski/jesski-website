@@ -8,7 +8,8 @@ import Content from '../../content/Content';
 import Meta from '../../layout/Meta';
 import Main from '../../templates/Main';
 import AppConfig from '../../utils/AppConfig';
-import { FBPost, getBlogPosts } from '../../utils/Posts';
+import { getBlogPosts } from '../../utils/Posts';
+import { FBPost } from '../../types';
 
 const PostsIndex: React.FC<{}> = () => {
   const [page, setPage] = useState<number>(() => {

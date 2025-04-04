@@ -4,12 +4,9 @@ import { format } from 'date-fns';
 import Link from 'next/link';
 
 import { searchBlogPosts, searchGamePosts } from '../utils/Posts';
+import { SearchProps } from '../types';
 
-interface Props {
-  postType: string;
-}
-
-export default function Search(Props: Props) {
+export default function Search(Props: SearchProps) {
   const searchRef = useRef<any>(null);
   const [query, setQuery] = useState<string>('');
   const [active, setActive] = useState<boolean>(false);

@@ -4,7 +4,7 @@
   "proxy": "http://localhost:3000",
   "scripts": {
     "devmin": "npm run cache-posts && npm run lint && next dev",
-    "dev": "npx dotenv-run-script compile-games-from-csv && npm run cache-posts && npm run lint && next dev",
+    "dev": "npx dotenv-run-script compile-games-from-csv && npx dotenv-run-script create-art-posts && npm run cache-posts && npm run lint && next dev",
     "build": "npm run cache-posts && next build",
     "lint": "npx eslint \"./src/\" --fix",
     "start": "next start",
@@ -13,7 +13,8 @@
     "cache-posts": "npx ts-node --skip-project ./src/scripts/PostCache.ts",
     "compile-games-from-csv": "npx ts-node --skip-project ./src/scripts/GamesFromCSV.ts",
     "update-front-matter": "npx ts-node --skip-project ./src/scripts/FrontmatterChanger.ts",
-    "compress-images": "npx ts-node --skip-project ./src/scripts/CompressImages.ts"
+    "compress-images": "npx ts-node --skip-project ./src/scripts/CompressImages.ts",
+    "create-art-posts": "npx ts-node --skip-project ./src/scripts/CreateArtPosts.ts"
   },
   "husky": {
     "hooks": {
