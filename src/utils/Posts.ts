@@ -1,51 +1,5 @@
 import axios from 'axios';
-
-export type PostItems = {
-  [key: string]: string;
-};
-
-export type FBPost = {
-  screenshots: any;
-  title: string;
-  description: string;
-  date: string;
-  modified_date: string;
-  image: string;
-  slug: string;
-  content: string;
-};
-
-export type PostResponse = {
-  results: FBPost[];
-  totalPosts: number;
-};
-
-export type GameAwards = string[];
-
-export type GameTags = string[];
-
-export type FBGame = {
-  id: number;
-  title: string;
-  description: string;
-  score: number;
-  date: string;
-  modified_date: string;
-  screenshots: string[];
-  slug: string;
-  content: string;
-  cover: string;
-  goty: GameAwards;
-  tags: GameTags;
-  image: string;
-  completed: boolean;
-  videos: string[];
-};
-
-export type GameResponse = {
-  results: FBGame[];
-  totalPosts: number;
-};
+import { PostResponse, GameResponse } from '../types';
 
 /**
  * Gets a post by post slug.

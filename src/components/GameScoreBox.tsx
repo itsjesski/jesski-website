@@ -1,10 +1,7 @@
 import React from 'react';
+import { GameScoreBoxProps } from '../types';
 
-export type IGameScoreProps = {
-  score: number | string;
-};
-
-const GameScoreBox = (props: IGameScoreProps) => (
+const GameScoreBox = (props: GameScoreBoxProps) => (
   <>
     <div
       className={`game-score align-middle text-sm text-cstyle-green w-1/4 text-right`}
@@ -14,4 +11,4 @@ const GameScoreBox = (props: IGameScoreProps) => (
   </>
 );
 
-export { GameScoreBox };
+export default GameScoreBox;

@@ -5,7 +5,8 @@ import PageIntroBox from '../../components/PageIntroBox';
 import Content from '../../content/Content';
 import Meta from '../../layout/Meta';
 import Main from '../../templates/Main';
-import { FBGame, getGamePosts } from '../../utils/Posts';
+import { getGamePosts } from '../../utils/Posts';
+import { FBGame } from '../../types';
 
 const PostsIndex: React.FC<{}> = () => {
   const [fbPosts, setPostData] = useState<FBGame[]>();

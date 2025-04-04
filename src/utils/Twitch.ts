@@ -3,18 +3,7 @@ import { ApiClient } from '@twurple/api';
 import { ClientCredentialsAuthProvider } from '@twurple/auth';
 import axios from 'axios';
 import flatCache from 'flat-cache';
-
-export type TwitchCache = {
-  status: {
-    online: boolean;
-    time: number;
-  };
-};
-
-type TwitchSecrets = {
-  client_id: string;
-  client_secret: string;
-};
+import { TwitchSecrets } from '../types';
 
 export const twitchSecrets: TwitchSecrets = {
   client_id: process.env.TWITCH_CLIENT_ID as string,

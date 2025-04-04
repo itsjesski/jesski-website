@@ -4,35 +4,14 @@ import axios from 'axios';
 import { format } from 'date-fns';
 import { GetStaticPaths, GetStaticProps } from 'next';
 import ReactPlayer from 'react-player';
-
 import { posts } from '../../../public/cache/_games';
 import Content from '../../content/Content';
 import Meta from '../../layout/Meta';
 import Main from '../../templates/Main';
 import { filterPostFields } from '../../utils/ApiHelper';
-import { getGenreString, IGDBGame } from '../../utils/IGDB';
+import { getGenreString } from '../../utils/IGDB';
 import markdownToHtml from '../../utils/Markdown';
-import { GameAwards, GameResponse } from '../../utils/Posts';
-
-type IPostUrl = {
-  slug: string;
-};
-
-type GameDetails = {
-  id: number;
-  title: string;
-  description: string;
-  date: string;
-  modified_date: string;
-  content: string;
-  score: number;
-  image: string;
-  cover: string;
-  completed: boolean;
-  goty: GameAwards | [];
-  videos: string[];
-  screenshots: string[];
-};
+import { IGDBGame, IPostUrl, GameDetails, GameResponse } from '../../types';
 
 function getPostBySlug(slug: string, fields: string): GameResponse {
   let result = posts.filter((post) => {

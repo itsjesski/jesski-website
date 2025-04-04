@@ -5,19 +5,9 @@ import { useRouter } from 'next/router';
 
 import AppConfig from '../utils/AppConfig';
 import addTrailingSlash from '../utils/Url';
+import { MetaProps } from '../types/Layout';
 
-type IMetaProps = {
-  title: string;
-  description: string;
-  canonical?: string;
-  post?: {
-    image: string;
-    date: string;
-    modified_date: string;
-  };
-};
-
-const Meta = (props: IMetaProps) => {
+const Meta = (props: MetaProps) => {
   const router = useRouter();
 
   return (
