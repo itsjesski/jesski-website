@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import Link from 'next/link';
 import Lightbox from 'yet-another-react-lightbox';
 import Counter from 'yet-another-react-lightbox/plugins/counter';
 import PostCard from './PostCard';
@@ -93,9 +92,6 @@ const PostGallery: React.FC<{ limit?: number }> = ({ limit = 6 }) => (
         <h2 className="mb-0">
           Recent <span className="text-cstyle-green">Posts</span>
         </h2>
-        <div className="text-sm text-gray-400 font-bold">
-          <Link href="/posts">View All Posts {'>'}</Link>
-        </div>
       </div>
       <div className="gallery-content">
         <PostCardList limit={limit} />
