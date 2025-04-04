@@ -5,7 +5,7 @@
   "scripts": {
     "devmin": "npm run cache-posts && npm run lint && next dev",
     "dev": "npx dotenv-run-script compile-games-from-csv && npx dotenv-run-script create-art-posts && npm run cache-posts && npm run lint && next dev",
-    "build": "npm run cache-posts && next build",
+    "build": "mkdir -p .next/cache && npm ci && npm run cache-posts && next build",
     "lint": "npx eslint \"./src/\" --fix",
     "start": "next start",
     "build-types": "tsc --noEmit --pretty",
