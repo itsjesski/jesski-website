@@ -52,7 +52,6 @@ const DailyArtChallenge: React.FC = () => {
         ))}
       </div>
 
-      {/* OPTION 1: Using Counter plugin with fixed positioning */}
       {lightboxOpen && (
         <Lightbox
           slides={currentGallery.map((image) => ({ src: image }))}
@@ -62,7 +61,7 @@ const DailyArtChallenge: React.FC = () => {
           plugins={[Counter]}
           styles={{
             container: {
-              backgroundColor: 'rgba(0, 0, 0, 0.8)',
+              backgroundColor: 'rgba(0, 0, 0, 1)',
             },
             root: {
               position: 'fixed',
@@ -87,6 +86,7 @@ const DailyArtChallenge: React.FC = () => {
                 borderRadius: '4px',
                 fontSize: '16px',
                 zIndex: 10,
+                color: '#fff',
               },
             },
           }}

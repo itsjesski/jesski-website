@@ -52,7 +52,7 @@ const PostCardList: React.FC<{ limit?: number }> = ({ limit = 6 }) => {
         plugins={[Counter]}
         styles={{
           container: {
-            backgroundColor: 'rgba(0, 0, 0, 0.8)',
+            backgroundColor: 'rgba(0, 0, 0, 1)',
           },
           root: {
             position: 'fixed',
@@ -77,6 +77,7 @@ const PostCardList: React.FC<{ limit?: number }> = ({ limit = 6 }) => {
               borderRadius: '4px',
               fontSize: '16px',
               zIndex: 10,
+              color: '#fff',
             },
           },
         }}

@@ -10,12 +10,21 @@ function loadCache() {
 
 export function getDataFromIGDBCache(key: string) {
   const cache = loadCache();
-  return cache.getKey(key);
+  const data = cache.getKey(key);
+
+  if (data && data.expires > Date.now()) {
+    return data.data;
+  }
+  return null;
 }
 
-async function cacheIGDBData(key: string, data: any) {
+async function cacheIGDBData(key: string, data: any, ttl = 86400000) {
   const cache = loadCache();
-  cache.setKey(key, { ...data, time: Date.now() });
+  cache.setKey(key, {
+    data,
+    time: Date.now(),
+    expires: Date.now() + ttl,
+  });
   cache.save();
 }
 

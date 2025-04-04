@@ -2,10 +2,9 @@ import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import Link from 'next/link';
 import Image from 'next/image';
-import Spinner from './Spinner';
 
 const PageIntroBox: React.FC<{}> = (props) => {
-  const [streamIsOnline, setStreamIsOnline] = useState<boolean | null>(null);
+  const [streamIsOnline, setStreamIsOnline] = useState<boolean | null>(false);
   const [firebotImage, setFirebotImage] = useState<string>('');
 
   function pickFirebotImage() {
@@ -44,23 +43,16 @@ const PageIntroBox: React.FC<{}> = (props) => {
   }
 
   useEffect(() => {
-    if (streamIsOnline == null) {
-      getOnlineStatus();
-    }
+    getOnlineStatus();
 
     if (!firebotImage) {
       pickFirebotImage();
     }
-  }, [firebotImage, streamIsOnline]);
+  }, [firebotImage]);
 
   return (
     <div className="index-header items-end flex-wrap flex justify-around mb-3 bg-cstyle-green rounded p-2">
-      {streamIsOnline == null && (
-        <div className="pl-2">
-          <Spinner />
-        </div>
-      )}
-      {streamIsOnline && (
+      {streamIsOnline ? (
         <div className="pl-2 grid grid-cols-12 gap-4">
           <div className="col-span-12 md:col-span-6 lg:col-span-6 text-white flex flex-col justify-center">
             <h1 className="text-4xl">Jesski is live streaming right now!</h1>
@@ -87,8 +79,7 @@ const PageIntroBox: React.FC<{}> = (props) => {
             ></iframe>
           </div>
         </div>
-      )}
-      {streamIsOnline === false && (
+      ) : (
         <div className="pl-2 grid grid-cols-12 gap-4">
           <div className="col-span-12 md:col-span-9 lg:col-span-10">
             {props.children}

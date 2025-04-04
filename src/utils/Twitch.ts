@@ -21,7 +21,11 @@ export function getDataFromTwitchCache(key: string) {
 
 async function cacheTwitchData(key: string, data: any) {
   const cache = loadCache();
-  cache.setKey(key, { ...data, time: Date.now() });
+  cache.setKey(key, {
+    ...data,
+    time: Date.now(),
+    expires: Date.now() + 5 * 60 * 1000, // 5 minute expiration
+  });
   cache.save();
 }
 
@@ -71,9 +75,11 @@ export async function getTwitchLiveStatus(): Promise<boolean> {
   const status = getDataFromTwitchCache('status') as {
     online: boolean;
     time: number;
+    expires: number;
   } | null;
 
-  if (status && Date.now() - status.time < 60 * 1000) {
+  // Use explicit expiration instead of fixed time window
+  if (status && Date.now() < status.expires) {
     return status.online;
   }
 
