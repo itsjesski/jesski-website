@@ -14,7 +14,8 @@
     "compile-games-from-csv": "npx ts-node --skip-project ./src/scripts/GamesFromCSV.ts",
     "update-front-matter": "npx ts-node --skip-project ./src/scripts/FrontmatterChanger.ts",
     "compress-images": "npx ts-node --skip-project ./src/scripts/CompressImages.ts",
-    "create-art-posts": "npx ts-node --skip-project ./src/scripts/CreateArtPosts.ts"
+    "create-art-posts": "npx ts-node --skip-project ./src/scripts/CreateArtPosts.ts",
+    "prepare-art": "npm run compress-images && npm run create-art-posts"
   },
   "husky": {
     "hooks": {
